@@ -1,0 +1,6 @@
+{
+  "extends": "@sankit/config/tsconfig.base.json",
+  "compilerOptions": { "noEmit": true },
+  "files": [],
+  "exclude": ["node_modules", "dist", "**/dist"]
+}

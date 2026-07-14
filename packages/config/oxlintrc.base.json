@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "import"],
+  "categories": { "correctness": "error" },
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/.turbo/**",
+    "**/build/**",
+    "**/.expo/**",
+    "**/.wrangler/**",
+    "**/worker-configuration.d.ts"
+  ]
+}

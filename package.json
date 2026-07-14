@@ -1,0 +1,23 @@
+{
+  "name": "sankit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "lint": "oxlint",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
+  },
+  "devDependencies": {
+    "@sankit/config": "workspace:*",
+    "oxfmt": "^0.58.0",
+    "oxlint": "^1.73.0",
+    "turbo": "^2.10.4",
+    "typescript": "6.0.3",
+    "vitest": "^4.1.10"
+  },
+  "packageManager": "pnpm@11.9.0"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@sankit/config",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "tsconfig.base.json",
+    "oxlintrc.base.json",
+    "tailwind-base.css",
+    "vitest.base.ts"
+  ],
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./oxlintrc.base.json": "./oxlintrc.base.json",
+    "./tailwind-base.css": "./tailwind-base.css",
+    "./vitest.base": "./vitest.base.ts"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "vitest": "^4.1.10"
+  }
+}

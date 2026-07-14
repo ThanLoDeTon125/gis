@@ -1,0 +1,6 @@
+/* @sankit/config base Tailwind layer. Web apps: @import "@sankit/config/tailwind-base.css"; then layer their own theme. */
+@import "tailwindcss";
+
+@theme {
+  --color-sankit-brand: oklch(0.62 0.19 145);
+}

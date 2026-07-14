@@ -1,0 +1,19 @@
+// Metro config for the pnpm monorepo (hoisted node-linker).
+// Watches the workspace root and resolves deps from both the app and the root
+// node_modules so Metro finds hoisted packages. See https://docs.expo.dev/guides/monorepos/
+const { getDefaultConfig } = require("expo/metro-config");
+const path = require("node:path");
+
+const projectRoot = __dirname;
+const workspaceRoot = path.resolve(projectRoot, "../..");
+
+const config = getDefaultConfig(projectRoot);
+
+config.watchFolders = [workspaceRoot];
+config.resolver.nodeModulesPaths = [
+  path.resolve(projectRoot, "node_modules"),
+  path.resolve(workspaceRoot, "node_modules"),
+];
+config.resolver.disableHierarchicalLookup = true;
+
+module.exports = config;
