@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "duocdien",
+      "runtimeExecutable": "/Users/trinhquocbao/Documents/Sankit/rag_duocdien/venv/bin/python3",
+      "runtimeArgs": ["/Users/trinhquocbao/Documents/Sankit/rag_duocdien/server.py"],
+      "port": 8600
+    }
+  ]
+}
