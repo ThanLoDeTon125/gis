@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sk-coop",
+  "compatibility_date": "2026-07-08",
+  "main": "worker/index.ts",
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+  },
+  "vars": {
+    // Placeholder only — real value set via `wrangler secret put APP_SECRET`
+    "APP_SECRET": "placeholder-set-via-wrangler-secret",
+  },
+}

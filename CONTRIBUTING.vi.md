@@ -1,58 +1,62 @@
 # Contributing
 
-Cách mọi developer của Sankit làm việc. Đọc cái này trước khi động vào codebase.
+Tài liệu này cho mỗi developer của Sankit biết cách làm việc. Đọc tài liệu này trước khi bạn thay
+đổi repository.
 
-> Repo này là **proprietary and confidential** — xem [LICENSE.md](./LICENSE.vi.md). Không chia sẻ
-> source, config hay quy trình setup ra ngoài Company.
+> Repository này là **proprietary and confidential** — xem [LICENSE.md](./LICENSE.vi.md). Không
+> chia sẻ source, configuration, hay quy trình setup ra ngoài Company.
 
 ---
 
 ## 0. Setup một lần
 
 1. Cài toolchain → [docs/PREREQUISITES.md](./docs/PREREQUISITES.vi.md)
-2. Set up repo → [docs/INSTALLATION.md](./docs/INSTALLATION.vi.md)
+2. Set up repository → [docs/INSTALLATION.md](./docs/INSTALLATION.vi.md)
 
-Xác nhận `pnpm build`, `pnpm lint`, `pnpm test` đều xanh trước khi bắt đầu.
+Trước khi bắt đầu, hãy chắc chắn `pnpm build`, `pnpm lint`, và `pnpm test` đều xanh.
 
 ---
 
 ## 1. Mọi thay đổi đều đi qua Pull Request
 
-**Không commit thẳng vào `main`.** `main` được bảo vệ và luôn ở trạng thái release được. Mọi công việc
-đều vào qua PR và review.
+**Không commit thẳng vào `main`.** Nhánh `main` được bảo vệ và luôn release được. Mọi công việc
+vào `main` qua một pull request và một review.
 
 ### The loop
 
-1. **Bắt đầu từ một Linear ticket.** Mỗi thay đổi đều gắn với một Linear issue (ví dụ `SANKIT-123`).
-   Không ticket, không PR.
-2. **Nhánh ra từ `main`**, đặt tên theo ticket ID:
+1. **Bắt đầu từ một Linear ticket.** Mỗi thay đổi có một Linear issue (ví dụ `SANKIT-123`). Nếu
+   không có ticket, không mở pull request.
+2. **Tạo nhánh từ `main`.** Đặt ticket ID trong tên nhánh:
    ```sh
    git switch main && git pull
    git switch -c SANKIT-123-short-description
    ```
-3. **Commit** theo từng bước nhỏ, logic, dùng **Conventional Commits** (xem §2).
-4. **Mở PR** trở lại vào `main`:
-   - Title: `SANKIT-123: <what changed>` (ticket ID giúp Linear tự động link PR).
-   - Description: cái gì + tại sao, đã test thế nào, kèm screenshot nếu là UI.
-   - Link Linear ticket (dán URL / dùng integration Linear ↔ GitHub).
-5. **Qua hết các gate** (§3) — CI xanh, và ít nhất **một review approve**.
+3. **Commit** theo từng bước nhỏ và logic. Dùng **Conventional Commits** (xem §2).
+4. **Mở một pull request** vào `main`:
+   - Title: `SANKIT-123: <what changed>` (ticket ID giúp Linear tự động link pull request).
+   - Description: nói cái gì thay đổi và tại sao. Nói bạn đã test thế nào. Thêm screenshot cho
+     thay đổi UI.
+   - Link Linear ticket. Dán URL, hoặc dùng integration Linear ↔ GitHub.
+5. **Qua hết các gate** (§3). CI phải xanh. Pull request phải có ít nhất **một review approve**.
 6. **Merge**, rồi xoá nhánh.
 
-> 🔴 **CHỈ DÙNG SQUASH MERGE.** Mỗi PR khi lên `main` là **một commit squash duy nhất** — không
-> merge commit, không rebase-and-merge, không push thẳng nhiều commit. Nhờ vậy history của `main`
-> giữ đúng một commit sạch cho mỗi ticket. Đặt title commit squash là `SANKIT-123: <what changed>`.
+> 🔴 **CHỈ DÙNG SQUASH MERGE.** Mỗi pull request lên `main` là **một commit squash duy nhất**.
+> Không dùng merge commit. Không dùng rebase-and-merge. Không push nhiều commit thô. Quy tắc này
+> giữ một commit sạch cho mỗi ticket trong history của `main`. Đặt title commit squash là
+> `SANKIT-123: <what changed>`.
 
-> Mẹo: để ticket ID **cả** trong tên nhánh **lẫn** title PR để Linear tự link cả hai.
+> Mẹo: đặt ticket ID trong tên nhánh **và** trong title pull request. Khi đó Linear tự link cả
+> hai.
 
-### Các concept Git nên biết
+### Các concept Git cần biết
 
-Workflow này dựa vào vài feature của Git. Cái nào chưa quen thì đọc mấy bài dưới trước (khỏi cần
-cày hết man page — đây là bản ngắn, thực dụng):
+Workflow này dùng một số feature của Git. Nếu một feature còn mới với bạn, đọc trang liên quan bên
+dưới trước. Các trang này ngắn và thực dụng — bạn không cần đọc hết man page.
 
 - **Branching** — [Atlassian: Using branches](https://www.atlassian.com/git/tutorials/using-branches)
-- **Squash** — [Tower: Squash commits](https://www.git-tower.com/learn/git/faq/git-squash) (đây là cách mọi PR lên `main` — xem §1)
-- **Cherry-pick** — [Atlassian: git cherry-pick](https://www.atlassian.com/git/tutorials/cherry-pick) (bê một commit lẻ giữa các branch, ví dụ hotfix)
-- **Worktree** — [DataCamp: Git worktree](https://www.datacamp.com/tutorial/git-worktree-tutorial) (làm nhiều branch cùng lúc, khỏi stash/switch qua lại)
+- **Squash** — [Tower: Squash commits](https://www.git-tower.com/learn/git/faq/git-squash) (mỗi pull request lên `main` bằng cách này — xem §1)
+- **Cherry-pick** — [Atlassian: git cherry-pick](https://www.atlassian.com/git/tutorials/cherry-pick) (chuyển một commit giữa các nhánh, ví dụ một hotfix)
+- **Worktree** — [DataCamp: Git worktree](https://www.datacamp.com/tutorial/git-worktree-tutorial) (làm việc trên hai hay nhiều nhánh cùng lúc, không cần stash hay switch)
 
 ---
 
@@ -63,47 +67,50 @@ cày hết man page — đây là bản ngắn, thực dụng):
 ```
 
 Types: `feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `style`, `perf`, `ci`.
-Scope = app/package (`api`, `sk-ops`, `sk-hub`, `sk-go`, `config`, `types`, …).
+Scope là tên app hoặc package (`sk-backend`, `sk-ops`, `sk-coop`, `sk-go`, `config`, `types`, …).
 
 Ví dụ:
-- `feat(api): add tenant guard to health module`
+
+- `feat(sk-backend): add tenant guard to health module`
 - `fix(sk-ops): correct TanStack Router param typing`
 - `chore(config): bump oxlint base rules`
 
 ---
 
-## 3. Definition of Done (phải pass trước khi request review)
+## 3. Definition of Done (mọi mục phải pass trước khi bạn request review)
 
 - [ ] `pnpm build` — xanh
 - [ ] `pnpm lint` — xanh (**chỉ oxlint + oxfmt**; không ESLint/Prettier)
 - [ ] `pnpm format:check` — sạch
 - [ ] `pnpm test` — xanh (Vitest; không Jest)
-- [ ] Hành vi mới phải có test (ưu tiên TDD — red → green → refactor)
-- [ ] PR đã link với Linear ticket của nó
-- [ ] Không commit secret, không giá trị `.env`, không dữ liệu proprietary
+- [ ] Hành vi mới có test (ưu tiên TDD — red → green → refactor)
+- [ ] Pull request đã link với Linear ticket của nó
+- [ ] Không có secret, không có giá trị `.env`, không có dữ liệu proprietary trong các commit
 
 ---
 
 ## 4. House rules
 
-- **Chỉ thêm dependency qua CLI** — `pnpm add` / `pnpm add -D`. Không bao giờ tự tay ghi dependency vào
+- **Chỉ thêm dependency bằng CLI** — `pnpm add` / `pnpm add -D`. Không tự tay ghi dependency vào
   `package.json`.
 - **Cài vào đúng workspace:** `pnpm add <pkg> --filter <app>` (hoặc `-w` cho root).
-- **TypeScript giữ ở 6.0.3** — chưa bump lên native compiler TS 7: `nest build` cần programmatic
-  compiler API mà tsgo chưa ship tới TS 7.1 (phần còn lại của repo TS7-clean; api là chỗ vướng).
-- **Không có `packages/ui` dùng chung** — mỗi web app tự sở hữu shadcn design system. Logic thực sự dùng
-  chung thì để trong `@sankit/{types,form-schema,rule-engine}`, còn config dùng chung thì để trong
+- **Giữ TypeScript ở 6.0.3** — chưa chuyển sang native compiler TS 7. Tooling của repository
+  (wrangler, Vitest, Expo) chưa được validate trên tsgo.
+- **Không tạo `packages/ui` dùng chung** — mỗi web app tự sở hữu shadcn design system. Đặt logic
+  dùng chung trong `@sankit/{types,form-schema,rule-engine}`. Đặt configuration dùng chung trong
   `@sankit/config`.
-- **Web app deploy dưới dạng Cloudflare Workers với static assets** (không phải Pages). Giữ nguyên Worker
-  entry thật + `wrangler.jsonc` của từng app.
-- **Giữ `main` luôn release được.** Nếu một thay đổi có rủi ro, hãy gate nó sau một flag hoặc chia PR nhỏ ra.
-- **Không commit output sinh ra tự động** (`dist`, `.turbo`, `node_modules`, `dist` của Expo) — đã có
-  trong `.gitignore`.
-- **Kỷ luật bootstrap:** không viết business logic / schema / auth wiring nằm ngoài ticket sở hữu nó.
+- **Web app deploy dưới dạng Cloudflare Workers với static assets** (không phải Pages). Giữ
+  nguyên Worker entry và `wrangler.jsonc` của mỗi app.
+- **Giữ `main` luôn release được.** Nếu một thay đổi có rủi ro, đặt nó sau một flag, hoặc giữ pull
+  request nhỏ.
+- **Không commit output sinh tự động** (`dist`, `.turbo`, `node_modules`, `dist` của Expo). Các
+  đường dẫn này đã có trong `.gitignore`.
+- **Kỷ luật bootstrap:** không thêm business logic, schema, hay auth wiring ngoài ticket sở hữu
+  chúng.
 
 ---
 
-## 5. Cần trợ giúp
+## 5. Nhận trợ giúp
 
-Bị block? Comment vào Linear ticket hoặc báo trong channel của team kèm ticket ID. Đừng lách một blocker
-bằng cách phá vỡ house rule.
+Nếu bạn bị block, comment vào Linear ticket, hoặc gửi tin nhắn kèm ticket ID trong channel của
+team. Không phá house rule để lách một blocker.

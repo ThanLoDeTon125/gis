@@ -1,3 +1,4 @@
 {
-  "extends": ["./packages/config/oxlintrc.base.json"]
+  "extends": ["./packages/config/oxlintrc.base.json"],
+  "ignorePatterns": ["**/_prototype/**"]
 }

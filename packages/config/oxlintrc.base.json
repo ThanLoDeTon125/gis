@@ -8,6 +8,7 @@
     "**/build/**",
     "**/.expo/**",
     "**/.wrangler/**",
-    "**/worker-configuration.d.ts"
+    "**/worker-configuration.d.ts",
+    "**/_prototype/**"
   ]
 }

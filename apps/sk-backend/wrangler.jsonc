@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sk-backend",
+  "compatibility_date": "2026-07-08",
+  "main": "src/index.ts",
+  "vars": {
+    // Placeholder only — real value set via `wrangler secret put APP_SECRET`
+    "APP_SECRET": "placeholder-set-via-wrangler-secret",
+  },
+}

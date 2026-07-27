@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap">
+<style>
+ body{margin:0;background:#dcdad5;min-height:100vh;display:grid;place-items:center;padding:34px 16px;font-family:'Barlow',system-ui,sans-serif}
+ svg.ic{flex:none;fill:none;stroke:currentColor;stroke-width:1.6px;stroke-linecap:round;stroke-linejoin:round;width:22px;height:22px}
+ svg.ic.i14{width:14px;height:14px}svg.ic.i16{width:16px;height:16px}svg.ic.i18{width:18px;height:18px}svg.ic.i20{width:20px;height:20px}svg.ic.i24{width:24px;height:24px}svg.ic.i26{width:26px;height:26px}svg.ic.i30{width:30px;height:30px}svg.ic.i40{width:40px;height:40px}
+ .bp{position:relative}
+ .bp>i.c{position:absolute;width:8px;height:8px;pointer-events:none;border-color:color-mix(in srgb,currentColor 55%,transparent);border-style:solid;border-width:0}
+ .bp>i.tl{top:-1px;left:-1px;border-left-width:1.5px;border-top-width:1.5px}
+ .bp>i.tr{top:-1px;right:-1px;border-right-width:1.5px;border-top-width:1.5px}
+ .bp>i.bl{bottom:-1px;left:-1px;border-left-width:1.5px;border-bottom-width:1.5px}
+ .bp>i.br{bottom:-1px;right:-1px;border-right-width:1.5px;border-bottom-width:1.5px}
+ .tapfx{transition:transform .06s ease}
+ .tapfx:active{transform:scale(.96)}
+ .scrolly{overflow-y:auto;scrollbar-width:none}
+ .scrolly::-webkit-scrollbar{display:none}
+ @keyframes pop{0%{transform:scale(.5);opacity:0}55%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+ @keyframes ping{0%{transform:scale(.9);box-shadow:0 0 0 0 rgba(18,122,107,.45)}70%{transform:scale(1.04);box-shadow:0 0 0 22px rgba(18,122,107,0)}100%{transform:scale(.9);box-shadow:0 0 0 0 rgba(18,122,107,0)}}
+</style>
+</helmet>
+<div style="--bg:#f2f2f3;--surface:#e9e9ea;--panel:#e4e4e6;--ink:#1d1f20;--muted:#5d5d60;--line:rgba(29,31,32,.26);--accent:#127a6b;--accent100:#e9f6f3;--accent200:#c9ece5;--accent700:#0b5346;--ok:#2e8b57;--okbg:#e3f0e7;--oktext:#20613b;--warn:#b7791f;--warnbg:#f4ebd6;--warntext:#7c5410;--danger:#c0392b;--dangerbg:#f7ddd8;--dangertext:#8a271c;--fh:'Barlow Condensed',system-ui,sans-serif;--fb:'Barlow',system-ui,sans-serif;color:var(--ink);font-family:var(--fb)">
+ <div style="display:flex;flex-direction:column;align-items:center;gap:16px">
+  <div style="text-align:center;max-width:380px">
+    <div style="font:700 15px 'Barlow Condensed',system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#1d1f20">sk-go · Field Capture</div>
+    <div style="font:400 12.5px 'Barlow',system-ui,sans-serif;color:#5d5d60;margin-top:3px">Interactive prototype — sign in, then tap through the flow</div>
+   </div>
+  <div style="width:366px;border-radius:38px;background:#0b0b0c;padding:10px;box-shadow:0 16px 40px rgba(0,0,0,.32)">
+   <div style="border-radius:29px;overflow:hidden;background:var(--bg);position:relative;height:792px;display:flex;flex-direction:column">
+
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 18px 6px;font:600 12px var(--fb);flex:none">
+     <span>14:20</span>
+     <span style="display:flex;align-items:center;gap:5px;color:var(--danger);font-weight:700"><svg class="ic i16" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></svg><span style="font-size:11px">Không có sóng</span></span>
+     <span style="display:flex;align-items:center;gap:4px"><span style="font-size:11px">78%</span><svg class="ic i16" viewBox="0 0 24 24"><rect x="2" y="7" width="16" height="10" rx="2"/><line x1="22" x2="22" y1="11" y2="13"/></svg></span>
+    </div>
+
+    <sc-if value="{{ isCapture }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;gap:7px;padding:8px 16px 12px;border-bottom:1px solid var(--line);flex:none">
+     <sc-for list="{{ stations }}" as="st" hint-placeholder-count="3">
+      <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 4px;border:1.5px solid;border-radius:3px;{{ st.chipStyle }}">
+       <sc-if value="{{ st.done }}" hint-placeholder-val="{{ false }}"><svg class="ic i18" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></sc-if>
+       <sc-if value="{{ st.notDone }}" hint-placeholder-val="{{ true }}"><span style="font:700 16px var(--fh)">{{ st.n }}</span></sc-if>
+       <span style="font:600 13px var(--fh);text-transform:uppercase;letter-spacing:.02em">{{ st.w }}</span>
+      </div>
+     </sc-for>
+    </div>
+    </sc-if>
+
+    <div class="scrolly" style="flex:1;display:flex;flex-direction:column;position:relative">
+
+    <sc-if value="{{ isSignin }}" hint-placeholder-val="{{ true }}">
+     <sc-if value="{{ noWorker }}" hint-placeholder-val="{{ true }}">
+     <div style="padding:22px 20px;flex:1;display:flex;flex-direction:column">
+      <div style="font:600 12px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--accent700)">HTX Sâm Ngọc Linh</div>
+      <div style="font:700 30px var(--fh);text-transform:uppercase;margin-top:4px;line-height:1">Chạm vào tên bạn</div>
+      <div style="font-size:13px;color:var(--muted);margin-top:4px">Dùng chung máy — chọn đúng người</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:20px">
+       <sc-for list="{{ workers }}" as="w" hint-placeholder-count="4">
+        <button class="bp tapfx" onClick="{{ w.onClick }}" style="padding:14px 10px;background:var(--bg);border:1.5px solid var(--line);border-radius:3px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:9px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+         <div style="width:70px;height:70px;border-radius:50%;overflow:hidden;background:var(--surface);position:relative"><svg class="ic i30" viewBox="0 0 24 24" style="position:absolute;inset:0;margin:auto;color:var(--muted)"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><img src="{{ w.img }}" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+         <div style="font:600 17px var(--fh);text-transform:uppercase">{{ w.name }}</div>
+        </button>
+       </sc-for>
+      </div>
+      <div style="flex:1;min-height:12px"></div>
+      <div style="display:flex;align-items:center;gap:8px;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:11px 12px;font-size:12px"><svg class="ic i18" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Đăng nhập được cả khi không có mạng.</div>
+     </div>
+     </sc-if>
+     <sc-if value="{{ hasWorker }}" hint-placeholder-val="{{ false }}">
+     <div style="padding:22px 20px;flex:1;display:flex;flex-direction:column;align-items:center">
+      <button class="tapfx" onClick="{{ clearWorker }}" style="align-self:flex-start;display:flex;align-items:center;gap:6px;background:none;border:none;color:var(--muted);font:600 13px var(--fh);text-transform:uppercase;cursor:pointer"><svg class="ic i18" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>Đổi người</button>
+      <div style="width:88px;height:88px;border-radius:50%;overflow:hidden;background:var(--surface);margin-top:12px;position:relative"><img src="{{ workerImg }}" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+      <div style="font:700 24px var(--fh);text-transform:uppercase;margin-top:12px">Chào, {{ workerName }}</div>
+      <div style="font-size:13px;color:var(--muted)">Nhập mã 4 số</div>
+      <div style="display:flex;gap:14px;margin:20px 0 8px">
+       <sc-for list="{{ pinDots }}" as="d" hint-placeholder-count="4"><span style="width:16px;height:16px;border-radius:50%;border:2px solid var(--accent);background:{{ d.bg }}"></span></sc-for>
+      </div>
+      <div style="flex:1"></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:100%;max-width:260px">
+       <sc-for list="{{ keys }}" as="k" hint-placeholder-count="12"><button class="tapfx" onClick="{{ k.onClick }}" style="height:56px;border:1.5px solid var(--line);border-radius:3px;background:var(--bg);color:var(--ink);font:700 24px var(--fh);cursor:pointer;display:flex;align-items:center;justify-content:center">{{ k.label }}</button></sc-for>
+      </div>
+     </div>
+     </sc-if>
+    </sc-if>
+
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:16px 18px 20px;flex:1;display:flex;flex-direction:column">
+     <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;background:var(--surface);flex:none;position:relative"><img src="{{ workerImg }}" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+      <div style="flex:1"><div style="font:600 11px var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">HTX Sâm Ngọc Linh</div><div style="font:700 24px var(--fh);text-transform:uppercase;line-height:1">Chào, {{ workerName }}</div></div>
+     </div>
+     <div style="display:flex;align-items:center;gap:16px;margin-top:16px;border:1px solid var(--line);border-radius:3px;padding:14px">
+      <div style="position:relative;width:80px;height:80px;flex:none">
+       <svg width="80" height="80" style="transform:rotate(-90deg)"><circle cx="40" cy="40" r="32" fill="none" stroke="var(--line)" stroke-width="7"></circle><circle cx="40" cy="40" r="32" fill="none" stroke="var(--accent)" stroke-width="7" stroke-dasharray="201" stroke-dashoffset="80.4"></circle></svg>
+       <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 22px var(--fh)">3/5</div>
+      </div>
+      <div style="flex:1">
+       <div style="font:700 19px var(--fh);text-transform:uppercase">Việc hôm nay</div>
+       <div style="font-size:12.5px;color:var(--muted)">Còn 2 việc là xong</div>
+       <div style="display:inline-flex;align-items:center;gap:6px;margin-top:9px;border:1px solid var(--accent);color:var(--accent700);padding:4px 9px;border-radius:3px"><svg class="ic i16" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg><span style="font:700 12px var(--fb)">5 ngày liên tục</span></div>
+      </div>
+     </div>
+     <div style="font:600 11px var(--fb);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:18px 0 10px">Việc tiếp theo</div>
+     <button class="bp tapfx" onClick="{{ startCapture }}" style="border:1px solid var(--line);background:var(--bg);display:flex;align-items:center;gap:12px;padding:13px;border-radius:3px;cursor:pointer;text-align:left"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+      <div style="width:46px;height:46px;border:1px solid var(--accent);color:var(--accent700);display:flex;align-items:center;justify-content:center;border-radius:3px;flex:none"><svg class="ic i22" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 4.9 7 3c-.29 1.9-1.14 3.14-2.29 4.06S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></div>
+      <div style="flex:1"><div style="font:600 17px var(--fh);text-transform:uppercase">Phun thuốc</div><div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:5px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Lô A3</div></div>
+      <div style="text-align:right"><div style="font:700 16px var(--fh);color:var(--accent700)">+10</div><div style="font-size:10px;color:var(--muted)">điểm</div></div>
+     </button>
+     <button class="tapfx" onClick="{{ goTasks }}" style="margin-top:10px;background:none;border:none;color:var(--accent700);font:600 13px var(--fh);text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:5px;align-self:flex-start">Xem tất cả việc <svg class="ic i16" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+     <div style="display:flex;align-items:center;gap:8px;margin-top:14px;color:var(--warntext);background:var(--warnbg);padding:10px 12px;font-size:12px;border-radius:3px"><svg class="ic i16" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>Lô A3 có 1 việc sắp quá hạn</div>
+     <div style="flex:1;min-height:14px"></div>
+     <button class="bp tapfx" onClick="{{ startCapture }}" style="display:flex;align-items:center;justify-content:center;gap:10px;padding:17px;border:none;border-radius:3px;cursor:pointer;font:700 19px var(--fh);text-transform:uppercase;background:var(--accent);color:#fff"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><svg class="ic i26" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>Bắt đầu việc</button>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isTasks }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:14px 18px 18px;flex:1;display:flex;flex-direction:column">
+     <div style="font:700 26px var(--fh);text-transform:uppercase">Việc hôm nay</div>
+     <div style="display:flex;gap:8px;margin:12px 0 14px">
+      <div style="padding:7px 14px;font:600 12px var(--fh);text-transform:uppercase;background:var(--accent);color:#fff;border-radius:3px">Tất cả</div>
+      <div style="padding:7px 14px;font:500 12px var(--fb);color:var(--muted);border:1px solid var(--line);border-radius:3px">Lô A3</div>
+      <div style="padding:7px 14px;font:500 12px var(--fb);color:var(--muted);border:1px solid var(--line);border-radius:3px">Định kỳ</div>
+     </div>
+     <div style="display:flex;flex-direction:column;gap:12px">
+      <button class="bp tapfx" onClick="{{ startSpray }}" style="border:1.5px solid var(--line);background:var(--bg);display:flex;align-items:center;gap:12px;padding:12px;border-radius:3px;cursor:pointer;text-align:left"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="width:44px;height:44px;border:1px solid var(--accent);color:var(--accent700);display:flex;align-items:center;justify-content:center;border-radius:3px;flex:none"><svg class="ic i22" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 4.9 7 3c-.29 1.9-1.14 3.14-2.29 4.06S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></div><div style="flex:1"><div style="font:600 16px var(--fh);text-transform:uppercase">Phun thuốc</div><div style="font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:5px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Lô A3 · hôm nay</div></div><div style="text-align:right"><div style="font:700 14px var(--fh);color:var(--accent700)">+10</div><svg class="ic i18" viewBox="0 0 24 24" style="color:var(--muted)"><path d="m9 18 6-6-6-6"/></svg></div></button>
+      <button class="bp tapfx" onClick="{{ startPest }}" style="border:1.5px solid var(--line);background:var(--bg);display:flex;align-items:center;gap:12px;padding:12px;border-radius:3px;cursor:pointer;text-align:left"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="width:44px;height:44px;border:1px solid var(--accent);color:var(--accent700);display:flex;align-items:center;justify-content:center;border-radius:3px;flex:none"><svg class="ic i22" viewBox="0 0 24 24"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6z"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg></div><div style="flex:1"><div style="font:600 16px var(--fh);text-transform:uppercase">Kiểm tra sâu bệnh</div><div style="font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:5px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Lô B1 · hôm nay</div></div><div style="text-align:right"><div style="font:700 14px var(--fh);color:var(--accent700)">+8</div><svg class="ic i18" viewBox="0 0 24 24" style="color:var(--muted)"><path d="m9 18 6-6-6-6"/></svg></div></button>
+      <button class="bp tapfx" onClick="{{ startFert }}" style="border:1.5px solid var(--line);background:var(--bg);display:flex;align-items:center;gap:12px;padding:12px;border-radius:3px;cursor:pointer;text-align:left"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="width:44px;height:44px;border:1px solid var(--accent);color:var(--accent700);display:flex;align-items:center;justify-content:center;border-radius:3px;flex:none"><svg class="ic i22" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></div><div style="flex:1"><div style="font:600 16px var(--fh);text-transform:uppercase">Bón phân</div><div style="font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:5px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Lô A1 · hôm nay</div></div><div style="text-align:right"><div style="font:700 14px var(--fh);color:var(--accent700)">+9</div><svg class="ic i18" viewBox="0 0 24 24" style="color:var(--muted)"><path d="m9 18 6-6-6-6"/></svg></div></button>
+      <div style="border:1.5px dashed var(--line);display:flex;align-items:center;gap:12px;padding:12px;opacity:.62;border-radius:3px"><div style="width:44px;height:44px;border:1px solid var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;border-radius:3px;flex:none"><svg class="ic i22" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg></div><div style="flex:1"><div style="font:600 16px var(--fh);text-transform:uppercase;display:flex;align-items:center;gap:6px">Thu hoạch <svg class="ic i14" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div style="font-size:11px;color:var(--warntext);background:var(--warnbg);padding:3px 7px;margin-top:4px;display:inline-block;border-radius:3px">Khóa đến 24/06 — còn 4 ngày cách ly</div></div></div>
+      <div style="border:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:12px;border-radius:3px"><div style="width:44px;height:44px;border:1px solid var(--ok);color:var(--oktext);display:flex;align-items:center;justify-content:center;border-radius:3px;flex:none"><svg class="ic i22" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="m9 12 2 2 4-4"/></svg></div><div style="flex:1"><div style="font:600 16px var(--fh);text-transform:uppercase;color:var(--muted)">Tưới nước</div><div style="font-size:11px;color:var(--oktext);display:flex;align-items:center;gap:4px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Đã xác minh · Lô A3</div></div><div style="font:700 14px var(--fh);color:var(--muted)">+5</div></div>
+     </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isMap }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:14px 18px 18px;flex:1;display:flex;flex-direction:column">
+     <div style="font:700 26px var(--fh);text-transform:uppercase">Bản đồ lô</div>
+     <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-top:4px"><span style="width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent200)"></span>Bạn đang ở gần Lô A3</div>
+     <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:16px">
+      <button class="bp tapfx" onClick="{{ startCapture }}" style="border:1.5px solid var(--accent);background:var(--accent100);border-radius:3px;padding:14px 12px;cursor:pointer;text-align:left"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 22px var(--fh);text-transform:uppercase">Lô A3</div><div style="font-size:11.5px;color:var(--accent700);font-weight:600;display:flex;align-items:center;gap:4px;margin-top:3px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>2 việc cần chụp</div></button>
+      <div class="bp" style="border:1.5px solid var(--line);border-radius:3px;padding:14px 12px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 22px var(--fh);text-transform:uppercase">Lô A1</div><div style="font-size:11.5px;color:var(--oktext);font-weight:600;display:flex;align-items:center;gap:4px;margin-top:3px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Tốt · xong</div></div>
+      <div class="bp" style="border:1.5px solid var(--warn);background:var(--warnbg);border-radius:3px;padding:14px 12px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 22px var(--fh);text-transform:uppercase">Lô B1</div><div style="font-size:11.5px;color:var(--warntext);font-weight:600;display:flex;align-items:center;gap:4px;margin-top:3px"><svg class="ic i14" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>Cần chú ý</div></div>
+      <div class="bp" style="border:1.5px dashed var(--line);border-radius:3px;padding:14px 12px;opacity:.62"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 22px var(--fh);text-transform:uppercase">Lô B3</div><div style="font-size:11.5px;color:var(--muted);font-weight:600;display:flex;align-items:center;gap:4px;margin-top:3px"><svg class="ic i14" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Khóa · cách ly</div></div>
+     </div>
+     <div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap;font-size:11px;color:var(--muted)">
+      <span style="display:flex;align-items:center;gap:5px"><span style="width:11px;height:11px;border-radius:2px;background:var(--accent)"></span>Cần chụp</span>
+      <span style="display:flex;align-items:center;gap:5px"><span style="width:11px;height:11px;border-radius:2px;background:var(--ok)"></span>Tốt</span>
+      <span style="display:flex;align-items:center;gap:5px"><span style="width:11px;height:11px;border-radius:2px;background:var(--warn)"></span>Chú ý</span>
+      <span style="display:flex;align-items:center;gap:5px"><span style="width:11px;height:11px;border-radius:2px;background:var(--muted)"></span>Khóa</span>
+     </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isSync }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:14px 18px 18px;flex:1;display:flex;flex-direction:column">
+     <div style="font:700 26px var(--fh);text-transform:uppercase">Chờ gửi</div>
+     <div class="bp" style="display:flex;align-items:center;gap:10px;border:1.5px solid var(--accent);background:var(--accent100);padding:12px 13px;margin-top:12px;border-radius:3px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><svg class="ic i24" viewBox="0 0 24 24" style="color:var(--accent700)"><path d="m2 2 20 20"/><path d="M5.782 5.782A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.307-.193"/><path d="M21.532 16.5A4.5 4.5 0 0 0 17.5 10h-1.79A7.008 7.008 0 0 0 10 5.07"/></svg><div style="flex:1;font-size:12.5px;line-height:1.35;color:var(--accent700)"><strong>5 việc đã lưu an toàn trên máy.</strong><br>Tự gửi ngay khi có sóng.</div></div>
+     <div style="height:1px;background:var(--line);margin:14px 0"></div>
+     <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;align-items:center;gap:11px"><div style="width:44px;height:44px;border-radius:3px;overflow:hidden;background:var(--surface);position:relative;flex:none"><img src="https://picsum.photos/seed/skgo-q1/120" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="flex:1"><div style="font:600 15px var(--fh);text-transform:uppercase">Phun thuốc · Lô A3</div><div style="font-size:11px;color:var(--oktext);display:flex;align-items:center;gap:4px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Đã xác minh · 14:20</div></div><span style="font:500 10.5px var(--fb);color:var(--muted);border:1px solid var(--line);padding:3px 7px;border-radius:3px">chờ gửi</span></div>
+      <div style="display:flex;align-items:center;gap:11px"><div style="width:44px;height:44px;border-radius:3px;overflow:hidden;background:var(--surface);position:relative;flex:none"><img src="https://picsum.photos/seed/skgo-q2/120" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="flex:1"><div style="font:600 15px var(--fh);text-transform:uppercase">Tưới nước · Lô A3</div><div style="font-size:11px;color:var(--oktext);display:flex;align-items:center;gap:4px"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Đã xác minh · 11:05</div></div><span style="font:500 10.5px var(--fb);color:var(--muted);border:1px solid var(--line);padding:3px 7px;border-radius:3px">chờ gửi</span></div>
+      <div style="display:flex;align-items:center;gap:11px"><div style="width:44px;height:44px;border-radius:3px;overflow:hidden;background:var(--surface);position:relative;flex:none"><img src="https://picsum.photos/seed/skgo-q3/120" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div style="flex:1"><div style="font:600 15px var(--fh);text-transform:uppercase">Kiểm tra sâu bệnh · Lô B1</div><div style="font-size:11px;color:var(--warntext);display:flex;align-items:center;gap:4px"><svg class="ic i14" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>Cần GPS · chưa xác minh</div></div><span style="font:700 10.5px var(--fb);color:var(--warntext);background:var(--warnbg);padding:3px 7px;border-radius:3px">Sửa</span></div>
+     </div>
+     <div style="display:flex;gap:9px;align-items:flex-start;background:var(--warnbg);border-left:3px solid var(--warn);padding:10px 12px;margin-top:14px;border-radius:3px"><svg class="ic i16" viewBox="0 0 24 24" style="color:var(--warntext);margin-top:1px"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><div style="font-size:11.5px;line-height:1.4;color:var(--warntext)">Danh sách duyệt đã 12 ngày — nên gửi sớm.</div></div>
+     <div style="flex:1;min-height:8px"></div>
+     <div style="font-size:11px;color:var(--muted);display:flex;align-items:center;gap:6px;margin-bottom:10px"><svg class="ic i14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Lần gửi cuối: hôm qua · 18:30</div>
+     <div style="display:flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line);color:var(--muted);padding:14px;font:600 14px var(--fh);text-transform:uppercase;opacity:.75;border-radius:3px"><svg class="ic i18" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>Sẽ gửi khi có sóng</div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isProfile }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:18px 18px 18px;flex:1;display:flex;flex-direction:column;align-items:center">
+     <div style="width:82px;height:82px;border-radius:50%;overflow:hidden;background:var(--surface);position:relative"><img src="{{ workerImg }}" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+     <div style="font:700 24px var(--fh);text-transform:uppercase;margin-top:10px">{{ workerName }}</div>
+     <div style="font-size:12px;color:var(--muted)">HTX Sâm Ngọc Linh</div>
+     <div class="bp" style="display:flex;align-items:center;gap:10px;border:1.5px solid var(--accent);background:var(--accent100);border-radius:3px;padding:14px 16px;margin-top:18px;width:100%;box-sizing:border-box"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><svg class="ic i30" viewBox="0 0 24 24" style="color:var(--accent)"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg><div><div style="font:700 30px var(--fh);line-height:1;color:var(--accent700)">6 ngày</div><div style="font-size:12px;color:var(--muted)">Chuỗi liên tục — kỷ lục của bạn!</div></div></div>
+     <div style="display:flex;gap:10px;margin-top:12px;width:100%">
+      <div class="bp" style="flex:1;border:1px solid var(--line);border-radius:3px;padding:14px 4px;text-align:center"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 24px var(--fh)">18</div><div style="font-size:10.5px;color:var(--muted);text-transform:uppercase">việc / tuần</div></div>
+      <div class="bp" style="flex:1;border:1px solid var(--line);border-radius:3px;padding:14px 4px;text-align:center"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 24px var(--fh);color:var(--oktext)">96%</div><div style="font-size:10.5px;color:var(--muted);text-transform:uppercase">đúng hạn</div></div>
+     </div>
+     <div style="font:600 11px var(--fb);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);align-self:flex-start;margin:20px 0 10px">Huy hiệu</div>
+     <div style="display:flex;gap:12px;align-self:flex-start">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;width:66px"><div style="width:56px;height:56px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center"><svg class="ic i26" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div><span style="font-size:10px;text-align:center;color:var(--muted);line-height:1.1">5 ngày</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;width:66px"><div style="width:56px;height:56px;border-radius:50%;background:var(--ok);color:#fff;display:flex;align-items:center;justify-content:center"><svg class="ic i26" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="m9 12 2 2 4-4"/></svg></div><span style="font-size:10px;text-align:center;color:var(--muted);line-height:1.1">100 việc</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;width:66px;opacity:.45"><div style="width:56px;height:56px;border-radius:50%;border:1.5px dashed var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center"><svg class="ic i26" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><span style="font-size:10px;text-align:center;color:var(--muted);line-height:1.1">Sắp có</span></div>
+     </div>
+     <div style="flex:1;min-height:10px"></div>
+     <button class="tapfx" onClick="{{ clearWorker }}" style="display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);background:var(--bg);color:var(--muted);padding:13px;font:600 14px var(--fh);text-transform:uppercase;border-radius:3px;cursor:pointer;width:100%"><svg class="ic i18" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Đổi người dùng</button>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isCapture }}" hint-placeholder-val="{{ false }}">
+     <sc-if value="{{ capPick }}" hint-placeholder-val="{{ true }}">
+     <div style="padding:14px 18px 16px;flex:1;display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;gap:8px">
+       <button class="tapfx" onClick="{{ goHome }}" style="background:none;border:none;color:var(--muted);padding:0;cursor:pointer;display:flex"><svg class="ic i24" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+       <div style="font:700 22px var(--fh);text-transform:uppercase;line-height:1">{{ taskTitle }}</div>
+       <div style="flex:1"></div>
+       <div style="display:flex;align-items:center;gap:4px;font-size:12.5px;color:var(--muted)"><svg class="ic i16" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>{{ taskPlot }}</div>
+      </div>
+      <sc-for list="{{ fields }}" as="f" hint-placeholder-count="2">
+       <div>
+        <div style="font:600 12px var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">{{ f.label }}</div>
+        <sc-if value="{{ f.isPhotopick }}" hint-placeholder-val="{{ false }}">
+         <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px">
+          <sc-for list="{{ f.options }}" as="o" hint-placeholder-count="4">
+           <button class="bp tapfx" onClick="{{ o.onClick }}" style="padding:0;background:var(--bg);border:1.5px solid;cursor:pointer;text-align:left;border-radius:3px;{{ o.frameStyle }}"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+            <div style="position:relative;height:80px;background:var(--surface);border-radius:2px 2px 0 0;overflow:hidden;display:flex;align-items:center;justify-content:center;color:var(--muted)">
+             <svg class="ic i26" viewBox="0 0 24 24" style="position:absolute"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 4.9 7 3c-.29 1.9-1.14 3.14-2.29 4.06S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg>
+             <img src="{{ o.img }}" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+             <sc-if value="{{ o.selected }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:5px;right:5px;width:26px;height:26px;border-radius:50%;background:var(--ok);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.3)"><svg class="ic i16" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div></sc-if>
+            </div>
+            <div style="padding:7px 9px 8px"><div style="font:600 14px var(--fh);text-transform:uppercase;line-height:1.05">{{ o.name }}</div><div style="font-size:11px;color:var(--muted);margin-top:1px">{{ o.use }}</div></div>
+           </button>
+          </sc-for>
+         </div>
+        </sc-if>
+        <sc-if value="{{ f.isStepper }}" hint-placeholder-val="{{ false }}">
+         <div style="display:flex;align-items:center;gap:12px">
+          <button class="tapfx" onClick="{{ f.dec }}" style="width:52px;height:52px;border-radius:50%;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);display:flex;align-items:center;justify-content:center;cursor:pointer"><svg class="ic i26" viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+           <sc-if value="{{ f.isCaps }}" hint-placeholder-val="{{ false }}"><div style="display:flex;gap:5px"><sc-for list="{{ f.caps }}" as="cap" hint-placeholder-count="5"><span style="width:16px;height:22px;border:1.5px solid var(--accent);border-radius:2px;background:{{ cap.bg }}"></span></sc-for></div></sc-if>
+           <div style="font:700 15px var(--fh);text-transform:uppercase"><span style="font-size:26px">{{ f.value }}</span> {{ f.unit }}</div>
+          </div>
+          <button class="tapfx" onClick="{{ f.inc }}" style="width:52px;height:52px;border-radius:50%;border:none;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer"><svg class="ic i26" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
+         </div>
+        </sc-if>
+        <sc-if value="{{ f.isArea }}" hint-placeholder-val="{{ false }}">
+         <div style="display:flex;gap:11px">
+          <sc-for list="{{ f.options }}" as="o" hint-placeholder-count="2">
+           <button class="bp tapfx" onClick="{{ o.onClick }}" style="flex:1;padding:11px;background:var(--bg);border:1.5px solid;border-radius:3px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:7px;{{ o.style }}"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+            <sc-if value="{{ o.isHalf }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 40 40" style="width:38px;height:38px"><rect x="2" y="2" width="36" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="2" y="20" width="36" height="18" fill="currentColor" opacity=".55"/></svg></sc-if>
+            <sc-if value="{{ o.isFull }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 40 40" style="width:38px;height:38px"><rect x="2" y="2" width="36" height="36" rx="2" fill="currentColor" opacity=".55"/><rect x="2" y="2" width="36" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg></sc-if>
+            <span style="font:600 14px var(--fh);text-transform:uppercase">{{ o.label }}</span>
+           </button>
+          </sc-for>
+         </div>
+        </sc-if>
+        <sc-if value="{{ f.isSev }}" hint-placeholder-val="{{ false }}">
+         <div style="display:flex;gap:9px">
+          <sc-for list="{{ f.options }}" as="o" hint-placeholder-count="3">
+           <button class="bp tapfx" onClick="{{ o.onClick }}" style="flex:1;padding:12px 6px;background:var(--bg);border:1.5px solid;border-radius:3px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:7px;{{ o.chipStyle }}"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+            <span style="width:20px;height:20px;border-radius:50%;{{ o.dotStyle }}"></span>
+            <span style="font:600 15px var(--fh);text-transform:uppercase">{{ o.label }}</span>
+           </button>
+          </sc-for>
+         </div>
+        </sc-if>
+       </div>
+      </sc-for>
+      <div style="flex:1;min-height:6px"></div>
+      <button class="bp tapfx" onClick="{{ goPhoto }}" style="display:flex;align-items:center;justify-content:center;gap:10px;padding:17px;border:none;border-radius:3px;cursor:pointer;font:700 19px var(--fh);text-transform:uppercase;{{ continueStyle }}"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><svg class="ic i26" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>Chụp ảnh</button>
+     </div>
+     </sc-if>
+
+     <sc-if value="{{ capPhoto }}" hint-placeholder-val="{{ false }}">
+      <sc-if value="{{ notCaptured }}" hint-placeholder-val="{{ true }}">
+      <div style="flex:1;display:flex;flex-direction:column">
+       <div style="position:relative;flex:1;min-height:440px;background:#141414;display:flex;align-items:center;justify-content:center;overflow:hidden">
+        <div style="position:absolute;top:20px;left:20px;width:30px;height:30px;border-left:2.5px solid rgba(120,220,190,.85);border-top:2.5px solid rgba(120,220,190,.85)"></div>
+        <div style="position:absolute;top:20px;right:20px;width:30px;height:30px;border-right:2.5px solid rgba(120,220,190,.85);border-top:2.5px solid rgba(120,220,190,.85)"></div>
+        <div style="position:absolute;bottom:118px;left:20px;width:30px;height:30px;border-left:2.5px solid rgba(120,220,190,.85);border-bottom:2.5px solid rgba(120,220,190,.85)"></div>
+        <div style="position:absolute;bottom:118px;right:20px;width:30px;height:30px;border-right:2.5px solid rgba(120,220,190,.85);border-bottom:2.5px solid rgba(120,220,190,.85)"></div>
+        <div style="text-align:center;color:rgba(210,240,230,.92)"><svg class="ic i40" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg><div style="font:600 15px var(--fh);text-transform:uppercase;margin-top:10px">Chụp cây tại chỗ</div><div style="font:400 11px ui-monospace,monospace;color:rgba(210,240,230,.55);margin-top:3px">chỉ chụp trực tiếp</div></div>
+       </div>
+       <div style="padding:18px;display:flex;align-items:center;justify-content:center;background:#141414"><button class="tapfx" onClick="{{ shoot }}" style="width:74px;height:74px;border-radius:50%;background:#fff;border:5px solid rgba(255,255,255,.4);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#111"><svg class="ic i30" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></button></div>
+      </div>
+      </sc-if>
+      <sc-if value="{{ captured }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:16px 18px 18px;flex:1;display:flex;flex-direction:column;gap:14px">
+       <div class="bp" style="position:relative;border:1.5px solid var(--accent);border-radius:3px;overflow:hidden;height:206px;background:var(--surface);animation:pop .35s ease-out both"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+        <img src="{{ cropImg }}" onError="{{ hideImg }}" alt="" style="width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;top:9px;right:9px;display:flex;align-items:center;gap:5px;background:var(--ok);color:#fff;padding:5px 9px;border-radius:3px;font:700 11px var(--fh);text-transform:uppercase"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Đã chụp</div>
+       </div>
+       <div class="bp" style="border:1px solid var(--line);border-radius:3px;padding:13px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+        <div style="font:600 12px var(--fh);text-transform:uppercase;color:var(--oktext);margin-bottom:10px;display:flex;align-items:center;gap:6px"><svg class="ic i16" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76z"/><path d="m9 12 2 2 4-4"/></svg>Máy tự ghi</div>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14px">
+         <div style="display:flex;align-items:center;gap:10px"><svg class="ic i18" viewBox="0 0 24 24" style="color:var(--muted)"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>{{ workerName }}</div>
+         <div style="display:flex;align-items:center;gap:10px"><svg class="ic i18" viewBox="0 0 24 24" style="color:var(--muted)"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Hôm nay · 14:20</div>
+         <div style="display:flex;align-items:center;gap:10px"><svg class="ic i18" viewBox="0 0 24 24" style="color:var(--muted)"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>{{ taskPlot }} · <span style="color:var(--oktext);font-weight:700">GPS ✓</span></div>
+        </div>
+       </div>
+       <div style="display:flex;align-items:center;gap:8px;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:10px 12px;font-size:12px"><svg class="ic i16" viewBox="0 0 24 24"><path d="m2 2 20 20"/><path d="M5.782 5.782A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.307-.193"/><path d="M21.532 16.5A4.5 4.5 0 0 0 17.5 10h-1.79A7.008 7.008 0 0 0 10 5.07"/></svg>Không có sóng — máy sẽ tự gửi.</div>
+       <div style="flex:1;min-height:2px"></div>
+       <div style="display:flex;gap:10px">
+        <button class="tapfx" onClick="{{ retake }}" style="width:64px;flex:none;border:1.5px solid var(--line);background:var(--bg);border-radius:3px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--ink)"><svg class="ic i22" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg></button>
+        <button class="bp tapfx" onClick="{{ save }}" style="flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:17px;border:none;border-radius:3px;cursor:pointer;font:700 19px var(--fh);text-transform:uppercase;background:var(--accent);color:#fff"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><svg class="ic i26" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Lưu</button>
+       </div>
+      </div>
+      </sc-if>
+     </sc-if>
+
+     <sc-if value="{{ capDone }}" hint-placeholder-val="{{ false }}">
+     <div style="flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 22px 20px">
+      <div style="width:104px;height:104px;border-radius:50%;background:var(--ok);color:#fff;display:flex;align-items:center;justify-content:center;animation:pop .45s ease-out both"><svg class="ic i40" viewBox="0 0 24 24" style="stroke-width:2.4px"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <div style="font:700 30px var(--fh);text-transform:uppercase;margin-top:16px;line-height:1">Đã lưu ✓</div>
+      <div style="font:600 13px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--oktext);margin-top:4px">Đã xác minh</div>
+      <div class="bp" style="margin-top:18px;border:1.5px solid var(--accent);border-radius:3px;overflow:hidden;width:150px;height:108px;background:var(--surface);position:relative"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><img src="{{ cropImg }}" onError="{{ hideImg }}" alt="" style="width:100%;height:100%;object-fit:cover"><div style="position:absolute;bottom:5px;right:5px;width:24px;height:24px;border-radius:50%;background:var(--ok);color:#fff;display:flex;align-items:center;justify-content:center"><svg class="ic i14" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div></div>
+      <div style="display:flex;gap:10px;margin-top:20px;width:100%">
+       <div class="bp" style="flex:1;border:1px solid var(--line);border-radius:3px;padding:13px 4px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 25px var(--fh);color:var(--accent700)">{{ taskReward }}</div><div style="font-size:10px;color:var(--muted);text-transform:uppercase">điểm</div></div>
+       <div class="bp" style="flex:1;border:1px solid var(--line);border-radius:3px;padding:13px 4px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 25px var(--fh);display:flex;align-items:center;justify-content:center;gap:3px">6<svg class="ic i20" viewBox="0 0 24 24" style="color:var(--accent)"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></div><div style="font-size:10px;color:var(--muted);text-transform:uppercase">ngày</div></div>
+       <div class="bp" style="flex:1;border:1px solid var(--line);border-radius:3px;padding:13px 4px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font:700 25px var(--fh)">4/5</div><div style="font-size:10px;color:var(--muted);text-transform:uppercase">hôm nay</div></div>
+      </div>
+      <div style="flex:1;min-height:8px"></div>
+      <button class="bp tapfx" onClick="{{ goSync }}" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;border:1px solid var(--line);border-radius:3px;cursor:pointer;font:600 14px var(--fh);text-transform:uppercase;background:var(--bg);color:var(--muted);width:100%;box-sizing:border-box"><svg class="ic i16" viewBox="0 0 24 24"><path d="m2 2 20 20"/><path d="M5.782 5.782A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.307-.193"/><path d="M21.532 16.5A4.5 4.5 0 0 0 17.5 10h-1.79A7.008 7.008 0 0 0 10 5.07"/></svg>Đã lưu · chờ gửi (5)</button>
+      <button class="bp tapfx" onClick="{{ goHome }}" style="display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border:none;border-radius:3px;cursor:pointer;font:700 18px var(--fh);text-transform:uppercase;background:var(--accent);color:#fff;width:100%;box-sizing:border-box;margin-top:10px"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><svg class="ic i22" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>Xong — về trang chủ</button>
+     </div>
+     </sc-if>
+    </sc-if>
+
+    <sc-if value="{{ showGate }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;inset:0;background:var(--bg);display:flex;flex-direction:column;animation:pop .3s ease-out both;z-index:5">
+     <div style="background:var(--danger);color:#fff;padding:30px 22px 26px">
+      <svg viewBox="0 0 24 24" style="width:72px;height:72px;fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round"><path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+      <div style="font:700 40px var(--fh);text-transform:uppercase;margin-top:12px;line-height:.92">Dừng lại</div>
+     </div>
+     <div style="padding:20px 22px;flex:1;display:flex;flex-direction:column;gap:16px">
+      <div class="bp" style="border:1.5px solid var(--danger);border-radius:3px;padding:14px;color:var(--dangertext)"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="font-size:15px;line-height:1.4"><strong>{{ gateName }}</strong> — không có trong danh sách được duyệt cho Sâm Ngọc Linh.</div></div>
+      <div style="font:600 12px var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)">Nên làm</div>
+      <button class="tapfx" onClick="{{ closeGate }}" style="display:flex;align-items:center;gap:12px;padding:14px;border:1.5px solid var(--line);border-radius:3px;cursor:pointer;background:var(--bg);text-align:left"><div style="width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;flex:none;display:flex;align-items:center;justify-content:center"><svg class="ic i22" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 4.9 7 3c-.29 1.9-1.14 3.14-2.29 4.06S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></div><div style="font:600 17px var(--fh);text-transform:uppercase">Chọn thuốc khác</div></button>
+      <button class="tapfx" onClick="{{ openManager }}" style="display:flex;align-items:center;gap:12px;padding:14px;border:1.5px solid var(--accent);border-radius:3px;background:var(--accent100);cursor:pointer;text-align:left;width:100%"><div style="width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;flex:none;display:flex;align-items:center;justify-content:center"><svg class="ic i22" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384z"/></svg></div><div style="flex:1"><div style="font:600 17px var(--fh);text-transform:uppercase;color:var(--accent700)">Hỏi quản lý</div><div style="font-size:12px;color:var(--muted)">A. Bình · gọi hoặc nhắn tin</div></div><svg class="ic i20" viewBox="0 0 24 24" style="color:var(--accent700)"><path d="m9 18 6-6-6-6"/></svg></button>
+     </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ showManager }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;inset:0;background:var(--bg);display:flex;flex-direction:column;z-index:7;animation:pop .25s ease-out both">
+     <div style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--line);flex:none">
+      <button class="tapfx" onClick="{{ closeManager }}" style="background:none;border:none;color:var(--muted);padding:0;cursor:pointer;display:flex"><svg class="ic i24" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+      <div style="font:700 20px var(--fh);text-transform:uppercase">Hỏi quản lý</div>
+     </div>
+     <sc-if value="{{ mgrContact }}" hint-placeholder-val="{{ true }}">
+     <div style="flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding:26px 22px 22px">
+      <div style="width:96px;height:96px;border-radius:50%;overflow:hidden;background:var(--surface);position:relative"><img src="{{ managerImg }}" onError="{{ hideImg }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+      <div style="font:700 26px var(--fh);text-transform:uppercase;margin-top:12px">A. Bình</div>
+      <div style="font-size:13px;color:var(--muted)">Quản lý HTX · phụ trách Lô A3</div>
+      <div style="display:flex;align-items:center;gap:7px;margin-top:12px;color:var(--warntext);background:var(--warnbg);padding:8px 12px;border-radius:3px;font-size:12px"><svg class="ic i16" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></svg>Có thể không có sóng để gọi</div>
+      <div style="flex:1;min-height:14px"></div>
+      <button class="bp tapfx" onClick="{{ callManager }}" style="width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:17px;border:none;border-radius:3px;cursor:pointer;font:700 19px var(--fh);text-transform:uppercase;background:var(--accent);color:#fff"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><svg class="ic i24" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384z"/></svg>Gọi điện</button>
+      <button class="tapfx" onClick="{{ goMessages }}" style="width:100%;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:9px;padding:15px;border:1.5px solid var(--line);border-radius:3px;cursor:pointer;font:600 16px var(--fh);text-transform:uppercase;background:var(--bg);color:var(--ink)"><svg class="ic i22" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg>Nhắn tin nhanh</button>
+     </div>
+     </sc-if>
+     <sc-if value="{{ mgrCalling }}" hint-placeholder-val="{{ false }}">
+     <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:26px 22px;gap:22px">
+      <div style="width:104px;height:104px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;animation:ping 1.5s ease-out infinite"><svg class="ic i40" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384z"/></svg></div>
+      <div><div style="font:700 24px var(--fh);text-transform:uppercase">Đang gọi A. Bình…</div><div style="font-size:13px;color:var(--muted);margin-top:2px">Đang tìm sóng</div></div>
+      <button class="tapfx" onClick="{{ cancelCall }}" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 28px;border:1.5px solid var(--danger);color:var(--dangertext);background:var(--bg);border-radius:3px;cursor:pointer;font:700 15px var(--fh);text-transform:uppercase"><svg class="ic i18" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>Hủy</button>
+     </div>
+     </sc-if>
+     <sc-if value="{{ mgrAsync }}" hint-placeholder-val="{{ false }}">
+     <div style="flex:1;display:flex;flex-direction:column;padding:18px 20px;gap:14px">
+      <div style="display:flex;align-items:center;gap:9px;color:var(--warntext);background:var(--warnbg);padding:11px 13px;border-radius:3px;font-size:12.5px"><svg class="ic i20" viewBox="0 0 24 24"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></svg><div><strong>Không có sóng để gọi ngay.</strong><br>Gửi tin — máy tự gửi khi có sóng.</div></div>
+      <button class="bp tapfx" onClick="{{ requestCallback }}" style="display:flex;align-items:center;gap:12px;padding:14px;border:1.5px solid var(--accent);background:var(--accent100);border-radius:3px;cursor:pointer;text-align:left"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><div style="width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;flex:none;display:flex;align-items:center;justify-content:center"><svg class="ic i22" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384z"/></svg></div><div style="font:600 16px var(--fh);text-transform:uppercase;color:var(--accent700)">Gửi yêu cầu gọi lại</div></button>
+      <div style="font:600 12px var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)">Hoặc nhắn nhanh</div>
+      <sc-for list="{{ messages }}" as="m" hint-placeholder-count="2">
+       <button class="tapfx" onClick="{{ m.onClick }}" style="display:flex;align-items:center;gap:11px;padding:13px;border:1px solid var(--line);border-radius:3px;cursor:pointer;background:var(--bg);text-align:left;width:100%"><svg class="ic i22" viewBox="0 0 24 24" style="color:var(--accent);flex:none"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg><span style="font-size:13.5px;line-height:1.35">{{ m.text }}</span></button>
+      </sc-for>
+     </div>
+     </sc-if>
+     <sc-if value="{{ mgrSent }}" hint-placeholder-val="{{ false }}">
+     <div style="flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 22px 20px">
+      <div style="width:96px;height:96px;border-radius:50%;background:var(--ok);color:#fff;display:flex;align-items:center;justify-content:center;animation:pop .4s ease-out both"><svg class="ic i40" viewBox="0 0 24 24" style="stroke-width:2.4px"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <div style="font:700 26px var(--fh);text-transform:uppercase;margin-top:14px">Đã lưu ✓</div>
+      <div style="font-size:14px;color:var(--muted);margin-top:6px;max-width:250px">{{ sentText }}</div>
+      <div style="display:flex;align-items:center;gap:8px;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:10px 12px;margin-top:16px;font-size:12px"><svg class="ic i16" viewBox="0 0 24 24"><path d="m2 2 20 20"/><path d="M5.782 5.782A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.307-.193"/><path d="M21.532 16.5A4.5 4.5 0 0 0 17.5 10h-1.79A7.008 7.008 0 0 0 10 5.07"/></svg>A. Bình sẽ nhận khi có sóng</div>
+      <div style="flex:1;min-height:10px"></div>
+      <button class="bp tapfx" onClick="{{ managerResolved }}" style="width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border:none;border-radius:3px;cursor:pointer;font:700 18px var(--fh);text-transform:uppercase;background:var(--accent);color:#fff"><i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i><svg class="ic i22" viewBox="0 0 24 24"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 4.9 7 3c-.29 1.9-1.14 3.14-2.29 4.06S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg>Chọn thuốc khác</button>
+     </div>
+     </sc-if>
+    </div>
+    </sc-if>
+
+    </div>
+
+    <sc-if value="{{ showNav }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;align-items:flex-end;border-top:1px solid var(--line);background:var(--bg);flex:none;padding:0 4px">
+     <button class="tapfx" onClick="{{ goHome }}" style="flex:1;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 0;{{ navHome }}"><svg class="ic i22" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span style="font:600 9.5px var(--fb);text-transform:uppercase">Việc</span></button>
+     <button class="tapfx" onClick="{{ goMap }}" style="flex:1;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 0;{{ navMap }}"><svg class="ic i22" viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg><span style="font:600 9.5px var(--fb);text-transform:uppercase">Bản đồ</span></button>
+     <button class="tapfx" onClick="{{ startCapture }}" style="flex:none;width:62px;background:none;border:none;cursor:pointer;display:flex;justify-content:center;padding:0 0 8px"><span style="width:56px;height:56px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(18,122,107,.4);margin-top:-16px"><svg class="ic i26" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></span></button>
+     <button class="tapfx" onClick="{{ goSync }}" style="flex:1;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 0;position:relative;{{ navSync }}"><svg class="ic i22" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg><span style="font:600 9.5px var(--fb);text-transform:uppercase">Chờ gửi</span><span style="position:absolute;top:5px;right:22px;background:var(--danger);color:#fff;font:700 9px var(--fb);min-width:15px;height:15px;display:flex;align-items:center;justify-content:center;padding:0 3px;border-radius:8px">5</span></button>
+     <button class="tapfx" onClick="{{ goProfile }}" style="flex:1;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 0;{{ navProfile }}"><svg class="ic i22" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span style="font:600 9.5px var(--fb);text-transform:uppercase">Tôi</span></button>
+    </div>
+    </sc-if>
+
+   </div>
+  </div>
+ </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:440,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { screen:'signin', worker:null, pin:'', taskId:'spray', step:'pick', values:{}, captured:false, showGate:false, gateName:'', managerStep:null, sentText:'' };
+
+  WORKERS = [
+    { id:'hoa', name:'Hoa', img:'https://picsum.photos/seed/skgo-hoa/160/160' },
+    { id:'binh', name:'Bình', img:'https://picsum.photos/seed/skgo-binh/160/160' },
+    { id:'lan', name:'Lan', img:'https://picsum.photos/seed/skgo-lan/160/160' },
+    { id:'tu', name:'Tú', img:'https://picsum.photos/seed/skgo-tu/160/160' }
+  ];
+  PROD = [
+    { id:'actara', name:'Actara 25WG', use:'Rầy · rệp', img:'https://picsum.photos/seed/skgo-actara/260/200', ok:true },
+    { id:'radiant', name:'Radiant 60SC', use:'Sâu cuốn lá', img:'https://picsum.photos/seed/skgo-radiant/260/200', ok:true },
+    { id:'neem', name:'Dầu Neem', use:'Phòng ngừa', img:'https://picsum.photos/seed/skgo-neem/260/200', ok:true },
+    { id:'regent', name:'Regent 800WG', use:'Cần kiểm tra', img:'https://picsum.photos/seed/skgo-regent/260/200', ok:false }
+  ];
+  PEST = [
+    { id:'ray', name:'Rầy', use:'Lá xoăn', img:'https://picsum.photos/seed/skgo-ray/260/200', ok:true },
+    { id:'sau', name:'Sâu ăn lá', use:'Thủng lá', img:'https://picsum.photos/seed/skgo-sau/260/200', ok:true },
+    { id:'nam', name:'Nấm', use:'Đốm nâu', img:'https://picsum.photos/seed/skgo-nam/260/200', ok:true },
+    { id:'khoe', name:'Cây khỏe', use:'Không sao', img:'https://picsum.photos/seed/skgo-khoe/260/200', ok:true }
+  ];
+  FERT = [
+    { id:'huuco', name:'Phân hữu cơ', use:'Đã duyệt', img:'https://picsum.photos/seed/skgo-huuco/260/200', ok:true },
+    { id:'npk', name:'NPK 16-16-8', use:'Đã duyệt', img:'https://picsum.photos/seed/skgo-npk/260/200', ok:true },
+    { id:'visinh', name:'Phân vi sinh', use:'Đã duyệt', img:'https://picsum.photos/seed/skgo-visinh/260/200', ok:true },
+    { id:'ure', name:'Urê đậm đặc', use:'Cần kiểm tra', img:'https://picsum.photos/seed/skgo-ure/260/200', ok:false }
+  ];
+  AREA = [ { id:'half', label:'Nửa lô' }, { id:'full', label:'Cả lô' } ];
+  SEV = [ { id:'nhe', label:'Nhẹ', tone:'ok' }, { id:'vua', label:'Vừa', tone:'warn' }, { id:'nang', label:'Nặng', tone:'danger' } ];
+  tasks(){
+    return {
+      spray:    { title:'Phun thuốc', plot:'Lô A3', reward:10, crop:'skgo-ginseng', fields:[
+        { key:'product', kind:'photopick', label:'Loại thuốc — từ danh sách duyệt', gated:true, options:this.PROD },
+        { key:'dose', kind:'stepper', label:'Liều lượng', min:1, max:5, def:3, unit:'nắp', caps:true },
+        { key:'area', kind:'choice', label:'Diện tích', style:'area', options:this.AREA } ] },
+      pest:     { title:'Kiểm tra sâu bệnh', plot:'Lô B1', reward:8, crop:'skgo-leaf', fields:[
+        { key:'pest', kind:'photopick', label:'Thấy sâu hay bệnh gì?', options:this.PEST },
+        { key:'sev', kind:'choice', label:'Mức độ nặng nhẹ', style:'sev', options:this.SEV } ] },
+      harvest:  { title:'Thu hoạch', plot:'Lô A1', reward:14, crop:'skgo-harvest', fields:[
+        { key:'kg', kind:'stepper', label:'Số ký thu được', min:1, max:50, def:8, unit:'kg', caps:false },
+        { key:'area', kind:'choice', label:'Khu vực', style:'area', options:this.AREA } ] },
+      water:    { title:'Tưới nước', plot:'Lô A3', reward:5, crop:'skgo-water', fields:[
+        { key:'buckets', kind:'stepper', label:'Số thùng nước', min:1, max:12, def:4, unit:'thùng', caps:false } ] },
+      fertilize:{ title:'Bón phân', plot:'Lô A1', reward:9, crop:'skgo-fert', fields:[
+        { key:'fert', kind:'photopick', label:'Loại phân — từ danh sách duyệt', gated:true, options:this.FERT },
+        { key:'amt', kind:'stepper', label:'Liều lượng', min:1, max:5, def:2, unit:'nắp', caps:true } ] }
+    };
+  }
+  curTask(){ return this.tasks()[this.state.taskId] || this.tasks().spray; }
+
+  _ctx(){
+    if (!this._c) { try { this._c = new (window.AudioContext||window.webkitAudioContext)(); } catch(e){} }
+    if (this._c && this._c.state === 'suspended') this._c.resume();
+    return this._c;
+  }
+  beep(f, d, type){
+    const c = this._ctx(); if (!c) return;
+    const o = c.createOscillator(), g = c.createGain();
+    o.type = type || 'sine'; o.frequency.value = f;
+    o.connect(g); g.connect(c.destination);
+    const t = c.currentTime;
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(0.2, t + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + d);
+    o.start(t); o.stop(t + d + 0.03);
+  }
+  buzz(p){ try { if (navigator.vibrate) navigator.vibrate(p); } catch(e){} }
+  tap(){ this.beep(520, 0.06); this.buzz(12); }
+  okS(){ this.beep(680, 0.09); setTimeout(()=>this.beep(940, 0.14), 80); this.buzz([14,40,20]); }
+  errS(){ this.beep(150, 0.24, 'square'); this.buzz(140); }
+
+  go(screen){ this.tap(); this.setState({ screen, showGate:false, managerStep:null }); }
+  startCapture(taskId){
+    this.tap();
+    const id = (typeof taskId === 'string' && this.tasks()[taskId]) ? taskId : 'spray';
+    const t = this.tasks()[id];
+    const values = {};
+    t.fields.forEach(f => { if (f.kind === 'stepper') values[f.key] = f.def; });
+    this.setState({ screen:'capture', taskId:id, step:'pick', values, captured:false, showGate:false, managerStep:null, sentText:'' });
+  }
+  selectWorker(w){ this.tap(); this.setState({ worker:w.id, pin:'' }); }
+  clearWorker(){ this.tap(); this.setState({ worker:null, pin:'', screen:'signin' }); }
+  pinPress(k){
+    if (k === 'back'){ this.tap(); this.setState(s => ({ pin: s.pin.slice(0,-1) })); return; }
+    if (k === '') return;
+    const pin = (this.state.pin + k).slice(0,4);
+    this.tap();
+    if (pin.length === 4){ this.okS(); setTimeout(()=>this.setState({ screen:'home', pin:'' }), 180); this.setState({ pin }); }
+    else this.setState({ pin });
+  }
+  pickOption(field, opt){
+    if (field.gated && !opt.ok){ this.errS(); this.setState({ showGate:true, gateName:opt.name }); return; }
+    this.okS();
+    this.setState(s => ({ values: { ...s.values, [field.key]: opt.id } }));
+  }
+  setChoice(field, opt){ this.tap(); this.setState(s => ({ values: { ...s.values, [field.key]: opt.id } })); }
+  stepField(field, delta){
+    this.tap();
+    this.setState(s => {
+      const cur = s.values[field.key] != null ? s.values[field.key] : field.def;
+      const v = Math.max(field.min, Math.min(field.max, cur + delta));
+      return { values: { ...s.values, [field.key]: v } };
+    });
+  }
+  goPhoto(){
+    const t = this.curTask();
+    const need = t.fields.filter(f => f.kind !== 'stepper');
+    const ok = need.every(f => this.state.values[f.key] != null);
+    if (!ok){ this.errS(); return; }
+    this.tap(); this.setState({ step:'photo' });
+  }
+  shoot(){ this.beep(600,0.05); this.beep(300,0.04); this.buzz(20); this.setState({ captured:true }); }
+  retake(){ this.tap(); this.setState({ captured:false }); }
+  save(){ this.okS(); this.setState({ step:'done' }); }
+  closeGate(){ this.tap(); this.setState({ showGate:false, managerStep:null }); }
+  openManager(){ this.tap(); this.setState({ managerStep:'contact' }); }
+  callManager(){ this.beep(660,0.12); this.buzz(20); this.setState({ managerStep:'calling' }); setTimeout(()=>{ if (this.state.managerStep === 'calling'){ this.errS(); this.setState({ managerStep:'async' }); } }, 1900); }
+  cancelCall(){ this.tap(); this.setState({ managerStep:'contact' }); }
+  goMessages(){ this.tap(); this.setState({ managerStep:'async' }); }
+  requestCallback(){ this.okS(); this.setState({ managerStep:'sent', sentText:'Yêu cầu gọi lại đã lưu' }); }
+  pickMsg(t){ this.okS(); this.setState({ managerStep:'sent', sentText:t }); }
+  closeManager(){ this.tap(); this.setState({ managerStep:null }); }
+  managerResolved(){ this.tap(); this.setState({ showGate:false, managerStep:null }); }
+
+  renderVals(){
+    const s = this.state;
+    const worker = this.WORKERS.find(w => w.id === s.worker);
+    const t = this.curTask();
+    const order = ['pick','photo','done'];
+    const ci = order.indexOf(s.step);
+    const stations = [{n:'1',w:'Chọn'},{n:'2',w:'Chụp'},{n:'3',w:'Xong'}].map((d,i)=>{
+      const done = i<ci, now = i===ci;
+      const chipStyle = now ? 'background:var(--accent);color:#fff;border-color:var(--accent)'
+        : (done ? 'background:var(--accent100);color:var(--accent700);border-color:var(--accent)'
+                : 'background:transparent;color:var(--muted);border-color:var(--line)');
+      return { n:d.n, w:d.w, done, notDone:!done, chipStyle };
+    });
+    const tone = { ok:'var(--ok)', warn:'var(--warn)', danger:'var(--danger)' };
+    const fields = t.fields.map(f => {
+      const val = s.values[f.key];
+      const base = { key:f.key, label:f.label, isPhotopick:false, isStepper:false, isArea:false, isSev:false };
+      if (f.kind === 'photopick'){
+        base.isPhotopick = true;
+        base.options = f.options.map(o => ({ ...o, selected: val === o.id,
+          frameStyle: val === o.id ? 'border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset' : 'border-color:var(--line)',
+          onClick: () => this.pickOption(f, o) }));
+      } else if (f.kind === 'stepper'){
+        base.isStepper = true;
+        const v = val != null ? val : f.def;
+        base.value = v; base.unit = f.unit; base.isCaps = !!f.caps; base.isNumber = !f.caps;
+        base.caps = f.caps ? Array.from({length:f.max}, (_,i) => ({ bg: i < v ? 'var(--accent)' : 'transparent' })) : [];
+        base.inc = () => this.stepField(f, 1); base.dec = () => this.stepField(f, -1);
+      } else if (f.kind === 'choice' && f.style === 'area'){
+        base.isArea = true;
+        base.options = f.options.map(o => ({ id:o.id, label:o.label, isHalf:o.id==='half', isFull:o.id==='full',
+          selected: val === o.id,
+          style: val === o.id ? 'border-color:var(--accent);background:var(--accent100);color:var(--accent700)' : 'border-color:var(--line);color:var(--muted)',
+          onClick: () => this.setChoice(f, o) }));
+      } else if (f.kind === 'choice' && f.style === 'sev'){
+        base.isSev = true;
+        base.options = f.options.map(o => { const cv = tone[o.tone];
+          return { id:o.id, label:o.label, selected: val === o.id, dotStyle:'background:'+cv,
+            chipStyle: val === o.id ? ('border-color:'+cv+';background:color-mix(in srgb,'+cv+' 15%,transparent);color:var(--ink)') : 'border-color:var(--line);color:var(--muted)',
+            onClick: () => this.setChoice(f, o) }; });
+      }
+      return base;
+    });
+    const needFilled = t.fields.filter(f => f.kind !== 'stepper').every(f => s.values[f.key] != null);
+    const workers = this.WORKERS.map(w => ({ ...w, onClick: () => this.selectWorker(w) }));
+    const pinDots = Array.from({length:4}, (_,i) => ({ bg: i < s.pin.length ? 'var(--accent)' : 'transparent' }));
+    const keys = ['1','2','3','4','5','6','7','8','9','','0','back'].map(k => ({ label: k === 'back' ? '⌫' : k, onClick: () => this.pinPress(k) }));
+    const navOn = 'color:var(--accent700)', navOff = 'color:var(--muted)';
+    const messages = [
+      { id:'m1', text:'Thuốc không có trong danh sách — nên dùng loại nào?', onClick: () => this.pickMsg('Đã gửi: “Nên dùng thuốc nào thay thế cho Lô A3?”') },
+      { id:'m2', text:'Xin duyệt thêm thuốc mới cho Lô A3', onClick: () => this.pickMsg('Đã gửi: “Xin duyệt thêm thuốc mới cho Lô A3.”') }
+    ];
+    return {
+      isSignin: s.screen==='signin', isHome: s.screen==='home', isTasks: s.screen==='tasks',
+      isCapture: s.screen==='capture', isMap: s.screen==='map', isSync: s.screen==='sync', isProfile: s.screen==='profile',
+      showNav: ['home','tasks','map','sync','profile'].includes(s.screen),
+      noWorker: !s.worker, hasWorker: !!s.worker,
+      workerName: worker ? worker.name : 'Hoa', workerImg: worker ? worker.img : this.WORKERS[0].img,
+      workers, pinDots, keys,
+      capPick: s.step==='pick', capPhoto: s.step==='photo', capDone: s.step==='done',
+      notCaptured: !s.captured, captured: s.captured, showGate: s.showGate, gateName: s.gateName,
+      stations, fields,
+      taskTitle: t.title, taskPlot: t.plot, taskReward: '+' + t.reward,
+      cropImg: 'https://picsum.photos/seed/' + t.crop + '/480/360',
+      continueStyle: needFilled ? 'background:var(--accent);color:#fff' : 'background:var(--surface);color:var(--muted);opacity:.65',
+      navHome: s.screen==='home'?navOn:navOff, navMap: s.screen==='map'?navOn:navOff,
+      navSync: s.screen==='sync'?navOn:navOff, navProfile: s.screen==='profile'?navOn:navOff,
+      showManager: !!s.managerStep, mgrContact: s.managerStep==='contact', mgrCalling: s.managerStep==='calling',
+      mgrAsync: s.managerStep==='async', mgrSent: s.managerStep==='sent',
+      managerImg: 'https://picsum.photos/seed/skgo-binh/160/160', sentText: s.sentText, messages,
+      hideImg: (e) => { if (e && e.target) e.target.style.opacity = '0'; },
+      startCapture: () => this.startCapture(),
+      startSpray: () => this.startCapture('spray'), startPest: () => this.startCapture('pest'),
+      startHarvest: () => this.startCapture('harvest'), startFert: () => this.startCapture('fertilize'),
+      clearWorker: () => this.clearWorker(),
+      goHome: () => this.go('home'), goTasks: () => this.go('tasks'), goMap: () => this.go('map'),
+      goSync: () => this.go('sync'), goProfile: () => this.go('profile'),
+      goPhoto: () => this.goPhoto(), shoot: () => this.shoot(), retake: () => this.retake(), save: () => this.save(),
+      closeGate: () => this.closeGate(),
+      openManager: () => this.openManager(), callManager: () => this.callManager(), cancelCall: () => this.cancelCall(),
+      goMessages: () => this.goMessages(), requestCallback: () => this.requestCallback(),
+      closeManager: () => this.closeManager(), managerResolved: () => this.managerResolved()
+    };
+  }
+}
+</script>
+</body>
+</html>

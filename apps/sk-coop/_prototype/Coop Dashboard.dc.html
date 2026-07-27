@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .sk-plot-label{background:rgba(255,255,255,.92)!important;border:none!important;border-radius:3px!important;box-shadow:0 1px 3px rgba(0,0,0,.35)!important;font-family:'Plus Jakarta Sans',sans-serif!important;font-weight:700!important;font-size:12px!important;color:#0e2c27!important;padding:3px 8px!important;line-height:1.2!important;text-align:center!important}
+  .sk-plot-label span{display:block!important;font-family:'IBM Plex Mono',monospace!important;font-weight:600!important;font-size:10px!important;color:#128173!important;margin-top:1px!important}
+  .sk-plot-label::before{display:none!important}
+  .sk-plot-label.sk-warn{color:#7a4d00!important}
+  .sk-legend{background:rgba(255,255,255,.95);border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.3);padding:8px 10px;font-family:'Barlow',sans-serif;font-size:11px;color:#2a3b36;line-height:1.5}
+  .sk-legend-row{display:flex;align-items:center;gap:6px}
+  .sk-legend .sk-sw{width:11px;height:11px;border-radius:2px;display:inline-block;flex-shrink:0}
+  .sk-legend .sk-sw-x{background:repeating-linear-gradient(45deg,#c9b06a 0 3px,transparent 3px 6px);border:1px dashed #b8973f}
+  .sk-legend-tot{margin-top:5px;padding-top:5px;border-top:1px solid #e2eae7;font-family:'IBM Plex Mono',monospace;font-size:11px}
+  .sk-area-tip{background:#12211d!important;color:#fff!important;border:none!important;border-radius:4px!important;box-shadow:0 2px 6px rgba(0,0,0,.4)!important;font-family:'Barlow',sans-serif!important;font-size:12px!important;padding:4px 9px!important}
+  .sk-area-tip b{font-family:'IBM Plex Mono',monospace!important;color:#4fe0a0!important}
+  .sk-area-tip::before{border-top-color:#12211d!important}
+  .sk-vtx{width:16px;height:16px;border-radius:50%;background:#3a7ca5;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4);cursor:grab;display:flex;align-items:center;justify-content:center}
+  .sk-vtx:active{cursor:grabbing}
+  .sk-vtx span{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;color:#fff;line-height:1}
+  .sk-scroll-hint{position:absolute;inset:0;z-index:500;display:flex;align-items:center;justify-content:center;background:rgba(15,31,27,.42);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:14px;opacity:0;pointer-events:none;transition:opacity .18s}
+  .sk-scroll-hint.show{opacity:1}
+  .leaflet-container{font-family:'Barlow',sans-serif;border-radius:4px}
+  .sk-pin .sk-pin-body{transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;gap:2px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:13px;color:#7a4d00;background:#ffb63d;padding:5px 10px 7px;border-radius:5px;box-shadow:0 3px 8px rgba(0,0,0,.4);white-space:nowrap;position:relative}
+  .sk-pin .sk-pin-body span{font-size:10px;font-weight:600;opacity:.85}
+  .sk-pin .sk-pin-body::after{content:'';position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:#ffb63d;border-bottom:0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:'Barlow',system-ui,sans-serif;color:#45534e;background:#eef2f0;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:#0e6a5f;text-decoration:none}
+  a:hover{color:#128173}
+  ::selection{background:#cdeae3}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-thumb{background:#c7d2ce;border:3px solid #f6f8f7}
+  @keyframes skPop{0%{transform:scale(.9) translateY(8px);opacity:0}60%{transform:scale(1.02)}100%{transform:scale(1) translateY(0);opacity:1}}
+  @keyframes skSpin{to{transform:translateY(-50%) rotate(360deg)}}
+  @keyframes skFill{from{stroke-dashoffset:339}}
+  @keyframes skRise{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
+  @keyframes skSpark{0%{transform:scale(0) rotate(0);opacity:0}40%{opacity:1}100%{transform:scale(1.4) rotate(90deg);opacity:0}}
+  @keyframes skMarquee{from{transform:translateX(0)}to{transform:translateX(var(--sk-shift,0px))}}
+  @keyframes skFadeL{from{opacity:0}to{opacity:1}}
+  @keyframes skFadeR{from{opacity:1}to{opacity:0}}
+  @keyframes skScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .sk-name{position:relative;overflow:hidden;white-space:nowrap}
+  .sk-track{display:inline-flex;will-change:transform;animation:skScroll 9s linear infinite;animation-play-state:paused}
+  .sk-track > span{padding-right:2.6rem}
+  .sk-name:hover .sk-track{animation-play-state:running}
+  .sk-fade{position:absolute;top:0;bottom:0;width:22px;pointer-events:none;z-index:1}
+  .sk-fade-l{left:0;background:linear-gradient(90deg,#0f1f1b,rgba(15,31,27,0));opacity:0;transition:opacity .3s}
+  .sk-fade-r{right:0;background:linear-gradient(270deg,#0f1f1b,rgba(15,31,27,0));opacity:1;transition:opacity .3s}
+  .sk-name:hover .sk-fade-l{opacity:1}
+</style>
+</helmet>
+
+<sc-if value="{{ showLogin }}" hint-placeholder-val="{{ true }}">
+<div style="min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;font-family:'Barlow',sans-serif;background:#f6f8f7">
+  <div style="position:relative;background:#0f1f1b;color:#dfe8e4;padding:56px 60px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden">
+    <div style="position:absolute;inset:0;opacity:.5;background-image:linear-gradient(#16302a 1px,transparent 1px),linear-gradient(90deg,#16302a 1px,transparent 1px);background-size:32px 32px"></div>
+    <div style="position:absolute;top:24px;left:24px;width:16px;height:16px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+    <div style="position:absolute;bottom:24px;right:24px;width:16px;height:16px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+    <div style="position:relative;display:flex;align-items:center;gap:12px">
+      <div style="width:34px;height:34px;background:#128173;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;color:#fff;font-size:20px">S</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.16em;color:#eafffa">SANKIT <span style="color:#7fd6c6">· SK-COOP</span></div>
+    </div>
+    <div style="position:relative">
+      <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:52px;line-height:1.02;letter-spacing:-.01em;color:#fff">Bảng điều hành<br>Hợp tác xã</div>
+      <p style="margin-top:18px;max-width:30ch;font-size:16px;color:#a9bcb5;line-height:1.5">Theo dõi tiến độ chứng nhận, xử lý vấn đề <em style="color:#7fd6c6;font-style:normal">trước kỳ kiểm định</em>, và xuất hồ sơ minh chứng khi cần.</p>
+    </div>
+    <div style="position:relative;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#5d7d75">SANKIT · NỀN TẢNG MINH CHỨNG CHỨNG NHẬN NÔNG NGHIỆP</div>
+  </div>
+
+  <div style="display:flex;align-items:center;justify-content:center;padding:40px">
+    <div style="width:100%;max-width:380px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:#128173">ĐĂNG NHẬP</div>
+      <h1 style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:34px;color:#12211d;margin-top:6px">Chào mừng trở lại</h1>
+      <p style="color:#85938d;font-size:14px;margin-top:4px">Đăng nhập để tiếp tục quản lý hợp tác xã của bạn.</p>
+
+      <div style="margin-top:26px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#85938d">HỢP TÁC XÃ</div>
+      <div style="margin-top:8px;border:1px solid #dbe3e0;border-radius:4px;background:#fff;display:flex;align-items:center;gap:12px;padding:12px 14px">
+        <div style="width:38px;height:38px;border-radius:4px;background:#e7f2ef;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;color:#0e6a5f;font-size:16px">SP</div>
+        <div style="flex:1">
+          <div style="font-weight:600;color:#12211d">Hợp tác xã Dược liệu & Nông sản sạch Sa Pa – Lào Cai</div>
+          <div style="font-size:12px;color:#85938d">Lào Cai · 6 thửa · 14 nhân sự</div>
+        </div>
+        <div style="width:9px;height:9px;border-radius:50%;background:#2f9e5b"></div>
+      </div>
+
+      <div style="margin-top:18px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#85938d">EMAIL</div>
+      <input value="huong@htxduoclieusapa.vn" readonly style="margin-top:8px;width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:12px 14px;font-family:'Barlow';font-size:15px;color:#12211d;background:#fff">
+      <input type="password" value="••••••••" readonly style="margin-top:10px;width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:12px 14px;font-family:'Barlow';font-size:15px;color:#12211d;background:#fff">
+
+      <button onClick="{{ signIn }}" style="margin-top:22px;width:100%;border:none;border-radius:4px;background:#128173;color:#fff;font-family:'Plus Jakarta Sans';font-weight:600;font-size:19px;letter-spacing:.02em;padding:14px;cursor:pointer" style-hover="{{ btnHover }}">Vào bảng điều hành →</button>
+      <div style="margin-top:16px;text-align:center;font-size:12px;color:#a3aeaa">Bản mẫu tương tác · nhấn để khám phá</div>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ showApp }}" hint-placeholder-val="{{ true }}">
+<div style="min-height:100vh;display:grid;grid-template-columns:238px 1fr;background:#eef2f0;font-family:'Barlow',sans-serif">
+
+  <aside style="background:#0f1f1b;color:#c8d6d0;display:flex;flex-direction:column;position:sticky;top:0;height:100vh">
+    <div style="padding:20px 18px 18px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #1c342e">
+      <div style="width:42px;height:42px;background:#0e6a5f;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;color:#fff;font-size:16px;flex-shrink:0">SP</div>
+      <div style="min-width:0;flex:1">
+        <div class="sk-name" ref="{{ marqueeRef }}" style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:15px;color:#fff;line-height:1.25"><div class="sk-track"><span>Hợp tác xã Dược liệu & Nông sản sạch Sa Pa – Lào Cai</span><span aria-hidden="true">Hợp tác xã Dược liệu & Nông sản sạch Sa Pa – Lào Cai</span></div><span class="sk-fade sk-fade-l"></span><span class="sk-fade sk-fade-r"></span></div>
+        <div style="font-size:11px;color:#7fb8ac;margin-top:3px;display:flex;align-items:center;gap:4px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#7fb8ac" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Lào Cai</div>
+      </div>
+    </div>
+
+    <nav style="flex:1;overflow-y:auto;padding:6px 10px 12px;display:flex;flex-direction:column;gap:1px">
+      <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="14">
+        <button onClick="{{ item.onClick }}" style="{{ item.style }}">
+          <span style="{{ item.iconWrap }}">{{ item.icon }}</span>
+          <span style="flex:1;text-align:left">{{ item.label }}</span>
+          <sc-if value="{{ item.badge }}" hint-placeholder-val="{{ true }}"><span style="{{ item.badgeStyle }}">{{ item.badge }}</span></sc-if>
+        </button>
+      </sc-for>
+    </nav>
+
+    <div style="position:relative;border-top:1px solid #1c342e">
+      <sc-if value="{{ userMenu }}" hint-placeholder-val="{{ false }}">
+        <div onClick="{{ closeUserMenu }}" style="position:fixed;inset:0;z-index:30"></div>
+        <div style="position:absolute;bottom:calc(100% - 4px);left:14px;right:14px;background:#fff;border:1px solid #dbe3e0;border-radius:4px;box-shadow:0 14px 36px rgba(0,0,0,.30);z-index:40;padding:6px">
+          <button onClick="{{ openCoopFromMenu }}" style="display:flex;align-items:center;gap:9px;width:100%;text-align:left;border:none;background:transparent;font-family:'Barlow';font-size:13px;font-weight:600;color:#12211d;padding:10px 10px;border-radius:4px;cursor:pointer">⚙ Cấu hình hợp tác xã</button>
+          <button onClick="{{ signOutFromMenu }}" style="display:flex;align-items:center;gap:9px;width:100%;text-align:left;border:none;background:transparent;font-family:'Barlow';font-size:13px;font-weight:600;color:#a8342a;padding:10px 10px;border-radius:4px;cursor:pointer">⏻ Đăng xuất phiên này</button>
+        </div>
+      </sc-if>
+      <div style="padding:12px 14px;display:flex;align-items:center;gap:10px">
+        <div style="width:30px;height:30px;border-radius:50%;background:#234a42;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:600;color:#cfeee6;font-size:13px">NH</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:13px;font-weight:600;color:#eafffa">Nguyễn T. Hương</div>
+          <div style="font-size:10px;color:#6f9b90">Quản lý HTX</div>
+        </div>
+        <button onClick="{{ toggleUserMenu }}" title="Tùy chọn" style="background:none;border:none;border-radius:4px;cursor:pointer;padding:6px 7px;display:flex;flex-direction:column;align-items:center;gap:3px;flex-shrink:0">
+          <span style="width:4px;height:4px;border-radius:50%;background:#9db8b0;display:block"></span>
+          <span style="width:4px;height:4px;border-radius:50%;background:#9db8b0;display:block"></span>
+          <span style="width:4px;height:4px;border-radius:50%;background:#9db8b0;display:block"></span>
+        </button>
+      </div>
+      <div style="padding:0 14px 14px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.12em;color:#4f6d64">ĐƯỢC CUNG CẤP BỞI SANKIT</div>
+    </div>
+  </aside>
+
+  <main style="min-width:0;display:flex;flex-direction:column;height:100vh;overflow:hidden">
+    <header style="background:#fff;border-bottom:1px solid #dbe3e0;padding:0 26px;display:flex;align-items:center;gap:20px;height:60px;flex-shrink:0">
+      <div style="min-width:0">
+        <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;color:#12211d;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ viewTitle }}</div>
+        <div style="font-size:11px;color:#85938d;font-family:'IBM Plex Mono',monospace;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ viewSub }}</div>
+      </div>
+      <div style="flex:1"></div>
+      <div style="display:flex;align-items:center;gap:8px;background:#f2f6f4;border:1px solid #e2eae7;border-radius:4px;padding:7px 11px;min-width:200px">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a3aeaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+        <input placeholder="Tìm thửa, nhân sự, bản ghi…" style="border:none;background:none;outline:none;font-family:'Barlow';font-size:13px;color:#45534e;width:100%">
+      </div>
+      <div style="position:relative">
+        <button onClick="{{ toggleSeason }}" style="display:flex;align-items:center;gap:8px;background:#f2f6f4;border:1px solid #e2eae7;border-radius:4px;padding:7px 11px;cursor:pointer">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#85938d;letter-spacing:.08em">VỤ</span>
+          <span style="font-size:13px;font-weight:600;color:#12211d;white-space:nowrap">{{ season }}</span>
+          <span style="color:#a3aeaa;font-size:10px">▾</span>
+        </button>
+        <sc-if value="{{ seasonOpen }}" hint-placeholder-val="{{ false }}">
+          <div onClick="{{ closeSeason }}" style="position:fixed;inset:0;z-index:30"></div>
+          <div style="position:absolute;top:calc(100% + 6px);right:0;min-width:210px;background:#fff;border:1px solid #dbe3e0;border-radius:4px;box-shadow:0 12px 34px rgba(15,31,27,.16);z-index:40;padding:6px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;color:#a3aeaa;padding:6px 9px 4px">CHỌN VỤ MÙA</div>
+            <sc-for list="{{ seasons }}" as="s" hint-placeholder-count="3">
+              <button onClick="{{ s.onClick }}" style="{{ s.style }}"><span>{{ s.label }}</span><sc-if value="{{ s.check }}" hint-placeholder-val="{{ false }}"><span style="color:#128173;font-weight:700">✓</span></sc-if></button>
+            </sc-for>
+            <div style="border-top:1px solid #eef2f0;margin-top:4px;padding-top:4px">
+              <button onClick="{{ goSeasons }}" style="width:100%;text-align:left;border:none;background:transparent;color:#0e6a5f;font-family:'Barlow';font-weight:600;font-size:13px;padding:9px 10px;border-radius:4px;cursor:pointer">Quản lý vụ mùa →</button>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+      <button onClick="{{ nav.notifications }}" title="Thông báo" style="position:relative;background:#fff;border:1px solid #dbe3e0;border-radius:4px;width:38px;height:36px;cursor:pointer;color:#45534e;display:flex;align-items:center;justify-content:center">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#45534e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.5 21a1.7 1.7 0 0 1-3 0"></path></svg>
+        <span style="position:absolute;top:-6px;right:-6px;background:#cf4436;color:#fff;font-size:10px;font-weight:700;border-radius:9px;min-width:17px;height:17px;display:flex;align-items:center;justify-content:center;font-family:'Barlow'">5</span></button>
+    </header>
+
+    <div style="flex:1;overflow-y:auto;padding:24px 26px 60px">
+
+      <!-- ============ OVERVIEW ============ -->
+      <sc-if value="{{ isOverview }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:#85938d;margin-right:4px">Chế độ xem</span>
+          <sc-for list="{{ heroTabs }}" as="t" hint-placeholder-count="3">
+            <button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.label }}</button>
+          </sc-for>
+        </div>
+
+        <div style="margin-bottom:16px;background:#e4f3ea;border:1px solid #bfe4cd;border-radius:4px;padding:9px 16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:16px">🎉</span>
+          <div style="font-size:14px;color:#1f7a45"><strong>Đã xử lý xong 4 vấn đề trong tuần này.</strong> Tiến độ GACP nhờ đó tăng thêm 9% — cứ đà này nhé!</div>
+        </div>
+
+        <!-- audit countdown banner -->
+        <div style="background:#0f1f1b;color:#fff;border-radius:4px;padding:16px 20px;display:flex;align-items:center;gap:22px;position:relative;overflow:hidden;margin-bottom:18px">
+          <div style="position:absolute;inset:0;opacity:.35;background-image:linear-gradient(90deg,#16302a 1px,transparent 1px);background-size:26px 26px"></div>
+          <div style="position:relative;display:flex;align-items:center;gap:14px">
+            <div style="text-align:center;background:#cf4436;border-radius:4px;padding:8px 16px">
+              <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:34px;line-height:.9">{{ auditDays }}</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em">NGÀY</div>
+            </div>
+            <div>
+              <div style="font-family:'Plus Jakarta Sans';font-weight:600;font-size:20px;color:#fff">Kiểm định GACP · {{ auditDate }}</div>
+              <div style="font-size:13px;color:#a9bcb5">Còn <strong style="color:#f2b3ab">7 vấn đề</strong> cần xử lý trước ngày kiểm định.</div>
+            </div>
+          </div>
+          <div style="flex:1"></div>
+          <button onClick="{{ nav.issues }}" style="position:relative;background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Plus Jakarta Sans';font-weight:600;font-size:16px;padding:11px 18px;cursor:pointer">Xem việc cần xử lý →</button>
+        </div>
+
+        <!-- VARIANT: meter-led -->
+        <sc-if value="{{ heroMeter }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+            <sc-for list="{{ programmes }}" as="p" hint-placeholder-count="2">
+              <div style="position:relative;background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:26px;display:flex;gap:26px;align-items:center">
+                <sc-if value="{{ cornerMarks }}" hint-placeholder-val="{{ true }}">
+                  <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+                  <div style="position:absolute;bottom:-1px;right:-1px;width:13px;height:13px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+                </sc-if>
+                <div style="position:relative;width:132px;height:132px;flex-shrink:0">
+                  <svg viewBox="0 0 120 120" style="width:132px;height:132px;transform:rotate(-90deg)">
+                    <circle cx="60" cy="60" r="54" fill="none" stroke="#eef2f0" stroke-width="11"></circle>
+                    <circle cx="60" cy="60" r="54" fill="none" stroke="{{ p.ringColor }}" stroke-width="11" stroke-linecap="butt" stroke-dasharray="339.3" stroke-dashoffset="{{ p.ringOffset }}" style="animation:skFill 1.1s ease-out"></circle>
+                  </svg>
+                  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+                    <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:34px;color:#12211d;line-height:.9">{{ p.pct }}<span style="font-size:18px">%</span></div>
+                    <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#85938d;letter-spacing:.08em">SẴN SÀNG</div>
+                  </div>
+                </div>
+                <div style="min-width:0">
+                  <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:23px;color:#12211d">{{ p.name }}</div>
+                  <span style="{{ p.pillStyle }}">{{ p.pillLabel }}</span>
+                  <div style="margin-top:14px;display:flex;gap:20px">
+                    <div><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:22px;color:#12211d">{{ p.goalsDone }}/{{ p.goalsTotal }}</div><div style="font-size:11px;color:#85938d">Mục tiêu đủ</div></div>
+                    <div><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:22px;color:{{ p.openColor }}">{{ p.openGaps }}</div><div style="font-size:11px;color:#85938d">Còn thiếu</div></div>
+                  </div>
+                  <button onClick="{{ nav.readiness }}" style="margin-top:14px;background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;color:#0e6a5f;padding:8px 12px;cursor:pointer">Mở bảng sẵn sàng →</button>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <!-- VARIANT: action-led -->
+        <sc-if value="{{ heroAction }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:18px">
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:22px">
+              <div style="display:flex;align-items:baseline;gap:10px">
+                <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:20px;color:#12211d">Cần làm tuần này</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#cf4436;letter-spacing:.04em">Xếp theo mức rủi ro</div>
+              </div>
+              <div style="margin-top:14px;display:flex;flex-direction:column;gap:10px">
+                <sc-for list="{{ actionItems }}" as="a" hint-placeholder-count="4">
+                  <div style="display:flex;align-items:center;gap:13px;border:1px solid #e2eae7;border-radius:4px;padding:12px 14px;background:#fbfdfc">
+                    <span style="width:10px;height:10px;border-radius:2px;background:{{ a.accent }};flex-shrink:0"></span>
+                    <div style="min-width:0;flex:1">
+                      <div style="font-weight:600;color:#12211d;font-size:14px">{{ a.title }}</div>
+                      <div style="font-size:12px;color:#85938d">{{ a.meta }}</div>
+                    </div>
+                    <span style="{{ a.pillStyle }}">{{ a.due }}</span>
+                    <button onClick="{{ nav.readiness }}" style="background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:12px;padding:7px 11px;cursor:pointer;white-space:nowrap">Giao việc</button>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:18px">
+              <sc-for list="{{ programmes }}" as="p" hint-placeholder-count="2">
+                <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:18px">
+                  <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d">{{ p.name }}</div><span style="{{ p.pillStyle }}">{{ p.pillLabel }}</span></div>
+                  <div style="margin-top:12px;height:12px;background:#eef2f0;border-radius:4px;overflow:hidden"><div style="height:100%;width:{{ p.pct }}%;background:{{ p.ringColor }}"></div></div>
+                  <div style="margin-top:7px;display:flex;justify-content:space-between;font-size:12px;color:#85938d"><span>{{ p.goalsDone }}/{{ p.goalsTotal }} mục tiêu</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:16px;color:#12211d">{{ p.pct }}%</span></div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <!-- VARIANT: balanced grid -->
+        <sc-if value="{{ heroGrid }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px">
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:20px">
+              <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d;margin-bottom:14px">Tiến độ đạt chứng nhận</div>
+              <sc-for list="{{ programmes }}" as="p" hint-placeholder-count="2">
+                <div style="margin-bottom:16px">
+                  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><div style="display:flex;align-items:center;gap:8px"><span style="font-weight:600;color:#12211d">{{ p.name }}</span><span style="{{ p.pillStyle }}">{{ p.pillLabel }}</span></div><span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:19px;color:#12211d">{{ p.pct }}%</span></div>
+                  <div style="height:14px;background:#eef2f0;border-radius:4px;overflow:hidden;position:relative"><div style="height:100%;width:{{ p.pct }}%;background:{{ p.ringColor }}"></div>
+                    <sc-for list="{{ p.milestones }}" as="m" hint-placeholder-count="3"><div style="position:absolute;top:0;bottom:0;left:{{ m }}%;width:1px;background:#fff;opacity:.7"></div></sc-for>
+                  </div>
+                  <div style="margin-top:6px;font-size:12px;color:#85938d">{{ p.summary }}</div>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:20px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d">Vấn đề cần ưu tiên</div><button onClick="{{ nav.issues }}" style="background:none;border:none;color:#0e6a5f;font-weight:600;font-size:12px;cursor:pointer">Tất cả →</button></div>
+              <sc-for list="{{ topIssues }}" as="i" hint-placeholder-count="4">
+                <div style="display:flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px solid #eef2f0">
+                  <span style="width:9px;height:9px;border-radius:50%;background:{{ i.dot }};flex-shrink:0"></span>
+                  <div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:600;color:#12211d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ i.title }}</div><div style="font-size:11px;color:#85938d">{{ i.meta }}</div></div>
+                  <span style="{{ i.pillStyle }}">{{ i.kind }}</span>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:20px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d">Tình hình nhân sự</div><button onClick="{{ nav.team }}" style="background:none;border:none;color:#0e6a5f;font-weight:600;font-size:12px;cursor:pointer">Xem đội →</button></div>
+              <div style="display:flex;gap:14px;margin-bottom:12px">
+                <div style="flex:1;background:#f2f6f4;border-radius:4px;padding:11px"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:23px;color:#12211d">11<span style="font-size:14px;color:#85938d">/14</span></div><div style="font-size:11px;color:#85938d">đang hoạt động</div></div>
+                <div style="flex:1;background:#f2f6f4;border-radius:4px;padding:11px"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:23px;color:#2f9e5b">128</div><div style="font-size:11px;color:#85938d">bản ghi Verified</div></div>
+              </div>
+              <sc-for list="{{ teamMini }}" as="s" hint-placeholder-count="3">
+                <div style="display:flex;align-items:center;gap:10px;padding:6px 0"><div style="width:26px;height:26px;border-radius:50%;background:#e7f2ef;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#0e6a5f">{{ s.ini }}</div><div style="flex:1;font-size:13px;color:#12211d">{{ s.name }}</div><span style="font-size:12px;color:#cf8a0d">🔥 {{ s.streak }}</span><span style="{{ s.pillStyle }}">{{ s.state }}</span></div>
+              </sc-for>
+            </div>
+
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:20px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d">Sắp đến hạn</div><button onClick="{{ nav.tasks }}" style="background:none;border:none;color:#0e6a5f;font-weight:600;font-size:12px;cursor:pointer">Lịch →</button></div>
+              <sc-for list="{{ deadlines }}" as="d" hint-placeholder-count="4">
+                <div style="display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #eef2f0">
+                  <div style="text-align:center;width:40px;flex-shrink:0"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:17px;color:{{ d.color }};line-height:1">{{ d.day }}</div><div style="font-size:10px;color:#85938d">{{ d.mon }}</div></div>
+                  <div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:600;color:#12211d">{{ d.title }}</div><div style="font-size:11px;color:#85938d">{{ d.meta }}</div></div>
+                  <span style="{{ d.pillStyle }}">{{ d.tag }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+        </sc-if>
+      </sc-if>
+
+      <!-- ============ READINESS BOARD ============ -->
+      <sc-if value="{{ isReadiness }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:8px;margin-bottom:16px;align-items:center;flex-wrap:wrap">
+          <sc-for list="{{ programmeTabs }}" as="t" hint-placeholder-count="2">
+            <button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.label }}</button>
+          </sc-for>
+          <div style="flex:1"></div>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#85938d">LỌC:</span>
+          <button style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;font-size:12px;color:#45534e;padding:6px 11px;cursor:pointer">Tất cả thửa ▾</button>
+          <button style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;font-size:12px;color:#45534e;padding:6px 11px;cursor:pointer">Tất cả cây ▾</button>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px">
+          <sc-for list="{{ goals }}" as="g" hint-placeholder-count="6">
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:16px 16px 14px">
+              <span style="{{ g.pillStyle }}">{{ g.statusLabel }}</span>
+              <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:17px;color:#12211d;line-height:1.2;margin-top:8px">{{ g.title }}</div>
+              <div style="margin-top:10px;height:8px;background:#eef2f0;border-radius:4px;overflow:hidden"><div style="height:100%;width:{{ g.pct }}%;background:{{ g.accent }}"></div></div>
+              <div style="margin-top:7px;display:flex;justify-content:space-between;font-size:12px;color:#85938d"><span>{{ g.evidence }} bằng chứng</span><span>{{ g.pct }}%</span></div>
+              <sc-if value="{{ g.hasOutstanding }}" hint-placeholder-val="{{ true }}">
+                <div style="margin-top:11px;background:#fbfdfc;border:1px dashed #cddad5;border-radius:4px;padding:9px 11px">
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;color:#9a6a06;margin-bottom:5px">CÒN THIẾU</div>
+                  <sc-for list="{{ g.outstanding }}" as="o" hint-placeholder-count="2"><div style="font-size:12.5px;color:#45534e;display:flex;gap:6px"><span style="color:#cf4436">•</span><span>{{ o }}</span></div></sc-for>
+                </div>
+              </sc-if>
+              <div style="margin-top:12px;display:flex;gap:8px">
+                <button onClick="{{ g.assign }}" style="flex:1;background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;padding:8px;cursor:pointer">+ Giao việc bổ sung</button>
+                <button style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-size:13px;color:#0e6a5f;padding:8px 11px;cursor:pointer">Bằng chứng</button>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ============ ISSUES ============ -->
+      <sc-if value="{{ isIssues }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:14px;margin-bottom:16px">
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:13px 18px;flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:25px;color:#cf4436">{{ openCount }}</div><div style="font-size:12px;color:#85938d">Đang mở</div></div>
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:13px 18px;flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:25px;color:#cf8a0d">3</div><div style="font-size:12px;color:#85938d">Đang xử lý</div></div>
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:13px 18px;flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:25px;color:#2f9e5b">{{ clearedCount }}</div><div style="font-size:12px;color:#85938d">Đã xử lý tuần này</div></div>
+          <div style="background:#0f1f1b;color:#fff;border-radius:4px;padding:13px 18px;flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:25px;color:#7fd6c6">{{ auditDays }} ngày</div><div style="font-size:12px;color:#a9bcb5">Kỳ kiểm định gần nhất · {{ nextAuditProg }}</div></div>
+        </div>
+
+        <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;overflow:hidden">
+          <div style="display:flex;align-items:center;gap:16px;padding:10px 18px;border-bottom:1px solid #eef2f0;background:#fbfdfc;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;color:#85938d">
+            <span style="width:130px">PHÂN LOẠI</span><span style="flex:1">VẤN ĐỀ</span><span style="width:130px">HẠN CHÓT</span><span style="width:120px;text-align:right">XỬ LÝ</span>
+          </div>
+          <sc-for list="{{ issues }}" as="i" hint-placeholder-count="6">
+            <div style="{{ i.rowStyle }}">
+              <div style="width:130px"><span style="{{ i.sevStyleFull }}">{{ i.sev }}</span></div>
+              <div style="flex:1;min-width:0;padding-right:12px">
+                <div style="font-weight:600;color:#12211d;font-size:14px">{{ i.title }}</div>
+                <div style="font-size:12px;color:#85938d">{{ i.meta }}</div>
+                <sc-if value="{{ i.quote }}" hint-placeholder-val="{{ true }}"><div style="margin-top:5px;font-size:12px;color:#7a8a85;border-left:2px solid #dbe3e0;padding-left:8px;font-style:italic">“{{ i.quote }}”</div></sc-if>
+              </div>
+              <div style="width:130px;font-size:12px;color:{{ i.dueColor }};font-weight:600">{{ i.due }}</div>
+              <div style="width:120px;text-align:right">
+                <sc-if value="{{ i.resolved }}" hint-placeholder-val="{{ true }}"><span style="color:#2f9e5b;font-weight:600;font-size:13px">✓ Đã xử lý</span></sc-if>
+                <sc-if value="{{ i.notResolved }}" hint-placeholder-val="{{ true }}"><button onClick="{{ i.resolve }}" style="background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:12px;padding:7px 12px;cursor:pointer">Xử lý</button></sc-if>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ============ RECORDS ============ -->
+      <sc-if value="{{ isRecords }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">
+          <button style="background:#0f1f1b;color:#fff;border:none;border-radius:4px;font-size:12px;font-weight:600;padding:7px 13px;cursor:pointer">Tất cả</button>
+          <button style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;font-size:12px;color:#45534e;padding:7px 13px;cursor:pointer">Phun thuốc</button>
+          <button style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;font-size:12px;color:#45534e;padding:7px 13px;cursor:pointer">Sâu bệnh</button>
+          <button style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;font-size:12px;color:#45534e;padding:7px 13px;cursor:pointer">Thu hoạch</button>
+          <div style="flex:1"></div>
+          <button style="background:#f8eed6;border:1px solid #ecd39a;border-radius:4px;font-size:12px;color:#9a6a06;font-weight:600;padding:7px 13px;cursor:pointer">⚑ Chỉ xem nghi vấn (2)</button>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px">
+          <sc-for list="{{ records }}" as="r" hint-placeholder-count="8">
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;overflow:hidden">
+              <div style="{{ r.thumbStyle }}">
+                <div style="position:absolute;top:8px;right:8px;{{ r.sealStyle }}">{{ r.seal }}</div>
+                <sc-if value="{{ r.flagged }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;top:8px;left:8px;background:#cf4436;color:#fff;font-size:10px;font-weight:700;border-radius:4px;padding:2px 6px">⚑ NGHI VẤN</div></sc-if>
+              </div>
+              <div style="padding:11px 13px">
+                <div style="font-weight:600;color:#12211d;font-size:14px">{{ r.type }}</div>
+                <div style="font-size:12px;color:#85938d;margin-top:2px">{{ r.plot }} · {{ r.crop }}</div>
+                <div style="display:flex;align-items:center;gap:7px;margin-top:9px">
+                  <div style="width:22px;height:22px;border-radius:50%;background:#e7f2ef;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#0e6a5f">{{ r.ini }}</div>
+                  <span style="font-size:12px;color:#45534e;flex:1">{{ r.worker }}</span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#a3aeaa">{{ r.time }}</span>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ============ DOCUMENTS ============ -->
+      <sc-if value="{{ isDocuments }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:14px">
+          <div style="font-size:13px;color:#85938d;max-width:62ch">Tài liệu bắt buộc theo chương trình cùng các giấy tờ bổ sung của hợp tác xã. Mỗi tài liệu nên được gắn với chương trình hoặc mục tiêu tương ứng.</div>
+          <button onClick="{{ openDoc }}" style="background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;padding:9px 14px;cursor:pointer;white-space:nowrap">+ Tải tài liệu lên</button>
+        </div>
+        <div style="background:#f8eed6;border:1px solid #ecd39a;border-radius:4px;padding:9px 16px;margin-bottom:16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:16px">⚠</span><div style="font-size:13px;color:#9a6a06"><strong>2 tài liệu cần chú ý</strong> — 1 thiếu (bắt buộc cho GACP), 1 sắp hết hạn trong 30 ngày.</div>
+        </div>
+        <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;overflow:hidden">
+          <div style="display:flex;padding:10px 18px;border-bottom:1px solid #eef2f0;background:#fbfdfc;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;color:#85938d"><span style="flex:1">TÀI LIỆU</span><span style="width:130px">CHƯƠNG TRÌNH</span><span style="width:140px">HẾT HẠN</span><span style="width:120px">TRẠNG THÁI</span><span style="width:90px;text-align:right"></span></div>
+          <sc-for list="{{ documents }}" as="d" hint-placeholder-count="5">
+            <div style="display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #f2f6f4">
+              <div style="flex:1;display:flex;align-items:center;gap:11px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#85938d" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path></svg><div><div style="font-weight:600;color:#12211d;font-size:14px">{{ d.name }}</div><div style="font-size:11px;color:#a3aeaa">Mục tiêu: {{ d.goal }}</div></div></div>
+              <div style="width:130px;font-size:12px;color:#45534e">{{ d.programme }}</div>
+              <div style="width:140px;font-size:12px;color:{{ d.expColor }};font-weight:600">{{ d.expiry }}</div>
+              <div style="width:120px"><span style="{{ d.pillStyle }}">{{ d.status }}</span></div>
+              <div style="width:90px;text-align:right"><button style="{{ d.btnStyle }}">{{ d.action }}</button></div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ============ AUDIT PACK ============ -->
+      <sc-if value="{{ isAudit }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:8px;margin-bottom:16px;align-items:center;flex-wrap:wrap"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:#85938d;margin-right:2px">CHƯƠNG TRÌNH:</span><sc-for list="{{ programmeTabs }}" as="t" hint-placeholder-count="2"><button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.label }}</button></sc-for></div>
+        <div style="display:grid;grid-template-columns:300px 1fr;gap:18px">
+          <div style="position:relative;background:#0f1f1b;color:#fff;border-radius:4px;padding:24px;height:fit-content">
+            <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#7fb8ac">HỒ SƠ KIỂM ĐỊNH · {{ auditProgName }}</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:50px;color:#fff;line-height:1;margin-top:8px">{{ auditPct }}<span style="font-size:26px">%</span></div>
+            <div style="color:#a9bcb5;font-size:13px">sẵn sàng · còn {{ auditDays }} ngày</div>
+            <div style="margin-top:18px;display:flex;flex-direction:column;gap:9px">
+              <div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:#a9bcb5">Bằng chứng đã thu thập</span><strong>{{ auditEvidence }}</strong></div>
+              <div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:#a9bcb5">Mục tiêu đủ</span><strong style="color:#7fd6c6">{{ auditGoalsDone }} / {{ auditGoalsTotal }}</strong></div>
+              <div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:#a9bcb5">Còn thiếu</span><strong style="color:#f2b3ab">{{ auditMissing }}</strong></div>
+              <div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:#a9bcb5">Tài liệu đã ký</span><strong style="color:#f2c98a">{{ auditDocs }}</strong></div>
+            </div>
+            <button style="margin-top:20px;width:100%;background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Plus Jakarta Sans';font-weight:600;font-size:16px;padding:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>Xuất hồ sơ (PDF)</button>
+            <button style="margin-top:9px;width:100%;background:transparent;color:#7fd6c6;border:1px solid #234a42;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;padding:10px;cursor:pointer">Xuất báo cáo phần còn thiếu</button>
+          </div>
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:20px">
+            <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:19px;color:#12211d;margin-bottom:14px">Bằng chứng theo mục tiêu · {{ auditProgName }}</div>
+            <sc-for list="{{ auditRows }}" as="a" hint-placeholder-count="7">
+              <div style="display:flex;align-items:center;gap:13px;padding:11px 0;border-bottom:1px solid #eef2f0">
+                <div style="flex:1;min-width:0"><div style="font-weight:600;color:#12211d;font-size:14px">{{ a.goal }}</div><div style="font-size:12px;color:#85938d">{{ a.detail }}</div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#45534e">{{ a.count }}</span>
+                <span style="{{ a.pillStyle }}">{{ a.status }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ============ REGISTRY ============ -->
+      <sc-if value="{{ isRegistry }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:1fr 340px;gap:18px">
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:18px">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d;flex-shrink:0">Bản đồ thửa</div><div style="display:flex;gap:8px;align-items:center;flex:1;justify-content:flex-end">
+              <div style="position:relative;flex:1;max-width:280px">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9aa8a2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:9px;top:50%;transform:translateY(-50%);pointer-events:none"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                <input value="{{ searchQ }}" onInput="{{ onSearchInput }}" onKeyDown="{{ onSearchKey }}" placeholder="Tìm địa điểm để nhảy tới…" style="width:100%;font-family:'Barlow';font-size:13px;color:#12211d;padding:8px 30px 8px 30px;border:1px solid #dbe3e0;border-radius:4px;box-sizing:border-box" />
+                <sc-if value="{{ searching }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;right:10px;top:50%;transform:translateY(-50%);width:12px;height:12px;border:2px solid #cddbd5;border-top-color:#128173;border-radius:50%;animation:skSpin .7s linear infinite"></span></sc-if>
+                <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ false }}">
+                  <div style="position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid #dbe3e0;border-radius:4px;box-shadow:0 8px 24px rgba(15,31,27,.18);z-index:30;overflow:hidden">
+                    <sc-for list="{{ searchResults }}" as="r" hint-placeholder-count="3">
+                      <div onClick="{{ r.go }}" style="padding:9px 11px;font-family:'Barlow';font-size:12.5px;color:#2a3b36;cursor:pointer;border-bottom:1px solid #f0f4f2;line-height:1.35" style-hover="background:#f2f6f4">{{ r.label }}</div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+              </div>
+              <button onClick="{{ onDrawToggle }}" style="{{ drawBtnStyle }}">{{ drawBtnLabel }}</button></div></div>
+            <sc-if value="{{ drawing }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-bottom:10px;padding:14px;background:#eef4f8;border:1px solid #d5e4ee;border-radius:4px">
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px">
+                  <div>
+                    <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:13px;color:#1f4b63">Dán toạ độ ranh giới thửa</div>
+                    <div style="font-family:'Barlow';font-size:11px;color:#5a7688;margin-top:1px">Mỗi dòng một đỉnh theo thứ tự · định dạng <b>vĩ độ, kinh độ</b> (WGS-84). Dán từ hồ sơ địa chính / máy GPS.</div>
+                  </div>
+                  <button onClick="{{ onLoadSample }}" style="flex-shrink:0;font-family:'Barlow';font-size:11px;font-weight:600;color:#2b6a8f;background:#fff;border:1px solid #cddbe6;border-radius:4px;padding:6px 10px;cursor:pointer">Dùng mẫu</button>
+                </div>
+                <textarea value="{{ coordText }}" onInput="{{ onCoordInput }}" placeholder="22.34165, 103.83835&#10;22.34172, 103.83905&#10;22.34138, 103.83958&#10;22.34092, 103.83935&#10;…" spellcheck="false" style="width:100%;box-sizing:border-box;height:104px;resize:vertical;font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.55;color:#12211d;padding:10px 12px;border:1px solid #cddbe6;border-radius:4px;background:#fff"></textarea>
+                <div style="display:flex;align-items:center;gap:10px;margin-top:9px">
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:{{ coordStatColor }};flex:1">{{ coordStat }}</div>
+                  <button onClick="{{ onCancelDraw }}" style="font-family:'Barlow';font-weight:600;font-size:12px;padding:7px 13px;border-radius:4px;border:1px solid #dbe3e0;background:#fff;color:#45534e;cursor:pointer">Huỷ</button>
+                  <button onClick="{{ onDrawToggle }}" style="{{ drawBtnStyle }}">{{ drawBtnLabel }}</button>
+                </div>
+              </div>
+            </sc-if>
+            <div ref="{{ mapRef }}" style="position:relative;height:300px;background:#e7edea;border:1px solid #e2eae7;border-radius:4px;overflow:hidden;z-index:0"></div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:12px;padding:11px 14px;background:#f6f8f7;border:1px solid #eef2f0;border-radius:4px">
+              <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow';font-size:12px;color:#2a3b36"><span style="width:12px;height:12px;border-radius:2px;background:#2fd08a;flex-shrink:0"></span>Đã đo ranh · {{ gisMapped }} thửa</div>
+              <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow';font-size:12px;color:#2a3b36"><span style="width:12px;height:12px;border-radius:2px;background:#ff6b57;flex-shrink:0"></span>Bị chặn</div>
+              <div style="display:flex;align-items:center;gap:7px;font-family:'Barlow';font-size:12px;color:#2a3b36"><span style="width:12px;height:12px;border-radius:2px;flex-shrink:0;background:repeating-linear-gradient(45deg,#c9b06a 0 3px,transparent 3px 6px);border:1px dashed #b8973f"></span>Chưa đo ranh · {{ gisUnmapped }} thửa</div>
+              <div style="margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#12211d">Σ diện tích đo được <b style="color:#0e6a5f">{{ gisTotal }} ha</b></div>
+            </div>
+            <div style="margin-top:10px;font-size:12px;color:#9a6a06;display:flex;gap:6px;align-items:center"><span>⚠</span><span>Thửa A3 chưa có ranh giới nên không hiển thị trên bản đồ — hãy vẽ ranh giới trong phần chi tiết thửa để đưa lên bản đồ.</span></div>
+          </div>
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:18px">
+            <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d;margin-bottom:12px">Thửa & Cây trồng</div>
+            <sc-for list="{{ plots }}" as="p" hint-placeholder-count="6">
+              <div style="display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px solid #eef2f0">
+                <div style="width:34px;height:34px;border-radius:4px;background:#e7f2ef;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;color:#0e6a5f;font-size:13px">{{ p.id }}</div>
+                <div style="flex:1;min-width:0"><div style="font-weight:600;color:#12211d;font-size:14px">{{ p.crop }}</div><div style="font-size:11px;color:#85938d">{{ p.area }} · {{ p.batch }}</div></div>
+                <span style="{{ p.pillStyle }}">{{ p.status }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ============ TEAM ============ -->
+      <sc-if value="{{ isTeam }}" hint-placeholder-val="{{ true }}">
+        <div style="background:#e3eef5;border:1px solid #c3dbeb;border-radius:4px;padding:9px 16px;margin-bottom:16px;display:flex;align-items:center;gap:10px">
+          <span style="font-size:16px">👥</span><div style="font-size:13px;color:#2b6a8f"><strong>2 nhân sự ít hoạt động</strong> — mục này để hỗ trợ, không xếp hạng. Điểm và chuỗi ngày chỉ tính cho bản ghi Verified: bản ghi có ảnh, vị trí và thời gian hợp lệ tại hiện trường.</div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d">14 nhân sự · 11 người đang hoạt động (7 ngày qua)</div><button onClick="{{ openNewStaff }}" style="background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;padding:9px 14px;cursor:pointer">+ Thêm nhân sự</button></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px">
+          <sc-for list="{{ staff }}" as="s" hint-placeholder-count="6">
+            <div onClick="{{ s.open }}" style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:16px;cursor:pointer" style-hover="{{ cardHover }}">
+              <div style="display:flex;align-items:center;gap:11px">
+                <div style="width:42px;height:42px;border-radius:50%;background:#e7f2ef;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;color:#0e6a5f;font-size:16px">{{ s.ini }}</div>
+                <div style="flex:1;min-width:0"><div style="font-weight:600;color:#12211d;font-size:15px">{{ s.name }}</div><div style="font-size:12px;color:#85938d">{{ s.role }}</div></div>
+                <span style="{{ s.pillStyle }}">{{ s.state }}</span>
+              </div>
+              <div style="margin-top:14px;display:flex;gap:10px">
+                <div style="flex:1;text-align:center;background:#f2f6f4;border-radius:4px;padding:9px"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:19px;color:#cf8a0d">🔥{{ s.streak }}</div><div style="font-size:10px;color:#85938d">chuỗi ngày</div></div>
+                <div style="flex:1;text-align:center;background:#f2f6f4;border-radius:4px;padding:9px"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:19px;color:#12211d">{{ s.rate }}%</div><div style="font-size:10px;color:#85938d">hoàn thành</div></div>
+                <div style="flex:1;text-align:center;background:#f2f6f4;border-radius:4px;padding:9px"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:19px;color:#2f9e5b">{{ s.logs }}</div><div style="font-size:10px;color:#85938d">bản ghi Verified</div></div>
+              </div>
+              <div style="margin-top:11px;font-size:12px;color:#85938d">Thửa: {{ s.plots }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ============ CATALOG ============ -->
+      <sc-if value="{{ isCatalog }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:14px">
+          <div style="font-size:13px;color:#85938d;max-width:64ch">Danh mục dùng chung do Sankit cung cấp và cập nhật theo quy định của chương trình. Hợp tác xã có thể bổ sung vật tư riêng của mình vào danh mục.</div>
+          <button onClick="{{ openCatalog }}" style="background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;padding:9px 14px;cursor:pointer;white-space:nowrap">+ Thêm vào danh mục</button>
+        </div>
+        <div style="display:flex;gap:8px;margin-bottom:16px">
+          <sc-for list="{{ catalogTabs }}" as="t" hint-placeholder-count="3"><button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.label }}</button></sc-for>
+        </div>
+        <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;overflow:hidden">
+          <div style="display:flex;align-items:center;padding:10px 18px;border-bottom:1px solid #eef2f0;background:#fbfdfc;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;color:#85938d">
+            <span style="flex:1">VẬT TƯ</span><span style="flex:1.4">CHI TIẾT</span><span style="width:140px;text-align:right">NGUỒN</span>
+          </div>
+          <sc-for list="{{ catalogItems }}" as="c" hint-placeholder-count="4">
+            <div style="display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #f2f6f4">
+              <div style="flex:1;font-weight:600;color:#12211d;font-size:14px;padding-right:12px">{{ c.name }}</div>
+              <div style="flex:1.4;font-size:13px;color:#85938d;padding-right:12px">{{ c.detail }}</div>
+              <div style="width:140px;text-align:right"><span style="{{ c.badgeStyle }}">{{ c.badge }}</span></div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ============ SEASONS ============ -->
+      <sc-if value="{{ isSeasons }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:14px">
+          <div style="font-size:13px;color:#85938d;max-width:64ch">Mỗi hợp tác xã tự khai báo lịch vụ mùa của mình. Vụ chọn ở thanh trên cùng sẽ lọc toàn bộ số liệu trong bảng điều hành theo vụ đó.</div>
+          <button style="background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;padding:9px 14px;cursor:pointer;white-space:nowrap">+ Thêm vụ mùa</button>
+        </div>
+        <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;overflow:hidden">
+          <div style="display:flex;align-items:center;padding:10px 18px;border-bottom:1px solid #eef2f0;background:#fbfdfc;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;color:#85938d">
+            <span style="width:210px">VỤ MÙA</span><span style="width:210px">THỜI GIAN</span><span style="flex:1">CÂY TRỒNG CHÍNH</span><span style="width:120px">TRẠNG THÁI</span><span style="width:180px;text-align:right"></span>
+          </div>
+          <sc-for list="{{ seasonRows }}" as="s" hint-placeholder-count="4">
+            <div style="display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #f2f6f4">
+              <div style="width:210px;font-weight:600;color:#12211d;font-size:14px">{{ s.name }}</div>
+              <div style="width:210px;font-size:13px;color:#45534e;font-family:'IBM Plex Mono',monospace">{{ s.range }}</div>
+              <div style="flex:1;font-size:13px;color:#45534e">{{ s.crops }}</div>
+              <div style="width:120px"><span style="{{ s.pillStyle }}">{{ s.tag }}</span></div>
+              <div style="width:180px;text-align:right">
+                <sc-if value="{{ s.isCurrent }}" hint-placeholder-val="{{ false }}"><span style="color:#1f7a45;font-weight:600;font-size:13px">✓ Vụ đang chọn</span></sc-if>
+                <sc-if value="{{ s.notCurrent }}" hint-placeholder-val="{{ true }}"><button onClick="{{ s.setCurrent }}" style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:12px;color:#0e6a5f;padding:7px 11px;cursor:pointer">Chọn làm vụ này</button></sc-if>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ============ ROLES ============ -->
+      <sc-if value="{{ isRoles }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:14px">
+          <div style="font-size:13px;color:#85938d;max-width:64ch">Mỗi vai trò gắn với một chức danh và bộ quyền hạn. Thay đổi ở đây sẽ áp dụng cho tất cả nhân sự thuộc vai trò đó.</div>
+          <button style="background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;padding:9px 14px;cursor:pointer;white-space:nowrap">+ Thêm vai trò</button>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px">
+          <sc-for list="{{ roles }}" as="r" hint-placeholder-count="5">
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:16px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">
+                <div style="display:flex;align-items:center;gap:9px;min-width:0"><span style="width:9px;height:9px;border-radius:2px;background:{{ r.color }};flex-shrink:0"></span><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:17px;color:#12211d;line-height:1.15">{{ r.name }}</div></div>
+                <span style="background:#f2f6f4;border:1px solid #e2eae7;border-radius:4px;font-size:11px;font-weight:600;color:#45534e;padding:3px 8px;white-space:nowrap">{{ r.memberLabel }}</span>
+              </div>
+              <div style="font-size:12px;color:#85938d;margin-top:3px">Chức danh: {{ r.title }}</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;color:#85938d;margin:13px 0 7px">QUYỀN HẠN</div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px">
+                <sc-for list="{{ r.perms }}" as="p" hint-placeholder-count="2"><span style="background:#e7f2ef;color:#0e6a5f;border:1px solid #cfe6e0;border-radius:4px;font-size:12px;padding:3px 9px">{{ p }}</span></sc-for>
+              </div>
+              <div style="margin-top:14px;display:flex;gap:8px">
+                <button style="flex:1;background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;color:#0e6a5f;padding:8px;cursor:pointer">Chỉnh sửa quyền</button>
+                <button style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;font-size:13px;color:#85938d;padding:8px 11px;cursor:pointer">Đổi tên</button>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <!-- ============ TASKS ============ -->
+      <sc-if value="{{ isTasks }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:18px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d">Công việc định kỳ</div><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#2b6a8f;background:#e3eef5;padding:3px 7px;border:1px solid #c3dbeb">TỰ ĐỘNG NHẮC LẠI</span></div>
+            <sc-for list="{{ routines }}" as="r" hint-placeholder-count="3">
+              <div style="border:1px solid #e2eae7;border-radius:4px;padding:12px;margin-bottom:10px">
+                <div style="display:flex;justify-content:space-between;align-items:center;gap:10px"><div style="font-weight:600;color:#12211d;font-size:14px">{{ r.title }}</div><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#2b6a8f">{{ r.cadence }}</span></div>
+                <div style="font-size:12px;color:#85938d;margin-top:3px">{{ r.scope }} · {{ r.assignee }}</div>
+                <div style="margin-top:9px;height:7px;background:#eef2f0;border-radius:4px;overflow:hidden"><div style="height:100%;width:{{ r.pct }}%;background:{{ r.color }}"></div></div>
+                <div style="margin-top:5px;font-size:11px;color:#85938d">{{ r.pct }}% hoàn thành kỳ này</div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:18px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d">Công việc phát sinh</div><button style="background:#128173;color:#fff;border:none;border-radius:4px;font-size:13px;font-weight:600;padding:8px 12px;cursor:pointer">+ Tạo việc</button></div>
+            <sc-for list="{{ tasks }}" as="t" hint-placeholder-count="4">
+              <div style="display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid #eef2f0">
+                <div style="width:34px;height:34px;border-radius:50%;background:#e7f2ef;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#0e6a5f">{{ t.ini }}</div>
+                <div style="flex:1;min-width:0"><div style="font-weight:600;color:#12211d;font-size:14px">{{ t.title }}</div><div style="display:flex;align-items:center;gap:7px;margin-top:4px;flex-wrap:wrap"><span style="{{ t.chipStyle }}">{{ t.type }}</span><span style="font-size:11px;color:#85938d">{{ t.assignee }} · Thửa {{ t.plot }} · {{ t.crop }}</span></div></div>
+                <span style="{{ t.pillStyle }}">{{ t.due }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ============ PROGRAMMES ============ -->
+      <sc-if value="{{ isProgrammes }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px">
+          <sc-for list="{{ programmes }}" as="p" hint-placeholder-count="2">
+            <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:22px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:24px;color:#12211d">{{ p.name }}</div><div style="font-size:12px;color:#85938d">{{ p.version }}</div></div><span style="{{ p.pillStyle }}">{{ p.pillLabel }}</span></div>
+              <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+                <div style="background:#f2f6f4;border-radius:4px;padding:12px"><div style="font-size:11px;color:#85938d">Chứng nhận</div><div style="font-weight:600;color:#12211d;margin-top:2px">{{ p.certStatus }}</div></div>
+                <div style="background:#f2f6f4;border-radius:4px;padding:12px"><div style="font-size:11px;color:#85938d">Ngày gia hạn</div><div style="font-weight:600;color:{{ p.renewColor }};margin-top:2px">{{ p.renewal }}</div></div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="background:#fff;border:1px dashed #cddad5;border-radius:4px;padding:22px;text-align:center">
+          <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;color:#12211d">Cần thêm một chương trình chứng nhận khác?</div>
+          <p style="font-size:13px;color:#85938d;margin-top:4px;margin-bottom:14px">Yêu cầu của bạn sẽ được gửi tới đội ngũ Sankit để thiết lập.</p>
+          <button style="background:#128173;color:#fff;border:none;border-radius:4px;font-size:14px;font-weight:600;padding:10px 18px;cursor:pointer">+ Yêu cầu thêm chương trình</button>
+        </div>
+      </sc-if>
+
+      <!-- ============ SUPPORT ============ -->
+      <sc-if value="{{ isSupport }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:14px">
+          <div style="font-size:13px;color:#85938d;max-width:70ch;line-height:1.5;text-wrap:pretty">Gửi yêu cầu khi hợp tác xã cần Sankit hỗ trợ. Điều phối viên SK-OPS chuyển yêu cầu tới đúng chuyên viên phụ trách — bạn luôn thấy ai đang xử lý và toàn bộ nội dung trao đổi.</div>
+          <button onClick="{{ openSupport }}" style="flex-shrink:0;background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Plus Jakarta Sans';font-weight:600;font-size:15px;padding:10px 16px;cursor:pointer" style-hover="{{ btnHover }}">+ Tạo yêu cầu hỗ trợ</button>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
+          <sc-for list="{{ supTabs }}" as="t" hint-placeholder-count="4">
+            <button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.label }}</button>
+          </sc-for>
+        </div>
+
+        <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:18px;align-items:start">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ supList }}" as="r" hint-placeholder-count="4">
+              <button onClick="{{ r.select }}" style="{{ r.rowStyle }}">
+                <div style="display:flex;align-items:center;gap:8px;width:100%">
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;color:#85938d">{{ r.code }}</span>
+                  <span style="width:5px;height:5px;border-radius:50%;background:{{ r.priColor }}"></span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:{{ r.priColor }}">{{ r.priLabel }}</span>
+                  <span style="flex:1"></span>
+                  <span style="{{ r.statusStyle }}">{{ r.statusLabel }}</span>
+                </div>
+                <div style="font-family:'Barlow';font-weight:600;color:#12211d;font-size:14px;margin-top:7px;line-height:1.4;text-wrap:pretty">{{ r.title }}</div>
+                <div style="display:flex;align-items:center;gap:8px;margin-top:8px;width:100%">
+                  <span style="font-size:12px;color:#85938d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.catLabel }} · {{ r.assignee }}</span>
+                  <span style="flex:1"></span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#a3aeaa;white-space:nowrap">{{ r.updated }}</span>
+                </div>
+              </button>
+            </sc-for>
+          </div>
+
+          <div style="background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:20px 22px">
+            <div style="display:flex;align-items:center;gap:9px">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#128173">{{ supCode }}</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:{{ supPriColor }}">Mức độ: {{ supPriLabel }}</span>
+              <span style="flex:1"></span>
+              <span style="{{ statusStyle }}">{{ statusLabel }}</span>
+            </div>
+            <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:20px;color:#12211d;margin-top:7px;line-height:1.25;text-wrap:pretty">{{ supTitleCur }}</div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:9px;font-size:12.5px;color:#85938d">
+              <span>{{ supCatLabel }}</span>
+              <span>Gắn với: {{ supLink }}</span>
+              <span>Gửi lúc {{ supCreated }}</span>
+            </div>
+
+            <div style="margin-top:16px;display:flex;align-items:center;gap:12px;background:#0f1f1b;border-radius:4px;padding:13px 15px">
+              <span style="width:38px;height:38px;border-radius:50%;background:#234a42;color:#7fd6c6;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;font-size:13px;flex-shrink:0">{{ supOwnerAvi }}</span>
+              <div style="min-width:0;flex:1">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;color:#6f9b90">NGƯỜI ĐANG PHỤ TRÁCH</div>
+                <div style="font-family:'Plus Jakarta Sans';font-weight:600;font-size:16px;color:#fff;margin-top:2px">{{ supOwnerName }}</div>
+                <div style="font-size:12px;color:#a9bcb5">{{ supOwnerRole }}</div>
+              </div>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#7fd6c6;white-space:nowrap">Cập nhật {{ supUpdated }}</span>
+            </div>
+
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:18px 0 8px">ĐƯỜNG ĐI CỦA YÊU CẦU</div>
+            <div style="display:flex;gap:14px;background:#f6faf9;border:1px solid #e2eae7;border-radius:4px;padding:14px 16px">
+              <sc-for list="{{ supRoute }}" as="s" hint-placeholder-count="3">
+                <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:5px">
+                  <div style="display:flex;align-items:center;gap:6px">
+                    <span style="width:9px;height:9px;border-radius:50%;flex-shrink:0;background:{{ s.dot }}"></span>
+                    <span style="flex:1;height:1px;background:#dbe3e0"></span>
+                  </div>
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.07em;color:#85938d">{{ s.step }}</div>
+                  <div style="font-family:'Barlow';font-weight:600;font-size:13px;line-height:1.3;color:{{ s.fg }}">{{ s.who }}</div>
+                  <div style="font-size:11px;color:#a3aeaa">{{ s.time }}</div>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:18px 0 10px">TRAO ĐỔI</div>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <sc-for list="{{ supThread }}" as="m" hint-placeholder-count="3">
+                <div style="display:flex;gap:11px">
+                  <span style="{{ m.aviStyle }}">{{ m.avi }}</span>
+                  <div style="flex:1;min-width:0">
+                    <div style="display:flex;align-items:center;gap:8px">
+                      <span style="font-family:'Barlow';font-weight:600;font-size:13px;color:#12211d">{{ m.who }}</span>
+                      <span style="{{ m.tagStyle }}">{{ m.tag }}</span>
+                      <span style="flex:1"></span>
+                      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#a3aeaa;white-space:nowrap">{{ m.time }}</span>
+                    </div>
+                    <div style="{{ m.bubbleStyle }}">{{ m.text }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+
+            <sc-if value="{{ supCanReply }}" hint-placeholder-val="{{ true }}">
+              <div style="margin-top:18px;border-top:1px solid #eef2f0;padding-top:16px">
+                <textarea value="{{ supReply }}" onChange="{{ supReplyChange }}" placeholder="Trả lời chuyên viên phụ trách…" style="width:100%;min-height:78px;resize:vertical;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:13.5px;color:#12211d;outline:none;line-height:1.5"></textarea>
+                <div style="display:flex;align-items:center;gap:10px;margin-top:10px">
+                  <button style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;color:#45534e;padding:9px 13px;cursor:pointer">Đính kèm ảnh / tệp</button>
+                  <span style="flex:1"></span>
+                  <button onClick="{{ supSend }}" style="background:#128173;color:#fff;border:none;border-radius:4px;font-family:'Barlow';font-weight:700;font-size:13.5px;padding:10px 18px;cursor:pointer" style-hover="{{ btnHover }}">Gửi phản hồi</button>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{ supDone }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:18px;background:#e4f3ea;border:1px solid #bfe4cd;border-radius:4px;padding:12px 15px;display:flex;align-items:center;gap:10px">
+                <span style="font-size:15px">✓</span>
+                <div style="flex:1;font-size:13px;color:#1f7a45">Yêu cầu đã được xử lý và đóng. Nội dung trao đổi vẫn lưu trong hồ sơ minh chứng.</div>
+                <button onClick="{{ openSupport }}" style="background:#fff;border:1px solid #bfe4cd;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:12.5px;color:#1f7a45;padding:8px 12px;cursor:pointer;white-space:nowrap">Gửi yêu cầu mới</button>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- ============ NOTIFICATIONS ============ -->
+      <sc-if value="{{ isNotifications }}" hint-placeholder-val="{{ true }}">
+        <div style="max-width:720px">
+          <sc-for list="{{ notifications }}" as="n" hint-placeholder-count="6">
+            <div style="display:flex;align-items:center;gap:13px;background:#fff;border:1px solid #dbe3e0;border-radius:4px;padding:14px 16px;margin-bottom:10px">
+              <span style="width:36px;height:36px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;background:{{ n.tint }};border:1px solid {{ n.accent }}">{{ n.icon }}</span>
+              <div style="flex:1"><div style="font-weight:600;color:#12211d;font-size:14px">{{ n.title }}</div><div style="font-size:12px;color:#85938d;margin-top:2px">{{ n.body }}</div></div>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#a3aeaa;white-space:nowrap">{{ n.time }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+
+    </div>
+  </main>
+</div>
+
+<sc-if value="{{ catalogModal }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeCatalog }}" style="position:fixed;inset:0;background:rgba(15,31,27,.55);display:flex;align-items:center;justify-content:center;z-index:60;padding:24px">
+    <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:460px;background:#fff;border-radius:4px;padding:24px;box-shadow:0 20px 60px rgba(15,31,27,.4);animation:skPop .28s ease-out">
+      <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+      <div style="position:absolute;bottom:-1px;right:-1px;width:13px;height:13px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#128173">THÊM VÀO DANH MỤC</div><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;color:#12211d;margin-top:3px">Vật tư của hợp tác xã</div></div>
+        <button onClick="{{ closeCatalog }}" style="background:none;border:none;font-size:20px;color:#a3aeaa;cursor:pointer;line-height:1">✕</button>
+      </div>
+      <div style="margin-top:6px;font-size:12px;color:#85938d;line-height:1.45">Vật tư bạn thêm sẽ được đánh dấu “Của HTX” và chỉ áp dụng cho hợp tác xã của bạn. Danh mục dùng chung do Sankit quản lý.</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">LOẠI VẬT TƯ</div>
+      <select style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;background:#fff;cursor:pointer;outline:none">
+        <option>Thuốc BVTV</option><option>Phân bón</option><option>Giống cây</option>
+      </select>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">TÊN VẬT TƯ</div>
+      <input placeholder="VD: Chế phẩm tỏi – ớt – gừng" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">CHI TIẾT / GHI CHÚ</div>
+      <input placeholder="VD: HTX tự sản xuất · thời gian cách ly, liều dùng…" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none">
+      <div style="display:flex;gap:10px;margin-top:20px">
+        <button onClick="{{ closeCatalog }}" style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:14px;color:#45534e;padding:12px 18px;cursor:pointer">Hủy</button>
+        <button onClick="{{ saveCatalog }}" style="flex:1;background:#128173;border:none;border-radius:4px;font-family:'Barlow';font-weight:700;font-size:14px;color:#fff;padding:12px;cursor:pointer">Thêm vào danh mục</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ docModal }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeDoc }}" style="position:fixed;inset:0;background:rgba(15,31,27,.55);display:flex;align-items:center;justify-content:center;z-index:60;padding:24px">
+    <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:480px;background:#fff;border-radius:4px;padding:24px;box-shadow:0 20px 60px rgba(15,31,27,.4);animation:skPop .28s ease-out">
+      <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+      <div style="position:absolute;bottom:-1px;right:-1px;width:13px;height:13px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#128173">TÀI LIỆU MỚI</div><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;color:#12211d;margin-top:3px">Tải tài liệu lên</div></div>
+        <button onClick="{{ closeDoc }}" style="background:none;border:none;font-size:20px;color:#a3aeaa;cursor:pointer;line-height:1">✕</button>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">TÊN TÀI LIỆU</div>
+      <input placeholder="VD: Hợp đồng bao tiêu 2026" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none">
+      <div style="display:flex;gap:12px">
+        <div style="flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">CHƯƠNG TRÌNH</div>
+          <select style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;background:#fff;cursor:pointer;outline:none">
+            <option>GACP-WHO</option><option>GLOBALG.A.P.</option><option>Không gắn chương trình</option>
+          </select></div>
+        <div style="flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">LOẠI</div>
+          <select style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;background:#fff;cursor:pointer;outline:none">
+            <option>Tài liệu bắt buộc</option><option>Tài liệu bổ sung</option>
+          </select></div>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">GẮN VỚI MỤC TIÊU / CÔNG VIỆC</div>
+      <select style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;background:#fff;cursor:pointer;outline:none">
+        <option>Không gắn</option>
+        <optgroup label="Mục tiêu (GACP)"><option>Nguồn nước &amp; xét nghiệm</option><option>Đào tạo an toàn lao động</option><option>Truy xuất giống &amp; nguồn gốc</option></optgroup>
+        <optgroup label="Công việc"><option>Lấy mẫu nước Thửa A3</option><option>Cập nhật hồ sơ đào tạo</option></optgroup>
+      </select>
+      <div style="display:flex;gap:12px;align-items:flex-end">
+        <div style="flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">NGÀY HẾT HẠN</div>
+          <input placeholder="dd/mm/yyyy · để trống nếu không có" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none"></div>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">TỆP</div>
+      <div style="border:1px dashed #c7d2ce;border-radius:4px;padding:20px;text-align:center;background:#fbfdfc;cursor:pointer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a3aeaa" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block"><path d="M12 16V4"></path><path d="M7 9l5-5 5 5"></path><path d="M5 20h14"></path></svg>
+        <div style="font-size:13px;color:#45534e;font-weight:600;margin-top:4px">Kéo thả tệp vào đây hoặc bấm để chọn</div>
+        <div style="font-size:11px;color:#a3aeaa;margin-top:2px">PDF, JPG hoặc PNG · tối đa 20MB</div>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:20px">
+        <button onClick="{{ closeDoc }}" style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:14px;color:#45534e;padding:12px 18px;cursor:pointer">Hủy</button>
+        <button onClick="{{ saveDoc }}" style="flex:1;background:#128173;border:none;border-radius:4px;font-family:'Barlow';font-weight:700;font-size:14px;color:#fff;padding:12px;cursor:pointer">Lưu tài liệu</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ coopModal }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeCoop }}" style="position:fixed;inset:0;background:rgba(15,31,27,.55);display:flex;align-items:center;justify-content:center;z-index:60;padding:24px">
+    <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:460px;background:#fff;border-radius:4px;padding:24px;box-shadow:0 20px 60px rgba(15,31,27,.4);animation:skPop .28s ease-out">
+      <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+      <div style="position:absolute;bottom:-1px;right:-1px;width:13px;height:13px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#128173">THIẾT LẬP HỢP TÁC XÃ</div><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;color:#12211d;margin-top:3px">Thông tin & thương hiệu</div></div>
+        <button onClick="{{ closeCoop }}" style="background:none;border:none;font-size:20px;color:#a3aeaa;cursor:pointer;line-height:1">✕</button>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:18px 0 8px">LOGO</div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="width:56px;height:56px;background:#0e6a5f;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;color:#fff;font-size:20px;flex-shrink:0">SP</div>
+        <div><button style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:13px;color:#0e6a5f;padding:8px 13px;cursor:pointer">Tải logo lên</button><div style="font-size:11px;color:#a3aeaa;margin-top:6px">PNG hoặc SVG nền trong suốt, tối thiểu 128×128px.</div></div>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">TÊN HỢP TÁC XÃ</div>
+      <input value="Hợp tác xã Dược liệu & Nông sản sạch Sa Pa – Lào Cai" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none">
+      <div style="display:flex;gap:12px">
+        <div style="flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">ĐỊA PHƯƠNG</div><input value="Lào Cai" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none"></div>
+        <div style="flex:1"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">MÃ SỐ HTX</div><input value="6300-SP-2019" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none"></div>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">NGƯỜI ĐẠI DIỆN</div>
+      <input value="Nguyễn Thị Hương" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none">
+      <div style="display:flex;gap:10px;margin-top:20px">
+        <button onClick="{{ closeCoop }}" style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:14px;color:#45534e;padding:12px 18px;cursor:pointer">Hủy</button>
+        <button onClick="{{ saveCoop }}" style="flex:1;background:#128173;border:none;border-radius:4px;font-family:'Barlow';font-weight:700;font-size:14px;color:#fff;padding:12px;cursor:pointer">Lưu thay đổi</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ resolving }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeResolve }}" style="position:fixed;inset:0;background:rgba(15,31,27,.55);display:flex;align-items:center;justify-content:center;z-index:60;padding:24px">
+    <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:480px;background:#fff;border-radius:4px;padding:24px;box-shadow:0 20px 60px rgba(15,31,27,.4);animation:skPop .28s ease-out">
+      <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+      <div style="position:absolute;bottom:-1px;right:-1px;width:13px;height:13px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+        <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#128173">XỬ LÝ VẤN ĐỀ</div><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;color:#12211d;line-height:1.15;margin-top:3px">{{ resolving.title }}</div></div>
+        <button onClick="{{ closeResolve }}" style="background:none;border:none;font-size:20px;color:#a3aeaa;cursor:pointer;line-height:1">✕</button>
+      </div>
+      <div style="margin-top:12px;display:flex;align-items:center;gap:10px;background:#fbfdfc;border:1px solid #eef2f0;border-radius:4px;padding:10px 12px">
+        <span style="{{ resolvingSevStyle }}">{{ resolving.sev }}</span>
+        <span style="font-size:12px;color:#85938d">{{ resolving.meta }}</span>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 8px">CHỌN CÁCH XỬ LÝ</div>
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <sc-for list="{{ methods }}" as="m" hint-placeholder-count="3">
+          <button onClick="{{ m.onClick }}" style="{{ m.style }}">
+            <span style="{{ m.radioStyle }}"></span>
+            <div><div style="font-weight:600;color:#12211d;font-size:14px">{{ m.title }}</div><div style="font-size:12px;color:#85938d;margin-top:2px">{{ m.desc }}</div></div>
+          </button>
+        </sc-for>
+      </div>
+      <sc-if value="{{ showNote }}" hint-placeholder-val="{{ false }}">
+        <textarea onInput="{{ setNote }}" placeholder="Lý do chính đáng để đóng vấn đề (sẽ được lưu vết cho kiểm định)…" style="margin-top:12px;width:100%;min-height:74px;border:1px solid #dbe3e0;border-radius:4px;padding:10px 12px;font-family:'Barlow';font-size:13px;color:#12211d;resize:vertical;outline:none"></textarea>
+      </sc-if>
+      <div style="display:flex;gap:10px;margin-top:18px">
+        <button onClick="{{ closeResolve }}" style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:14px;color:#45534e;padding:12px 18px;cursor:pointer">Hủy</button>
+        <button onClick="{{ confirmResolve }}" style="{{ confirmStyle }}">{{ confirmLabel }}</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ showStaffModal }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeStaff }}" style="position:fixed;inset:0;background:rgba(15,31,27,.55);display:flex;align-items:center;justify-content:center;z-index:60;padding:24px">
+    <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:460px;background:#fff;border-radius:4px;padding:24px;box-shadow:0 20px 60px rgba(15,31,27,.4);animation:skPop .28s ease-out">
+      <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+      <div style="position:absolute;bottom:-1px;right:-1px;width:13px;height:13px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+
+      <sc-if value="{{ staffModalEdit }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;align-items:center;gap:13px">
+          <div style="width:46px;height:46px;border-radius:50%;background:#e7f2ef;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;color:#0e6a5f;font-size:17px">{{ staffModalEdit.ini }}</div>
+          <div style="flex:1;min-width:0"><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:19px;color:#12211d">{{ staffModalEdit.name }}</div><div style="font-size:12px;color:#85938d">{{ staffModalEdit.role }}</div></div>
+          <button onClick="{{ closeStaff }}" style="background:none;border:none;font-size:20px;color:#a3aeaa;cursor:pointer;line-height:1">✕</button>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:10px">
+          <div style="flex:1;text-align:center;background:#f2f6f4;border-radius:4px;padding:10px"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#cf8a0d">🔥{{ staffModalEdit.streak }}</div><div style="font-size:10px;color:#85938d">chuỗi ngày</div></div>
+          <div style="flex:1;text-align:center;background:#f2f6f4;border-radius:4px;padding:10px"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#12211d">{{ staffModalEdit.rate }}%</div><div style="font-size:10px;color:#85938d">hoàn thành</div></div>
+          <div style="flex:1;text-align:center;background:#f2f6f4;border-radius:4px;padding:10px"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:18px;color:#2f9e5b">{{ staffModalEdit.logs }}</div><div style="font-size:10px;color:#85938d">bản ghi Verified</div></div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 8px">THỬA PHỤ TRÁCH</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px">
+          <sc-for list="{{ staffPlots }}" as="pl" hint-placeholder-count="3"><span style="background:#e7f2ef;color:#0e6a5f;border:1px solid #cfe6e0;border-radius:4px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;padding:4px 9px">{{ pl }}</span></sc-for>
+          <button style="background:#fff;border:1px dashed #c7d2ce;border-radius:4px;font-size:12px;color:#0e6a5f;padding:4px 9px;cursor:pointer">+ Giao thửa</button>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 8px">QUẢN LÝ</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button style="text-align:left;background:#fff;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-size:13px;font-weight:600;color:#45534e;padding:11px 13px;cursor:pointer">Xem bản ghi của nhân sự →</button>
+          <button style="text-align:left;background:#fff;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-size:13px;font-weight:600;color:#45534e;padding:11px 13px;cursor:pointer">Đặt lại quyền truy cập</button>
+          <button style="text-align:left;background:#fff;border:1px solid #ecc9c4;border-radius:4px;font-family:'Barlow';font-size:13px;font-weight:600;color:#a8342a;padding:11px 13px;cursor:pointer">Tạm ngưng nhân sự</button>
+        </div>
+        <div style="margin-top:14px;font-size:11px;color:#a3aeaa;line-height:1.4">Danh tính này là “ai” trong mọi bằng chứng (provenance) — không xoá, chỉ tạm ngưng để giữ lịch sử.</div>
+        <div style="display:flex;gap:10px;margin-top:18px">
+          <button onClick="{{ closeStaff }}" style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:14px;color:#45534e;padding:12px 18px;cursor:pointer">Đóng</button>
+          <button onClick="{{ saveStaff }}" style="flex:1;background:#128173;border:none;border-radius:4px;font-family:'Barlow';font-weight:700;font-size:14px;color:#fff;padding:12px;cursor:pointer">Lưu thay đổi</button>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ staffModalNew }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#128173">THÊM NHÂN SỰ</div><div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;color:#12211d;margin-top:3px">Nhân sự mới</div></div>
+          <button onClick="{{ closeStaff }}" style="background:none;border:none;font-size:20px;color:#a3aeaa;cursor:pointer;line-height:1">✕</button>
+        </div>
+        <div style="margin-top:6px;font-size:12px;color:#85938d;line-height:1.45">Danh tính này là “ai” trong mọi bằng chứng — hãy nhập chính xác họ tên.</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">HỌ VÀ TÊN</div>
+        <input placeholder="VD: Nguyễn Văn A" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">VAI TRÒ</div>
+        <select style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none;background:#fff;cursor:pointer">
+          <option>Nhân viên đồng ruộng</option>
+          <option>Tổ trưởng đồng ruộng</option>
+          <option>Nhân viên thời vụ</option>
+          <option>Kế toán / Hành chính</option>
+          <option>Chỉ xem</option>
+        </select>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:14px 0 6px">THỬA PHỤ TRÁCH</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px">
+          <sc-for list="{{ plotChips }}" as="c" hint-placeholder-count="6"><button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.id }}</button></sc-for>
+        </div>
+        <div style="font-size:11px;color:#a3aeaa;margin-top:6px">Chọn một hoặc nhiều thửa để giao cho nhân sự này.</div>
+        <div style="display:flex;gap:10px;margin-top:20px">
+          <button onClick="{{ closeStaff }}" style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:14px;color:#45534e;padding:12px 18px;cursor:pointer">Hủy</button>
+          <button onClick="{{ createStaff }}" style="flex:1;background:#128173;border:none;border-radius:4px;font-family:'Barlow';font-weight:700;font-size:14px;color:#fff;padding:12px;cursor:pointer">Tạo nhân sự</button>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ drawSaveOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ cancelSaveForm }}" style="position:fixed;inset:0;background:rgba(15,31,27,.55);display:flex;align-items:center;justify-content:center;z-index:70;padding:24px">
+    <div onClick="{{ stopForm }}" style="position:relative;width:100%;max-width:440px;background:#fff;border-radius:4px;padding:24px;box-shadow:0 20px 60px rgba(15,31,27,.4);animation:skPop .28s ease-out">
+      <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+      <div style="position:absolute;bottom:-1px;right:-1px;width:13px;height:13px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+        <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:19px;color:#12211d">Thông tin thửa mới</div>
+        <button onClick="{{ cancelSaveForm }}" style="background:none;border:none;font-size:20px;color:#a3aeaa;cursor:pointer;line-height:1">✕</button>
+      </div>
+      <div style="font-family:'Barlow';font-size:12px;color:#85938d;margin-bottom:18px">Ranh giới đã vẽ xong. Đặt mã và thông tin để lưu vào sổ đăng ký.</div>
+
+      <div style="display:flex;gap:12px;margin-bottom:14px">
+        <div style="flex:1">
+          <label style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;color:#85938d;margin-bottom:5px">KHU (VÙNG)</label>
+          <select value="{{ formZone }}" onChange="{{ onFormZone }}" style="width:100%;font-family:'Barlow';font-size:14px;color:#12211d;padding:9px 10px;border:1px solid #dbe3e0;border-radius:4px;background:#fff">
+            <option value="A">Khu A</option><option value="B">Khu B</option><option value="C">Khu C</option><option value="D">Khu D</option>
+          </select>
+        </div>
+        <div style="flex:1">
+          <label style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;color:#85938d;margin-bottom:5px">SỐ THỬA</label>
+          <input value="{{ formNum }}" onChange="{{ onFormNum }}" inputmode="numeric" style="width:100%;font-family:'Barlow';font-size:14px;color:#12211d;padding:9px 10px;border:1px solid #dbe3e0;border-radius:4px" />
+        </div>
+        <div style="width:96px">
+          <label style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;color:#85938d;margin-bottom:5px">MÃ THỬA</label>
+          <div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:18px;color:#0e6a5f;padding:8px 10px;background:#e7f2ef;border-radius:4px;text-align:center">{{ formId }}</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom:14px">
+        <label style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;color:#85938d;margin-bottom:5px">CÂY TRỒNG</label>
+        <select value="{{ formCrop }}" onChange="{{ onFormCrop }}" style="width:100%;font-family:'Barlow';font-size:14px;color:#12211d;padding:9px 10px;border:1px solid #dbe3e0;border-radius:4px;background:#fff">
+          <option>Atisô</option><option>Đương quy</option><option>Giảo cổ lam</option><option>Cát cánh</option><option>Chưa gán cây</option>
+        </select>
+      </div>
+
+      <div style="display:flex;gap:12px;margin-bottom:20px">
+        <div style="flex:1">
+          <label style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;color:#85938d;margin-bottom:5px">LÔ SẢN XUẤT</label>
+          <input value="{{ formBatch }}" onChange="{{ onFormBatch }}" placeholder="VD: Lô AT-26D" style="width:100%;font-family:'Barlow';font-size:14px;color:#12211d;padding:9px 10px;border:1px solid #dbe3e0;border-radius:4px" />
+        </div>
+        <div style="width:130px">
+          <label style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;color:#85938d;margin-bottom:5px">DIỆN TÍCH</label>
+          <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;color:#12211d;padding:9px 10px;background:#f6f8f7;border:1px solid #eef2f0;border-radius:4px">{{ formArea }} ha</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:10px">
+        <button onClick="{{ cancelSaveForm }}" style="flex:0 0 auto;font-family:'Barlow';font-weight:600;font-size:14px;padding:12px 18px;border-radius:4px;border:1px solid #dbe3e0;background:#fff;color:#45534e;cursor:pointer">Quay lại chỉnh</button>
+        <button onClick="{{ confirmSavePlot }}" style="flex:1;font-family:'Barlow';font-weight:700;font-size:14px;padding:12px;border-radius:4px;border:none;background:#128173;color:#fff;cursor:pointer">Lưu thửa vào sổ</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ supportModal }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeSupport }}" style="position:fixed;inset:0;background:rgba(15,31,27,.55);display:flex;align-items:center;justify-content:center;z-index:60;padding:24px">
+    <div onClick="{{ stop }}" style="position:relative;width:100%;max-width:520px;max-height:92vh;overflow-y:auto;background:#fff;border-radius:4px;padding:24px;box-shadow:0 20px 60px rgba(15,31,27,.4);animation:skPop .28s ease-out">
+      <div style="position:absolute;top:-1px;left:-1px;width:13px;height:13px;border-top:2px solid #128173;border-left:2px solid #128173"></div>
+      <div style="position:absolute;bottom:-1px;right:-1px;width:13px;height:13px;border-bottom:2px solid #128173;border-right:2px solid #128173"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:14px">
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#128173">YÊU CẦU HỖ TRỢ MỚI</div>
+          <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;color:#12211d;margin-top:3px">Sankit cần giúp gì cho HTX?</div>
+        </div>
+        <button onClick="{{ closeSupport }}" style="background:none;border:none;font-size:20px;color:#a3aeaa;cursor:pointer;line-height:1">✕</button>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:18px 0 6px">NHÓM VẤN ĐỀ</div>
+      <select value="{{ supCat }}" onChange="{{ supCatChange }}" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;background:#fff;cursor:pointer;outline:none">
+        <option value="cert">Chứng nhận &amp; kiểm định</option>
+        <option value="agro">Kỹ thuật canh tác</option>
+        <option value="catalog">Vật tư &amp; danh mục</option>
+        <option value="system">Kỹ thuật hệ thống</option>
+        <option value="other">Việc khác</option>
+      </select>
+
+      <div style="margin-top:10px;display:flex;align-items:center;gap:12px;background:#f6faf9;border:1px solid #cfe6e0;border-radius:4px;padding:12px 14px">
+        <span style="width:34px;height:34px;border-radius:50%;background:#0f1f1b;color:#7fd6c6;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;font-size:12px;flex-shrink:0">{{ supRouteToAvi }}</span>
+        <div style="min-width:0;flex:1">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;color:#0e6a5f">SẼ ĐƯỢC CHUYỂN TỚI</div>
+          <div style="font-family:'Barlow';font-weight:600;font-size:14px;color:#12211d;margin-top:2px">{{ supRouteToName }}</div>
+          <div style="font-size:12px;color:#85938d">{{ supRouteToRole }} · phản hồi {{ supRouteSla }}</div>
+        </div>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">MỨC ĐỘ</div>
+      <div style="display:flex;gap:8px">
+        <sc-for list="{{ supPris }}" as="p" hint-placeholder-count="3">
+          <button onClick="{{ p.onClick }}" style="{{ p.style }}">{{ p.label }}</button>
+        </sc-for>
+      </div>
+
+      <div style="display:flex;gap:12px">
+        <div style="flex:1">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">GẮN VỚI</div>
+          <select style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;background:#fff;cursor:pointer;outline:none">
+            <option>Không gắn</option><option>Thửa A3</option><option>Thửa B1</option><option>Thửa C2</option><option>GACP-WHO · tài liệu bắt buộc</option><option>Nhân sự</option>
+          </select>
+        </div>
+        <div style="flex:1">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">CHƯƠNG TRÌNH</div>
+          <select style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;background:#fff;cursor:pointer;outline:none">
+            <option>GACP-WHO</option><option>GLOBALG.A.P.</option><option>Không gắn chương trình</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">TIÊU ĐỀ</div>
+      <input placeholder="VD: Xin phương án khắc phục nguồn nước Thửa A3" style="width:100%;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none">
+
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:#85938d;margin:16px 0 6px">MÔ TẢ CHI TIẾT</div>
+      <textarea placeholder="Nêu rõ tình huống, việc HTX đã làm và điều cần Sankit hỗ trợ." style="width:100%;min-height:96px;resize:vertical;border:1px solid #dbe3e0;border-radius:4px;padding:11px 13px;font-family:'Barlow';font-size:14px;color:#12211d;outline:none;line-height:1.5"></textarea>
+
+      <div style="margin-top:12px;border:1px dashed #dbe3e0;border-radius:4px;padding:14px;text-align:center;background:#fbfdfc">
+        <div style="font-family:'Barlow';font-weight:600;font-size:13px;color:#45534e">Đính kèm ảnh, kết quả xét nghiệm hoặc tệp liên quan</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#a3aeaa;margin-top:3px">JPG · PNG · PDF · tối đa 10MB mỗi tệp</div>
+      </div>
+
+      <div style="display:flex;gap:10px;margin-top:20px">
+        <button onClick="{{ closeSupport }}" style="background:#f2f6f4;border:1px solid #dbe3e0;border-radius:4px;font-family:'Barlow';font-weight:600;font-size:14px;color:#45534e;padding:12px 18px;cursor:pointer">Hủy</button>
+        <button onClick="{{ createSupport }}" style="flex:1;background:#128173;border:none;border-radius:4px;font-family:'Barlow';font-weight:700;font-size:14px;color:#fff;padding:12px;cursor:pointer" style-hover="{{ btnHover }}">Gửi yêu cầu tới Sankit</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;bottom:26px;left:50%;transform:translateX(-50%);background:#0f1f1b;color:#fff;border-radius:4px;padding:14px 22px;display:flex;align-items:center;gap:14px;box-shadow:0 12px 40px rgba(15,31,27,.35);animation:skPop .35s ease-out;z-index:50">
+    <div style="position:relative;width:34px;height:34px;background:#2f9e5b;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px">✓
+      <span style="position:absolute;top:-6px;right:-6px;color:#7fd6c6;font-size:14px;animation:skSpark .8s ease-out">✦</span>
+      <span style="position:absolute;bottom:-4px;left:-8px;color:#f2c98a;font-size:11px;animation:skSpark 1s ease-out .1s">✦</span>
+    </div>
+    <div>
+      <div style="font-family:'Plus Jakarta Sans';font-weight:600;font-size:17px">{{ toast.title }}</div>
+      <div style="font-size:12px;color:#a9bcb5">{{ toast.body }}</div>
+    </div>
+    <sc-if value="{{ toastPoints }}" hint-placeholder-val="{{ false }}"><span style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:22px;color:#7fd6c6">+{{ toast.points }}</span></sc-if>
+  </div>
+</sc-if>
+
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1360,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { signedIn: false, view: 'overview', programmeId: 'gacp', hero: 'grid', resolved: {}, cleared: 4, toast: null, resolving: null, method: 'task', note: '', processing: false, seasonOpen: false, season: 'Xuân–Hè 2026', newPlots: [], coopModal: false, docModal: false, catalogCat: 'pesticide', userMenu: false, catalogModal: false, supportModal: false, supFilter: 'all', supSel: '0148', supCat: 'cert', supPri: 'high', supReply: '', supExtra: {}, supStatus: {} };
+
+  meta(k) {
+    const M = {
+      complete:{l:'Đủ',b:'#e4f3ea',f:'#1f7a45'}, partial:{l:'Chưa đủ',b:'#f8eed6',f:'#9a6a06'},
+      missing:{l:'Thiếu',b:'#f8e3e0',f:'#a8342a'}, atrisk:{l:'Rủi ro',b:'#f8eed6',f:'#9a6a06'},
+      verified:{l:'Verified ✓',b:'#e4f3ea',f:'#1f7a45'}, unverified:{l:'Cần GPS',b:'#f8eed6',f:'#9a6a06'},
+      healthy:{l:'Ổn định',b:'#e4f3ea',f:'#1f7a45'}, behind:{l:'Chậm',b:'#f8e3e0',f:'#a8342a'},
+      ready:{l:'Gần đủ',b:'#e4f3ea',f:'#1f7a45'}, active:{l:'Hoạt động',b:'#e4f3ea',f:'#1f7a45'},
+      inactive:{l:'Ít hoạt động',b:'#e3eef5',f:'#2b6a8f'}, flagged:{l:'Cần lưu ý',b:'#f8e3e0',f:'#a8342a'},
+      overdue:{l:'Quá hạn',b:'#f8e3e0',f:'#a8342a'}, soon:{l:'Sắp tới',b:'#e3eef5',f:'#2b6a8f'},
+      neutral:{l:'',b:'#eef2f0',f:'#5a6a65'}
+    };
+    return M[k] || M.neutral;
+  }
+  pill(k, label) { const m = this.meta(k); return { style: `display:inline-block;margin-top:6px;white-space:nowrap;flex-shrink:0;background:${m.b};color:${m.f};font-size:11px;font-weight:700;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;padding:3px 8px;border-radius:4px`, label: label || m.l }; }
+  pillInline(k, label) { const m = this.meta(k); return { style: `display:inline-block;white-space:nowrap;flex-shrink:0;background:${m.b};color:${m.f};font-size:11px;font-weight:700;font-family:'IBM Plex Mono',monospace;padding:3px 8px;border-radius:4px`, label: label || m.l }; }
+
+  setView(id){ return () => this.setState({ view: id, resolving: null, staffModal: null, processing: false, seasonOpen: false }); }
+
+  _supCats(){ return {
+    cert:{ label:'Chứng nhận & kiểm định', person:'Đỗ M. Khánh', avi:'ĐK', role:'Chuyên viên chứng nhận · Vùng Tây Bắc', sla:'trong 4 giờ làm việc' },
+    agro:{ label:'Kỹ thuật canh tác', person:'Lê T. Bình', avi:'LB', role:'Chuyên viên nông học · Vùng Tây Bắc', sla:'trong 1 ngày làm việc' },
+    catalog:{ label:'Vật tư & danh mục', person:'Tổ danh mục vật tư', avi:'DM', role:'Ban danh mục · Trung tâm Sankit', sla:'trong 1 ngày làm việc' },
+    system:{ label:'Kỹ thuật hệ thống', person:'Bùi Q. Nam', avi:'BN', role:'Hỗ trợ kỹ thuật · Trung tâm Sankit', sla:'trong 2 giờ' },
+    other:{ label:'Việc khác', person:'Điều phối viên SK-OPS', avi:'ĐP', role:'Điều phối vùng Tây Bắc', sla:'trong 1 ngày làm việc' }
+  }; }
+
+  _supMeta(k){
+    const M = { pending:['Chờ tiếp nhận','#e3eef5','#2b6a8f'], routed:['Đã chuyển chuyên viên','#e3eef5','#2b6a8f'],
+      working:['Đang xử lý','#f8eed6','#9a6a06'], waiting:['Chờ bạn phản hồi','#f8e3e0','#a8342a'], done:['Đã xử lý','#e4f3ea','#1f7a45'] };
+    const v = M[k] || M.pending;
+    return { statusLabel:v[0], statusFg:v[2],
+      statusStyle:`display:inline-flex;align-items:center;white-space:nowrap;flex-shrink:0;background:${v[1]};color:${v[2]};font-size:12px;font-weight:600;font-family:'Barlow',sans-serif;letter-spacing:.01em;padding:3px 9px;border-radius:4px` };
+  }
+
+  _flash(t, b){ this.setState({ toast:{ title:t, body:b } }, () => { clearTimeout(this._t); this._t = setTimeout(()=>this.setState({toast:null}), 3400); }); }
+
+  _supSend(){
+    const txt = (this.state.supReply||'').trim(); if(!txt) return;
+    const id = this.state.supSel;
+    this.setState(s => ({
+      supExtra: { ...s.supExtra, [id]: [ ...(s.supExtra[id]||[]), { side:'coop', time:'Vừa xong', text:txt } ] },
+      supStatus: { ...s.supStatus, [id]:'working' }, supReply:''
+    }), () => this._flash('Đã gửi phản hồi ✓', 'Chuyên viên phụ trách nhận được thông báo ngay.'));
+  }
+
+  _supCreate(){
+    const c = this._supCats()[this.state.supCat];
+    this.setState({ supportModal:false }, () => this._flash('Đã gửi yêu cầu hỗ trợ ✓', 'Mã SK-2026-0152 · đang chuyển tới ' + c.person));
+  }
+
+  _support(){
+    const CATS = this._supCats(), st = this.state;
+    const PRI = { urgent:['Khẩn','#cf4436'], high:['Cao','#cf8a0d'], normal:['Bình thường','#3a7ca5'] };
+    const REQS = [
+      { id:'0148', cat:'cert', pri:'high', status:'waiting', updated:'2 giờ trước',
+        title:'Coliform trong nước tưới Thửa A3 vượt ngưỡng — xin phương án khắc phục',
+        link:'Thửa A3 · mục tiêu “Nguồn nước & xét nghiệm”', created:'21/07 09:12', routedAt:'21/07 10:40',
+        thread:[
+          { side:'coop', time:'21/07 09:12', text:'Kết quả xét nghiệm ngày 18/07 cho thấy Coliform 68 MPN/100ml, vượt ngưỡng GACP. HTX đã dừng tưới từ nguồn này. Xin hướng dẫn phương án khắc phục và cho biết có cần xét nghiệm lại trước kỳ kiểm định 10/08 không.' },
+          { side:'system', time:'21/07 10:40', text:'Điều phối viên SK-OPS đã chuyển yêu cầu tới Đỗ M. Khánh — Chuyên viên chứng nhận, vùng Tây Bắc.' },
+          { side:'sankit', time:'21/07 14:05', text:'Đã nhận. Phương án: (1) khử trùng bể chứa và đường ống, (2) xét nghiệm lại sau 7 ngày tại đơn vị được chỉ định, (3) lưu biên bản khắc phục vào hồ sơ GACP. Anh/chị gửi giúp tôi ảnh bể chứa hiện tại và tên đơn vị đã xét nghiệm lần trước.' }
+        ]},
+      { id:'0146', cat:'catalog', pri:'urgent', status:'working', updated:'Hôm qua',
+        title:'Thửa B1 đã phun thuốc ngoài danh mục — cần hướng dẫn xử lý và chất thay thế',
+        link:'Thửa B1 · vấn đề “Sản phẩm ngoài danh mục”', created:'20/07 16:30', routedAt:'20/07 16:52',
+        thread:[
+          { side:'coop', time:'20/07 16:30', text:'Nhân viên đã phun một chế phẩm không có trong danh mục cho luống đương quy Thửa B1. Bản ghi bị hệ thống chặn. HTX cần biết cách ghi nhận đúng và chất thay thế được phép dùng.' },
+          { side:'system', time:'20/07 16:52', text:'Yêu cầu được chuyển tới Tổ danh mục vật tư — Trung tâm Sankit.' },
+          { side:'sankit', time:'21/07 08:15', text:'Chế phẩm này chưa có trong danh mục GACP nên bản ghi phải giữ trạng thái vi phạm và ghi biên bản khắc phục. Chất thay thế đề xuất: Azadirachtin (dầu neem), cách ly 5 ngày. Anh/chị cho tôi ảnh nhãn sản phẩm đã dùng để đánh giá nguy cơ tồn dư.' },
+          { side:'coop', time:'21/07 11:02', text:'Đã gửi ảnh nhãn trong tệp đính kèm. Luống này dự kiến thu hoạch ngày 05/08, có ảnh hưởng không?' }
+        ]},
+      { id:'0143', cat:'system', pri:'normal', status:'routed', updated:'2 ngày trước',
+        title:'Nhân viên Hoàng không tải được ảnh nhật ký lên ứng dụng',
+        link:'Nhân sự · Trần V. Hoàng', created:'19/07 08:05', routedAt:'19/07 08:20',
+        thread:[
+          { side:'coop', time:'19/07 08:05', text:'Ứng dụng báo lỗi khi tải ảnh, nhân viên phải ghi tay rồi nhập lại buổi tối nên ảnh bị đánh dấu nghi vấn. Nhờ kiểm tra giúp.' },
+          { side:'system', time:'19/07 08:20', text:'Yêu cầu được chuyển tới Bùi Q. Nam — Hỗ trợ kỹ thuật, Trung tâm Sankit.' }
+        ]},
+      { id:'0139', cat:'cert', pri:'high', status:'pending', updated:'3 ngày trước',
+        title:'Nhờ rà soát hồ sơ đào tạo ATLĐ trước kỳ kiểm định 10/08',
+        link:'GACP-WHO · tài liệu bắt buộc', created:'18/07 15:40', routedAt:'',
+        thread:[
+          { side:'coop', time:'18/07 15:40', text:'HTX đã tổ chức tập huấn an toàn lao động tháng 6 nhưng chưa rõ biểu mẫu và ảnh hiện trường có đủ làm minh chứng hay không. Nhờ Sankit rà soát trước khi kiểm định.' }
+        ]},
+      { id:'0131', cat:'agro', pri:'normal', status:'done', updated:'10 ngày trước',
+        title:'Hướng dẫn ghi nhật ký thu hoạch cho tổ lao động thời vụ',
+        link:'Nhật ký đồng ruộng · tổ thời vụ', created:'12/07 09:00', routedAt:'12/07 09:35', closedAt:'15/07',
+        thread:[
+          { side:'coop', time:'12/07 09:00', text:'Tổ thời vụ 6 người mới vào, chưa biết ghi nhật ký thu hoạch. Nhờ hướng dẫn ngắn gọn để HTX in ra dán tại nhà sơ chế.' },
+          { side:'system', time:'12/07 09:35', text:'Yêu cầu được chuyển tới Lê T. Bình — Chuyên viên nông học, vùng Tây Bắc.' },
+          { side:'sankit', time:'12/07 14:20', text:'Tôi gửi kèm bản hướng dẫn một trang và mẫu phiếu thu hoạch. Lưu ý bắt buộc: mã lô, khối lượng, người thu và ảnh tại ruộng ngay sau khi thu.' },
+          { side:'coop', time:'15/07 08:10', text:'HTX đã in và dán tại nhà sơ chế. Cảm ơn anh, yêu cầu có thể đóng.' }
+        ]},
+      { id:'0127', cat:'system', pri:'normal', status:'done', updated:'14 ngày trước',
+        title:'Cập nhật lại ranh giới Thửa C2 sau khi đo lại bằng GPS',
+        link:'Thửa C2 · bản đồ thửa', created:'08/07 10:20', routedAt:'08/07 10:44', closedAt:'11/07',
+        thread:[
+          { side:'coop', time:'08/07 10:20', text:'Diện tích Thửa C2 trên hệ thống lệch khoảng 0,3 ha so với kết quả đo lại. Nhờ cập nhật ranh giới theo tệp toạ độ HTX gửi kèm.' },
+          { side:'system', time:'08/07 10:44', text:'Yêu cầu được chuyển tới Bùi Q. Nam — Hỗ trợ kỹ thuật, Trung tâm Sankit.' },
+          { side:'sankit', time:'11/07 09:30', text:'Đã cập nhật ranh giới và diện tích Thửa C2 theo toạ độ mới. Anh/chị kiểm tra lại trên bản đồ giúp tôi.' }
+        ]}
+    ].map(r => ({ ...r, status: st.supStatus[r.id] || r.status }));
+
+    const cOpen = REQS.filter(r => r.status !== 'done').length;
+    const cWait = REQS.filter(r => r.status === 'waiting').length;
+    const cDone = REQS.filter(r => r.status === 'done').length;
+    const supTabs = [['all','Tất cả '+REQS.length],['open','Đang mở '+cOpen],['waiting','Chờ bạn phản hồi '+cWait],['done','Đã xử lý '+cDone]].map(([k,l]) => {
+      const sel = st.supFilter === k;
+      return { label:l, onClick:()=>this.setState({supFilter:k}),
+        style:`font-family:'Barlow';font-size:13px;font-weight:600;padding:6px 13px;border-radius:4px;cursor:pointer;white-space:nowrap;border:1px solid ${sel?'#0f1f1b':'#dbe3e0'};background:${sel?'#0f1f1b':'#fff'};color:${sel?'#fff':'#45534e'}` };
+    });
+
+    const filtered = REQS.filter(r => st.supFilter === 'all' || (st.supFilter === 'open' ? r.status !== 'done' : r.status === st.supFilter));
+    const supList = filtered.map(r => {
+      const c = CATS[r.cat], sel = st.supSel === r.id, p = PRI[r.pri];
+      return { ...r, ...this._supMeta(r.status), code:'SK-2026-'+r.id, catLabel:c.label, assignee:r.status==='pending' ? 'Chưa phân công' : c.person,
+        priLabel:p[0], priColor:p[1], select:()=>this.setState({supSel:r.id}),
+        rowStyle:`display:flex;flex-direction:column;align-items:flex-start;width:100%;cursor:pointer;background:#fff;border:1px solid ${sel?'#128173':'#dbe3e0'};border-left:3px solid ${sel?'#128173':'#dbe3e0'};border-radius:4px;padding:13px 15px;font-family:'Barlow';text-align:left;box-shadow:${sel?'0 3px 12px rgba(18,129,115,.10)':'none'}` };
+    });
+
+    const cur = REQS.find(r => r.id === st.supSel) || REQS[0];
+    const cc = CATS[cur.cat], cp = PRI[cur.pri];
+    const routed = cur.status !== 'pending';
+    const supRoute = [
+      { step:'1 · HTX GỬI YÊU CẦU', who:'Nguyễn T. Hương', time:cur.created, dot:'#2f9e5b', fg:'#12211d' },
+      { step:'2 · ĐIỀU PHỐI SK-OPS', who: routed ? 'Đã chuyển đúng bộ phận' : 'Đang chờ tiếp nhận', time: routed ? cur.routedAt : 'chưa tiếp nhận', dot: routed ? '#2f9e5b' : '#c7d2ce', fg: routed ? '#12211d' : '#a3aeaa' },
+      { step:'3 · CHUYÊN VIÊN XỬ LÝ', who: routed ? cc.person : 'Chưa phân công', time: cur.status==='done' ? ('đóng ngày '+cur.closedAt) : routed ? cc.role.split(' · ')[0] : '—',
+        dot: cur.status==='done' ? '#2f9e5b' : routed ? '#cf8a0d' : '#c7d2ce', fg: routed ? '#12211d' : '#a3aeaa' }
+    ];
+    const WHO = {
+      coop:{ who:'Nguyễn T. Hương', tag:'HTX', avi:'NH', aviBg:'#e7f2ef', aviFg:'#0e6a5f', bub:'background:#f6f8f7;border:1px solid #e2eae7', tagBg:'#eef2f0', tagFg:'#5a6a65' },
+      sankit:{ who:cc.person, tag:'SANKIT', avi:cc.avi, aviBg:'#0f1f1b', aviFg:'#7fd6c6', bub:'background:#eaf4f1;border:1px solid #cfe6e0', tagBg:'#e7f2ef', tagFg:'#0e6a5f' },
+      system:{ who:'Điều phối SK-OPS', tag:'ĐIỀU PHỐI', avi:'⇄', aviBg:'#f2f6f4', aviFg:'#85938d', bub:'background:transparent;border:1px dashed #dbe3e0', tagBg:'#e3eef5', tagFg:'#2b6a8f' }
+    };
+    const supThread = [...cur.thread, ...(st.supExtra[cur.id]||[])].map(m => {
+      const w = WHO[m.side];
+      return { text:m.text, time:m.time, who:w.who, tag:w.tag, avi:w.avi,
+        aviStyle:`width:30px;height:30px;border-radius:50%;flex-shrink:0;background:${w.aviBg};color:${w.aviFg};display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:700;font-size:11px`,
+        tagStyle:`font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.08em;background:${w.tagBg};color:${w.tagFg};padding:2px 6px;border-radius:3px`,
+        bubbleStyle:`margin-top:5px;${w.bub};border-radius:4px;padding:11px 13px;font-size:13.5px;color:#2a3b36;line-height:1.55;text-wrap:pretty` };
+    });
+
+    const nc = CATS[st.supCat];
+    const supPris = [['urgent','Khẩn'],['high','Cao'],['normal','Bình thường']].map(([k,l]) => {
+      const sel = st.supPri === k;
+      return { label:l, onClick:()=>this.setState({supPri:k}),
+        style:`flex:1;font-family:'Barlow';font-size:13px;font-weight:600;padding:9px 0;border-radius:4px;cursor:pointer;border:1px solid ${sel?PRI[k][1]:'#dbe3e0'};background:${sel?'#fbf7ef':'#fff'};color:${sel?PRI[k][1]:'#85938d'}` };
+    });
+
+    return {
+      isSupport: st.view === 'support', supTabs, supList,
+      supCode:'SK-2026-'+cur.id, supTitleCur:cur.title, supLink:cur.link, supCatLabel:cc.label,
+      supPriLabel:cp[0], supPriColor:cp[1], supCreated:cur.created, supUpdated:cur.updated,
+      ...this._supMeta(cur.status), supRoute, supThread,
+      supOwnerName:routed ? cc.person : 'Chưa phân công', supOwnerRole:routed ? cc.role : 'Điều phối viên SK-OPS đang tiếp nhận', supOwnerAvi:routed ? cc.avi : '⋯',
+      supCanReply: cur.status !== 'done', supDone: cur.status === 'done',
+      supReply: st.supReply, supReplyChange:(e)=>this.setState({supReply:e.target.value}),
+      supSend:()=>this._supSend(),
+      supportModal: st.supportModal,
+      openSupport:()=>this.setState({ supportModal:true, view:'support' }),
+      closeSupport:()=>this.setState({ supportModal:false }),
+      createSupport:()=>this._supCreate(),
+      supCat: st.supCat, supCatChange:(e)=>this.setState({supCat:e.target.value}),
+      supPris, supRouteToName:nc.person, supRouteToRole:nc.role, supRouteToAvi:nc.avi, supRouteSla:nc.sla
+    };
+  }
+
+  confirmResolve(){
+    if (this.state.processing) return;
+    this.setState({ processing: true });
+    setTimeout(() => {
+      const r = this.state.resolving; if (!r) return;
+      this.setState(s => ({
+        resolved: { ...s.resolved, [r.id]: true }, cleared: s.cleared + 1,
+        resolving: null, processing: false, note: '',
+        toast: { title: 'Đã xử lý vấn đề ✓', body: r.title, points: 50 }
+      }), () => { clearTimeout(this._t); this._t = setTimeout(() => this.setState({ toast: null }), 3200); });
+    }, 950);
+  }
+
+  renderVals(){
+    const gp = 'moderate';
+    const cornerMarks = false;
+    const auditDays = 10;
+    const view = this.state.view;
+
+    const NAV = [
+      ['overview','Tổng quan','', ['M3 3h7v7H3z','M14 3h7v7h-7z','M14 14h7v7h-7z','M3 14h7v7H3z']],
+      ['readiness','Tiến độ chứng nhận','', ['M12 21a9 9 0 1 1 9-9','M8 12l3 3 6-7']],
+      ['issues','Vấn đề cần xử lý','7', ['M12 3l9 16H3z','M12 10v4','M12 17h.01']],
+      ['registry','Thửa & Cây trồng','', ['M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z','M9 4v14','M15 6v14']],
+      ['catalog','Danh mục vật tư','', ['M3 7l9-4 9 4-9 4-9-4z','M3 7v10l9 4 9-4V7','M12 11v10']],
+      ['team','Nhân sự','', ['M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2','M10 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6','M21 21v-2a4 4 0 0 0-3-3.9']],
+      ['roles','Vai trò & Phân quyền','', ['M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z']],
+      ['tasks','Công việc','', ['M9 4h6v3H9z','M9 5H6v15h12V5h-3','M9 13l1.8 1.8L15 9']],
+      ['records','Nhật ký đồng ruộng','', ['M4 8h3l2-2h6l2 2h3v11H4z','M12 11a3 3 0 1 0 0 6 3 3 0 0 0 0-6']],
+      ['documents','Tài liệu','2', ['M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z','M14 3v5h5']],
+      ['support','Yêu cầu hỗ trợ','1', ['M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z','M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4','M12 15.5h.01']],
+      ['audit','Hồ sơ kiểm định','', ['M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z','M14 3v5h5','M9 15l1.8 1.8L15 13']],
+      ['programmes','Chương trình','', ['M12 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10z','M8.5 12.5L7 21l5-3 5 3-1.5-8.5']],
+      ['notifications','Thông báo','5', ['M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9','M13.5 21a1.7 1.7 0 0 1-3 0']]
+    ];
+    const navItems = NAV.map(([id,label,badge,paths]) => {
+      const active = view === id;
+      return {
+        id, label, onClick: this.setView(id),
+        badge: badge || null,
+        icon: this._icon(paths, active ? '#eafffa' : '#8fa9a1'),
+        iconWrap: `width:18px;height:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0`,
+        style: `display:flex;align-items:center;gap:11px;width:100%;border:none;cursor:pointer;font-family:'Barlow';font-size:14.5px;font-weight:${active?600:500};padding:10px 12px;border-radius:4px;background:${active?'#16302a':'transparent'};color:${active?'#eafffa':'#98b3ab'}`,
+        badgeStyle: `display:inline-flex;align-items:center;justify-content:center;background:${id==='issues'?'#cf4436':'#234a42'};color:#fff;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;border-radius:3px;min-width:17px;height:16px;padding:0 4px;box-sizing:border-box;flex-shrink:0`
+      };
+    });
+
+    const TITLES = {
+      overview:['Tổng quan','Tình hình hợp tác xã hôm nay'],
+      readiness:['Tiến độ chứng nhận','Mức đáp ứng yêu cầu chứng nhận theo từng mục tiêu'],
+      issues:['Vấn đề cần xử lý','Những việc cần khắc phục trước kỳ kiểm định'],
+      registry:['Thửa & Cây trồng','Danh sách thửa, cây trồng và lô sản xuất'],
+      catalog:['Danh mục vật tư','Thuốc BVTV, phân bón và giống — dùng chung và riêng của HTX'],
+      team:['Nhân sự','Quản lý nhân sự và theo dõi mức độ hoạt động'],
+      roles:['Vai trò & Phân quyền','Chức danh, vai trò và quyền hạn trong hợp tác xã'],
+      seasons:['Vụ mùa','Lịch vụ mùa của hợp tác xã — dữ liệu được lọc theo vụ đang chọn'],
+      tasks:['Công việc & Định kỳ','Giao việc và lịch thu thập định kỳ'],
+      records:['Nhật ký đồng ruộng','Kiểm tra và rà soát tính xác thực của từng bản ghi'],
+      documents:['Tài liệu','Giấy tờ, chứng nhận và ngày gia hạn'],
+      support:['Yêu cầu hỗ trợ','Gửi yêu cầu tới Sankit và theo dõi người đang xử lý'],
+      audit:['Hồ sơ kiểm định','Tổng hợp minh chứng để cung cấp cho kiểm định viên'],
+      programmes:['Chương trình','Các chương trình chứng nhận và thời hạn gia hạn'],
+      notifications:['Thông báo','Cập nhật hạn chót và hoạt động gần đây']
+    };
+
+    const programmes = [
+      { id:'gacp', name:'GACP-WHO', version:'v2 · 14 mục tiêu', pct:64, ringColor:'#cf8a0d', ...this._ring(64),
+        goalsDone:9, goalsTotal:14, openGaps:5, openColor:'#cf4436', ...this._pp('atrisk','Chưa sẵn sàng'),
+        milestones:[25,50,75], summary:'5 mục tiêu còn thiếu · kiểm định trong '+auditDays+' ngày',
+        certStatus:'Đang chuẩn bị', renewal:'Kiểm định 10/08/2026', renewColor:'#cf4436' },
+      { id:'globalgap', name:'GLOBALG.A.P.', version:'v6 · 11 mục tiêu', pct:91, ringColor:'#2f9e5b', ...this._ring(91),
+        goalsDone:10, goalsTotal:11, openGaps:1, openColor:'#cf8a0d', ...this._pp('ready','Sắp sẵn sàng'),
+        milestones:[25,50,75], summary:'1 mục tiêu một phần · gần sẵn sàng',
+        certStatus:'Còn hiệu lực', renewal:'Gia hạn 03/2027', renewColor:'#1f7a45' }
+    ];
+
+    const heroTabs = [['grid','Tổng hợp'],['meter','Theo tiến độ'],['action','Theo công việc']].map(([k,l])=>({
+      label:l, onClick:()=>this.setState({hero:k}),
+      style:`font-family:'Barlow';font-size:13px;font-weight:600;padding:6px 13px;border-radius:4px;cursor:pointer;white-space:nowrap;border:1px solid ${this.state.hero===k?'#0f1f1b':'#dbe3e0'};background:${this.state.hero===k?'#0f1f1b':'#fff'};color:${this.state.hero===k?'#fff':'#45534e'}`
+    }));
+
+    const programmeTabs = programmes.map(p=>({
+      label:p.name, onClick:()=>this.setState({programmeId:p.id}),
+      style:`font-family:'Plus Jakarta Sans';font-weight:600;font-size:16px;padding:7px 16px;border-radius:4px;cursor:pointer;white-space:nowrap;border:1px solid ${this.state.programmeId===p.id?'#128173':'#dbe3e0'};background:${this.state.programmeId===p.id?'#e7f2ef':'#fff'};color:${this.state.programmeId===p.id?'#0e6a5f':'#45534e'}`
+    }));
+
+    const actionItems = [
+      { title:'Xét nghiệm nước — Thửa A3', meta:'GACP · Nguồn nước & xét nghiệm', accent:'#cf4436', due:'2 ngày', ...this._pp2('overdue','2 ngày') },
+      { title:'Hồ sơ đào tạo ATLĐ 2026', meta:'GACP · Tài liệu bắt buộc còn thiếu', accent:'#cf4436', due:'Thiếu', ...this._pp2('missing','Thiếu') },
+      { title:'Sản phẩm ngoài danh mục — Thửa B1', meta:'GACP · Bị hệ thống tự động chặn', accent:'#cf4436', due:'Khẩn', ...this._pp2('missing','Khẩn') },
+      { title:'Kiểm tra sâu bệnh — Thửa C2', meta:'Định kỳ quá hạn 4 ngày', accent:'#cf8a0d', due:'Trễ 4d', ...this._pp2('overdue','Trễ 4d') }
+    ];
+
+    const topIssues = [
+      { title:'Sản phẩm ngoài danh mục · Thửa B1', meta:'GACP · quy định thuốc BVTV', cat:'gate' },
+      { title:'Thiếu xét nghiệm nước · Thửa A3', meta:'GACP · nguồn nước', cat:'evidence' },
+      { title:'Ảnh trùng lặp nghi vấn · NV Hoàng', meta:'Tính xác thực · Thửa C2', cat:'integrity' },
+      { title:'Dữ liệu tham chiếu đã cũ', meta:'Danh mục BVTV v2024.2', cat:'stale' }
+    ].map(i=>{ const m=this._cat(i.cat); return { ...i, dot:m.f, kind:m.l, pillStyle:this._catPill(i.cat) }; });
+
+    const teamMini = [
+      { ini:'LA', name:'Nguyễn T. Lan', streak:12, ...this._pp2('active','Tốt') },
+      { ini:'HO', name:'Trần V. Hoàng', streak:3, ...this._pp2('flagged','Cần lưu ý') },
+      { ini:'TU', name:'Phạm V. Tú', streak:0, ...this._pp2('inactive','Ít hoạt động') }
+    ];
+
+    const deadlines = [
+      { day:'24', mon:'Thg 7', color:'#cf4436', title:'Lấy mẫu nước Thửa A3', who:'NV Lan', tag:['overdue','Trễ 2 ngày'] },
+      { day:'26', mon:'Thg 7', color:'#cf8a0d', title:'Kiểm tra sâu bệnh (định kỳ)', scope:'tất cả các thửa', tag:['soon','Định kỳ'] },
+      { day:'28', mon:'Thg 7', color:'#3a7ca5', title:'Cập nhật hồ sơ đào tạo', doc:'tài liệu GACP', tag:['soon','Tài liệu'] },
+      { day:'02', mon:'Thg 8', color:'#3a7ca5', title:'Rà soát trước kiểm định', scope:'toàn hợp tác xã', tag:['soon','Cột mốc'] }
+    ].map(d => ({ ...d,
+      meta: d.who ? `Do ${d.who} phụ trách` : d.scope ? `Áp dụng cho ${d.scope}` : d.doc ? `Thuộc ${d.doc}` : '',
+      ...this._pp2(d.tag[0], d.tag[1]) }));
+
+    const GOALS = {
+      gacp:[
+        { id:'g1', title:'Nguồn nước & xét nghiệm', status:'partial', pct:60, evidence:8, outstanding:['Chưa có kết quả xét nghiệm nước cho Thửa A3','Thiếu ảnh nguồn nước Thửa B1'] },
+        { id:'g2', title:'Nhật ký phun thuốc BVTV', status:'complete', pct:100, evidence:34, outstanding:[] },
+        { id:'g3', title:'Truy xuất giống & nguồn gốc', status:'atrisk', pct:45, evidence:5, outstanding:['Chứng nhận giống Đương quy sắp hết hạn','2 lô chưa gắn nguồn giống'] },
+        { id:'g4', title:'Đào tạo an toàn lao động', status:'missing', pct:0, evidence:0, outstanding:['Chưa tải hồ sơ đào tạo ATLĐ 2026'] },
+        { id:'g5', title:'Bón phân & thời gian cách ly', status:'partial', pct:72, evidence:19, outstanding:['3 lần bón chưa có ảnh cận cảnh'] },
+        { id:'g6', title:'Thu hoạch & sơ chế', status:'missing', pct:15, evidence:2, outstanding:['Chưa có bản ghi sơ chế cho vụ này'] },
+        { id:'g7', title:'Ranh giới & mã thửa ổn định', status:'complete', pct:100, evidence:6, outstanding:[] },
+        { id:'g8', title:'Quản lý dịch hại tổng hợp', status:'complete', pct:100, evidence:22, outstanding:[] }
+      ],
+      globalgap:[
+        { id:'gg1', title:'Truy xuất & ghi chép', status:'complete', pct:100, evidence:41, outstanding:[] },
+        { id:'gg2', title:'An toàn thực phẩm', status:'complete', pct:100, evidence:28, outstanding:[] },
+        { id:'gg3', title:'Sức khoẻ người lao động', status:'partial', pct:80, evidence:12, outstanding:['1 nhân sự thiếu ký cam kết'] },
+        { id:'gg4', title:'Quản lý môi trường', status:'complete', pct:100, evidence:17, outstanding:[] }
+      ]
+    };
+    const goals = (GOALS[this.state.programmeId]||GOALS.gacp).map(g=>({
+      ...g, accent: g.status==='complete'?'#2f9e5b':g.status==='partial'?'#cf8a0d':g.status==='atrisk'?'#cf8a0d':'#cf4436',
+      ...this._pp('','') , statusLabel:this.meta(g.status).l, pillStyle:this._pp(g.status,null).pillStyle,
+      hasOutstanding: g.outstanding.length>0, assign: this.setView('tasks')
+    }));
+
+    const ISS = [
+      { id:'i1', cat:'gate', title:'Sản phẩm ngoài danh mục — Thửa B1', meta:'GACP · quy định thuốc BVTV · NV Hoàng · 21/07', quote:'Chỉ được dùng thuốc trong danh mục đã duyệt của chương trình.', due:'Khẩn cấp', dueColor:'#cf4436' },
+      { id:'i2', cat:'evidence', title:'Thiếu xét nghiệm nước — Thửa A3', meta:'GACP · mục tiêu Nguồn nước & xét nghiệm', quote:'', due:'Còn 2 ngày', dueColor:'#cf4436' },
+      { id:'i3', cat:'integrity', title:'Ảnh trùng lặp nghi vấn — 3 bản ghi của NV Hoàng', meta:'Cần rà soát thủ công · Thửa C2', quote:'', due:'Cần rà soát', dueColor:'#cf8a0d' },
+      { id:'i4', cat:'stale', title:'Dữ liệu tham chiếu đã cũ — Danh mục BVTV v2024.2', meta:'Đã có phiên bản mới hơn (v2025.1)', quote:'', due:'Nên sớm', dueColor:'#cf8a0d' },
+      { id:'i5', cat:'overdue', title:'Định kỳ quá hạn — Kiểm tra sâu bệnh Thửa C2', meta:'Trễ 4 ngày · NV Tú', quote:'', due:'Trễ 4 ngày', dueColor:'#cf8a0d' },
+      { id:'i6', cat:'document', title:'Thiếu hồ sơ đào tạo ATLĐ 2026', meta:'GACP · bắt buộc cho kiểm định', quote:'', due:'Bắt buộc', dueColor:'#cf4436' }
+    ];
+    const issues = ISS.map(i=>{
+      const resolved = !!this.state.resolved[i.id];
+      const cm = this._cat(i.cat);
+      return { ...i, sev: cm.l, resolved, notResolved: !resolved,
+        rowStyle:`display:flex;align-items:flex-start;gap:16px;padding:14px 18px;border-bottom:1px solid #f2f6f4;${resolved?'opacity:.55;background:#fafcfb':''}`,
+        sevStyle: this._catPill(i.cat),
+        sevStyleFull: this._catPill(i.cat) + ';display:block;width:100%;text-align:center;box-sizing:border-box',
+        resolve: () => this.setState({ resolving: { id:i.id, title:i.title, meta:i.meta, cat:i.cat, sev:cm.l }, method:'task', note:'' }) };
+    });
+    const openCount = ISS.length - Object.keys(this.state.resolved).length;
+
+    const records = [
+      { type:'Phun thuốc', plot:'Thửa A1', crop:'Atisô', worker:'NV. Lan', ini:'LA', time:'08:12', ...this._seal('verified') },
+      { type:'Kiểm tra sâu bệnh', plot:'Thửa C2', crop:'Đương quy', worker:'NV. Hoàng', ini:'HO', time:'09:03', ...this._seal('verified'), flagged:true },
+      { type:'Thu hoạch 42kg', plot:'Thửa A2', crop:'Atisô', worker:'NV. Minh', ini:'MI', time:'10:41', ...this._seal('verified') },
+      { type:'Tưới nước', plot:'Thửa B3', crop:'Giảo cổ lam', worker:'NV. Tú', ini:'TU', time:'11:20', ...this._seal('unverified') },
+      { type:'Bón phân', plot:'Thửa A1', crop:'Atisô', worker:'NV. Lan', ini:'LA', time:'13:05', ...this._seal('verified') },
+      { type:'Kiểm tra sâu bệnh', plot:'Thửa B1', crop:'Đương quy', worker:'NV. Hoàng', ini:'HO', time:'14:18', ...this._seal('verified'), flagged:true },
+      { type:'Phun thuốc', plot:'Thửa A3', crop:'Atisô', worker:'NV. Minh', ini:'MI', time:'15:32', ...this._seal('verified') },
+      { type:'Thu hoạch 28kg', plot:'Thửa C2', crop:'Giảo cổ lam', worker:'NV. Lan', ini:'LA', time:'16:47', ...this._seal('verified') }
+    ].map((r, i) => { const u = `https://picsum.photos/seed/skhub-${i}/480/320`; return { ...r, img: u,
+      thumbStyle: `position:relative;height:130px;overflow:hidden;background-image:url('${u}');background-size:cover;background-position:center;background-color:#eef2f0` }; });
+
+    const documents = [
+      { name:'Hợp đồng bao tiêu', goal:'Cam kết đầu ra', programme:'GACP', expiry:'12/2027', status:'complete', action:'Xem' },
+      { name:'Chứng nhận giống Atisô', goal:'Truy xuất giống', programme:'GACP', expiry:'08/2027', status:'complete', action:'Xem' },
+      { name:'Hồ sơ đào tạo ATLĐ 2026', goal:'Đào tạo ATLĐ', programme:'GACP', expiry:'—', status:'missing', action:'Tải lên' },
+      { name:'Kết quả xét nghiệm đất', goal:'Chất lượng đất', programme:'GACP', expiry:'còn 30 ngày', expSoon:true, status:'atrisk', action:'Gia hạn' },
+      { name:'Giấy phép sử dụng đất', goal:'Quyền sử dụng đất', programme:'GlobalGAP', expiry:'05/2029', status:'complete', action:'Xem' }
+    ].map(d=>({ ...d,
+      expColor: d.status==='missing'?'#cf4436':d.expSoon?'#cf8a0d':'#45534e',
+      pillStyle:this._pp2(d.status, d.status==='complete'?'Đã có':d.status==='missing'?'Thiếu':'Sắp hết hạn').pillStyle,
+      status: d.status==='complete'?'Đã có':d.status==='missing'?'Thiếu':'Sắp hết hạn',
+      btnStyle: d.action==='Xem'?`background:#f2f6f4;border:1px solid #dbe3e0;color:#0e6a5f;font-weight:600;font-size:12px;padding:6px 12px;border-radius:4px;cursor:pointer`:`background:#128173;border:none;color:#fff;font-weight:600;font-size:12px;padding:6px 12px;border-radius:4px;cursor:pointer`
+    }));
+
+    const AUDIT = {
+      gacp: { pct:64, evidence:142, done:9, total:14, missing:5, docs:'4 / 5', rows:[
+        ['Nguồn nước & xét nghiệm','1/2 thửa có xét nghiệm','8','partial'],
+        ['Nhật ký phun thuốc BVTV','Đầy đủ theo vụ','34','complete'],
+        ['Truy xuất giống & nguồn gốc','2 lô chưa gắn nguồn','5','atrisk'],
+        ['Đào tạo an toàn lao động','Chưa có tài liệu','0','missing'],
+        ['Bón phân & cách ly','Thiếu vài ảnh cận cảnh','19','partial'],
+        ['Thu hoạch & sơ chế','Chưa có bản ghi sơ chế','2','missing'],
+        ['Ranh giới & mã thửa','Ổn định qua các vụ','6','complete']
+      ]},
+      globalgap: { pct:91, evidence:126, done:10, total:11, missing:1, docs:'3 / 3', rows:[
+        ['Truy xuất & ghi chép','Đầy đủ theo lô','41','complete'],
+        ['An toàn thực phẩm','Đạt yêu cầu','28','complete'],
+        ['Sức khoẻ người lao động','1 nhân sự thiếu ký cam kết','12','partial'],
+        ['Quản lý môi trường','Đầy đủ','17','complete'],
+        ['Quản lý chất thải','Đầy đủ','9','complete'],
+        ['Vệ sinh & sơ chế','Đầy đủ','19','complete']
+      ]}
+    };
+    const audit = AUDIT[this.state.programmeId] || AUDIT.gacp;
+    const selProg = programmes.find(p => p.id === this.state.programmeId) || programmes[0];
+    const auditRows = audit.rows.map(([goal,detail,count,status])=>({
+      goal, detail, count, status:this.meta(status).l, pillStyle:this._pp2(status,null).pillStyle,
+      dotColor: this.meta(status).f
+    }));
+
+    const plots = [
+      { id:'A1', crop:'Atisô', area:'0,8 ha', batch:'Lô AT-26A', ...this._pp2('active','Bình thường') },
+      { id:'A2', crop:'Atisô', area:'0,6 ha', batch:'Lô AT-26B', ...this._pp2('active','Bình thường') },
+      { id:'A3', crop:'Atisô', area:'0,5 ha', batch:'Lô AT-26C', ...this._pp2('flagged','Thiếu ranh giới') },
+      { id:'B1', crop:'Đương quy', area:'1,1 ha', batch:'Lô ĐQ-26', ...this._pp2('flagged','Bị chặn') },
+      { id:'B3', crop:'Giảo cổ lam', area:'0,7 ha', batch:'Lô GC-26', ...this._pp2('active','Bình thường') },
+      { id:'C2', crop:'Giảo cổ lam', area:'0,9 ha', batch:'Lô GC-27', ...this._pp2('inactive','Trễ định kỳ') }
+    ];
+    const plotChips = plots.map(p => { const sel = this.state.newPlots.includes(p.id); return {
+      id: p.id, sel,
+      onClick: () => this.setState(st => ({ newPlots: sel ? st.newPlots.filter(x => x !== p.id) : [...st.newPlots, p.id] })),
+      style: `border:1px solid ${sel?'#128173':'#dbe3e0'};background:${sel?'#e7f2ef':'#fff'};color:${sel?'#0e6a5f':'#45534e'};border-radius:4px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;padding:7px 12px;cursor:pointer` }; });
+
+    const staff = [
+      { ini:'LA', name:'Nguyễn T. Lan', role:'Tổ trưởng đồng ruộng', streak:12, rate:96, logs:42, plots:'A1, A2, A3', ...this._pp2('active','Hoạt động') },
+      { ini:'MI', name:'Lê T. Minh', role:'Nhân viên đồng ruộng', streak:8, rate:88, logs:31, plots:'A2, C2', ...this._pp2('active','Hoạt động') },
+      { ini:'HO', name:'Trần V. Hoàng', role:'Nhân viên đồng ruộng', streak:3, rate:78, logs:24, plots:'B1, C2', ...this._pp2('flagged','Cần lưu ý') },
+      { ini:'TU', name:'Phạm V. Tú', role:'Nhân viên thời vụ', streak:0, rate:41, logs:9, plots:'B3', ...this._pp2('inactive','Ít hoạt động') },
+      { ini:'HA', name:'Vũ T. Hà', role:'Nhân viên đồng ruộng', streak:6, rate:82, logs:22, plots:'A1, B3', ...this._pp2('active','Hoạt động') },
+      { ini:'SO', name:'Giàng A Sơn', role:'Nhân viên thời vụ', streak:2, rate:55, logs:11, plots:'C2', ...this._pp2('inactive','Ít hoạt động') }
+    ].map(s => ({ ...s, open: () => this.setState({ staffModal: s }) }));
+
+    const routines = [
+      { title:'Kiểm tra sâu bệnh', cadence:'HÀNG TUẦN', scope:'Tất cả thửa', assignee:'Tổ đồng ruộng', pct:68, color:'#cf8a0d' },
+      { title:'Ghi nhật ký tưới', cadence:'HÀNG NGÀY', scope:'Thửa A, B', assignee:'NV Lan, Tú', pct:84, color:'#2f9e5b' },
+      { title:'Rà soát bón phân', cadence:'2 TUẦN/LẦN', scope:'Tất cả thửa', assignee:'NV Minh', pct:92, color:'#2f9e5b' }
+    ];
+    const taskChip = `background:#eef2f0;color:#5a6a65;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;white-space:nowrap`;
+    const tasks = [
+      { type:'Xét nghiệm nước', ini:'LA', title:'Lấy mẫu nước Thửa A3', assignee:'NV Lan', plot:'A3', crop:'Atisô', ...this._pp2('overdue','2 ngày') },
+      { type:'Thu hoạch', ini:'MI', title:'Chụp ảnh sơ chế lô AT-26A', assignee:'NV Minh', plot:'A1', crop:'Atisô', ...this._pp2('soon','5 ngày') },
+      { type:'Bón phân', ini:'HO', title:'Bổ sung ảnh bón phân', assignee:'NV Hoàng', plot:'B1', crop:'Đương quy', ...this._pp2('soon','tuần này') },
+      { type:'Sổ đăng ký', ini:'HA', title:'Cập nhật ranh giới A3', assignee:'NV Hà', plot:'A3', crop:'Atisô', ...this._pp2('overdue','trễ') }
+    ].map(t => ({ ...t, chipStyle: taskChip }));
+
+    const notifications = [
+      { icon:'⏰', accent:'#cf4436', title:'Công việc quá hạn', body:'Lấy mẫu nước Thửa A3 đã trễ 2 ngày — giao cho NV Lan.', time:'1 giờ trước' },
+      { icon:'🛑', accent:'#cf4436', title:'Thao tác bị chặn tự động', body:'NV Hoàng thử dùng thuốc ngoài danh mục tại Thửa B1.', time:'3 giờ trước' },
+      { icon:'🔄', accent:'#3a7ca5', title:'Cập nhật danh mục tham chiếu', body:'Danh mục thuốc BVTV đã có bản cập nhật v2025.1.', time:'hôm qua' },
+      { icon:'✅', accent:'#2f9e5b', title:'Đã xử lý vấn đề', body:'Đã bổ sung bằng chứng bón phân còn thiếu ở Thửa A2.', time:'hôm qua' },
+      { icon:'🔥', accent:'#cf8a0d', title:'Chuỗi hoạt động', body:'NV Lan đã có 12 ngày liên tiếp gửi bản ghi Verified.', time:'2 ngày trước' },
+      { icon:'📄', accent:'#cf8a0d', title:'Tài liệu sắp hết hạn', body:'Kết quả xét nghiệm đất còn hiệu lực 30 ngày.', time:'3 ngày trước' }
+    ].map(n=>({ ...n, tint:{'#cf4436':'#f8e3e0','#3a7ca5':'#e3eef5','#2f9e5b':'#e4f3ea','#cf8a0d':'#f8eed6'}[n.accent] }));
+
+    const methods = [
+      { key:'task', title:'Giao việc bổ sung', desc:'Giao cho nhân sự thu thập bằng chứng còn thiếu.' },
+      { key:'evidence', title:'Đính kèm bằng chứng', desc:'Gắn bản ghi/ảnh đã có để đáp ứng mục tiêu.' },
+      { key:'override', title:'Biện minh & bỏ qua', desc:'Ghi lý do chính đáng để đóng vấn đề (có lưu vết).' }
+    ].map(m => { const sel = this.state.method === m.key; return { ...m, sel,
+      onClick: () => this.setState({ method: m.key }),
+      style: `display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;cursor:pointer;padding:13px;border-radius:4px;border:1.5px solid ${sel?'#128173':'#dbe3e0'};background:${sel?'#e7f2ef':'#fff'}`,
+      radioStyle: `width:16px;height:16px;border-radius:50%;flex-shrink:0;margin-top:2px;box-sizing:border-box;background:#fff;border:${sel?'5px solid #128173':'2px solid #c7d2ce'}` }; });
+
+    const sm = this.state.staffModal;
+    const smEdit = (sm && sm !== 'new') ? sm : null;
+
+    const roles = [
+      { name:'Quản lý HTX', title:'Người điều hành', members:2, color:'#128173', perms:['Toàn bộ chức năng','Phân quyền nhân sự'] },
+      { name:'Tổ trưởng đồng ruộng', title:'Phụ trách tổ sản xuất', members:3, color:'#3a7ca5', perms:['Giao & theo dõi công việc','Quản lý thửa & cây trồng','Xem toàn bộ bản ghi'] },
+      { name:'Nhân viên đồng ruộng', title:'Người thu thập bằng chứng', members:7, color:'#2f9e5b', perms:['Xem việc được giao','Gửi bản ghi hiện trường'] },
+      { name:'Nhân viên thời vụ', title:'Cộng tác theo mùa vụ', members:2, color:'#cf8a0d', perms:['Xem việc được giao'] },
+      { name:'Kế toán / Hành chính', title:'Hỗ trợ hồ sơ, giấy tờ', members:1, color:'#5f6f6a', perms:['Quản lý tài liệu','Xuất hồ sơ kiểm định'] }
+    ].map(r => ({ ...r, memberLabel: `${r.members} người` }));
+
+    const seasonRows = [
+      ['Xuân–Hè 2026','01/03 – 31/08/2026','Atisô, Đương quy','active','Đang diễn ra'],
+      ['Thu–Đông 2025','01/09/2025 – 28/02/2026','Giảo cổ lam, Atisô','neutral','Đã đóng'],
+      ['Xuân–Hè 2025','01/03 – 31/08/2025','Atisô, Đương quy','neutral','Đã đóng'],
+      ['Thu–Đông 2026 (dự kiến)','01/09/2026 – (chưa chốt)','Chưa gán cây trồng','soon','Sắp tới']
+    ].map(([name,range,crops,k,l]) => { const isCurrent = name === this.state.season; return {
+      name, range, crops, ...this._pp2(k,l), isCurrent, notCurrent: !isCurrent,
+      setCurrent: () => this.setState({ season: name }) }; });
+
+    const catalogTabs = [['pesticide','Thuốc BVTV'],['fertilizer','Phân bón'],['seed','Giống cây']].map(([k,l]) => ({
+      label: l, onClick: () => this.setState({ catalogCat: k }),
+      style: `font-family:'Barlow';font-size:13px;font-weight:600;padding:7px 14px;border-radius:4px;cursor:pointer;white-space:nowrap;border:1px solid ${this.state.catalogCat===k?'#0f1f1b':'#dbe3e0'};background:${this.state.catalogCat===k?'#0f1f1b':'#fff'};color:${this.state.catalogCat===k?'#fff':'#45534e'}` }));
+    const CATALOG = {
+      pesticide: [
+        { name:'Abamectin 1.8EC', detail:'Trừ sâu · thời gian cách ly 7 ngày', shared:true },
+        { name:'Emamectin benzoate 5WG', detail:'Trừ sâu sinh học · cách ly 5 ngày', shared:true },
+        { name:'Azadirachtin (dầu neem)', detail:'Sinh học · an toàn cho dược liệu', shared:true },
+        { name:'Chế phẩm tỏi – ớt – gừng', detail:'HTX tự sản xuất · xua côn trùng', shared:false }
+      ],
+      fertilizer: [
+        { name:'NPK 16-16-8', detail:'Bón thúc · nhà cung cấp Bình Điền', shared:true },
+        { name:'Hữu cơ vi sinh Sông Gianh', detail:'Bón lót · cải tạo đất', shared:true },
+        { name:'Phân chuồng ủ hoai', detail:'HTX tự ủ từ phụ phẩm chăn nuôi', shared:false }
+      ],
+      seed: [
+        { name:'Atisô Đà Lạt', detail:'Giống · nguồn gốc rõ ràng', shared:true },
+        { name:'Đương quy Nhật (Angelica acutiloba)', detail:'Giống nhập · có chứng nhận', shared:true },
+        { name:'Giảo cổ lam bản địa', detail:'HTX tự nhân giống · lưu vườn đầu dòng', shared:false }
+      ]
+    };
+    const catalogItems = (CATALOG[this.state.catalogCat] || []).map(it => ({ ...it,
+      badge: it.shared ? 'Sankit' : 'Của HTX',
+      badgeStyle: `display:inline-block;font-size:11px;font-weight:700;font-family:'IBM Plex Mono',monospace;padding:3px 8px;border-radius:4px;${it.shared?'background:#e3eef5;color:#2b6a8f;border:1px solid #c3dbeb':'background:#e7f2ef;color:#0e6a5f;border:1px solid #cfe6e0'}` }));
+
+    const seasons = ['Xuân–Hè 2026', 'Thu–Đông 2025', 'Xuân–Hè 2025'].map(s => { const sel = s === this.state.season; return {
+      label: s, check: sel, onClick: () => this.setState({ season: s, seasonOpen: false }),
+      style: `display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;border:none;background:${sel?'#e7f2ef':'transparent'};color:#12211d;font-family:'Barlow';font-size:13px;font-weight:${sel?600:500};padding:9px 10px;border-radius:4px;cursor:pointer` }; });
+
+    return {
+      showLogin: !this.state.signedIn, showApp: this.state.signedIn,
+      resolving: this.state.resolving,
+      resolvingSevStyle: this.state.resolving ? this._catPill(this.state.resolving.cat) : '',
+      methods, showNote: this.state.method === 'override', note: this.state.note,
+      setNote: (e) => this.setState({ note: e.target.value }),
+      closeResolve: () => this.setState({ resolving: null, processing: false }),
+      confirmResolve: () => this.confirmResolve(),
+      confirmLabel: this.state.processing ? 'Đang xử lý…' : 'Xác nhận xử lý',
+      confirmStyle: `flex:1;border:none;border-radius:4px;font-family:'Barlow';font-weight:700;font-size:14px;padding:12px;cursor:${this.state.processing?'default':'pointer'};background:${this.state.processing?'#6fb3a8':'#128173'};color:#fff`,
+      stop: (e) => e.stopPropagation(),
+      showStaffModal: !!sm, staffModalNew: sm === 'new', staffModalEdit: smEdit,
+      staffPlots: smEdit ? smEdit.plots.split(',').map(t => t.trim()) : [],
+      closeStaff: () => this.setState({ staffModal: null }),
+      openNewStaff: () => this.setState({ staffModal: 'new', newPlots: [] }),
+      plotChips,
+      saveStaff: () => this.setState({ staffModal: null }),
+      createStaff: () => this.setState({ staffModal: null }),
+      cardHover: { borderColor: '#128173', boxShadow: '0 3px 12px rgba(18,129,115,.10)' },
+      marqueeRef: (el) => { if(!el || el.__w) return; el.__w = true; const track = el.querySelector('.sk-track'); if(!track) return;
+        el.addEventListener('mouseenter', () => { track.style.transition='none'; track.style.transform=''; track.style.animation=''; });
+        el.addEventListener('mouseleave', () => { const t=getComputedStyle(track).transform; const x=(t&&t!=='none')?new DOMMatrix(t).m41:0; track.style.animation='none'; track.style.transform=`translateX(${x}px)`; void track.offsetWidth; track.style.transition='transform .5s ease'; track.style.transform='translateX(0px)'; const done=()=>{ track.style.transition=''; track.style.transform=''; track.style.animation=''; track.removeEventListener('transitionend',done); }; track.addEventListener('transitionend',done); }); },
+      season: this.state.season, seasons, seasonOpen: this.state.seasonOpen,
+      toggleSeason: () => this.setState(s => ({ seasonOpen: !s.seasonOpen })),
+      closeSeason: () => this.setState({ seasonOpen: false }),
+      goSeasons: () => this.setState({ view: 'seasons', seasonOpen: false }),
+      coopModal: this.state.coopModal, brandHover: { background: '#16302a' },
+      openCoop: () => this.setState({ coopModal: true }),
+      closeCoop: () => this.setState({ coopModal: false }),
+      saveCoop: () => this.setState({ coopModal: false }),
+      userMenu: this.state.userMenu,
+      toggleUserMenu: () => this.setState(s => ({ userMenu: !s.userMenu })),
+      closeUserMenu: () => this.setState({ userMenu: false }),
+      openCoopFromMenu: () => this.setState({ coopModal: true, userMenu: false }),
+      signOutFromMenu: () => this.setState({ signedIn: false, userMenu: false }),
+      docModal: this.state.docModal,
+      openDoc: () => this.setState({ docModal: true }),
+      closeDoc: () => this.setState({ docModal: false }),
+      saveDoc: () => this.setState({ docModal: false }),
+      catalogModal: this.state.catalogModal,
+      openCatalog: () => this.setState({ catalogModal: true }),
+      closeCatalog: () => this.setState({ catalogModal: false }),
+      saveCatalog: () => this.setState({ catalogModal: false }),
+      signIn: () => this.setState({ signedIn: true }), signOut: () => this.setState({ signedIn: false }),
+      toggleCoop: () => {}, btnHover: { background:'#0e6a5f' },
+      navItems,
+      nav: { overview:this.setView('overview'), readiness:this.setView('readiness'), issues:this.setView('issues'), team:this.setView('team'), tasks:this.setView('tasks'), notifications:this.setView('notifications') },
+      viewTitle: (TITLES[view]||['',''])[0], viewSub: (TITLES[view]||['',''])[1],
+      isOverview:view==='overview', isReadiness:view==='readiness', isIssues:view==='issues',
+      isRegistry:view==='registry', isTeam:view==='team', isTasks:view==='tasks', isRecords:view==='records', isRoles:view==='roles', roles, isSeasons:view==='seasons', seasonRows, isCatalog:view==='catalog', catalogTabs, catalogItems,
+      isDocuments:view==='documents', isAudit:view==='audit', isProgrammes:view==='programmes', isNotifications:view==='notifications',
+      heroTabs, heroMeter:this.state.hero==='meter', heroAction:this.state.hero==='action', heroGrid:this.state.hero==='grid',
+      programmes, programmeTabs, actionItems, topIssues, teamMini, deadlines,
+      goals, issues, openCount, clearedCount:this.state.cleared, records, documents, auditRows, plots, staff, routines, tasks, notifications,
+      mapRef: this._mapRef || (this._mapRef = (node) => this._mountMap(node)),
+      ...this._gisSummary(),
+      onDrawToggle: () => this.onDrawPrimary(),
+      onCancelDraw: () => this.onCancelDraw(),
+      onCoordInput: (e)=>this.onCoordInput(e.target.value),
+      onLoadSample: () => this.onLoadSample(),
+      coordText: this.state.coordText||'',
+      searchQ: this.state.searchQ||'',
+      searching: !!this.state.searching,
+      searchResults: this.state.searchResults||[],
+      hasResults: (this.state.searchResults||[]).length>0,
+      onSearchInput: (e)=>this.onSearchInput(e.target.value),
+      onSearchKey: (e)=>this.onSearchKey(e),
+      drawing: !!this.state.drawing,
+      coordStat: this._coordStat().text,
+      coordStatColor: this._coordStat().color,
+      drawSaveOpen: !!this.state.drawSaveOpen,
+      formZone: (this.state.plotForm||{}).zone||'A',
+      formNum: (this.state.plotForm||{}).num||'',
+      formCrop: (this.state.plotForm||{}).crop||'Atisô',
+      formBatch: (this.state.plotForm||{}).batch||'',
+      formId: ((this.state.plotForm||{}).zone||'A')+((this.state.plotForm||{}).num||''),
+      formArea: this._draftAreaHa().toFixed(2),
+      onFormZone: (e)=>this.setFormZone(e.target.value),
+      onFormNum: (e)=>this.setFormNum(e.target.value),
+      onFormCrop: (e)=>this.setFormCrop(e.target.value),
+      onFormBatch: (e)=>this.setFormBatch(e.target.value),
+      confirmSavePlot: ()=>this.confirmSavePlot(),
+      cancelSaveForm: ()=>this.cancelSaveForm(),
+      stopForm: (e)=>e.stopPropagation(),
+      drawBtnLabel: this.state.drawing ? 'Tiếp tục →' : '+ Thêm thửa',
+      drawBtnStyle: `border:none;border-radius:4px;font-size:13px;font-weight:600;padding:8px 14px;cursor:${this.state.drawing&&(this.state.draft||[]).length<3?'not-allowed':'pointer'};${this.state.drawing?((this.state.draft||[]).length>=3?'background:#1f7a45;color:#fff':'background:#c3d3ce;color:#fff'):'background:#128173;color:#fff'}`,
+      auditPct:audit.pct, auditEvidence:audit.evidence, auditGoalsDone:audit.done, auditGoalsTotal:audit.total, auditMissing:audit.missing, auditDocs:audit.docs, auditProgName:selProg.name,
+      auditDays, auditDate:'10 Thg8 2026', nextAuditProg:'GACP-WHO', cornerMarks, gp,
+      toast: this.state.toast,
+      toastPoints: (this.state.toast && this.state.toast.points) ? this.state.toast.points : null,
+      ...this._support()
+    };
+  }
+
+  _icon(paths, color){ return React.createElement('svg', { width:17, height:17, viewBox:'0 0 24 24', fill:'none', stroke:color, strokeWidth:1.7, strokeLinecap:'round', strokeLinejoin:'round' }, paths.map((d,i)=>React.createElement('path',{key:i,d:d}))); }
+  _cat(cat){ const D={l:'',bg:'#f8e3e0',f:'#a8342a'}, C={l:'',bg:'#f8eed6',f:'#9a6a06'}; const M={ gate:{l:'Vi phạm',bg:D.bg,f:D.f}, integrity:{l:'Bất thường',bg:D.bg,f:D.f}, evidence:{l:'Thiếu bằng chứng',bg:C.bg,f:C.f}, document:{l:'Thiếu tài liệu',bg:C.bg,f:C.f}, stale:{l:'Dữ liệu cũ',bg:C.bg,f:C.f}, overdue:{l:'Quá hạn',bg:C.bg,f:C.f} }; return M[cat]||C; }
+  _catPill(cat){ const m=this._cat(cat); return `display:inline-block;background:${m.bg};color:${m.f};font-size:11px;font-weight:700;font-family:'IBM Plex Mono',monospace;padding:3px 8px;border-radius:4px`; }
+  _ring(pct){ const c=339.3; return { ringOffset: c - c*pct/100 }; }
+  _pp(k,l){ return { pillStyle: this.pill(k,l).style, pillLabel: this.pill(k,l).label }; }
+  _pp2(k,l){ return { pillStyle: this.pillInline(k,l).style, tag:l, state:l, kind:l, status:l, due:l }; }
+  _seal(k){ const m=this.meta(k); return { seal:m.l, sealStyle:`background:${m.b};color:${m.f};font-size:10px;font-weight:700;font-family:'IBM Plex Mono',monospace;padding:3px 7px;border-radius:4px` }; }
+  _geoArea(geom){
+    if(!geom||geom.type!=='Polygon') return 0;
+    const ring=geom.coordinates[0], R=6378137, rad=Math.PI/180;
+    let a=0;
+    for(let i=0;i<ring.length-1;i++){
+      const [x1,y1]=ring[i], [x2,y2]=ring[i+1];
+      a += (x2-x1)*rad*(2+Math.sin(y1*rad)+Math.sin(y2*rad));
+    }
+    return Math.abs(a*R*R/2)/10000; // m² → hectares
+  }
+  _addPlotLayer(map, fit){
+    const L=window.L; if(!L||!map) return;
+    if(this._plotLayer) map.removeLayer(this._plotLayer);
+    const col={ ok:'#2fd08a', blocked:'#ff6b57' };
+    const layer=L.geoJSON(this._plotFC(),{
+      style:f=>({ color:col[f.properties.status]||'#2fd08a', weight:2.5, fillColor:col[f.properties.status]||'#2fd08a', fillOpacity:.22 }),
+      onEachFeature:(f,lyr)=>{
+        const ha=this._geoArea(f.geometry);
+        lyr.bindTooltip(`<b>${f.properties.id}</b>`,{ permanent:true, direction:'center', className:'sk-plot-label' });
+        let tip=null;
+        lyr.on('mouseover',e=>{ tip=L.tooltip({ direction:'top', offset:[0,-8], className:'sk-area-tip' }).setLatLng(e.latlng).setContent(`${f.properties.crop} · <b>${ha.toFixed(2)} ha</b>`); map.openTooltip(tip); });
+        lyr.on('mousemove',e=>{ if(tip) tip.setLatLng(e.latlng); });
+        lyr.on('mouseout',()=>{ if(tip){ map.closeTooltip(tip); tip=null; } });
+      }
+    }).addTo(map);
+    this._plotLayer=layer;
+    if(fit && layer.getBounds().isValid()) map.fitBounds(layer.getBounds().pad(0.55));
+  }
+  _drawDraft(pts){
+    const L=window.L, map=this._map; if(!L||!map) return;
+    if(this._draftLayer) map.removeLayer(this._draftLayer);
+    if(!pts.length){ this._draftLayer=null; return; }
+    const ll=pts.map(p=>[p[1],p[0]]), g=L.layerGroup();
+    if(ll.length>=3) L.polygon(ll,{ color:'#3a7ca5', weight:2, dashArray:'6 5', fillColor:'#3a7ca5', fillOpacity:.15, interactive:false }).addTo(g);
+    else if(ll.length===2) L.polyline(ll,{ color:'#3a7ca5', weight:2, dashArray:'6 5', interactive:false }).addTo(g);
+    ll.forEach((p,i)=>{
+      const m=L.marker(p,{ interactive:false, icon:L.divIcon({ className:'', html:`<div class="sk-vtx"><span>${i+1}</span></div>`, iconSize:[16,16], iconAnchor:[8,8] }) });
+      m.addTo(g);
+    });
+    g.addTo(map); this._draftLayer=g;
+  }
+  _clearDraft(){ if(this._draftLayer && this._map){ this._map.removeLayer(this._draftLayer); this._draftLayer=null; } }
+  parseCoords(text){
+    const pts=[], errs=[];
+    (text||'').split(/\r?\n/).forEach((line,idx)=>{
+      const t=line.trim(); if(!t) return;
+      const nums=t.split(/[,;\s]+/).map(s=>s.trim()).filter(Boolean).map(Number);
+      if(nums.length<2 || nums.some(isNaN)){ errs.push(idx+1); return; }
+      const [lat,lng]=nums;
+      if(lat<-90||lat>90||lng<-180||lng>180){ errs.push(idx+1); return; }
+      pts.push([lng,lat]);
+    });
+    return { pts, errs };
+  }
+  onCoordInput(v){
+    const { pts, errs }=this.parseCoords(v);
+    this.setState({ coordText:v, draft:pts, coordErrs:errs });
+    this._drawDraft(pts);
+    if(pts.length>=2 && this._map){ const L=window.L; const b=L.latLngBounds(pts.map(p=>[p[1],p[0]])); if(b.isValid()) this._map.fitBounds(b.pad(0.4),{ maxZoom:18 }); }
+  }
+  onLoadSample(){
+    const sample='22.34165, 103.83835\n22.34172, 103.83905\n22.34138, 103.83958\n22.34092, 103.83935\n22.34081, 103.83861\n22.34118, 103.83812';
+    this.onCoordInput(sample);
+  }
+  onSearchInput(v){
+    this.setState({ searchQ:v });
+    clearTimeout(this._searchT);
+    if(!v || v.trim().length<3){ this.setState({ searchResults:[], searching:false }); return; }
+    this._searchT=setTimeout(()=>this._runSearch(v.trim()), 450);
+  }
+  onSearchKey(e){ if(e.key==='Enter'){ clearTimeout(this._searchT); const v=(this.state.searchQ||'').trim(); if(v.length>=3) this._runSearch(v); } if(e.key==='Escape'){ this.setState({ searchResults:[], searchQ:'' }); } }
+  async _runSearch(q){
+    const seq=(this._searchSeq=(this._searchSeq||0)+1);
+    this.setState({ searching:true });
+    try{
+      const url='https://nominatim.openstreetmap.org/search?format=jsonv2&limit=6&accept-language=vi&q='+encodeURIComponent(q);
+      const res=await fetch(url,{ headers:{ 'Accept':'application/json' } });
+      const data=await res.json();
+      if(seq!==this._searchSeq) return;
+      this.setState({ searching:false, searchResults:(data||[]).map(d=>({
+        label:d.display_name, lat:+d.lat, lon:+d.lon, bb:d.boundingbox,
+        go:()=>this._flyTo(+d.lat,+d.lon,d.boundingbox)
+      })) });
+    }catch(err){ if(seq===this._searchSeq) this.setState({ searching:false, searchResults:[] }); }
+  }
+  _flyTo(lat,lon,bb){
+    const map=this._map, L=window.L; if(!map||!L) return;
+    if(bb && bb.length===4){ map.fitBounds([[+bb[0],+bb[2]],[+bb[1],+bb[3]]],{ maxZoom:17 }); }
+    else map.setView([lat,lon],16);
+    if(this._searchMarker) map.removeLayer(this._searchMarker);
+    this._searchMarker=L.marker([lat,lon]).addTo(map);
+    this.setState({ searchResults:[], searchQ:'' });
+  }
+  _coordStat(){
+    const pts=this.state.draft||[], errs=this.state.coordErrs||[];
+    if(errs.length) return { text:`⚠ ${errs.length} dòng sai định dạng (dòng ${errs.slice(0,4).join(', ')}${errs.length>4?'…':''})`, color:'#a8342a' };
+    if(!pts.length) return { text:'Chưa có toạ độ — dán ít nhất 3 đỉnh', color:'#5a7688' };
+    if(pts.length<3) return { text:`${pts.length} đỉnh · cần tối thiểu 3 đỉnh để tạo thửa`, color:'#9a6a06' };
+    return { text:`✓ ${pts.length} đỉnh hợp lệ · diện tích ${this._draftAreaHa().toFixed(2)} ha`, color:'#1f7a45' };
+  }
+  onDrawPrimary(){
+    if(!this.state.drawing){ this._clearDraft(); this.setState({ drawing:true, draft:[], coordText:'', coordErrs:[] }); return; }
+    if((this.state.draft||[]).length>=3){ this.openSaveForm(); }
+  }
+  onCancelDraw(){ this._clearDraft(); this.setState({ drawing:false, draft:[], coordText:'', coordErrs:[] }); }
+  _draftAreaHa(){ const d=this.state.draft||[]; return d.length<3?0:this._geoArea({ type:'Polygon', coordinates:[[...d, d[0]]] }); }
+  _nextPlotId(zone){ const re=/^([A-Za-z]+)(\d+)$/; let mx=0; this._plotFC().features.forEach(f=>{ const m=re.exec(f.properties.id); if(m && m[1].toUpperCase()===zone) mx=Math.max(mx,+m[2]); }); return mx+1; }
+  openSaveForm(){ const zone='A'; this.setState({ drawSaveOpen:true, plotForm:{ zone, num:this._nextPlotId(zone), crop:'Atisô', batch:'' } }); }
+  cancelSaveForm(){ this.setState({ drawSaveOpen:false }); }
+  setFormZone(v){ this.setState(st=>({ plotForm:{ ...st.plotForm, zone:v, num:this._nextPlotId(v) } })); }
+  setFormNum(v){ this.setState(st=>({ plotForm:{ ...st.plotForm, num:v.replace(/\D/g,'')||'' } })); }
+  setFormCrop(v){ this.setState(st=>({ plotForm:{ ...st.plotForm, crop:v } })); }
+  setFormBatch(v){ this.setState(st=>({ plotForm:{ ...st.plotForm, batch:v } })); }
+  confirmSavePlot(){
+    const f=this.state.plotForm||{}, pts=this.state.draft||[];
+    if(pts.length<3 || !f.num) return;
+    this._extraFeatures=this._extraFeatures||[];
+    const id=(f.zone||'A')+f.num;
+    this._extraFeatures.push({ type:'Feature', properties:{ id, crop:f.crop||'Chưa gán', batch:f.batch||'', status:'ok' }, geometry:{ type:'Polygon', coordinates:[[...pts, pts[0]]] } });
+    this._clearDraft();
+    this.setState({ drawing:false, draft:[], coordText:'', coordErrs:[], drawSaveOpen:false, toast:{ title:'Đã thêm thửa '+id, body:(f.crop||'')+' · '+this._geoArea({type:'Polygon',coordinates:[[...pts,pts[0]]]}).toFixed(2)+' ha (tính từ ranh)' } }, ()=>{ if(this._map) this._addPlotLayer(this._map, false); });
+    clearTimeout(this._toastT); this._toastT=setTimeout(()=>this.setState({ toast:null }),3200);
+  }
+  _plotFC(){ this._extraFeatures=this._extraFeatures||[]; return { type:'FeatureCollection', features:[
+    { type:'Feature', properties:{ id:'A1', crop:'Atisô', status:'ok' }, geometry:{ type:'Polygon', coordinates:[[[103.83835,22.34165],[103.83905,22.34172],[103.83958,22.34138],[103.83935,22.34092],[103.83861,22.34081],[103.83812,22.34118],[103.83835,22.34165]]] } },
+    { type:'Feature', properties:{ id:'A2', crop:'Đương quy', status:'ok' }, geometry:{ type:'Polygon', coordinates:[[[103.83985,22.34158],[103.84072,22.34168],[103.84098,22.34121],[103.84055,22.34082],[103.83992,22.34089],[103.83965,22.34124],[103.83985,22.34158]]] } },
+    { type:'Feature', properties:{ id:'B1', crop:'Đương quy', status:'blocked' }, geometry:{ type:'Polygon', coordinates:[[[103.83972,22.34058],[103.84061,22.34071],[103.84095,22.34032],[103.84078,22.33978],[103.84008,22.33961],[103.83951,22.33995],[103.83955,22.34035],[103.83972,22.34058]]] } },
+    { type:'Feature', properties:{ id:'A3', crop:'Atisô', status:'unmapped' }, geometry:null },
+    ...this._extraFeatures
+  ]}; }
+  _gisSummary(){ const fc=this._plotFC(); const total=fc.features.reduce((s,f)=>s+this._geoArea(f.geometry),0); const mapped=fc.features.filter(f=>f.geometry).length; return { gisTotal:total.toFixed(2), gisMapped:mapped, gisUnmapped:fc.features.length-mapped }; }
+  _mountMap(node){
+    if(!node){ if(this._map){ this._map.remove(); this._map=null; } return; }
+    if(this._map && this._mapNode===node) return;
+    if(this._map){ this._map.remove(); this._map=null; }
+    this._mapNode=node;
+    const start=()=>{
+      const L=window.L;
+      if(!L){ this._mapTimer=setTimeout(start,80); return; }
+      if(this._mapNode!==node || !node.isConnected) return;
+      const map=L.map(node,{ zoomControl:true, attributionControl:true, scrollWheelZoom:false });
+      this._map=map;
+      // Ctrl/Cmd + wheel zooms; plain wheel scrolls the page. Show a hint otherwise.
+      const hint=L.DomUtil.create('div','sk-scroll-hint', node);
+      hint.textContent='Giữ Ctrl + lăn chuột để phóng to';
+      node.addEventListener('wheel', ev=>{
+        if(ev.ctrlKey || ev.metaKey){
+          if(!map.scrollWheelZoom.enabled()) map.scrollWheelZoom.enable();
+          hint.classList.remove('show');
+        } else {
+          if(map.scrollWheelZoom.enabled()) map.scrollWheelZoom.disable();
+          hint.classList.add('show');
+          clearTimeout(this._hintT); this._hintT=setTimeout(()=>hint.classList.remove('show'),1100);
+        }
+      }, { passive:true });
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{ maxZoom:19, attribution:'Ảnh vệ tinh © Esri' }).addTo(map);
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',{ maxZoom:19, opacity:.9 }).addTo(map);
+      this._addPlotLayer(map, true);
+      setTimeout(()=>{ if(this._map===map) map.invalidateSize(); },120);
+    };
+    start();
+  }
+}
+</script>
+</body>
+</html>
