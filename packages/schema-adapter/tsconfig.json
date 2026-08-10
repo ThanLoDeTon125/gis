@@ -1,0 +1,12 @@
+{
+  "extends": "@sankit/config/tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "types": ["node"],
+    // Package export thẳng source (main → src/index.ts), consumer tự bundle —
+    // nên không emit, chỉ typecheck. Giống extraction-eval.
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": ["src", "test"]
+}
