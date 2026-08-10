@@ -1,0 +1,266 @@
+[
+  {
+    "source": "ASEAN-GAP-Standard",
+    "document_type": "standard",
+    "language": "en",
+    "chunks": [
+      {
+        "section": "Introduction",
+        "content": "ASEAN GAP establishes good agricultural practices for fresh fruit and vegetable production, harvesting, and postharvest handling. The framework focuses on reducing food safety hazards, environmental impacts, worker health and welfare risks, and maintaining produce quality.",
+        "tags": [
+          "gap",
+          "food_safety",
+          "postharvest",
+          "fresh_produce",
+          "asean"
+        ]
+      },
+      {
+        "section": "Food Safety",
+        "content": "Production sites must be assessed for chemical and biological contamination risks before cultivation. Identified hazards require corrective actions, monitoring, and documented records.",
+        "tags": [
+          "site_assessment",
+          "risk_management",
+          "food_safety"
+        ]
+      },
+      {
+        "section": "Planting Material",
+        "content": "Planting materials should have documented origins, supplier information, and chemical treatments where applicable. Toxic varieties intended for human consumption must not be cultivated.",
+        "tags": [
+          "planting_material",
+          "traceability"
+        ]
+      },
+      {
+        "section": "Fertiliser",
+        "content": "Fertilisers and soil additives should minimize contamination risks. Organic materials require proper treatment records. Human sewage must not be used. Storage, application, and purchasing records are mandatory.",
+        "tags": [
+          "fertilizer",
+          "soil",
+          "organic_material"
+        ]
+      },
+      {
+        "section": "Water",
+        "content": "Water used before and after harvest must be evaluated for chemical and microbiological risks. Testing, treatment, and monitoring records are required when contamination risks exist.",
+        "tags": [
+          "water_quality",
+          "irrigation",
+          "washing"
+        ]
+      },
+      {
+        "section": "Chemical Management",
+        "content": "Only approved chemicals from licensed suppliers should be used. Applications must comply with label instructions, maximum residue limits, withholding periods, and be fully documented. Storage, disposal, residue testing, and operator training are mandatory.",
+        "tags": [
+          "agrochemical",
+          "mrl",
+          "pesticide",
+          "chemical_storage"
+        ]
+      },
+      {
+        "section": "Harvest",
+        "content": "Harvested produce must be protected from contamination by soil, chemicals, pests, and damaged equipment. Containers must remain clean and suitable for food contact.",
+        "tags": [
+          "harvest",
+          "handling",
+          "containers"
+        ]
+      },
+      {
+        "section": "Modules",
+        "content": "ASEAN GAP consists of four integrated modules: Food Safety, Environmental Management, Worker Health Safety and Welfare, and Produce Quality.",
+        "tags": [
+          "module",
+          "environment",
+          "worker_safety",
+          "quality"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "GACP-EMA",
+    "document_type": "guideline",
+    "language": "en",
+    "chunks": [
+      {
+        "section": "Introduction",
+        "content": "Good Agricultural and Collection Practice ensures consistent quality of medicinal plant starting materials through cultivation, collection, harvesting, and primary processing supported by quality assurance systems.",
+        "tags": [
+          "gacp",
+          "medicinal_plants",
+          "quality_assurance"
+        ]
+      },
+      {
+        "section": "General",
+        "content": "The guideline applies to cultivation, wild collection, and primary processing of medicinal plants intended for pharmaceutical use, complementing GMP requirements.",
+        "tags": [
+          "cultivation",
+          "collection",
+          "gmp"
+        ]
+      },
+      {
+        "section": "Quality Assurance",
+        "content": "Quality agreements between producers and buyers should define active constituents, contamination limits, heavy metals, microbial requirements, and documentation responsibilities.",
+        "tags": [
+          "quality",
+          "specification",
+          "documentation"
+        ]
+      },
+      {
+        "section": "Personnel",
+        "content": "Workers require hygiene training, botanical knowledge, species identification skills, environmental awareness, and protective equipment when handling toxic plants.",
+        "tags": [
+          "training",
+          "personnel",
+          "botany"
+        ]
+      },
+      {
+        "section": "Buildings",
+        "content": "Processing buildings must remain clean, pest protected, ventilated, separated from livestock, and provide appropriate storage conditions to prevent contamination.",
+        "tags": [
+          "facility",
+          "storage",
+          "pest_control"
+        ]
+      },
+      {
+        "section": "Equipment",
+        "content": "Equipment should be regularly maintained, calibrated, cleaned after use, and constructed from materials preventing contamination or cross-contamination.",
+        "tags": [
+          "equipment",
+          "maintenance"
+        ]
+      },
+      {
+        "section": "Documentation",
+        "content": "Cultivation location, harvest period, chemicals applied, batch identification, collection site, production records, and audit reports must be fully documented to ensure traceability.",
+        "tags": [
+          "traceability",
+          "batch",
+          "audit"
+        ]
+      },
+      {
+        "section": "Seeds",
+        "content": "Seeds and propagation materials must be accurately identified, traceable, disease-free where possible, and comply with regulations regarding genetically modified plants.",
+        "tags": [
+          "seed",
+          "propagation",
+          "gmo"
+        ]
+      },
+      {
+        "section": "Cultivation",
+        "content": "Cultivation practices emphasize uncontaminated soil, controlled irrigation, minimal pesticide usage, appropriate fertilization, crop rotation, and environmental protection.",
+        "tags": [
+          "soil",
+          "irrigation",
+          "cultivation"
+        ]
+      },
+      {
+        "section": "Collection",
+        "content": "Wild collection must protect biodiversity, comply with conservation laws including CITES, and avoid damaging natural regeneration.",
+        "tags": [
+          "wild_collection",
+          "cites",
+          "conservation"
+        ]
+      },
+      {
+        "section": "Harvest",
+        "content": "Medicinal plants should be harvested at optimal quality, protected from contamination, transported rapidly, and handled carefully to minimize physical damage.",
+        "tags": [
+          "harvest",
+          "transport"
+        ]
+      },
+      {
+        "section": "Primary Processing",
+        "content": "Primary processing includes washing, drying, cutting, freezing, fumigation, and distillation performed promptly after harvest under hygienic conditions.",
+        "tags": [
+          "processing",
+          "drying",
+          "washing"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "EU_Organic_2018_848",
+    "document_type": "regulation",
+    "language": "en",
+    "chunks": [
+      {
+        "section": "Objectives",
+        "content": "EU Regulation 2018/848 establishes the legal framework governing organic production, labeling, certification, environmental protection, biodiversity, consumer confidence, and fair competition across the European Union.",
+        "tags": [
+          "organic",
+          "eu",
+          "regulation"
+        ]
+      },
+      {
+        "section": "Organic Principles",
+        "content": "Organic production promotes biodiversity, sustainable resource management, animal welfare, environmental protection, and reduced dependence on synthetic inputs.",
+        "tags": [
+          "organic_principles",
+          "sustainability"
+        ]
+      },
+      {
+        "section": "Scope",
+        "content": "The regulation applies to agricultural products, processed food, feed, aquaculture products, beekeeping products, and certain related agricultural products marketed as organic.",
+        "tags": [
+          "scope",
+          "food",
+          "feed"
+        ]
+      },
+      {
+        "section": "Consumer Protection",
+        "content": "Organic labeling aims to maintain consumer confidence through harmonized production standards, traceability, inspections, and consistent certification requirements.",
+        "tags": [
+          "consumer",
+          "labeling",
+          "traceability"
+        ]
+      },
+      {
+        "section": "Environmental Objectives",
+        "content": "Organic farming contributes to climate action, soil protection, biodiversity conservation, sustainable agriculture, and reduced environmental impact.",
+        "tags": [
+          "environment",
+          "climate",
+          "soil"
+        ]
+      },
+      {
+        "section": "Production Rules",
+        "content": "Organic operators must comply with detailed production rules covering plant production, livestock, processing, labeling, imports, inspections, certification, and market controls.",
+        "tags": [
+          "production",
+          "inspection",
+          "certification"
+        ]
+      },
+      {
+        "section": "Market",
+        "content": "The regulation promotes fair competition, transparent markets, harmonized standards, and sustainable development of organic agriculture throughout the European Union.",
+        "tags": [
+          "market",
+          "trade",
+          "competition"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Schema đích trích xuất standard — suy từ output.json trong resource SAN-78 (chốt 10/08/2026)",
+  "description": "File chuẩn (san78/output.json) là mảng tài liệu. Mỗi lần gọi model trích MỘT tài liệu thì dùng schema ở items — structured outputs yêu cầu root là object.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["source", "document_type", "language", "chunks"],
+    "properties": {
+      "source": { "type": "string" },
+      "document_type": { "type": "string" },
+      "language": { "type": "string" },
+      "chunks": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["section", "content", "tags"],
+          "properties": {
+            "section": { "type": "string" },
+            "content": { "type": "string" },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}
