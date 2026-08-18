@@ -1,0 +1,2522 @@
+[
+  {
+    "id": "SK-B-CUC26-1000-3",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1001-1",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1002-0",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1003-Y",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1004-W",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1005-U",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1006-S",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1007-Q",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1008-O",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1009-M",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1010-0",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1011-Y",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1012-W",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1013-U",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1014-S",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1015-Q",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1016-O",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1017-M",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1018-K",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1019-I",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1020-W",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1021-U",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1022-S",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1023-Q",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1024-O",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1025-M",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1026-K",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1027-I",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1028-G",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1029-E",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1030-S",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1031-Q",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1032-O",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1033-M",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1034-K",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1035-I",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1036-G",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1037-E",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1038-C",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1039-A",
+    "lo_hang_id": "SK-L-CUC26-13-E",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-14",
+    "han_su_dung": "2028-04-14",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1040-O",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1041-M",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1042-K",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1043-I",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1044-G",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1045-E",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1046-C",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1047-A",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1048-8",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1049-6",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1050-K",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1051-I",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1052-G",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1053-E",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1054-C",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1055-A",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1056-8",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1057-6",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1058-4",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1059-2",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1060-G",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1061-E",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1062-C",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1063-A",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1064-8",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1065-6",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1066-4",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1067-2",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1068-Z",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1069-X",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1070-C",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1071-A",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1072-8",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1073-6",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1074-4",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1075-2",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1076-Z",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1077-X",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1078-V",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1079-T",
+    "lo_hang_id": "SK-L-CUC26-12-G",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-11",
+    "han_su_dung": "2028-04-11",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1080-8",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1081-6",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1082-4",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1083-2",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1084-Z",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1085-X",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1086-V",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1087-T",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1088-R",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1089-P",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1090-4",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1091-2",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1092-Z",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1093-X",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1094-V",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1095-T",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1096-R",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1097-P",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1098-N",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1099-L",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1100-W",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1101-U",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1102-S",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1103-Q",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1104-O",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1105-M",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1106-K",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1107-I",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1108-G",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1109-E",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1110-S",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1111-Q",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1112-O",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1113-M",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1114-K",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1115-I",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1116-G",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1117-E",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1118-C",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-B-CUC26-1119-A",
+    "lo_hang_id": "SK-L-CUC26-11-I",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "quy_cach": {
+      "khoi_luong": "20 g",
+      "dang": "trà nguyên bông"
+    },
+    "ngay_dong_goi": "2026-04-07",
+    "han_su_dung": "2028-04-07",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "nguon": "mau"
+  }
+]

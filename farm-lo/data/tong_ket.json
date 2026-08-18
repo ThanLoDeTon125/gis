@@ -1,0 +1,140 @@
+{
+  "sinh_luc": null,
+  "ky_du_lieu": {
+    "tu": "2025-08-12",
+    "den": "2026-08-12"
+  },
+  "ngay_chot": "2026-08-12",
+  "vung": {
+    "ten": "RiTi Organic Farm — Trường Yên, Hoa Lư, Ninh Bình",
+    "toa_do_tham_chieu": {
+      "lat": 20.2579952,
+      "lon": 105.854332
+    },
+    "so_lo": 12,
+    "tong_dien_tich_ha": 8.8458,
+    "sai_so_ranh_gioi_m": 2.9,
+    "he_toa_do": "EPSG:4326 lưu trữ · EPSG:32648 tính diện tích"
+  },
+  "dem": {
+    "lo_dat": 12,
+    "vu_canh_tac": 18,
+    "dot_thu_hoach": 25,
+    "quan_trac_quang": 249,
+    "quan_trac_radar": 684,
+    "ngay_khi_hau": 366,
+    "dong_lo_thang": 156,
+    "nhat_ky": 584,
+    "lo_hang": 101,
+    "bich_co_ho_so": 120,
+    "bich_theo_so_dem": 31765,
+    "cay_co_tem": 92,
+    "canh_bao": 89
+  },
+  "san_luong_mo_phong": {
+    "hoa_cuc_kho_kg": 2117.7,
+    "bo_cong_anh_kho_kg": 3165.7,
+    "lac_kho_kg": 3983.3,
+    "chanh_tuoi_kg": 36398.6
+  },
+  "kiem_chung_cheo": {
+    "phat_hien": "Ngày thu hái ghi trong hồ sơ cây THẬT của Sankit (SK-C-CUC25-L01-0007-P, khu L01, thu hái 18/11/2025) rơi đúng vào đoạn NDVI của lô L01 tụt 0,738 (04/10/2025) → 0,307 (23/11/2025).",
+    "nghia_la": "Lô L01 trong GIS và khu L01 trong hồ sơ cây là CÙNG MỘT mảnh đất, và mốc thời gian hai bên khớp nhau. Đây là cơ sở để ghép hai hệ thống bằng khoá lo_id.",
+    "khong_nghia_la": "KHÔNG phải bằng chứng nhân quả. Ba cây có tem chỉ cho 1,24 kg hoa tươi — không đủ làm đổi NDVI của cả lô 1,7496 ha. Cái tụt đó là thu hoạch quy mô lô.",
+    "nguon": "that"
+  },
+  "dot_han_kiem_chung": {
+    "tu": "2026-03-30",
+    "den": "2026-04-16",
+    "so_ngay_mua_duoi_1mm": 18,
+    "can_bang_nuoc_thang_mm": -46.3,
+    "et0_thang_mm": 125.2,
+    "tmax_thang_c": 38.7,
+    "so_lo_sut_tren_0_10": 8,
+    "sut_ndvi_trung_binh": -0.134
+  },
+  "ngay_dang_ngo": {
+    "2025-09-14": {
+      "ly_do": "mu_khi_quyen",
+      "hut": 0.279,
+      "so_lo": 9
+    },
+    "2025-12-08": {
+      "ly_do": "mu_khi_quyen",
+      "hut": 0.244,
+      "so_lo": 10
+    },
+    "2025-12-23": {
+      "ly_do": "mu_khi_quyen_va_thua_lo",
+      "hut": 0.254,
+      "so_lo": 2
+    },
+    "2026-01-12": {
+      "ly_do": "thua_lo",
+      "hut": -0.019,
+      "so_lo": 2
+    }
+  },
+  "phan_dinh_nguon": [
+    {
+      "lop": "Ranh giới lô, diện tích, địa hình",
+      "nguon": "that",
+      "goc": "PDF chủ farm + Copernicus DEM + Esri World Imagery"
+    },
+    {
+      "lop": "NDVI / NDMI / radar theo lô theo ngày",
+      "nguon": "that",
+      "goc": "Sentinel-2 L2A + Sentinel-1 RTC"
+    },
+    {
+      "lop": "Khí hậu ngày và tháng",
+      "nguon": "that",
+      "goc": "Open-Meteo (ERA5)"
+    },
+    {
+      "lop": "Thổ nhưỡng",
+      "nguon": "that",
+      "goc": "SoilGrids v2.0 — 250 m, KHÔNG phân biệt được lô"
+    },
+    {
+      "lop": "Chu kỳ NDVI dò tự động",
+      "nguon": "that",
+      "goc": "analyze_condition.py trên chuỗi 12 tháng"
+    },
+    {
+      "lop": "Cây trồng của từng lô, ngày gieo, ngày thu",
+      "nguon": "mau",
+      "goc": "suy từ dạng chuỗi NDVI — xem scripts/ke_hoach_lo.py"
+    },
+    {
+      "lop": "Nhật ký đồng ruộng, nhân sự, vật tư",
+      "nguon": "mau",
+      "goc": "dựng theo lịch nông vụ + tháng thiếu nước THẬT"
+    },
+    {
+      "lop": "Lô hàng, bịch, sản lượng",
+      "nguon": "mau",
+      "goc": "năng suất tham chiếu × diện tích gieo THẬT"
+    },
+    {
+      "lop": "Nhiệt độ bề mặt theo lô",
+      "nguon": "dan_xuat",
+      "goc": "t_max THẬT + hệ số che phủ từ NDVI THẬT; công thức trong docs/05"
+    },
+    {
+      "lop": "Nhu cầu nước theo lô",
+      "nguon": "dan_xuat",
+      "goc": "ET0 THẬT × Kc FAO-56 − mưa hiệu quả THẬT"
+    },
+    {
+      "lop": "Cảnh báo",
+      "nguon": "dan_xuat",
+      "goc": "luật R1–R5 chạy trên quan trắc THẬT"
+    },
+    {
+      "lop": "Phiếu kiểm nghiệm",
+      "nguon": "khong_co",
+      "goc": "CỐ Ý để trống — không dựng phiếu giả"
+    }
+  ]
+}

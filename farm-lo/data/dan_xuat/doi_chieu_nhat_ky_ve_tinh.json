@@ -1,0 +1,589 @@
+[
+  {
+    "lo_id": "L01",
+    "dot_thu_id": "L01-2025-CUC",
+    "vu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "so_ngay_hai_khai_bao": 38,
+    "ngay_hai_tu": "2025-10-20",
+    "ngay_hai_den": "2025-11-26",
+    "nguong_sut_ap_dung": -0.2,
+    "anh_dinh_truoc": {
+      "ngay": "2025-10-04",
+      "ndvi": 0.7384
+    },
+    "anh_day_sau": {
+      "ngay": "2025-12-18",
+      "ndvi": 0.3145
+    },
+    "sut_ndvi": -0.4239,
+    "ket_qua": "khop",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -12.29,
+      "vh_sau_db": -15.89,
+      "thay_doi_db": -3.6,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan",
+    "dien_giai": "NDVI tụt đúng mức mà một lần thu hoạch loại này phải tạo ra."
+  },
+  {
+    "lo_id": "L01",
+    "dot_thu_id": "L01-2026-LAC",
+    "vu_id": "L01-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "so_ngay_hai_khai_bao": 9,
+    "ngay_hai_tu": "2026-06-10",
+    "ngay_hai_den": "2026-06-18",
+    "nguong_sut_ap_dung": -0.25,
+    "anh_dinh_truoc": {
+      "ngay": "2026-06-01",
+      "ndvi": 0.7962
+    },
+    "anh_day_sau": {
+      "ngay": "2026-07-11",
+      "ndvi": 0.1825
+    },
+    "sut_ndvi": -0.6137,
+    "ket_qua": "khop",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -12.95,
+      "vh_sau_db": -17.7,
+      "thay_doi_db": -4.75,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan",
+    "dien_giai": "NDVI tụt đúng mức mà một lần thu hoạch loại này phải tạo ra."
+  },
+  {
+    "lo_id": "L02",
+    "dot_thu_id": "L02-2025-CUC",
+    "vu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "so_ngay_hai_khai_bao": 16,
+    "ngay_hai_tu": "2025-11-20",
+    "ngay_hai_den": "2025-12-05",
+    "nguong_sut_ap_dung": -0.2,
+    "anh_dinh_truoc": {
+      "ngay": "2025-11-20",
+      "ndvi": 0.4927
+    },
+    "anh_day_sau": {
+      "ngay": "2025-12-18",
+      "ndvi": 0.5306
+    },
+    "sut_ndvi": 0.0379,
+    "ket_qua": "khong_thay_doi_tren_anh",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -14.17,
+      "vh_sau_db": -14.91,
+      "thay_doi_db": -0.74,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan_bang_radar",
+    "dien_giai": "Nhật ký khai thu hoạch nhưng tán không giảm đủ — cần người xác minh."
+  },
+  {
+    "lo_id": "L02",
+    "dot_thu_id": "L02-2026-CCO",
+    "vu_id": "L02-2023-CCO",
+    "ma_cay_trong": "CCO",
+    "so_ngay_hai_khai_bao": 15,
+    "ngay_hai_tu": "2026-03-10",
+    "ngay_hai_den": "2026-03-24",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": null,
+    "anh_day_sau": {
+      "ngay": "2026-04-07",
+      "ndvi": 0.3348
+    },
+    "sut_ndvi": null,
+    "ket_qua": "khong_du_du_lieu",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -15.13,
+      "vh_sau_db": -15.32,
+      "thay_doi_db": -0.19,
+      "ket_qua": "khong_thay_doi",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "chua_ket_luan_duoc",
+    "dien_giai": "Thiếu ảnh quang ở ít nhất một phía trong cửa sổ ±45 ngày."
+  },
+  {
+    "lo_id": "L03",
+    "dot_thu_id": "L03-2025-BCA",
+    "vu_id": "L03-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "so_ngay_hai_khai_bao": 17,
+    "ngay_hai_tu": "2025-12-14",
+    "ngay_hai_den": "2025-12-30",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": {
+      "ngay": "2025-11-13",
+      "ndvi": 0.5246
+    },
+    "anh_day_sau": null,
+    "sut_ndvi": null,
+    "ket_qua": "khong_du_du_lieu",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -15.13,
+      "vh_sau_db": -15.44,
+      "thay_doi_db": -0.31,
+      "ket_qua": "khong_thay_doi",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "chua_ket_luan_duoc",
+    "dien_giai": "Thiếu ảnh quang ở ít nhất một phía trong cửa sổ ±45 ngày."
+  },
+  {
+    "lo_id": "L03",
+    "dot_thu_id": "L03-2026-LAC",
+    "vu_id": "L03-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "so_ngay_hai_khai_bao": 11,
+    "ngay_hai_tu": "2026-06-25",
+    "ngay_hai_den": "2026-07-05",
+    "nguong_sut_ap_dung": -0.25,
+    "anh_dinh_truoc": {
+      "ngay": "2026-06-06",
+      "ndvi": 0.7537
+    },
+    "anh_day_sau": {
+      "ngay": "2026-07-11",
+      "ndvi": 0.3099
+    },
+    "sut_ndvi": -0.4438,
+    "ket_qua": "khop",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -14.23,
+      "vh_sau_db": -15.66,
+      "thay_doi_db": -1.43,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan",
+    "dien_giai": "NDVI tụt đúng mức mà một lần thu hoạch loại này phải tạo ra."
+  },
+  {
+    "lo_id": "L04",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "vu_id": "L04-2022-CHA",
+    "ma_cay_trong": "CHA",
+    "so_ngay_hai_khai_bao": 72,
+    "ngay_hai_tu": "2025-09-05",
+    "ngay_hai_den": "2025-11-15",
+    "nguong_sut_ap_dung": null,
+    "anh_dinh_truoc": {
+      "ngay": "2025-08-20",
+      "ndvi": 0.8217
+    },
+    "anh_day_sau": {
+      "ngay": "2025-11-23",
+      "ndvi": 0.7506
+    },
+    "sut_ndvi": -0.0711,
+    "ket_qua": "khong_ap_dung",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -12.38,
+      "vh_sau_db": -13.83,
+      "thay_doi_db": -1.45,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "khong_ap_dung",
+    "dien_giai": "Hái quả trên cây lưu niên không lấy đi tán — ảnh vệ tinh không kiểm được việc này. Phải dựa vào cân tại vườn và ảnh chụp có GPS."
+  },
+  {
+    "lo_id": "L04",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "vu_id": "L04-2022-CHA",
+    "ma_cay_trong": "CHA",
+    "so_ngay_hai_khai_bao": 85,
+    "ngay_hai_tu": "2026-05-20",
+    "ngay_hai_den": "2026-08-12",
+    "nguong_sut_ap_dung": null,
+    "anh_dinh_truoc": {
+      "ngay": "2026-04-12",
+      "ndvi": 0.4495
+    },
+    "anh_day_sau": null,
+    "sut_ndvi": null,
+    "ket_qua": "khong_ap_dung",
+    "kiem_bang_radar": null,
+    "ket_qua_tong_hop": "khong_ap_dung",
+    "dien_giai": "Hái quả trên cây lưu niên không lấy đi tán — ảnh vệ tinh không kiểm được việc này. Phải dựa vào cân tại vườn và ảnh chụp có GPS."
+  },
+  {
+    "lo_id": "L05",
+    "dot_thu_id": "L05-2025-BCA-L1",
+    "vu_id": "L05-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "so_ngay_hai_khai_bao": 11,
+    "ngay_hai_tu": "2025-11-20",
+    "ngay_hai_den": "2025-11-30",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": {
+      "ngay": "2025-11-20",
+      "ndvi": 0.6819
+    },
+    "anh_day_sau": {
+      "ngay": "2025-12-18",
+      "ndvi": 0.6039
+    },
+    "sut_ndvi": -0.078,
+    "ket_qua": "khong_thay_doi_tren_anh",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -12.73,
+      "vh_sau_db": -12.81,
+      "thay_doi_db": -0.08,
+      "ket_qua": "khong_thay_doi",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "can_nguoi_xac_minh",
+    "dien_giai": "Nhật ký khai thu hoạch nhưng tán không giảm đủ — cần người xác minh."
+  },
+  {
+    "lo_id": "L05",
+    "dot_thu_id": "L05-2026-BCA-L2",
+    "vu_id": "L05-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "so_ngay_hai_khai_bao": 9,
+    "ngay_hai_tu": "2026-03-10",
+    "ngay_hai_den": "2026-03-18",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": null,
+    "anh_day_sau": {
+      "ngay": "2026-04-07",
+      "ndvi": 0.3566
+    },
+    "sut_ndvi": null,
+    "ket_qua": "khong_du_du_lieu",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -13.31,
+      "vh_sau_db": -14.44,
+      "thay_doi_db": -1.13,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan_bang_radar",
+    "dien_giai": "Thiếu ảnh quang ở ít nhất một phía trong cửa sổ ±45 ngày."
+  },
+  {
+    "lo_id": "L05",
+    "dot_thu_id": "L05-2026-BCA-L3",
+    "vu_id": "L05-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "so_ngay_hai_khai_bao": 1,
+    "ngay_hai_tu": "2026-08-12",
+    "ngay_hai_den": "2026-08-12",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": {
+      "ngay": "2026-07-11",
+      "ndvi": 0.7989
+    },
+    "anh_day_sau": null,
+    "sut_ndvi": null,
+    "ket_qua": "khong_du_du_lieu",
+    "kiem_bang_radar": null,
+    "ket_qua_tong_hop": "chua_ket_luan_duoc",
+    "dien_giai": "Thiếu ảnh quang ở ít nhất một phía trong cửa sổ ±45 ngày."
+  },
+  {
+    "lo_id": "L06",
+    "dot_thu_id": null,
+    "vu_id": null,
+    "ma_cay_trong": null,
+    "so_ngay_hai_khai_bao": 1,
+    "ngay_hai_tu": "2026-05-14",
+    "ngay_hai_den": "2026-05-14",
+    "nguong_sut_ap_dung": -0.15,
+    "anh_dinh_truoc": {
+      "ngay": "2026-04-07",
+      "ndvi": 0.2836
+    },
+    "anh_day_sau": {
+      "ngay": "2026-06-21",
+      "ndvi": 0.3458
+    },
+    "sut_ndvi": 0.0622,
+    "ket_qua": "khong_thay_doi_tren_anh",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -14.34,
+      "vh_sau_db": -14.72,
+      "thay_doi_db": -0.38,
+      "ket_qua": "khong_thay_doi",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "can_nguoi_xac_minh",
+    "dien_giai": "Nhật ký khai thu hoạch nhưng tán không giảm đủ — cần người xác minh."
+  },
+  {
+    "lo_id": "L07",
+    "dot_thu_id": "L07-CHA-2025",
+    "vu_id": "L07-2021-CHA",
+    "ma_cay_trong": "CHA",
+    "so_ngay_hai_khai_bao": 52,
+    "ngay_hai_tu": "2025-09-20",
+    "ngay_hai_den": "2025-11-10",
+    "nguong_sut_ap_dung": null,
+    "anh_dinh_truoc": {
+      "ngay": "2025-08-20",
+      "ndvi": 0.8164
+    },
+    "anh_day_sau": {
+      "ngay": "2025-12-18",
+      "ndvi": 0.7313
+    },
+    "sut_ndvi": -0.0851,
+    "ket_qua": "khong_ap_dung",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -12.41,
+      "vh_sau_db": -13.51,
+      "thay_doi_db": -1.1,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "khong_ap_dung",
+    "dien_giai": "Hái quả trên cây lưu niên không lấy đi tán — ảnh vệ tinh không kiểm được việc này. Phải dựa vào cân tại vườn và ảnh chụp có GPS."
+  },
+  {
+    "lo_id": "L07",
+    "dot_thu_id": "L07-CHA-2026",
+    "vu_id": "L07-2021-CHA",
+    "ma_cay_trong": "CHA",
+    "so_ngay_hai_khai_bao": 59,
+    "ngay_hai_tu": "2026-06-15",
+    "ngay_hai_den": "2026-08-12",
+    "nguong_sut_ap_dung": null,
+    "anh_dinh_truoc": {
+      "ngay": "2026-06-01",
+      "ndvi": 0.7988
+    },
+    "anh_day_sau": null,
+    "sut_ndvi": null,
+    "ket_qua": "khong_ap_dung",
+    "kiem_bang_radar": null,
+    "ket_qua_tong_hop": "khong_ap_dung",
+    "dien_giai": "Hái quả trên cây lưu niên không lấy đi tán — ảnh vệ tinh không kiểm được việc này. Phải dựa vào cân tại vườn và ảnh chụp có GPS."
+  },
+  {
+    "lo_id": "L09",
+    "dot_thu_id": null,
+    "vu_id": null,
+    "ma_cay_trong": null,
+    "so_ngay_hai_khai_bao": 1,
+    "ngay_hai_tu": "2026-02-10",
+    "ngay_hai_den": "2026-02-10",
+    "nguong_sut_ap_dung": -0.15,
+    "anh_dinh_truoc": null,
+    "anh_day_sau": {
+      "ngay": "2026-03-13",
+      "ndvi": 0.3499
+    },
+    "sut_ndvi": null,
+    "ket_qua": "khong_du_du_lieu",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -14.96,
+      "vh_sau_db": -13.88,
+      "thay_doi_db": 1.08,
+      "ket_qua": "khong_thay_doi",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "chua_ket_luan_duoc",
+    "dien_giai": "Thiếu ảnh quang ở ít nhất một phía trong cửa sổ ±45 ngày."
+  },
+  {
+    "lo_id": "L10",
+    "dot_thu_id": "L10-2025-CUC",
+    "vu_id": "L10-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "so_ngay_hai_khai_bao": 11,
+    "ngay_hai_tu": "2025-11-25",
+    "ngay_hai_den": "2025-12-05",
+    "nguong_sut_ap_dung": -0.2,
+    "anh_dinh_truoc": {
+      "ngay": "2025-11-20",
+      "ndvi": 0.5628
+    },
+    "anh_day_sau": {
+      "ngay": "2025-12-18",
+      "ndvi": 0.5083
+    },
+    "sut_ndvi": -0.0545,
+    "ket_qua": "khong_thay_doi_tren_anh",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -13.74,
+      "vh_sau_db": -12.8,
+      "thay_doi_db": 0.94,
+      "ket_qua": "khong_thay_doi",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "can_nguoi_xac_minh",
+    "dien_giai": "Nhật ký khai thu hoạch nhưng tán không giảm đủ — cần người xác minh."
+  },
+  {
+    "lo_id": "L10",
+    "dot_thu_id": "L10-2026-UOM",
+    "vu_id": "L10-2026-UOM",
+    "ma_cay_trong": "UOM",
+    "so_ngay_hai_khai_bao": 6,
+    "ngay_hai_tu": "2026-03-15",
+    "ngay_hai_den": "2026-03-20",
+    "nguong_sut_ap_dung": -0.05,
+    "anh_dinh_truoc": {
+      "ngay": "2026-03-13",
+      "ndvi": 0.5394
+    },
+    "anh_day_sau": {
+      "ngay": "2026-04-12",
+      "ndvi": 0.282
+    },
+    "sut_ndvi": -0.2574,
+    "ket_qua": "khop",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -13.26,
+      "vh_sau_db": -14.43,
+      "thay_doi_db": -1.17,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan",
+    "dien_giai": "NDVI tụt đúng mức mà một lần thu hoạch loại này phải tạo ra."
+  },
+  {
+    "lo_id": "L11",
+    "dot_thu_id": "L11-2025-BCA-L1",
+    "vu_id": "L11-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "so_ngay_hai_khai_bao": 7,
+    "ngay_hai_tu": "2025-10-06",
+    "ngay_hai_den": "2025-10-12",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": {
+      "ngay": "2025-10-04",
+      "ndvi": 0.7319
+    },
+    "anh_day_sau": {
+      "ngay": "2025-11-23",
+      "ndvi": 0.6046
+    },
+    "sut_ndvi": -0.1273,
+    "ket_qua": "khop",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -12.55,
+      "vh_sau_db": -12.51,
+      "thay_doi_db": 0.04,
+      "ket_qua": "khong_thay_doi",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan",
+    "dien_giai": "NDVI tụt đúng mức mà một lần thu hoạch loại này phải tạo ra."
+  },
+  {
+    "lo_id": "L11",
+    "dot_thu_id": "L11-2025-BCA-L2",
+    "vu_id": "L11-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "so_ngay_hai_khai_bao": 5,
+    "ngay_hai_tu": "2025-12-20",
+    "ngay_hai_den": "2025-12-24",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": {
+      "ngay": "2025-11-13",
+      "ndvi": 0.6902
+    },
+    "anh_day_sau": null,
+    "sut_ndvi": null,
+    "ket_qua": "khong_du_du_lieu",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -12.1,
+      "vh_sau_db": -12.6,
+      "thay_doi_db": -0.5,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan_bang_radar",
+    "dien_giai": "Thiếu ảnh quang ở ít nhất một phía trong cửa sổ ±45 ngày."
+  },
+  {
+    "lo_id": "L11",
+    "dot_thu_id": "L11-2026-BCA-L3",
+    "vu_id": "L11-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "so_ngay_hai_khai_bao": 7,
+    "ngay_hai_tu": "2026-03-20",
+    "ngay_hai_den": "2026-03-26",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": {
+      "ngay": "2026-03-13",
+      "ndvi": 0.5684
+    },
+    "anh_day_sau": {
+      "ngay": "2026-04-07",
+      "ndvi": 0.392
+    },
+    "sut_ndvi": -0.1764,
+    "ket_qua": "khop",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -12.54,
+      "vh_sau_db": -13.11,
+      "thay_doi_db": -0.57,
+      "ket_qua": "khop",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan",
+    "dien_giai": "NDVI tụt đúng mức mà một lần thu hoạch loại này phải tạo ra."
+  },
+  {
+    "lo_id": "L11",
+    "dot_thu_id": "L11-2026-BCA-L4",
+    "vu_id": "L11-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "so_ngay_hai_khai_bao": 7,
+    "ngay_hai_tu": "2026-08-05",
+    "ngay_hai_den": "2026-08-11",
+    "nguong_sut_ap_dung": -0.08,
+    "anh_dinh_truoc": {
+      "ngay": "2026-07-11",
+      "ndvi": 0.602
+    },
+    "anh_day_sau": null,
+    "sut_ndvi": null,
+    "ket_qua": "khong_du_du_lieu",
+    "kiem_bang_radar": null,
+    "ket_qua_tong_hop": "chua_ket_luan_duoc",
+    "dien_giai": "Thiếu ảnh quang ở ít nhất một phía trong cửa sổ ±45 ngày."
+  },
+  {
+    "lo_id": "L12",
+    "dot_thu_id": "L12-2025-CUC",
+    "vu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "so_ngay_hai_khai_bao": 22,
+    "ngay_hai_tu": "2025-11-15",
+    "ngay_hai_den": "2025-12-06",
+    "nguong_sut_ap_dung": -0.2,
+    "anh_dinh_truoc": {
+      "ngay": "2025-11-13",
+      "ndvi": 0.7323
+    },
+    "anh_day_sau": {
+      "ngay": "2025-12-18",
+      "ndvi": 0.4268
+    },
+    "sut_ndvi": -0.3055,
+    "ket_qua": "khop",
+    "kiem_bang_radar": {
+      "vh_truoc_db": -13.45,
+      "vh_sau_db": -13.3,
+      "thay_doi_db": 0.15,
+      "ket_qua": "khong_thay_doi",
+      "ghi_chu": "Ngưỡng −0,5 dB. Radar nhiễu đốm nhiều, chỉ đọc được xu hướng."
+    },
+    "ket_qua_tong_hop": "xac_nhan",
+    "dien_giai": "NDVI tụt đúng mức mà một lần thu hoạch loại này phải tạo ra."
+  }
+]

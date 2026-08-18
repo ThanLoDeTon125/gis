@@ -1,0 +1,585 @@
+nk_id,lo_id,vu_id,ngay,loai_viec,mo_ta,nguoi_thuc_hien,vat_tu,luong,don_vi,bang_chung,ghi_chu,nguon
+NK-0319,L05,L05-2025-BCA,2025-08-08,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,112,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0320,L05,L05-2025-BCA,2025-08-13,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,1.8,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0321,L05,L05-2025-BCA,2025-08-20,xuong_giong,Xuống giống Bồ công anh — 0.224 ha,NS-01,,,,GPS|ẢNH|DUYỆT,,mau
+NK-0160,L04,L04-2022-CHA,2025-09-02,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,2.2,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0161,L04,L04-2022-CHA,2025-09-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0162,L04,L04-2022-CHA,2025-09-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0163,L04,L04-2022-CHA,2025-09-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0164,L04,L04-2022-CHA,2025-09-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0488,L10,L10-2025-CUC,2025-09-08,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,107,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0165,L04,L04-2022-CHA,2025-09-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0166,L04,L04-2022-CHA,2025-09-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0167,L04,L04-2022-CHA,2025-09-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0168,L04,L04-2022-CHA,2025-09-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0169,L04,L04-2022-CHA,2025-09-13,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0489,L10,L10-2025-CUC,2025-09-13,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,1.7,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0170,L04,L04-2022-CHA,2025-09-14,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0325,L05,L05-2025-BCA,2025-09-14,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0171,L04,L04-2022-CHA,2025-09-15,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0172,L04,L04-2022-CHA,2025-09-16,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0173,L04,L04-2022-CHA,2025-09-17,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0360,L07,L07-2021-CHA,2025-09-17,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,20.2,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0174,L04,L04-2022-CHA,2025-09-18,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0175,L04,L04-2022-CHA,2025-09-19,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0322,L05,L05-2025-BCA,2025-09-19,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,72,kg,CÂN|ẢNH,,mau
+NK-0176,L04,L04-2022-CHA,2025-09-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0361,L07,L07-2021-CHA,2025-09-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0490,L10,L10-2025-CUC,2025-09-20,xuong_giong,Xuống giống Cúc chi — 0.213 ha,NS-01,,,,GPS|ẢNH|DUYỆT,"Vụ muộn, gieo bằng cây giống ươm sẵn nên chu kỳ ngắn hơn L01.",mau
+NK-0177,L04,L04-2022-CHA,2025-09-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0362,L07,L07-2021-CHA,2025-09-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0178,L04,L04-2022-CHA,2025-09-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0363,L07,L07-2021-CHA,2025-09-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0179,L04,L04-2022-CHA,2025-09-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0364,L07,L07-2021-CHA,2025-09-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0180,L04,L04-2022-CHA,2025-09-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0365,L07,L07-2021-CHA,2025-09-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0181,L04,L04-2022-CHA,2025-09-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0366,L07,L07-2021-CHA,2025-09-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0182,L04,L04-2022-CHA,2025-09-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0367,L07,L07-2021-CHA,2025-09-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0183,L04,L04-2022-CHA,2025-09-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0368,L07,L07-2021-CHA,2025-09-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0184,L04,L04-2022-CHA,2025-09-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0369,L07,L07-2021-CHA,2025-09-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0185,L04,L04-2022-CHA,2025-09-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0370,L07,L07-2021-CHA,2025-09-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0186,L04,L04-2022-CHA,2025-09-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0371,L07,L07-2021-CHA,2025-09-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0187,L04,L04-2022-CHA,2025-10-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0372,L07,L07-2021-CHA,2025-10-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0188,L04,L04-2022-CHA,2025-10-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0373,L07,L07-2021-CHA,2025-10-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0189,L04,L04-2022-CHA,2025-10-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0374,L07,L07-2021-CHA,2025-10-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0527,L11,L11-2025-BCA,2025-10-03,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,4.3,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0190,L04,L04-2022-CHA,2025-10-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0375,L07,L07-2021-CHA,2025-10-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0191,L04,L04-2022-CHA,2025-10-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0376,L07,L07-2021-CHA,2025-10-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0192,L04,L04-2022-CHA,2025-10-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0377,L07,L07-2021-CHA,2025-10-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0528,L11,L11-2025-BCA,2025-10-06,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0193,L04,L04-2022-CHA,2025-10-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0378,L07,L07-2021-CHA,2025-10-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0529,L11,L11-2025-BCA,2025-10-07,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0104,L03,L03-2025-BCA,2025-10-08,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,324,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0194,L04,L04-2022-CHA,2025-10-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0379,L07,L07-2021-CHA,2025-10-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0530,L11,L11-2025-BCA,2025-10-08,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0195,L04,L04-2022-CHA,2025-10-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0380,L07,L07-2021-CHA,2025-10-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0531,L11,L11-2025-BCA,2025-10-09,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0196,L04,L04-2022-CHA,2025-10-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0381,L07,L07-2021-CHA,2025-10-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0532,L11,L11-2025-BCA,2025-10-10,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0197,L04,L04-2022-CHA,2025-10-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0382,L07,L07-2021-CHA,2025-10-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0533,L11,L11-2025-BCA,2025-10-11,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0198,L04,L04-2022-CHA,2025-10-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0383,L07,L07-2021-CHA,2025-10-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0534,L11,L11-2025-BCA,2025-10-12,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0105,L03,L03-2025-BCA,2025-10-13,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,5.2,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0199,L04,L04-2022-CHA,2025-10-13,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0384,L07,L07-2021-CHA,2025-10-13,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0200,L04,L04-2022-CHA,2025-10-14,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0326,L05,L05-2025-BCA,2025-10-14,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0385,L07,L07-2021-CHA,2025-10-14,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0201,L04,L04-2022-CHA,2025-10-15,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0386,L07,L07-2021-CHA,2025-10-15,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0493,L10,L10-2025-CUC,2025-10-15,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0202,L04,L04-2022-CHA,2025-10-16,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0387,L07,L07-2021-CHA,2025-10-16,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0001,L01,L01-2025-CUC,2025-10-17,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,17.2,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0203,L04,L04-2022-CHA,2025-10-17,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0388,L07,L07-2021-CHA,2025-10-17,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0204,L04,L04-2022-CHA,2025-10-18,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0389,L07,L07-2021-CHA,2025-10-18,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0205,L04,L04-2022-CHA,2025-10-19,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0323,L05,L05-2025-BCA,2025-10-19,bon_thuc,Bón thúc đợt 2,NS-02,Phân hữu cơ vi sinh,72,kg,CÂN|ẢNH,,mau
+NK-0390,L07,L07-2021-CHA,2025-10-19,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0002,L01,L01-2025-CUC,2025-10-20,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0106,L03,L03-2025-BCA,2025-10-20,xuong_giong,Xuống giống Bồ công anh — 0.649 ha,NS-01,,,,GPS|ẢNH|DUYỆT,,mau
+NK-0206,L04,L04-2022-CHA,2025-10-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0391,L07,L07-2021-CHA,2025-10-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0491,L10,L10-2025-CUC,2025-10-20,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,68,kg,CÂN|ẢNH,,mau
+NK-0003,L01,L01-2025-CUC,2025-10-21,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0207,L04,L04-2022-CHA,2025-10-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0392,L07,L07-2021-CHA,2025-10-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0004,L01,L01-2025-CUC,2025-10-22,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0208,L04,L04-2022-CHA,2025-10-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0393,L07,L07-2021-CHA,2025-10-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0005,L01,L01-2025-CUC,2025-10-23,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0209,L04,L04-2022-CHA,2025-10-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0394,L07,L07-2021-CHA,2025-10-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0006,L01,L01-2025-CUC,2025-10-24,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0210,L04,L04-2022-CHA,2025-10-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0395,L07,L07-2021-CHA,2025-10-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0007,L01,L01-2025-CUC,2025-10-25,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0211,L04,L04-2022-CHA,2025-10-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0396,L07,L07-2021-CHA,2025-10-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0008,L01,L01-2025-CUC,2025-10-26,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0212,L04,L04-2022-CHA,2025-10-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0397,L07,L07-2021-CHA,2025-10-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0009,L01,L01-2025-CUC,2025-10-27,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0213,L04,L04-2022-CHA,2025-10-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0398,L07,L07-2021-CHA,2025-10-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0010,L01,L01-2025-CUC,2025-10-28,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0214,L04,L04-2022-CHA,2025-10-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0399,L07,L07-2021-CHA,2025-10-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0011,L01,L01-2025-CUC,2025-10-29,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0215,L04,L04-2022-CHA,2025-10-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0400,L07,L07-2021-CHA,2025-10-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0012,L01,L01-2025-CUC,2025-10-30,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0216,L04,L04-2022-CHA,2025-10-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0401,L07,L07-2021-CHA,2025-10-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0013,L01,L01-2025-CUC,2025-10-31,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0217,L04,L04-2022-CHA,2025-10-31,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0402,L07,L07-2021-CHA,2025-10-31,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0014,L01,L01-2025-CUC,2025-11-01,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0218,L04,L04-2022-CHA,2025-11-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0403,L07,L07-2021-CHA,2025-11-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0015,L01,L01-2025-CUC,2025-11-02,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0219,L04,L04-2022-CHA,2025-11-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0404,L07,L07-2021-CHA,2025-11-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0016,L01,L01-2025-CUC,2025-11-03,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0220,L04,L04-2022-CHA,2025-11-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0405,L07,L07-2021-CHA,2025-11-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0017,L01,L01-2025-CUC,2025-11-04,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0221,L04,L04-2022-CHA,2025-11-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0406,L07,L07-2021-CHA,2025-11-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0018,L01,L01-2025-CUC,2025-11-05,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0222,L04,L04-2022-CHA,2025-11-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0407,L07,L07-2021-CHA,2025-11-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0019,L01,L01-2025-CUC,2025-11-06,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0223,L04,L04-2022-CHA,2025-11-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0408,L07,L07-2021-CHA,2025-11-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0020,L01,L01-2025-CUC,2025-11-07,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0224,L04,L04-2022-CHA,2025-11-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0409,L07,L07-2021-CHA,2025-11-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0021,L01,L01-2025-CUC,2025-11-08,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0225,L04,L04-2022-CHA,2025-11-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0410,L07,L07-2021-CHA,2025-11-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0022,L01,L01-2025-CUC,2025-11-09,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0226,L04,L04-2022-CHA,2025-11-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0411,L07,L07-2021-CHA,2025-11-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0023,L01,L01-2025-CUC,2025-11-10,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0227,L04,L04-2022-CHA,2025-11-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0412,L07,L07-2021-CHA,2025-11-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0024,L01,L01-2025-CUC,2025-11-11,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0228,L04,L04-2022-CHA,2025-11-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0025,L01,L01-2025-CUC,2025-11-12,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0229,L04,L04-2022-CHA,2025-11-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0557,L12,L12-2025-CUC,2025-11-12,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,11.5,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0026,L01,L01-2025-CUC,2025-11-13,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0230,L04,L04-2022-CHA,2025-11-13,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0027,L01,L01-2025-CUC,2025-11-14,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0108,L03,L03-2025-BCA,2025-11-14,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0231,L04,L04-2022-CHA,2025-11-14,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0494,L10,L10-2025-CUC,2025-11-14,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0028,L01,L01-2025-CUC,2025-11-15,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0232,L04,L04-2022-CHA,2025-11-15,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0558,L12,L12-2025-CUC,2025-11-15,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0029,L01,L01-2025-CUC,2025-11-16,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0559,L12,L12-2025-CUC,2025-11-16,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0030,L01,L01-2025-CUC,2025-11-17,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0067,L02,L02-2025-CUC,2025-11-17,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,3.3,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0334,L05,L05-2025-BCA,2025-11-17,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,2.7,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0560,L12,L12-2025-CUC,2025-11-17,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0031,L01,L01-2025-CUC,2025-11-18,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0324,L05,L05-2025-BCA,2025-11-18,bon_thuc,Bón thúc đợt 3,NS-02,Phân hữu cơ vi sinh,72,kg,CÂN|ẢNH,,mau
+NK-0561,L12,L12-2025-CUC,2025-11-18,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0032,L01,L01-2025-CUC,2025-11-19,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0107,L03,L03-2025-BCA,2025-11-19,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,208,kg,CÂN|ẢNH,,mau
+NK-0492,L10,L10-2025-CUC,2025-11-19,bon_thuc,Bón thúc đợt 2,NS-02,Phân hữu cơ vi sinh,68,kg,CÂN|ẢNH,,mau
+NK-0562,L12,L12-2025-CUC,2025-11-19,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0033,L01,L01-2025-CUC,2025-11-20,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0068,L02,L02-2025-CUC,2025-11-20,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0335,L05,L05-2025-BCA,2025-11-20,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0563,L12,L12-2025-CUC,2025-11-20,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0034,L01,L01-2025-CUC,2025-11-21,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0069,L02,L02-2025-CUC,2025-11-21,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0336,L05,L05-2025-BCA,2025-11-21,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0564,L12,L12-2025-CUC,2025-11-21,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0035,L01,L01-2025-CUC,2025-11-22,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0070,L02,L02-2025-CUC,2025-11-22,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0337,L05,L05-2025-BCA,2025-11-22,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0495,L10,L10-2025-CUC,2025-11-22,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,2.6,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0565,L12,L12-2025-CUC,2025-11-22,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0036,L01,L01-2025-CUC,2025-11-23,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0071,L02,L02-2025-CUC,2025-11-23,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0338,L05,L05-2025-BCA,2025-11-23,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0566,L12,L12-2025-CUC,2025-11-23,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0037,L01,L01-2025-CUC,2025-11-24,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0072,L02,L02-2025-CUC,2025-11-24,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0339,L05,L05-2025-BCA,2025-11-24,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0567,L12,L12-2025-CUC,2025-11-24,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0038,L01,L01-2025-CUC,2025-11-25,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0073,L02,L02-2025-CUC,2025-11-25,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0340,L05,L05-2025-BCA,2025-11-25,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0473,L08,,2025-11-25,cai_tao_dat,"Phát dọn bụi cây, thu gom sinh khối",NS-01,,,,ẢNH|GPS,"NDVI 0,825 (20/11 lô L04 tham chiếu) — lô L08 rơi từ 0,586 (13/11) xuống 0,195 (20/11)",mau
+NK-0496,L10,L10-2025-CUC,2025-11-25,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0568,L12,L12-2025-CUC,2025-11-25,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0039,L01,L01-2025-CUC,2025-11-26,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0074,L02,L02-2025-CUC,2025-11-26,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0341,L05,L05-2025-BCA,2025-11-26,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0497,L10,L10-2025-CUC,2025-11-26,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0569,L12,L12-2025-CUC,2025-11-26,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0075,L02,L02-2025-CUC,2025-11-27,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0342,L05,L05-2025-BCA,2025-11-27,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0498,L10,L10-2025-CUC,2025-11-27,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0570,L12,L12-2025-CUC,2025-11-27,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0076,L02,L02-2025-CUC,2025-11-28,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0343,L05,L05-2025-BCA,2025-11-28,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0499,L10,L10-2025-CUC,2025-11-28,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0571,L12,L12-2025-CUC,2025-11-28,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0077,L02,L02-2025-CUC,2025-11-29,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0344,L05,L05-2025-BCA,2025-11-29,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0500,L10,L10-2025-CUC,2025-11-29,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0572,L12,L12-2025-CUC,2025-11-29,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0078,L02,L02-2025-CUC,2025-11-30,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0345,L05,L05-2025-BCA,2025-11-30,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0501,L10,L10-2025-CUC,2025-11-30,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0573,L12,L12-2025-CUC,2025-11-30,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0079,L02,L02-2025-CUC,2025-12-01,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0502,L10,L10-2025-CUC,2025-12-01,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0574,L12,L12-2025-CUC,2025-12-01,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0080,L02,L02-2025-CUC,2025-12-02,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0503,L10,L10-2025-CUC,2025-12-02,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0575,L12,L12-2025-CUC,2025-12-02,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0081,L02,L02-2025-CUC,2025-12-03,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0504,L10,L10-2025-CUC,2025-12-03,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0576,L12,L12-2025-CUC,2025-12-03,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0082,L02,L02-2025-CUC,2025-12-04,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0505,L10,L10-2025-CUC,2025-12-04,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0577,L12,L12-2025-CUC,2025-12-04,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0083,L02,L02-2025-CUC,2025-12-05,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0506,L10,L10-2025-CUC,2025-12-05,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0578,L12,L12-2025-CUC,2025-12-05,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0579,L12,L12-2025-CUC,2025-12-06,thu_hoach,Thu hái Cúc chi — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0109,L03,L03-2025-BCA,2025-12-11,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,7.8,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0110,L03,L03-2025-BCA,2025-12-14,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0111,L03,L03-2025-BCA,2025-12-15,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0112,L03,L03-2025-BCA,2025-12-16,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0113,L03,L03-2025-BCA,2025-12-17,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0535,L11,L11-2025-BCA,2025-12-17,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,4.3,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0114,L03,L03-2025-BCA,2025-12-18,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0115,L03,L03-2025-BCA,2025-12-19,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0116,L03,L03-2025-BCA,2025-12-20,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0536,L11,L11-2025-BCA,2025-12-20,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0117,L03,L03-2025-BCA,2025-12-21,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0537,L11,L11-2025-BCA,2025-12-21,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0118,L03,L03-2025-BCA,2025-12-22,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0538,L11,L11-2025-BCA,2025-12-22,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0119,L03,L03-2025-BCA,2025-12-23,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0539,L11,L11-2025-BCA,2025-12-23,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0120,L03,L03-2025-BCA,2025-12-24,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0507,L10,L10-2026-UOM,2025-12-24,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,107,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0540,L11,L11-2025-BCA,2025-12-24,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0121,L03,L03-2025-BCA,2025-12-25,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0122,L03,L03-2025-BCA,2025-12-26,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0123,L03,L03-2025-BCA,2025-12-27,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0124,L03,L03-2025-BCA,2025-12-28,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0125,L03,L03-2025-BCA,2025-12-29,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0508,L10,L10-2026-UOM,2025-12-29,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,1.7,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0126,L03,L03-2025-BCA,2025-12-30,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0509,L10,L10-2026-UOM,2026-01-05,xuong_giong,Xuống giống Luống ươm cây giống — 0.213 ha,NS-01,,,,GPS|ẢNH|DUYỆT,'Thu' = ngày xuất cây giống sang lô khác.,mau
+NK-0084,L02,L02-2023-CCO,2026-01-08,tuoi,Tưới bù — thiếu 34.5 mm trong tháng,NS-01,Nước giếng khoan,79.1,m³,ĐỒNG HỒ NƯỚC,ET0 69.7 mm × Kc 0.95 = 66.2 mm; mưa hiệu quả 31.7 mm (khí hậu THẬT),mau
+NK-0158,L04,L04-2022-CHA,2026-01-08,tuoi,Tưới bù — thiếu 17.1 mm trong tháng,NS-01,Nước giếng khoan,10.5,m³,ĐỒNG HỒ NƯỚC,ET0 69.7 mm × Kc 0.7 = 48.8 mm; mưa hiệu quả 31.7 mm (khí hậu THẬT),mau
+NK-0327,L05,L05-2025-BCA,2026-01-08,tuoi,Tưới bù — thiếu 38.0 mm trong tháng,NS-01,Nước giếng khoan,28.3,m³,ĐỒNG HỒ NƯỚC,ET0 69.7 mm × Kc 1.0 = 69.7 mm; mưa hiệu quả 31.7 mm (khí hậu THẬT),mau
+NK-0358,L07,L07-2021-CHA,2026-01-08,tuoi,Tưới bù — thiếu 17.1 mm trong tháng,NS-01,Nước giếng khoan,95.7,m³,ĐỒNG HỒ NƯỚC,ET0 69.7 mm × Kc 0.7 = 48.8 mm; mưa hiệu quả 31.7 mm (khí hậu THẬT),mau
+NK-0520,L11,L11-2025-BCA,2026-01-08,tuoi,Tưới bù — thiếu 38.0 mm trong tháng,NS-01,Nước giếng khoan,45.0,m³,ĐỒNG HỒ NƯỚC,ET0 69.7 mm × Kc 1.0 = 69.7 mm; mưa hiệu quả 31.7 mm (khí hậu THẬT),mau
+NK-0474,L08,,2026-01-15,cai_tao_dat,"Bón lót phân chuồng hoai, để đất nghỉ",NS-01,,,,ẢNH|GPS,"NDVI phẳng 0,24–0,28 suốt 01–06/2026",mau
+NK-0085,L02,L02-2023-CCO,2026-01-18,tuoi,Tưới bù — thiếu 34.5 mm trong tháng,NS-01,Nước giếng khoan,79.1,m³,ĐỒNG HỒ NƯỚC,ET0 69.7 mm × Kc 0.95 = 66.2 mm; mưa hiệu quả 31.7 mm (khí hậu THẬT),mau
+NK-0328,L05,L05-2025-BCA,2026-01-18,tuoi,Tưới bù — thiếu 38.0 mm trong tháng,NS-01,Nước giếng khoan,28.3,m³,ĐỒNG HỒ NƯỚC,ET0 69.7 mm × Kc 1.0 = 69.7 mm; mưa hiệu quả 31.7 mm (khí hậu THẬT),mau
+NK-0521,L11,L11-2025-BCA,2026-01-18,tuoi,Tưới bù — thiếu 38.0 mm trong tháng,NS-01,Nước giếng khoan,45.0,m³,ĐỒNG HỒ NƯỚC,ET0 69.7 mm × Kc 1.0 = 69.7 mm; mưa hiệu quả 31.7 mm (khí hậu THẬT),mau
+NK-0040,L01,L01-2026-LAC,2026-01-24,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,717,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0041,L01,L01-2026-LAC,2026-01-29,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,11.5,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0512,L10,L10-2026-UOM,2026-01-30,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0127,L03,L03-2026-LAC,2026-01-31,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,324,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0510,L10,L10-2026-UOM,2026-02-04,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,68,kg,CÂN|ẢNH,,mau
+NK-0042,L01,L01-2026-LAC,2026-02-05,xuong_giong,Xuống giống Lạc (đậu phộng) — 1.435 ha,NS-01,,,,GPS|ẢNH|DUYỆT,"Lạc xuân đồng bằng sông Hồng, gieo đầu tháng 2 + ~130 ngày. Ngày thu SỬA LẠI sau khi luật R2 bắt được cú tụt 0,741 (06/06) → 0,298 (21/06): thu thật rơi giữa tháng 6, không phải đầu tháng 7 như lịch đặt ban đầu.",mau
+NK-0128,L03,L03-2026-LAC,2026-02-05,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,5.2,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0086,L02,L02-2023-CCO,2026-02-08,tuoi,Tưới bù — thiếu 19.2 mm trong tháng,NS-01,Nước giếng khoan,44.0,m³,ĐỒNG HỒ NƯỚC,ET0 58.0 mm × Kc 0.95 = 55.1 mm; mưa hiệu quả 35.9 mm (khí hậu THẬT),mau
+NK-0329,L05,L05-2025-BCA,2026-02-08,tuoi,Tưới bù — thiếu 22.1 mm trong tháng,NS-01,Nước giếng khoan,16.5,m³,ĐỒNG HỒ NƯỚC,ET0 58.0 mm × Kc 1.0 = 58.0 mm; mưa hiệu quả 35.9 mm (khí hậu THẬT),mau
+NK-0522,L11,L11-2025-BCA,2026-02-08,tuoi,Tưới bù — thiếu 22.1 mm trong tháng,NS-01,Nước giếng khoan,26.2,m³,ĐỒNG HỒ NƯỚC,ET0 58.0 mm × Kc 1.0 = 58.0 mm; mưa hiệu quả 35.9 mm (khí hậu THẬT),mau
+NK-0584,L09,L09-2026-DAU,2026-02-10,thu_hoach,Thu hái đậu che phủ (bản ghi SAI — cắm để kiểm thử cảnh báo),NS-05,,,,CÂN,"LỆCH CỐ Ý: NDVI L09 tháng 2–3/2026 không tụt, và vụ đậu mãi 20/05/2026 mới gieo.",mau
+NK-0129,L03,L03-2026-LAC,2026-02-12,xuong_giong,Xuống giống Lạc (đậu phộng) — 0.649 ha,NS-01,,,,GPS|ẢNH|DUYỆT,"Đáy 09/04 là đáy hạn toàn farm, không phải ngày gieo — xem can_cu.",mau
+NK-0513,L10,L10-2026-UOM,2026-03-01,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0046,L01,L01-2026-LAC,2026-03-02,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0511,L10,L10-2026-UOM,2026-03-06,bon_thuc,Bón thúc đợt 2,NS-02,Phân hữu cơ vi sinh,68,kg,CÂN|ẢNH,,mau
+NK-0043,L01,L01-2026-LAC,2026-03-07,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,459,kg,CÂN|ẢNH,,mau
+NK-0088,L02,L02-2023-CCO,2026-03-07,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,5.0,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0346,L05,L05-2025-BCA,2026-03-07,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,2.7,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0048,L01,L01-2026-LAC,2026-03-08,tuoi,Tưới bù — thiếu 47.3 mm trong tháng,NS-01,Nước giếng khoan,226.2,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 1.15 = 99.8 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0087,L02,L02-2023-CCO,2026-03-08,tuoi,Tưới bù — thiếu 16.9 mm trong tháng,NS-01,Nước giếng khoan,38.8,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 0.8 = 69.4 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0135,L03,L03-2026-LAC,2026-03-08,tuoi,Tưới bù — thiếu 47.3 mm trong tháng,NS-01,Nước giếng khoan,102.3,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 1.15 = 99.8 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0330,L05,L05-2025-BCA,2026-03-08,tuoi,Tưới bù — thiếu 21.3 mm trong tháng,NS-01,Nước giếng khoan,15.9,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 0.85 = 73.8 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0523,L11,L11-2025-BCA,2026-03-08,tuoi,Tưới bù — thiếu 21.3 mm trong tháng,NS-01,Nước giếng khoan,25.2,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 0.85 = 73.8 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0133,L03,L03-2026-LAC,2026-03-09,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0089,L02,L02-2023-CCO,2026-03-10,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0347,L05,L05-2025-BCA,2026-03-10,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0090,L02,L02-2023-CCO,2026-03-11,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0348,L05,L05-2025-BCA,2026-03-11,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0091,L02,L02-2023-CCO,2026-03-12,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0349,L05,L05-2025-BCA,2026-03-12,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0092,L02,L02-2023-CCO,2026-03-13,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0350,L05,L05-2025-BCA,2026-03-13,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0093,L02,L02-2023-CCO,2026-03-14,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0130,L03,L03-2026-LAC,2026-03-14,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,208,kg,CÂN|ẢNH,,mau
+NK-0351,L05,L05-2025-BCA,2026-03-14,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0094,L02,L02-2023-CCO,2026-03-15,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0352,L05,L05-2025-BCA,2026-03-15,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0514,L10,L10-2026-UOM,2026-03-15,thu_hoach,Thu hái Luống ươm cây giống — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0095,L02,L02-2023-CCO,2026-03-16,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0353,L05,L05-2025-BCA,2026-03-16,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0515,L10,L10-2026-UOM,2026-03-16,thu_hoach,Thu hái Luống ươm cây giống — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0096,L02,L02-2023-CCO,2026-03-17,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0354,L05,L05-2025-BCA,2026-03-17,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0516,L10,L10-2026-UOM,2026-03-17,thu_hoach,Thu hái Luống ươm cây giống — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0541,L11,L11-2025-BCA,2026-03-17,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,4.3,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0049,L01,L01-2026-LAC,2026-03-18,tuoi,Tưới bù — thiếu 47.3 mm trong tháng,NS-01,Nước giếng khoan,226.2,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 1.15 = 99.8 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0097,L02,L02-2023-CCO,2026-03-18,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0136,L03,L03-2026-LAC,2026-03-18,tuoi,Tưới bù — thiếu 47.3 mm trong tháng,NS-01,Nước giếng khoan,102.3,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 1.15 = 99.8 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0355,L05,L05-2025-BCA,2026-03-18,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0517,L10,L10-2026-UOM,2026-03-18,thu_hoach,Thu hái Luống ươm cây giống — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0098,L02,L02-2023-CCO,2026-03-19,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0518,L10,L10-2026-UOM,2026-03-19,thu_hoach,Thu hái Luống ươm cây giống — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0099,L02,L02-2023-CCO,2026-03-20,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0519,L10,L10-2026-UOM,2026-03-20,thu_hoach,Thu hái Luống ươm cây giống — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0542,L11,L11-2025-BCA,2026-03-20,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0100,L02,L02-2023-CCO,2026-03-21,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0543,L11,L11-2025-BCA,2026-03-21,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0101,L02,L02-2023-CCO,2026-03-22,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0544,L11,L11-2025-BCA,2026-03-22,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0102,L02,L02-2023-CCO,2026-03-23,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0545,L11,L11-2025-BCA,2026-03-23,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0103,L02,L02-2023-CCO,2026-03-24,thu_hoach,Thu hái Cúc cổ (trà hoa cúc cổ) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0546,L11,L11-2025-BCA,2026-03-24,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0547,L11,L11-2025-BCA,2026-03-25,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0548,L11,L11-2025-BCA,2026-03-26,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0050,L01,L01-2026-LAC,2026-03-27,tuoi,Tưới bù — thiếu 47.3 mm trong tháng,NS-01,Nước giếng khoan,226.2,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 1.15 = 99.8 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0137,L03,L03-2026-LAC,2026-03-27,tuoi,Tưới bù — thiếu 47.3 mm trong tháng,NS-01,Nước giếng khoan,102.3,m³,ĐỒNG HỒ NƯỚC,ET0 86.8 mm × Kc 1.15 = 99.8 mm; mưa hiệu quả 52.5 mm (khí hậu THẬT),mau
+NK-0047,L01,L01-2026-LAC,2026-04-01,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0044,L01,L01-2026-LAC,2026-04-06,bon_thuc,Bón thúc đợt 2,NS-02,Phân hữu cơ vi sinh,459,kg,CÂN|ẢNH,,mau
+NK-0051,L01,L01-2026-LAC,2026-04-08,tuoi,Tưới bù — thiếu 75.1 mm trong tháng,NS-01,Nước giếng khoan,359.1,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.15 = 144.0 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0134,L03,L03-2026-LAC,2026-04-08,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0138,L03,L03-2026-LAC,2026-04-08,tuoi,Tưới bù — thiếu 75.1 mm trong tháng,NS-01,Nước giếng khoan,162.4,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.15 = 144.0 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0159,L04,L04-2022-CHA,2026-04-08,tuoi,Tưới bù — thiếu 18.7 mm trong tháng,NS-01,Nước giếng khoan,11.5,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 0.7 = 87.6 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0331,L05,L05-2025-BCA,2026-04-08,tuoi,Tưới bù — thiếu 56.3 mm trong tháng,NS-01,Nước giếng khoan,42.0,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.0 = 125.2 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0359,L07,L07-2021-CHA,2026-04-08,tuoi,Tưới bù — thiếu 18.7 mm trong tháng,NS-01,Nước giếng khoan,104.7,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 0.7 = 87.6 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0524,L11,L11-2025-BCA,2026-04-08,tuoi,Tưới bù — thiếu 56.3 mm trong tháng,NS-01,Nước giếng khoan,66.7,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.0 = 125.2 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0131,L03,L03-2026-LAC,2026-04-13,bon_thuc,Bón thúc đợt 2,NS-02,Phân hữu cơ vi sinh,208,kg,CÂN|ẢNH,,mau
+NK-0052,L01,L01-2026-LAC,2026-04-18,tuoi,Tưới bù — thiếu 75.1 mm trong tháng,NS-01,Nước giếng khoan,359.1,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.15 = 144.0 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0139,L03,L03-2026-LAC,2026-04-18,tuoi,Tưới bù — thiếu 75.1 mm trong tháng,NS-01,Nước giếng khoan,162.4,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.15 = 144.0 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0332,L05,L05-2025-BCA,2026-04-18,tuoi,Tưới bù — thiếu 56.3 mm trong tháng,NS-01,Nước giếng khoan,42.0,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.0 = 125.2 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0525,L11,L11-2025-BCA,2026-04-18,tuoi,Tưới bù — thiếu 56.3 mm trong tháng,NS-01,Nước giếng khoan,66.7,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.0 = 125.2 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0053,L01,L01-2026-LAC,2026-04-27,tuoi,Tưới bù — thiếu 75.1 mm trong tháng,NS-01,Nước giếng khoan,359.1,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.15 = 144.0 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0140,L03,L03-2026-LAC,2026-04-27,tuoi,Tưới bù — thiếu 75.1 mm trong tháng,NS-01,Nước giếng khoan,162.4,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.15 = 144.0 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0333,L05,L05-2025-BCA,2026-04-27,tuoi,Tưới bù — thiếu 56.3 mm trong tháng,NS-01,Nước giếng khoan,42.0,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.0 = 125.2 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0526,L11,L11-2025-BCA,2026-04-27,tuoi,Tưới bù — thiếu 56.3 mm trong tháng,NS-01,Nước giếng khoan,66.7,m³,ĐỒNG HỒ NƯỚC,ET0 125.2 mm × Kc 1.0 = 125.2 mm; mưa hiệu quả 68.9 mm (khí hậu THẬT),mau
+NK-0045,L01,L01-2026-LAC,2026-05-06,bon_thuc,Bón thúc đợt 3,NS-02,Phân hữu cơ vi sinh,459,kg,CÂN|ẢNH,,mau
+NK-0481,L09,L09-2026-DAU,2026-05-08,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,182,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0132,L03,L03-2026-LAC,2026-05-13,bon_thuc,Bón thúc đợt 3,NS-02,Phân hữu cơ vi sinh,208,kg,CÂN|ẢNH,,mau
+NK-0482,L09,L09-2026-DAU,2026-05-13,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,2.9,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0583,L06,,2026-05-14,thu_hoach,Thu hái bồ công anh (bản ghi SAI — cắm để kiểm thử cảnh báo),NS-05,,,,CÂN,"LỆCH CỐ Ý: L06 là khu công trình, không có vụ nào.",mau
+NK-0233,L04,L04-2022-CHA,2026-05-17,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,2.2,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0234,L04,L04-2022-CHA,2026-05-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0483,L09,L09-2026-DAU,2026-05-20,xuong_giong,Xuống giống Đậu che phủ (cây phân xanh) — 0.364 ha,NS-01,,,,GPS|ẢNH|DUYỆT,Không thu sản phẩm — cày vùi làm phân xanh. 'Thu' ở đây là ngày cày vùi (kế hoạch).,mau
+NK-0235,L04,L04-2022-CHA,2026-05-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0236,L04,L04-2022-CHA,2026-05-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0237,L04,L04-2022-CHA,2026-05-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0238,L04,L04-2022-CHA,2026-05-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0239,L04,L04-2022-CHA,2026-05-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0240,L04,L04-2022-CHA,2026-05-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0241,L04,L04-2022-CHA,2026-05-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0242,L04,L04-2022-CHA,2026-05-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0243,L04,L04-2022-CHA,2026-05-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0244,L04,L04-2022-CHA,2026-05-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0245,L04,L04-2022-CHA,2026-05-31,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0246,L04,L04-2022-CHA,2026-06-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0247,L04,L04-2022-CHA,2026-06-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0248,L04,L04-2022-CHA,2026-06-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0249,L04,L04-2022-CHA,2026-06-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0250,L04,L04-2022-CHA,2026-06-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0251,L04,L04-2022-CHA,2026-06-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0054,L01,L01-2026-LAC,2026-06-07,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,17.2,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0252,L04,L04-2022-CHA,2026-06-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0253,L04,L04-2022-CHA,2026-06-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0254,L04,L04-2022-CHA,2026-06-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0055,L01,L01-2026-LAC,2026-06-10,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0255,L04,L04-2022-CHA,2026-06-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0056,L01,L01-2026-LAC,2026-06-11,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0256,L04,L04-2022-CHA,2026-06-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0057,L01,L01-2026-LAC,2026-06-12,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0257,L04,L04-2022-CHA,2026-06-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0413,L07,L07-2021-CHA,2026-06-12,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,20.2,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0058,L01,L01-2026-LAC,2026-06-13,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0258,L04,L04-2022-CHA,2026-06-13,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0059,L01,L01-2026-LAC,2026-06-14,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0259,L04,L04-2022-CHA,2026-06-14,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0486,L09,L09-2026-DAU,2026-06-14,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0060,L01,L01-2026-LAC,2026-06-15,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0260,L04,L04-2022-CHA,2026-06-15,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0414,L07,L07-2021-CHA,2026-06-15,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0061,L01,L01-2026-LAC,2026-06-16,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0261,L04,L04-2022-CHA,2026-06-16,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0415,L07,L07-2021-CHA,2026-06-16,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0062,L01,L01-2026-LAC,2026-06-17,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0262,L04,L04-2022-CHA,2026-06-17,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0416,L07,L07-2021-CHA,2026-06-17,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0063,L01,L01-2026-LAC,2026-06-18,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0263,L04,L04-2022-CHA,2026-06-18,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0417,L07,L07-2021-CHA,2026-06-18,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0264,L04,L04-2022-CHA,2026-06-19,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0418,L07,L07-2021-CHA,2026-06-19,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0484,L09,L09-2026-DAU,2026-06-19,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,116,kg,CÂN|ẢNH,,mau
+NK-0265,L04,L04-2022-CHA,2026-06-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0419,L07,L07-2021-CHA,2026-06-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0266,L04,L04-2022-CHA,2026-06-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0420,L07,L07-2021-CHA,2026-06-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0141,L03,L03-2026-LAC,2026-06-22,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,7.8,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0267,L04,L04-2022-CHA,2026-06-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0421,L07,L07-2021-CHA,2026-06-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0153,L03,L03-2026-CUC,2026-06-23,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,324,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0268,L04,L04-2022-CHA,2026-06-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0422,L07,L07-2021-CHA,2026-06-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0476,L08,L08-2026-BCA,2026-06-23,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,97,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0269,L04,L04-2022-CHA,2026-06-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0423,L07,L07-2021-CHA,2026-06-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0142,L03,L03-2026-LAC,2026-06-25,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0270,L04,L04-2022-CHA,2026-06-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0424,L07,L07-2021-CHA,2026-06-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0143,L03,L03-2026-LAC,2026-06-26,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0271,L04,L04-2022-CHA,2026-06-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0425,L07,L07-2021-CHA,2026-06-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0144,L03,L03-2026-LAC,2026-06-27,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0272,L04,L04-2022-CHA,2026-06-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0426,L07,L07-2021-CHA,2026-06-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0145,L03,L03-2026-LAC,2026-06-28,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0154,L03,L03-2026-CUC,2026-06-28,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,5.2,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0273,L04,L04-2022-CHA,2026-06-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0427,L07,L07-2021-CHA,2026-06-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0475,L08,,2026-06-28,cai_tao_dat,"Lên luống, rải vôi",NS-01,,,,ẢNH|GPS,"NDVI bắt đầu lên từ 0,277 (21/06) → 0,414 (11/07)",mau
+NK-0477,L08,L08-2026-BCA,2026-06-28,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,1.6,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0146,L03,L03-2026-LAC,2026-06-29,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0274,L04,L04-2022-CHA,2026-06-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0428,L07,L07-2021-CHA,2026-06-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0147,L03,L03-2026-LAC,2026-06-30,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0275,L04,L04-2022-CHA,2026-06-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0429,L07,L07-2021-CHA,2026-06-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0148,L03,L03-2026-LAC,2026-07-01,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0276,L04,L04-2022-CHA,2026-07-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0430,L07,L07-2021-CHA,2026-07-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0149,L03,L03-2026-LAC,2026-07-02,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0277,L04,L04-2022-CHA,2026-07-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0431,L07,L07-2021-CHA,2026-07-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0150,L03,L03-2026-LAC,2026-07-03,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0278,L04,L04-2022-CHA,2026-07-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0432,L07,L07-2021-CHA,2026-07-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0151,L03,L03-2026-LAC,2026-07-04,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0279,L04,L04-2022-CHA,2026-07-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0433,L07,L07-2021-CHA,2026-07-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0152,L03,L03-2026-LAC,2026-07-05,thu_hoach,Thu hái Lạc (đậu phộng) — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0155,L03,L03-2026-CUC,2026-07-05,xuong_giong,Xuống giống Cúc chi — 0.649 ha,NS-01,,,,GPS|ẢNH|DUYỆT,"Ngày gieo lấy thẳng từ hồ sơ cây THẬT SK-C-CUC26-L03-0011-B (đang trồng). Khớp với NDVI đi lên ngay sau đó: 0,310 (11/07) → 0,617 (10/08/2026).",mau
+NK-0280,L04,L04-2022-CHA,2026-07-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0434,L07,L07-2021-CHA,2026-07-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0478,L08,L08-2026-BCA,2026-07-05,xuong_giong,Xuống giống Bồ công anh — 0.195 ha,NS-01,,,,GPS|ẢNH|DUYỆT,Vụ ĐANG CHẠY. Trước đó lô nghỉ từ 25/11/2025.,mau
+NK-0281,L04,L04-2022-CHA,2026-07-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0435,L07,L07-2021-CHA,2026-07-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0282,L04,L04-2022-CHA,2026-07-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0436,L07,L07-2021-CHA,2026-07-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0064,L01,L01-2026-CUC,2026-07-08,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,717,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0283,L04,L04-2022-CHA,2026-07-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0437,L07,L07-2021-CHA,2026-07-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0284,L04,L04-2022-CHA,2026-07-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0438,L07,L07-2021-CHA,2026-07-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0285,L04,L04-2022-CHA,2026-07-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0439,L07,L07-2021-CHA,2026-07-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0286,L04,L04-2022-CHA,2026-07-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0440,L07,L07-2021-CHA,2026-07-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0287,L04,L04-2022-CHA,2026-07-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0441,L07,L07-2021-CHA,2026-07-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0065,L01,L01-2026-CUC,2026-07-13,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,11.5,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0288,L04,L04-2022-CHA,2026-07-13,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0442,L07,L07-2021-CHA,2026-07-13,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0580,L12,L12-2026-CUC,2026-07-13,lam_dat,"Cày ải, lên luống, rải vôi điều chỉnh pH",NS-01,Vôi bột nông nghiệp,481,kg,ẢNH|GPS,"pH đất SoilGrids 5,9 — dưới ngưỡng tối ưu 6,0–6,5",mau
+NK-0289,L04,L04-2022-CHA,2026-07-14,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0443,L07,L07-2021-CHA,2026-07-14,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0487,L09,L09-2026-DAU,2026-07-14,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0290,L04,L04-2022-CHA,2026-07-15,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0444,L07,L07-2021-CHA,2026-07-15,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0291,L04,L04-2022-CHA,2026-07-16,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0445,L07,L07-2021-CHA,2026-07-16,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0292,L04,L04-2022-CHA,2026-07-17,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0446,L07,L07-2021-CHA,2026-07-17,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0293,L04,L04-2022-CHA,2026-07-18,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0447,L07,L07-2021-CHA,2026-07-18,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0581,L12,L12-2026-CUC,2026-07-18,bon_lot,Bón lót phân chuồng hoai mục,NS-02,Phân chuồng hoai + trấu hun,7.7,tấn,CÂN|ẢNH|DUYỆT,,mau
+NK-0294,L04,L04-2022-CHA,2026-07-19,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0448,L07,L07-2021-CHA,2026-07-19,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0485,L09,L09-2026-DAU,2026-07-19,bon_thuc,Bón thúc đợt 2,NS-02,Phân hữu cơ vi sinh,116,kg,CÂN|ẢNH,,mau
+NK-0066,L01,L01-2026-CUC,2026-07-20,xuong_giong,Xuống giống Cúc chi — 1.435 ha,NS-01,,,,GPS|ẢNH|DUYỆT,"Vụ ĐANG CHẠY — chưa có đỉnh. NDVI 10/08/2026 = 0,650, xu hướng +0,489/tháng.",mau
+NK-0295,L04,L04-2022-CHA,2026-07-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0449,L07,L07-2021-CHA,2026-07-20,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0296,L04,L04-2022-CHA,2026-07-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0450,L07,L07-2021-CHA,2026-07-21,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0297,L04,L04-2022-CHA,2026-07-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0451,L07,L07-2021-CHA,2026-07-22,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0298,L04,L04-2022-CHA,2026-07-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0452,L07,L07-2021-CHA,2026-07-23,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0299,L04,L04-2022-CHA,2026-07-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0453,L07,L07-2021-CHA,2026-07-24,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0300,L04,L04-2022-CHA,2026-07-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0454,L07,L07-2021-CHA,2026-07-25,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0582,L12,L12-2026-CUC,2026-07-25,xuong_giong,Xuống giống Cúc chi — 0.962 ha,NS-01,,,,GPS|ẢNH|DUYỆT,"Vụ ĐANG CHẠY — NDVI 0,381 ngày 10/08/2026.",mau
+NK-0301,L04,L04-2022-CHA,2026-07-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0455,L07,L07-2021-CHA,2026-07-26,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0302,L04,L04-2022-CHA,2026-07-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0456,L07,L07-2021-CHA,2026-07-27,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0303,L04,L04-2022-CHA,2026-07-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0457,L07,L07-2021-CHA,2026-07-28,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0304,L04,L04-2022-CHA,2026-07-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0458,L07,L07-2021-CHA,2026-07-29,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0157,L03,L03-2026-CUC,2026-07-30,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0305,L04,L04-2022-CHA,2026-07-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0459,L07,L07-2021-CHA,2026-07-30,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0480,L08,L08-2026-BCA,2026-07-30,lam_co,"Làm cỏ thủ công, không dùng thuốc diệt cỏ",NS-04,,,,ẢNH,Canh tác hữu cơ TCVN 11041 — không hoạt chất tổng hợp,mau
+NK-0306,L04,L04-2022-CHA,2026-07-31,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0460,L07,L07-2021-CHA,2026-07-31,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0307,L04,L04-2022-CHA,2026-08-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0461,L07,L07-2021-CHA,2026-08-01,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0308,L04,L04-2022-CHA,2026-08-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0462,L07,L07-2021-CHA,2026-08-02,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0549,L11,L11-2025-BCA,2026-08-02,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,4.3,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0309,L04,L04-2022-CHA,2026-08-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0463,L07,L07-2021-CHA,2026-08-03,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0156,L03,L03-2026-CUC,2026-08-04,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,208,kg,CÂN|ẢNH,,mau
+NK-0310,L04,L04-2022-CHA,2026-08-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0464,L07,L07-2021-CHA,2026-08-04,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0479,L08,L08-2026-BCA,2026-08-04,bon_thuc,Bón thúc đợt 1,NS-02,Phân hữu cơ vi sinh,62,kg,CÂN|ẢNH,,mau
+NK-0311,L04,L04-2022-CHA,2026-08-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0465,L07,L07-2021-CHA,2026-08-05,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0550,L11,L11-2025-BCA,2026-08-05,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0312,L04,L04-2022-CHA,2026-08-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0466,L07,L07-2021-CHA,2026-08-06,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0551,L11,L11-2025-BCA,2026-08-06,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0313,L04,L04-2022-CHA,2026-08-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0467,L07,L07-2021-CHA,2026-08-07,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0552,L11,L11-2025-BCA,2026-08-07,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0314,L04,L04-2022-CHA,2026-08-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0468,L07,L07-2021-CHA,2026-08-08,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0553,L11,L11-2025-BCA,2026-08-08,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0315,L04,L04-2022-CHA,2026-08-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0356,L05,L05-2025-BCA,2026-08-09,phong_tru_sinh_hoc,Phun chế phẩm sinh học phòng nấm trước thu hái,NS-02,Chế phẩm nấm đối kháng Trichoderma,2.7,kg,ẢNH|DUYỆT,Không có thời gian cách ly bắt buộc — chế phẩm sinh học,mau
+NK-0469,L07,L07-2021-CHA,2026-08-09,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0554,L11,L11-2025-BCA,2026-08-09,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0316,L04,L04-2022-CHA,2026-08-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0470,L07,L07-2021-CHA,2026-08-10,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0555,L11,L11-2025-BCA,2026-08-10,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0317,L04,L04-2022-CHA,2026-08-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0471,L07,L07-2021-CHA,2026-08-11,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0556,L11,L11-2025-BCA,2026-08-11,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0318,L04,L04-2022-CHA,2026-08-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-05,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0357,L05,L05-2025-BCA,2026-08-12,thu_hoach,Thu hái Bồ công anh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
+NK-0472,L07,L07-2021-CHA,2026-08-12,thu_hoach,Thu hái Chanh — hái tay lúc sáng sớm,NS-04,,,,CÂN|GPS|ẢNH|QUÉT MÃ CÂY,,mau
