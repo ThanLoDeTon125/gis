@@ -1,0 +1,502 @@
+[
+  {
+    "dot_id": "L01-2025-CUC",
+    "vu_id": "L01-2025-CUC",
+    "lo_id": "L01",
+    "ma_cay_trong": "CUC",
+    "ngay_thu_tu": "2025-10-20",
+    "ngay_thu_den": "2025-11-26",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 1.4347,
+    "san_luong_tuoi_du_kien_tan": 4.448,
+    "san_luong_kho_du_kien_tan": 0.934,
+    "neo_ndvi": {
+      "day": "2025-08-12",
+      "ndvi_day": 0.269,
+      "dinh": "2025-10-01",
+      "ndvi_dinh": 0.73
+    },
+    "ghi_chu": "Ngày gieo lấy thẳng từ hồ sơ cây THẬT SK-C-CUC25-L01-0007-P. Cúc chi hái NHIỀU ĐỢT vì hoa nở dần, nên cửa sổ thu kéo 5 tuần chứ không phải 9 ngày — khớp với việc NDVI đã bắt đầu xuống từ 04/10 (0,738) chứ không đợi tới 18/11.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L01-2026-LAC",
+    "vu_id": "L01-2026-LAC",
+    "lo_id": "L01",
+    "ma_cay_trong": "LAC",
+    "ngay_thu_tu": "2026-06-10",
+    "ngay_thu_den": "2026-06-18",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 1.4347,
+    "san_luong_tuoi_du_kien_tan": 3.73,
+    "san_luong_kho_du_kien_tan": 2.686,
+    "neo_ndvi": {
+      "day": "2026-01-14",
+      "ndvi_day": 0.15,
+      "dinh": "2026-05-29",
+      "ndvi_dinh": 0.796
+    },
+    "ghi_chu": "Lạc xuân đồng bằng sông Hồng, gieo đầu tháng 2 + ~130 ngày. Ngày thu SỬA LẠI sau khi luật R2 bắt được cú tụt 0,741 (06/06) → 0,298 (21/06): thu thật rơi giữa tháng 6, không phải đầu tháng 7 như lịch đặt ban đầu.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L01-2026-CUC",
+    "vu_id": "L01-2026-CUC",
+    "lo_id": "L01",
+    "ma_cay_trong": "CUC",
+    "ngay_thu_tu": "2026-11-20",
+    "ngay_thu_den": "2026-11-28",
+    "trang_thai": "chua_toi",
+    "dien_tich_gieo_ha": 1.4347,
+    "san_luong_tuoi_du_kien_tan": 4.448,
+    "san_luong_kho_du_kien_tan": 0.934,
+    "neo_ndvi": {
+      "day": "2026-07-11",
+      "ndvi_day": 0.183,
+      "dinh": null,
+      "ndvi_dinh": null
+    },
+    "ghi_chu": "Vụ ĐANG CHẠY — chưa có đỉnh. NDVI 10/08/2026 = 0,650, xu hướng +0,489/tháng.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L02-2025-CUC",
+    "vu_id": "L02-2025-CUC",
+    "lo_id": "L02",
+    "ma_cay_trong": "CUC",
+    "ngay_thu_tu": "2025-11-20",
+    "ngay_thu_den": "2025-12-05",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.2752,
+    "san_luong_tuoi_du_kien_tan": 0.853,
+    "san_luong_kho_du_kien_tan": 0.179,
+    "neo_ndvi": {
+      "day": "2025-09-21",
+      "ndvi_day": 0.432,
+      "dinh": "2025-10-06",
+      "ndvi_dinh": 0.537
+    },
+    "ghi_chu": "Gieo và thu lấy thẳng từ hồ sơ cây thật SK-C-CUC25-L02-0003-3.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L02-2026-CCO",
+    "vu_id": "L02-2023-CCO",
+    "lo_id": "L02",
+    "ma_cay_trong": "CCO",
+    "ngay_thu_tu": "2026-03-10",
+    "ngay_thu_den": "2026-03-24",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.4127,
+    "san_luong_tuoi_du_kien_tan": 0.99,
+    "san_luong_kho_du_kien_tan": 0.218,
+    "neo_ndvi": {
+      "day": "2025-12-05",
+      "ndvi_day": 0.311,
+      "dinh": "2026-03-10",
+      "ndvi_dinh": 0.547
+    },
+    "ghi_chu": "Gốc cúc cổ trồng trước kỳ quan trắc — ngày trồng 'khong_kiem_duoc'.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L03-2025-BCA",
+    "vu_id": "L03-2025-BCA",
+    "lo_id": "L03",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2025-12-14",
+    "ngay_thu_den": "2025-12-30",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.6486,
+    "san_luong_tuoi_du_kien_tan": 5.837,
+    "san_luong_kho_du_kien_tan": 0.817,
+    "neo_ndvi": {
+      "day": "2025-12-05",
+      "ndvi_day": 0.323,
+      "dinh": "2025-12-20",
+      "ndvi_dinh": 0.59
+    },
+    "ghi_chu": null,
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L03-2026-LAC",
+    "vu_id": "L03-2026-LAC",
+    "lo_id": "L03",
+    "ma_cay_trong": "LAC",
+    "ngay_thu_tu": "2026-06-25",
+    "ngay_thu_den": "2026-07-05",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.6486,
+    "san_luong_tuoi_du_kien_tan": 1.686,
+    "san_luong_kho_du_kien_tan": 1.214,
+    "neo_ndvi": {
+      "day": "2026-04-09",
+      "ndvi_day": 0.26,
+      "dinh": "2026-06-03",
+      "ndvi_dinh": 0.748
+    },
+    "ghi_chu": "Đáy 09/04 là đáy hạn toàn farm, không phải ngày gieo — xem can_cu.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L03-2026-CUC",
+    "vu_id": "L03-2026-CUC",
+    "lo_id": "L03",
+    "ma_cay_trong": "CUC",
+    "ngay_thu_tu": "2026-11-10",
+    "ngay_thu_den": "2026-12-10",
+    "trang_thai": "chua_toi",
+    "dien_tich_gieo_ha": 0.6486,
+    "san_luong_tuoi_du_kien_tan": 2.011,
+    "san_luong_kho_du_kien_tan": 0.422,
+    "neo_ndvi": {
+      "day": "2026-07-11",
+      "ndvi_day": 0.31,
+      "dinh": null,
+      "ndvi_dinh": null
+    },
+    "ghi_chu": "Ngày gieo lấy thẳng từ hồ sơ cây THẬT SK-C-CUC26-L03-0011-B (đang trồng). Khớp với NDVI đi lên ngay sau đó: 0,310 (11/07) → 0,617 (10/08/2026).",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L04-CHA-LUU-NIEN",
+    "vu_id": "L04-2022-CHA",
+    "lo_id": "L04",
+    "ma_cay_trong": "CHA",
+    "ngay_thu_tu": "2025-09-05",
+    "ngay_thu_den": "2025-11-15",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.185,
+    "san_luong_tuoi_du_kien_tan": 2.035,
+    "san_luong_kho_du_kien_tan": 2.035,
+    "neo_ndvi": {
+      "day": "2025-09-11",
+      "ndvi_day": 0.39,
+      "dinh": "2025-10-06",
+      "ndvi_dinh": 0.825
+    },
+    "ghi_chu": "Trồng trước kỳ quan trắc — ngày trồng 'khong_kiem_duoc'.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L04-CHA-LUU-NIEN-2026",
+    "vu_id": "L04-2022-CHA",
+    "lo_id": "L04",
+    "ma_cay_trong": "CHA",
+    "ngay_thu_tu": "2026-05-20",
+    "ngay_thu_den": "2026-08-12",
+    "trang_thai": "dang_thu_hoach",
+    "dien_tich_gieo_ha": 0.185,
+    "san_luong_tuoi_du_kien_tan": 2.035,
+    "san_luong_kho_du_kien_tan": 2.035,
+    "neo_ndvi": {
+      "day": "2026-04-07",
+      "ndvi_day": 0.415,
+      "dinh": "2026-07-11",
+      "ndvi_dinh": 0.892
+    },
+    "ghi_chu": null,
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L05-2025-BCA-L1",
+    "vu_id": "L05-2025-BCA",
+    "lo_id": "L05",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2025-11-20",
+    "ngay_thu_den": "2025-11-30",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.2236,
+    "san_luong_tuoi_du_kien_tan": 2.012,
+    "san_luong_kho_du_kien_tan": 0.282,
+    "neo_ndvi": {
+      "day": "2025-09-11",
+      "ndvi_day": 0.295,
+      "dinh": "2025-11-20",
+      "ndvi_dinh": 0.682
+    },
+    "ghi_chu": null,
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L05-2026-BCA-L2",
+    "vu_id": "L05-2025-BCA",
+    "lo_id": "L05",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2026-03-10",
+    "ngay_thu_den": "2026-03-18",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.2236,
+    "san_luong_tuoi_du_kien_tan": 2.012,
+    "san_luong_kho_du_kien_tan": 0.282,
+    "neo_ndvi": {
+      "day": "2026-01-14",
+      "ndvi_day": 0.419,
+      "dinh": "2026-03-10",
+      "ndvi_dinh": 0.57
+    },
+    "ghi_chu": "Cắt lứa 2 trên cùng gốc, không gieo lại.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L05-2026-BCA-L3",
+    "vu_id": "L05-2025-BCA",
+    "lo_id": "L05",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2026-08-12",
+    "ngay_thu_den": "2026-08-20",
+    "trang_thai": "dang_thu_hoach",
+    "dien_tich_gieo_ha": 0.2236,
+    "san_luong_tuoi_du_kien_tan": 2.012,
+    "san_luong_kho_du_kien_tan": 0.282,
+    "neo_ndvi": {
+      "day": "2026-04-07",
+      "ndvi_day": 0.357,
+      "dinh": "2026-07-11",
+      "ndvi_dinh": 0.799
+    },
+    "ghi_chu": "Lứa ĐANG CẮT tại thời điểm chốt dữ liệu (12/08/2026).",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L07-CHA-2025",
+    "vu_id": "L07-2021-CHA",
+    "lo_id": "L07",
+    "ma_cay_trong": "CHA",
+    "ngay_thu_tu": "2025-09-20",
+    "ngay_thu_den": "2025-11-10",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 1.6794,
+    "san_luong_tuoi_du_kien_tan": 18.473,
+    "san_luong_kho_du_kien_tan": 18.473,
+    "neo_ndvi": {
+      "day": "2025-09-16",
+      "ndvi_day": 0.434,
+      "dinh": "2025-10-06",
+      "ndvi_dinh": 0.823
+    },
+    "ghi_chu": "Trồng trước kỳ quan trắc — 'khong_kiem_duoc'.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L07-CHA-2026",
+    "vu_id": "L07-2021-CHA",
+    "lo_id": "L07",
+    "ma_cay_trong": "CHA",
+    "ngay_thu_tu": "2026-06-15",
+    "ngay_thu_den": "2026-08-30",
+    "trang_thai": "dang_thu_hoach",
+    "dien_tich_gieo_ha": 1.6794,
+    "san_luong_tuoi_du_kien_tan": 18.473,
+    "san_luong_kho_du_kien_tan": 18.473,
+    "neo_ndvi": {
+      "day": "2025-12-25",
+      "ndvi_day": 0.337,
+      "dinh": "2026-03-10",
+      "ndvi_dinh": 0.729
+    },
+    "ghi_chu": "Đợt thu ĐANG CHẠY tại thời điểm chốt dữ liệu.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L08-2026-BCA",
+    "vu_id": "L08-2026-BCA",
+    "lo_id": "L08",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2026-10-10",
+    "ngay_thu_den": "2026-10-20",
+    "trang_thai": "chua_toi",
+    "dien_tich_gieo_ha": 0.1949,
+    "san_luong_tuoi_du_kien_tan": 1.754,
+    "san_luong_kho_du_kien_tan": 0.246,
+    "neo_ndvi": {
+      "day": "2026-06-21",
+      "ndvi_day": 0.277,
+      "dinh": null,
+      "ndvi_dinh": null
+    },
+    "ghi_chu": "Vụ ĐANG CHẠY. Trước đó lô nghỉ từ 25/11/2025.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L09-2026-DAU",
+    "vu_id": "L09-2026-DAU",
+    "lo_id": "L09",
+    "ma_cay_trong": "DAU",
+    "ngay_thu_tu": "2026-09-05",
+    "ngay_thu_den": "2026-09-10",
+    "trang_thai": "chua_toi",
+    "dien_tich_gieo_ha": 0.364,
+    "san_luong_tuoi_du_kien_tan": 0.0,
+    "san_luong_kho_du_kien_tan": 0.0,
+    "neo_ndvi": {
+      "day": "2026-04-07",
+      "ndvi_day": 0.306,
+      "dinh": "2026-07-11",
+      "ndvi_dinh": 0.749
+    },
+    "ghi_chu": "Không thu sản phẩm — cày vùi làm phân xanh. 'Thu' ở đây là ngày cày vùi (kế hoạch).",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L10-2025-CUC",
+    "vu_id": "L10-2025-CUC",
+    "lo_id": "L10",
+    "ma_cay_trong": "CUC",
+    "ngay_thu_tu": "2025-11-25",
+    "ngay_thu_den": "2025-12-05",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.2132,
+    "san_luong_tuoi_du_kien_tan": 0.661,
+    "san_luong_kho_du_kien_tan": 0.139,
+    "neo_ndvi": {
+      "day": "2025-09-16",
+      "ndvi_day": 0.199,
+      "dinh": "2025-11-20",
+      "ndvi_dinh": 0.563
+    },
+    "ghi_chu": "Vụ muộn, gieo bằng cây giống ươm sẵn nên chu kỳ ngắn hơn L01.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L10-2026-UOM",
+    "vu_id": "L10-2026-UOM",
+    "lo_id": "L10",
+    "ma_cay_trong": "UOM",
+    "ngay_thu_tu": "2026-03-15",
+    "ngay_thu_den": "2026-03-20",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.2132,
+    "san_luong_tuoi_du_kien_tan": 0.0,
+    "san_luong_kho_du_kien_tan": 0.0,
+    "neo_ndvi": {
+      "day": "2025-12-25",
+      "ndvi_day": 0.187,
+      "dinh": "2026-03-10",
+      "ndvi_dinh": 0.526
+    },
+    "ghi_chu": "'Thu' = ngày xuất cây giống sang lô khác.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L11-2025-BCA-L1",
+    "vu_id": "L11-2025-BCA",
+    "lo_id": "L11",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2025-10-06",
+    "ngay_thu_den": "2025-10-12",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.3553,
+    "san_luong_tuoi_du_kien_tan": 3.198,
+    "san_luong_kho_du_kien_tan": 0.448,
+    "neo_ndvi": {
+      "day": "2025-09-11",
+      "ndvi_day": 0.524,
+      "dinh": "2025-10-06",
+      "ndvi_dinh": 0.73
+    },
+    "ghi_chu": null,
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L11-2025-BCA-L2",
+    "vu_id": "L11-2025-BCA",
+    "lo_id": "L11",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2025-12-20",
+    "ngay_thu_den": "2025-12-24",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.3553,
+    "san_luong_tuoi_du_kien_tan": 3.198,
+    "san_luong_kho_du_kien_tan": 0.448,
+    "neo_ndvi": {
+      "day": "2025-12-10",
+      "ndvi_day": 0.36,
+      "dinh": "2025-12-20",
+      "ndvi_dinh": 0.583
+    },
+    "ghi_chu": "Lứa ngắn 10 ngày lên — cắt non.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L11-2026-BCA-L3",
+    "vu_id": "L11-2025-BCA",
+    "lo_id": "L11",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2026-03-20",
+    "ngay_thu_den": "2026-03-26",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.3553,
+    "san_luong_tuoi_du_kien_tan": 3.198,
+    "san_luong_kho_du_kien_tan": 0.448,
+    "neo_ndvi": {
+      "day": "2026-04-07",
+      "ndvi_day": 0.392,
+      "dinh": "2026-03-13",
+      "ndvi_dinh": 0.568
+    },
+    "ghi_chu": null,
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L11-2026-BCA-L4",
+    "vu_id": "L11-2025-BCA",
+    "lo_id": "L11",
+    "ma_cay_trong": "BCA",
+    "ngay_thu_tu": "2026-08-05",
+    "ngay_thu_den": "2026-08-11",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.3553,
+    "san_luong_tuoi_du_kien_tan": 3.198,
+    "san_luong_kho_du_kien_tan": 0.448,
+    "neo_ndvi": {
+      "day": "2026-06-21",
+      "ndvi_day": 0.488,
+      "dinh": "2026-07-11",
+      "ndvi_dinh": 0.602
+    },
+    "ghi_chu": "Lứa ĐANG CẮT tại thời điểm chốt dữ liệu.",
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L12-2025-CUC",
+    "vu_id": "L12-2025-CUC",
+    "lo_id": "L12",
+    "ma_cay_trong": "CUC",
+    "ngay_thu_tu": "2025-11-15",
+    "ngay_thu_den": "2025-12-06",
+    "trang_thai": "da_thu_hoach",
+    "dien_tich_gieo_ha": 0.9625,
+    "san_luong_tuoi_du_kien_tan": 2.984,
+    "san_luong_kho_du_kien_tan": 0.627,
+    "neo_ndvi": {
+      "day": "2025-08-17",
+      "ndvi_day": 0.366,
+      "dinh": "2025-11-10",
+      "ndvi_dinh": 0.731
+    },
+    "ghi_chu": null,
+    "nguon": "mau"
+  },
+  {
+    "dot_id": "L12-2026-CUC",
+    "vu_id": "L12-2026-CUC",
+    "lo_id": "L12",
+    "ma_cay_trong": "CUC",
+    "ngay_thu_tu": "2026-11-25",
+    "ngay_thu_den": "2026-12-03",
+    "trang_thai": "chua_toi",
+    "dien_tich_gieo_ha": 0.9625,
+    "san_luong_tuoi_du_kien_tan": 2.984,
+    "san_luong_kho_du_kien_tan": 0.627,
+    "neo_ndvi": {
+      "day": "2026-06-01",
+      "ndvi_day": 0.275,
+      "dinh": null,
+      "ndvi_dinh": null
+    },
+    "ghi_chu": "Vụ ĐANG CHẠY — NDVI 0,381 ngày 10/08/2026.",
+    "nguon": "mau"
+  }
+]

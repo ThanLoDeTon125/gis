@@ -1,0 +1,1474 @@
+[
+  {
+    "id": "SK-C-CUC25-L01-0001-2",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0002-Z",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0003-X",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0004-V",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0005-T",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0006-R",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0007-P",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": true,
+    "nguon": "that"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0008-N",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": true,
+    "nguon": "that"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0009-L",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 9,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0010-X",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 10,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0011-V",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 11,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0012-T",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 12,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0013-R",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 13,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L01-0014-P",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L01",
+    "so_trong_lo": 14,
+    "toa_do_uoc": {
+      "lat": 20.256698,
+      "lon": 105.855246
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±66 m)",
+    "vu_id": "L01-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0001-7",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0002-5",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0003-3",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": true,
+    "nguon": "that"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0004-1",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0005-0",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0006-Y",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0007-W",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0008-U",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0009-S",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 9,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L02-0010-5",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L02",
+    "so_trong_lo": 10,
+    "toa_do_uoc": {
+      "lat": 20.256893,
+      "lon": 105.854582
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±48 m)",
+    "vu_id": "L02-2025-CUC",
+    "ngay_xuong_giong": "2025-07-10",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0001-F",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0002-D",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0003-B",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0004-9",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0005-7",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0006-5",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0007-3",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0008-1",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0009-0",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 9,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0010-D",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 10,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0011-B",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 11,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": true,
+    "nguon": "that"
+  },
+  {
+    "id": "SK-C-CUC26-L03-0012-9",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L03",
+    "so_trong_lo": 12,
+    "toa_do_uoc": {
+      "lat": 20.257,
+      "lon": 105.854269
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±45 m)",
+    "vu_id": "L03-2026-CUC",
+    "ngay_xuong_giong": "2026-07-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L04-0001-M",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L04",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.257106,
+      "lon": 105.853886
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±23 m)",
+    "vu_id": "L04-2022-CHA",
+    "ngay_xuong_giong": "2022-04-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L04-0002-K",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L04",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.257106,
+      "lon": 105.853886
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±23 m)",
+    "vu_id": "L04-2022-CHA",
+    "ngay_xuong_giong": "2022-04-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L04-0003-I",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L04",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.257106,
+      "lon": 105.853886
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±23 m)",
+    "vu_id": "L04-2022-CHA",
+    "ngay_xuong_giong": "2022-04-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L04-0004-G",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L04",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.257106,
+      "lon": 105.853886
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±23 m)",
+    "vu_id": "L04-2022-CHA",
+    "ngay_xuong_giong": "2022-04-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L04-0005-E",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L04",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.257106,
+      "lon": 105.853886
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±23 m)",
+    "vu_id": "L04-2022-CHA",
+    "ngay_xuong_giong": "2022-04-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L04-0006-C",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L04",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.257106,
+      "lon": 105.853886
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±23 m)",
+    "vu_id": "L04-2022-CHA",
+    "ngay_xuong_giong": "2022-04-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L04-0007-A",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L04",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.257106,
+      "lon": 105.853886
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±23 m)",
+    "vu_id": "L04-2022-CHA",
+    "ngay_xuong_giong": "2022-04-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L04-0008-8",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L04",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.257106,
+      "lon": 105.853886
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±23 m)",
+    "vu_id": "L04-2022-CHA",
+    "ngay_xuong_giong": "2022-04-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L05-0001-M",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L05",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.256838,
+      "lon": 105.853791
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±26 m)",
+    "vu_id": "L05-2025-BCA",
+    "ngay_xuong_giong": "2025-08-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L05-0002-K",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L05",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.256838,
+      "lon": 105.853791
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±26 m)",
+    "vu_id": "L05-2025-BCA",
+    "ngay_xuong_giong": "2025-08-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L05-0003-I",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L05",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.256838,
+      "lon": 105.853791
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±26 m)",
+    "vu_id": "L05-2025-BCA",
+    "ngay_xuong_giong": "2025-08-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L05-0004-G",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L05",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.256838,
+      "lon": 105.853791
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±26 m)",
+    "vu_id": "L05-2025-BCA",
+    "ngay_xuong_giong": "2025-08-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L05-0005-E",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L05",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.256838,
+      "lon": 105.853791
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±26 m)",
+    "vu_id": "L05-2025-BCA",
+    "ngay_xuong_giong": "2025-08-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L05-0006-C",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L05",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.256838,
+      "lon": 105.853791
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±26 m)",
+    "vu_id": "L05-2025-BCA",
+    "ngay_xuong_giong": "2025-08-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L05-0007-A",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L05",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.256838,
+      "lon": 105.853791
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±26 m)",
+    "vu_id": "L05-2025-BCA",
+    "ngay_xuong_giong": "2025-08-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L05-0008-8",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L05",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.256838,
+      "lon": 105.853791
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±26 m)",
+    "vu_id": "L05-2025-BCA",
+    "ngay_xuong_giong": "2025-08-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0001-Z",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0002-X",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0003-V",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0004-T",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0005-R",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0006-P",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0007-N",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0008-L",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0009-J",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 9,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0010-Z",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 10,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0011-X",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 11,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CHA25-L07-0012-V",
+    "giong": "CHA",
+    "ten_thuong": "Chanh",
+    "lo_id": "L07",
+    "so_trong_lo": 12,
+    "toa_do_uoc": {
+      "lat": 20.257773,
+      "lon": 105.852972
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±69 m)",
+    "vu_id": "L07-2021-CHA",
+    "ngay_xuong_giong": "2021-03-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L10-0001-7",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L10",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.257419,
+      "lon": 105.852546
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±29 m)",
+    "vu_id": "L10-2025-CUC",
+    "ngay_xuong_giong": "2025-09-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L10-0002-5",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L10",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.257419,
+      "lon": 105.852546
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±29 m)",
+    "vu_id": "L10-2025-CUC",
+    "ngay_xuong_giong": "2025-09-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L10-0003-3",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L10",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.257419,
+      "lon": 105.852546
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±29 m)",
+    "vu_id": "L10-2025-CUC",
+    "ngay_xuong_giong": "2025-09-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L10-0004-1",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L10",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.257419,
+      "lon": 105.852546
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±29 m)",
+    "vu_id": "L10-2025-CUC",
+    "ngay_xuong_giong": "2025-09-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L10-0005-0",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L10",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.257419,
+      "lon": 105.852546
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±29 m)",
+    "vu_id": "L10-2025-CUC",
+    "ngay_xuong_giong": "2025-09-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L10-0006-Y",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L10",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.257419,
+      "lon": 105.852546
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±29 m)",
+    "vu_id": "L10-2025-CUC",
+    "ngay_xuong_giong": "2025-09-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L10-0007-W",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L10",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.257419,
+      "lon": 105.852546
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±29 m)",
+    "vu_id": "L10-2025-CUC",
+    "ngay_xuong_giong": "2025-09-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L10-0008-U",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L10",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.257419,
+      "lon": 105.852546
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±29 m)",
+    "vu_id": "L10-2025-CUC",
+    "ngay_xuong_giong": "2025-09-20",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L11-0001-C",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L11",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.256572,
+      "lon": 105.852807
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±33 m)",
+    "vu_id": "L11-2025-BCA",
+    "ngay_xuong_giong": "2025-06-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L11-0002-A",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L11",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.256572,
+      "lon": 105.852807
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±33 m)",
+    "vu_id": "L11-2025-BCA",
+    "ngay_xuong_giong": "2025-06-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L11-0003-8",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L11",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.256572,
+      "lon": 105.852807
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±33 m)",
+    "vu_id": "L11-2025-BCA",
+    "ngay_xuong_giong": "2025-06-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L11-0004-6",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L11",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.256572,
+      "lon": 105.852807
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±33 m)",
+    "vu_id": "L11-2025-BCA",
+    "ngay_xuong_giong": "2025-06-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L11-0005-4",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L11",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.256572,
+      "lon": 105.852807
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±33 m)",
+    "vu_id": "L11-2025-BCA",
+    "ngay_xuong_giong": "2025-06-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L11-0006-2",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L11",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.256572,
+      "lon": 105.852807
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±33 m)",
+    "vu_id": "L11-2025-BCA",
+    "ngay_xuong_giong": "2025-06-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L11-0007-Z",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L11",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.256572,
+      "lon": 105.852807
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±33 m)",
+    "vu_id": "L11-2025-BCA",
+    "ngay_xuong_giong": "2025-06-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L11-0008-X",
+    "giong": "CUC",
+    "ten_thuong": "Bồ công anh",
+    "lo_id": "L11",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.256572,
+      "lon": 105.852807
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±33 m)",
+    "vu_id": "L11-2025-BCA",
+    "ngay_xuong_giong": "2025-06-15",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0001-H",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 1,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0002-F",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 2,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0003-D",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 3,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0004-B",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 4,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0005-9",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 5,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0006-7",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 6,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0007-5",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 7,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0008-3",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 8,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0009-1",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 9,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0010-F",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 10,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0011-D",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 11,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-C-CUC25-L12-0012-B",
+    "giong": "CUC",
+    "ten_thuong": "Cúc chi",
+    "lo_id": "L12",
+    "so_trong_lo": 12,
+    "toa_do_uoc": {
+      "lat": 20.257078,
+      "lon": 105.851987
+    },
+    "do_chinh_xac_toa_do": "trong_tam_lo (±55 m)",
+    "vu_id": "L12-2025-CUC",
+    "ngay_xuong_giong": "2025-08-05",
+    "co_ho_so_that_trong_Sankit": false,
+    "nguon": "mau"
+  }
+]
