@@ -1,0 +1,13 @@
+{
+  "vi_sao": "Lịch canh tác mô phỏng được SUY TỪ đường NDVI, nên phép đối chiếu nhật ký ↔ vệ tinh tất nhiên khớp — không có gì để hiển thị. Hai bản ghi dưới đây được cắm SAI có chủ ý để đội web dựng được màn hình cảnh báo. Xoá chúng đi là bảng cảnh báo còn 0 hàng loại R5.",
+  "ban_ghi": [
+    {
+      "nk_id": "NK-0583",
+      "ly_do": "R5 — thu hoạch khai trên lô KHÔNG canh tác (L06 là khu công trình)"
+    },
+    {
+      "nk_id": "NK-0584",
+      "ly_do": "R5 — thu hoạch khai ngày 10/02/2026 trên L09 nhưng NDVI không hề tụt"
+    }
+  ]
+}

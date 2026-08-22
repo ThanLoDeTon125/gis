@@ -1,0 +1,1619 @@
+[
+  {
+    "cb_id": "CB-0001",
+    "ma_luat": "R3_MAT_DAU_QUANG_HOC",
+    "muc_do": "thap",
+    "lo_id": null,
+    "pham_vi": "farm",
+    "ngay": "2025-09-21",
+    "tieu_de": "Cả farm mất ảnh quang học 32 ngày (11/12 lô)",
+    "chi_tiet": "Từ 2025-08-20 tới 2025-09-21. Trong khoảng đó có 5 ngày radar Sentinel-1 — đủ để bám xu hướng. Lỗ hổng mây phủ cả vùng, không phải vấn đề của một lô.",
+    "bang_chung": {
+      "tu": "2025-08-20",
+      "den": "2025-09-21",
+      "so_ngay_radar": 5,
+      "cac_lo": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L11",
+        "L12"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0002",
+    "ma_luat": "R2_SUT_NDVI_KHONG_RO_LY_DO",
+    "muc_do": "cao",
+    "lo_id": "L08",
+    "pham_vi": "lo",
+    "ngay": "2025-09-21",
+    "tieu_de": "NDVI tụt 0.832 → 0.461 (-0.371) mà nhật ký không ghi việc gì",
+    "chi_tiet": "Giữa 2025-08-20 và 2025-09-21 (32 ngày). Không có bản ghi thu hoạch hay cải tạo đất nào trong cửa sổ ±10 ngày.",
+    "bang_chung": {
+      "anh_truoc": "2025-08-20",
+      "anh_sau": "2025-09-21",
+      "ndvi_truoc": 0.8315,
+      "ndvi_sau": 0.4606,
+      "trung_dot_han": false
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0003",
+    "ma_luat": "R2_SUT_NDVI_KHONG_RO_LY_DO",
+    "muc_do": "cao",
+    "lo_id": "L09",
+    "pham_vi": "lo",
+    "ngay": "2025-09-21",
+    "tieu_de": "NDVI tụt 0.710 → 0.299 (-0.410) mà nhật ký không ghi việc gì",
+    "chi_tiet": "Giữa 2025-08-20 và 2025-09-21 (32 ngày). Không có bản ghi thu hoạch hay cải tạo đất nào trong cửa sổ ±10 ngày.",
+    "bang_chung": {
+      "anh_truoc": "2025-08-20",
+      "anh_sau": "2025-09-21",
+      "ndvi_truoc": 0.7095,
+      "ndvi_sau": 0.2993,
+      "trung_dot_han": false
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0004",
+    "ma_luat": "R2_SUT_NDVI_KHONG_RO_LY_DO",
+    "muc_do": "trung_binh",
+    "lo_id": "L10",
+    "pham_vi": "lo",
+    "ngay": "2025-10-04",
+    "tieu_de": "NDVI tụt 0.598 → 0.340 (-0.258) mà nhật ký không ghi việc gì",
+    "chi_tiet": "Giữa 2025-08-20 và 2025-10-04 (45 ngày). Không có bản ghi thu hoạch hay cải tạo đất nào trong cửa sổ ±10 ngày.",
+    "bang_chung": {
+      "anh_truoc": "2025-08-20",
+      "anh_sau": "2025-10-04",
+      "ndvi_truoc": 0.5982,
+      "ndvi_sau": 0.34,
+      "trung_dot_han": false
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0005",
+    "ma_luat": "R3_MAT_DAU_QUANG_HOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L10",
+    "pham_vi": "lo",
+    "ngay": "2025-10-04",
+    "tieu_de": "Riêng lô này mất ảnh quang học 45 ngày",
+    "chi_tiet": "Từ 2025-08-20 tới 2025-10-04, trong khi 11 lô khác vẫn có ảnh. Có 7 ngày radar bù trong khoảng đó.",
+    "bang_chung": {
+      "tu": "2025-08-20",
+      "den": "2025-10-04",
+      "so_ngay_radar": 7
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0006",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2025-10-31",
+    "tieu_de": "Hụt nước 27 mm trong 15 ngày (2025-10-16 → 2025-10-31)",
+    "chi_tiet": "ETc dồn 52 mm (Kc 1.05 cho Cúc chi) so với mưa hiệu quả 25 mm. Cần bù khoảng 185 m³ cho 0.69 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-10-16",
+      "den": "2025-10-31",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0007",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L10",
+    "pham_vi": "lo",
+    "ngay": "2025-10-31",
+    "tieu_de": "Hụt nước 27 mm trong 15 ngày (2025-10-16 → 2025-10-31)",
+    "chi_tiet": "ETc dồn 52 mm (Kc 1.05 cho Cúc chi) so với mưa hiệu quả 25 mm. Cần bù khoảng 57 m³ cho 0.21 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-10-16",
+      "den": "2025-10-31",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0008",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L12",
+    "pham_vi": "lo",
+    "ngay": "2025-10-31",
+    "tieu_de": "Hụt nước 27 mm trong 15 ngày (2025-10-16 → 2025-10-31)",
+    "chi_tiet": "ETc dồn 52 mm (Kc 1.05 cho Cúc chi) so với mưa hiệu quả 25 mm. Cần bù khoảng 259 m³ cho 0.96 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-10-16",
+      "den": "2025-10-31",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0009",
+    "ma_luat": "R3_MAT_DAU_QUANG_HOC",
+    "muc_do": "thap",
+    "lo_id": null,
+    "pham_vi": "farm",
+    "ngay": "2025-11-13",
+    "tieu_de": "Cả farm mất ảnh quang học 40 ngày (12/12 lô)",
+    "chi_tiet": "Từ 2025-10-04 tới 2025-11-13. Trong khoảng đó có 6 ngày radar Sentinel-1 — đủ để bám xu hướng. Lỗ hổng mây phủ cả vùng, không phải vấn đề của một lô.",
+    "bang_chung": {
+      "tu": "2025-10-04",
+      "den": "2025-11-13",
+      "so_ngay_radar": 6,
+      "cac_lo": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0010",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L09",
+    "pham_vi": "lo",
+    "ngay": "2025-11-13",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2025-09-21 tới 2025-11-13. Lệch trung bình cả kỳ của lô này: -0.046.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2025-09-21",
+        "2025-10-04",
+        "2025-11-13"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0011",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L01",
+    "pham_vi": "lo",
+    "ngay": "2025-11-23",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2025-11-13 tới 2025-11-23. Lệch trung bình cả kỳ của lô này: -0.066.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2025-11-13",
+        "2025-11-20",
+        "2025-11-23"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0012",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "cao",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2025-11-30",
+    "tieu_de": "Khai thu hoạch nhưng ảnh vệ tinh không thấy tán giảm",
+    "chi_tiet": "11 ngày thu hoạch khai từ 2025-11-20 tới 2025-11-30. NDVI đỉnh 0.6819 (2025-11-20) → đáy 0.6039 (2025-12-18), thay đổi -0.078 — không đạt ngưỡng -0.08 của BCA. Radar cũng không thấy đổi (-0.08 dB).",
+    "bang_chung": {
+      "vu_id": "L05-2025-BCA",
+      "sut_ndvi": -0.078
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0013",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "thap",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2025-12-05",
+    "tieu_de": "Ảnh quang không thấy đợt thu hoạch, nhưng radar thấy",
+    "chi_tiet": "NDVI thay đổi 0.0379 — không đạt ngưỡng. Nhưng VH radar đổi -0.74 dB, đủ ngưỡng −0,5. Cách giải thích khớp nhất: cây chỉ chiếm một phần lô, nên trung bình NDVI cả lô không nhúc nhích.",
+    "bang_chung": {
+      "dot_thu_id": "L02-2025-CUC",
+      "vu_id": "L02-2025-CUC",
+      "sut_ndvi": 0.0379,
+      "vh_thay_doi_db": -0.74
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0014",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "cao",
+    "lo_id": "L10",
+    "pham_vi": "lo",
+    "ngay": "2025-12-05",
+    "tieu_de": "Khai thu hoạch nhưng ảnh vệ tinh không thấy tán giảm",
+    "chi_tiet": "11 ngày thu hoạch khai từ 2025-11-25 tới 2025-12-05. NDVI đỉnh 0.5628 (2025-11-20) → đáy 0.5083 (2025-12-18), thay đổi -0.054 — không đạt ngưỡng -0.20 của CUC. Radar cũng không thấy đổi (0.94 dB).",
+    "bang_chung": {
+      "vu_id": "L10-2025-CUC",
+      "sut_ndvi": -0.0545
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0015",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L01",
+    "pham_vi": "lo",
+    "ngay": "2025-12-07",
+    "tieu_de": "Hụt nước 34 mm trong 15 ngày (2025-11-19 → 2025-12-07)",
+    "chi_tiet": "ETc dồn 34 mm (Kc 0.75 cho Cúc chi) so với mưa hiệu quả 0 mm. Cần bù khoảng 485 m³ cho 1.43 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-19",
+      "den": "2025-12-07",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0016",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L04",
+    "pham_vi": "lo",
+    "ngay": "2025-12-11",
+    "tieu_de": "Hụt nước 32 mm trong 15 ngày (2025-11-19 → 2025-12-11)",
+    "chi_tiet": "ETc dồn 32 mm (Kc 0.65 cho Chanh) so với mưa hiệu quả 0 mm. Cần bù khoảng 59 m³ cho 0.19 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-19",
+      "den": "2025-12-11",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0017",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L07",
+    "pham_vi": "lo",
+    "ngay": "2025-12-11",
+    "tieu_de": "Hụt nước 32 mm trong 15 ngày (2025-11-19 → 2025-12-11)",
+    "chi_tiet": "ETc dồn 32 mm (Kc 0.65 cho Chanh) so với mưa hiệu quả 0 mm. Cần bù khoảng 537 m³ cho 1.68 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-19",
+      "den": "2025-12-11",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0018",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2025-12-12",
+    "tieu_de": "Hụt nước 37 mm trong 15 ngày (2025-11-19 → 2025-12-12)",
+    "chi_tiet": "ETc dồn 37 mm (Kc 0.75 cho Cúc chi) so với mưa hiệu quả 0 mm. Cần bù khoảng 251 m³ cho 0.69 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-19",
+      "den": "2025-12-12",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0019",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L03",
+    "pham_vi": "lo",
+    "ngay": "2025-12-12",
+    "tieu_de": "Hụt nước 48 mm trong 15 ngày (2025-11-11 → 2025-12-12)",
+    "chi_tiet": "ETc dồn 48 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 310 m³ cho 0.65 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-11",
+      "den": "2025-12-12",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0020",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2025-12-12",
+    "tieu_de": "Hụt nước 42 mm trong 15 ngày (2025-11-18 → 2025-12-12)",
+    "chi_tiet": "ETc dồn 42 mm (Kc 0.85 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 95 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-18",
+      "den": "2025-12-12",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0021",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L10",
+    "pham_vi": "lo",
+    "ngay": "2025-12-12",
+    "tieu_de": "Hụt nước 37 mm trong 15 ngày (2025-11-19 → 2025-12-12)",
+    "chi_tiet": "ETc dồn 37 mm (Kc 0.75 cho Cúc chi) so với mưa hiệu quả 0 mm. Cần bù khoảng 78 m³ cho 0.21 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-19",
+      "den": "2025-12-12",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0022",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2025-12-12",
+    "tieu_de": "Hụt nước 48 mm trong 15 ngày (2025-11-11 → 2025-12-12)",
+    "chi_tiet": "ETc dồn 48 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 170 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-11",
+      "den": "2025-12-12",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0023",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L12",
+    "pham_vi": "lo",
+    "ngay": "2025-12-12",
+    "tieu_de": "Hụt nước 37 mm trong 15 ngày (2025-11-19 → 2025-12-12)",
+    "chi_tiet": "ETc dồn 37 mm (Kc 0.75 cho Cúc chi) so với mưa hiệu quả 0 mm. Cần bù khoảng 351 m³ cho 0.96 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-11-19",
+      "den": "2025-12-12",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0024",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L06",
+    "pham_vi": "lo",
+    "ngay": "2025-12-18",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2025-11-20 tới 2025-12-18. Lệch trung bình cả kỳ của lô này: -0.119.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2025-11-20",
+        "2025-11-23",
+        "2025-12-18"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0025",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L08",
+    "pham_vi": "lo",
+    "ngay": "2025-12-18",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2025-11-20 tới 2025-12-18. Lệch trung bình cả kỳ của lô này: -0.13.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2025-11-20",
+        "2025-11-23",
+        "2025-12-18"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0026",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L09",
+    "pham_vi": "lo",
+    "ngay": "2025-12-18",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2025-11-20 tới 2025-12-18. Lệch trung bình cả kỳ của lô này: -0.046.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2025-11-20",
+        "2025-11-23",
+        "2025-12-18"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0027",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "thap",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2025-12-24",
+    "tieu_de": "Ảnh quang không thấy đợt thu hoạch, nhưng radar thấy",
+    "chi_tiet": "NDVI thay đổi n/a — không đạt ngưỡng. Nhưng VH radar đổi -0.5 dB, đủ ngưỡng −0,5. Cách giải thích khớp nhất: cây chỉ chiếm một phần lô, nên trung bình NDVI cả lô không nhúc nhích.",
+    "bang_chung": {
+      "dot_thu_id": "L11-2025-BCA-L2",
+      "vu_id": "L11-2025-BCA",
+      "sut_ndvi": null,
+      "vh_thay_doi_db": -0.5
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0028",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "thap",
+    "lo_id": "L03",
+    "pham_vi": "lo",
+    "ngay": "2025-12-30",
+    "tieu_de": "Không đủ dữ liệu để kiểm chứng đợt thu hoạch",
+    "chi_tiet": "Thiếu ảnh quang ở ít nhất một phía của mốc thu hoạch, và radar cũng không đổi đủ để kết luận.",
+    "bang_chung": {
+      "dot_thu_id": "L03-2025-BCA",
+      "vu_id": "L03-2025-BCA"
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0029",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L04",
+    "pham_vi": "lo",
+    "ngay": "2026-01-20",
+    "tieu_de": "Hụt nước 27 mm trong 15 ngày (2026-01-02 → 2026-01-20)",
+    "chi_tiet": "ETc dồn 27 mm (Kc 0.7 cho Chanh) so với mưa hiệu quả 0 mm. Cần bù khoảng 51 m³ cho 0.19 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-01-02",
+      "den": "2026-01-20",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0030",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L07",
+    "pham_vi": "lo",
+    "ngay": "2026-01-20",
+    "tieu_de": "Hụt nước 27 mm trong 15 ngày (2026-01-02 → 2026-01-20)",
+    "chi_tiet": "ETc dồn 27 mm (Kc 0.7 cho Chanh) so với mưa hiệu quả 0 mm. Cần bù khoảng 461 m³ cho 1.68 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-01-02",
+      "den": "2026-01-20",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0031",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2026-01-24",
+    "tieu_de": "Hụt nước 37 mm trong 15 ngày (2025-12-28 → 2026-01-24)",
+    "chi_tiet": "ETc dồn 37 mm (Kc 0.75 cho Cúc chi) so với mưa hiệu quả 0 mm. Cần bù khoảng 256 m³ cho 0.69 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-12-28",
+      "den": "2026-01-24",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0032",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-01-25",
+    "tieu_de": "Hụt nước 39 mm trong 15 ngày (2025-12-26 → 2026-01-25)",
+    "chi_tiet": "ETc dồn 39 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 88 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-12-26",
+      "den": "2026-01-25",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0033",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-01-25",
+    "tieu_de": "Hụt nước 39 mm trong 15 ngày (2025-12-26 → 2026-01-25)",
+    "chi_tiet": "ETc dồn 39 mm (Kc 0.85 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 139 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2025-12-26",
+      "den": "2026-01-25",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0034",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-01-30",
+    "tieu_de": "Hụt nước 25 mm trong 15 ngày (2026-01-16 → 2026-01-30)",
+    "chi_tiet": "ETc dồn 33 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 8 mm. Cần bù khoảng 56 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-01-16",
+      "den": "2026-01-30",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0035",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-01-30",
+    "tieu_de": "Hụt nước 25 mm trong 15 ngày (2026-01-16 → 2026-01-30)",
+    "chi_tiet": "ETc dồn 33 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 8 mm. Cần bù khoảng 89 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-01-16",
+      "den": "2026-01-30",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0036",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2026-02-07",
+    "tieu_de": "Hụt nước 31 mm trong 15 ngày (2026-01-22 → 2026-02-07)",
+    "chi_tiet": "ETc dồn 31 mm (Kc 0.95 cho Cúc cổ (trà hoa cúc cổ)) so với mưa hiệu quả 0 mm. Cần bù khoảng 215 m³ cho 0.69 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-01-22",
+      "den": "2026-02-07",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0037",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-02-07",
+    "tieu_de": "Hụt nước 33 mm trong 15 ngày (2026-01-22 → 2026-02-07)",
+    "chi_tiet": "ETc dồn 33 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 73 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-01-22",
+      "den": "2026-02-07",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0038",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-02-07",
+    "tieu_de": "Hụt nước 33 mm trong 15 ngày (2026-01-22 → 2026-02-07)",
+    "chi_tiet": "ETc dồn 33 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 117 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-01-22",
+      "den": "2026-02-07",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0039",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "thap",
+    "lo_id": "L09",
+    "pham_vi": "lo",
+    "ngay": "2026-02-10",
+    "tieu_de": "Không đủ dữ liệu để kiểm chứng đợt thu hoạch",
+    "chi_tiet": "Thiếu ảnh quang ở ít nhất một phía của mốc thu hoạch, và radar cũng không đổi đủ để kết luận.",
+    "bang_chung": {
+      "dot_thu_id": null,
+      "vu_id": null
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0040",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L10",
+    "pham_vi": "lo",
+    "ngay": "2026-03-02",
+    "tieu_de": "Hụt nước 27 mm trong 15 ngày (2026-02-09 → 2026-03-02)",
+    "chi_tiet": "ETc dồn 27 mm (Kc 0.8 cho Luống ươm cây giống) so với mưa hiệu quả 0 mm. Cần bù khoảng 58 m³ cho 0.21 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-09",
+      "den": "2026-03-02",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0041",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L10",
+    "pham_vi": "lo",
+    "ngay": "2026-03-06",
+    "tieu_de": "Hụt nước 25 mm trong 15 ngày (2026-02-20 → 2026-03-06)",
+    "chi_tiet": "ETc dồn 25 mm (Kc 0.8 cho Luống ươm cây giống) so với mưa hiệu quả 0 mm. Cần bù khoảng 54 m³ cho 0.21 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-20",
+      "den": "2026-03-06",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0042",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L01",
+    "pham_vi": "lo",
+    "ngay": "2026-03-08",
+    "tieu_de": "Hụt nước 30 mm trong 15 ngày (2026-02-20 → 2026-03-08)",
+    "chi_tiet": "ETc dồn 30 mm (Kc 0.4 cho Lạc (đậu phộng)) so với mưa hiệu quả 0 mm. Cần bù khoảng 427 m³ cho 1.43 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-20",
+      "den": "2026-03-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0043",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2026-03-08",
+    "tieu_de": "Hụt nước 33 mm trong 15 ngày (2026-02-09 → 2026-03-08)",
+    "chi_tiet": "ETc dồn 33 mm (Kc 0.95 cho Cúc cổ (trà hoa cúc cổ)) so với mưa hiệu quả 0 mm. Cần bù khoảng 226 m³ cho 0.69 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-09",
+      "den": "2026-03-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0044",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L03",
+    "pham_vi": "lo",
+    "ngay": "2026-03-08",
+    "tieu_de": "Hụt nước 30 mm trong 15 ngày (2026-02-20 → 2026-03-08)",
+    "chi_tiet": "ETc dồn 30 mm (Kc 0.4 cho Lạc (đậu phộng)) so với mưa hiệu quả 0 mm. Cần bù khoảng 193 m³ cho 0.65 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-20",
+      "den": "2026-03-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0045",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-03-08",
+    "tieu_de": "Hụt nước 35 mm trong 15 ngày (2026-02-09 → 2026-03-08)",
+    "chi_tiet": "ETc dồn 35 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 77 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-09",
+      "den": "2026-03-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0046",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-03-08",
+    "tieu_de": "Hụt nước 35 mm trong 15 ngày (2026-02-09 → 2026-03-08)",
+    "chi_tiet": "ETc dồn 35 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 123 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-09",
+      "den": "2026-03-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0047",
+    "ma_luat": "R3_MAT_DAU_QUANG_HOC",
+    "muc_do": "thap",
+    "lo_id": null,
+    "pham_vi": "farm",
+    "ngay": "2026-03-13",
+    "tieu_de": "Cả farm mất ảnh quang học 85 ngày (12/12 lô)",
+    "chi_tiet": "Từ 2025-12-18 tới 2026-03-13. Trong khoảng đó có 12 ngày radar Sentinel-1 — đủ để bám xu hướng. Lỗ hổng mây phủ cả vùng, không phải vấn đề của một lô.",
+    "bang_chung": {
+      "tu": "2025-12-18",
+      "den": "2026-03-13",
+      "so_ngay_radar": 12,
+      "cac_lo": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0048",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2026-03-13",
+    "tieu_de": "Hụt nước 25 mm trong 15 ngày (2026-02-27 → 2026-03-13)",
+    "chi_tiet": "ETc dồn 33 mm (Kc 0.95 cho Cúc cổ (trà hoa cúc cổ)) so với mưa hiệu quả 8 mm. Cần bù khoảng 173 m³ cho 0.69 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-27",
+      "den": "2026-03-13",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0049",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-03-16",
+    "tieu_de": "Hụt nước 27 mm trong 15 ngày (2026-02-24 → 2026-03-16)",
+    "chi_tiet": "ETc dồn 35 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 8 mm. Cần bù khoảng 61 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-24",
+      "den": "2026-03-16",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0050",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-03-16",
+    "tieu_de": "Hụt nước 27 mm trong 15 ngày (2026-02-24 → 2026-03-16)",
+    "chi_tiet": "ETc dồn 35 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 8 mm. Cần bù khoảng 96 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-24",
+      "den": "2026-03-16",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0051",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "thap",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-03-18",
+    "tieu_de": "Ảnh quang không thấy đợt thu hoạch, nhưng radar thấy",
+    "chi_tiet": "NDVI thay đổi n/a — không đạt ngưỡng. Nhưng VH radar đổi -1.13 dB, đủ ngưỡng −0,5. Cách giải thích khớp nhất: cây chỉ chiếm một phần lô, nên trung bình NDVI cả lô không nhúc nhích.",
+    "bang_chung": {
+      "dot_thu_id": "L05-2026-BCA-L2",
+      "vu_id": "L05-2025-BCA",
+      "sut_ndvi": null,
+      "vh_thay_doi_db": -1.13
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0052",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "thap",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2026-03-24",
+    "tieu_de": "Không đủ dữ liệu để kiểm chứng đợt thu hoạch",
+    "chi_tiet": "Thiếu ảnh quang ở ít nhất một phía của mốc thu hoạch, và radar cũng không đổi đủ để kết luận.",
+    "bang_chung": {
+      "dot_thu_id": "L02-2026-CCO",
+      "vu_id": "L02-2023-CCO"
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0053",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L01",
+    "pham_vi": "lo",
+    "ngay": "2026-03-28",
+    "tieu_de": "Hụt nước 47 mm trong 15 ngày (2026-02-24 → 2026-03-28)",
+    "chi_tiet": "ETc dồn 47 mm (Kc 0.4 cho Lạc (đậu phộng)) so với mưa hiệu quả 0 mm. Cần bù khoảng 671 m³ cho 1.43 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-24",
+      "den": "2026-03-28",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0054",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2026-03-28",
+    "tieu_de": "Hụt nước 33 mm trong 15 ngày (2026-03-10 → 2026-03-28)",
+    "chi_tiet": "ETc dồn 33 mm (Kc 0.8 cho Cúc cổ (trà hoa cúc cổ)) so với mưa hiệu quả 0 mm. Cần bù khoảng 224 m³ cho 0.69 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-10",
+      "den": "2026-03-28",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0055",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L03",
+    "pham_vi": "lo",
+    "ngay": "2026-03-28",
+    "tieu_de": "Hụt nước 47 mm trong 15 ngày (2026-02-24 → 2026-03-28)",
+    "chi_tiet": "ETc dồn 47 mm (Kc 0.4 cho Lạc (đậu phộng)) so với mưa hiệu quả 0 mm. Cần bù khoảng 303 m³ cho 0.65 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-02-24",
+      "den": "2026-03-28",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0056",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L04",
+    "pham_vi": "lo",
+    "ngay": "2026-03-28",
+    "tieu_de": "Hụt nước 28 mm trong 15 ngày (2026-03-10 → 2026-03-28)",
+    "chi_tiet": "ETc dồn 28 mm (Kc 0.7 cho Chanh) so với mưa hiệu quả 0 mm. Cần bù khoảng 53 m³ cho 0.19 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-10",
+      "den": "2026-03-28",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0057",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-03-28",
+    "tieu_de": "Hụt nước 35 mm trong 15 ngày (2026-03-04 → 2026-03-28)",
+    "chi_tiet": "ETc dồn 35 mm (Kc 0.85 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 77 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-04",
+      "den": "2026-03-28",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0058",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L07",
+    "pham_vi": "lo",
+    "ngay": "2026-03-28",
+    "tieu_de": "Hụt nước 28 mm trong 15 ngày (2026-03-10 → 2026-03-28)",
+    "chi_tiet": "ETc dồn 28 mm (Kc 0.7 cho Chanh) so với mưa hiệu quả 0 mm. Cần bù khoảng 478 m³ cho 1.68 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-10",
+      "den": "2026-03-28",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0059",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-03-28",
+    "tieu_de": "Hụt nước 35 mm trong 15 ngày (2026-03-04 → 2026-03-28)",
+    "chi_tiet": "ETc dồn 35 mm (Kc 0.85 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 123 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-04",
+      "den": "2026-03-28",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0060",
+    "ma_luat": "R2_SUT_NDVI_KHONG_RO_LY_DO",
+    "muc_do": "trung_binh",
+    "lo_id": "L04",
+    "pham_vi": "lo",
+    "ngay": "2026-04-07",
+    "tieu_de": "NDVI tụt 0.733 → 0.415 (-0.318) mà nhật ký không ghi việc gì",
+    "chi_tiet": "Giữa 2026-03-13 và 2026-04-07 (25 ngày). Không có bản ghi thu hoạch hay cải tạo đất nào trong cửa sổ ±10 ngày. TRÙNG đợt hạn 2026-03-30–2026-04-16 — nhiều khả năng là stress nước chứ không phải việc của người.",
+    "bang_chung": {
+      "anh_truoc": "2026-03-13",
+      "anh_sau": "2026-04-07",
+      "ndvi_truoc": 0.7328,
+      "ndvi_sau": 0.4152,
+      "trung_dot_han": true
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0061",
+    "ma_luat": "R2_SUT_NDVI_KHONG_RO_LY_DO",
+    "muc_do": "trung_binh",
+    "lo_id": "L07",
+    "pham_vi": "lo",
+    "ngay": "2026-04-07",
+    "tieu_de": "NDVI tụt 0.745 → 0.459 (-0.286) mà nhật ký không ghi việc gì",
+    "chi_tiet": "Giữa 2026-03-13 và 2026-04-07 (25 ngày). Không có bản ghi thu hoạch hay cải tạo đất nào trong cửa sổ ±10 ngày. TRÙNG đợt hạn 2026-03-30–2026-04-16 — nhiều khả năng là stress nước chứ không phải việc của người.",
+    "bang_chung": {
+      "anh_truoc": "2026-03-13",
+      "anh_sau": "2026-04-07",
+      "ndvi_truoc": 0.745,
+      "ndvi_sau": 0.4592,
+      "trung_dot_han": true
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0062",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L02",
+    "pham_vi": "lo",
+    "ngay": "2026-04-13",
+    "tieu_de": "Hụt nước 26 mm trong 15 ngày (2026-03-30 → 2026-04-13)",
+    "chi_tiet": "ETc dồn 26 mm (Kc 0.8 cho Cúc cổ (trà hoa cúc cổ)) so với mưa hiệu quả 0 mm. Cần bù khoảng 180 m³ cho 0.69 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-30",
+      "den": "2026-04-13",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0063",
+    "ma_luat": "R6_CHUOI_NGAY_KHONG_MUA",
+    "muc_do": "cao",
+    "lo_id": null,
+    "pham_vi": "farm",
+    "ngay": "2026-04-17",
+    "tieu_de": "18 ngày liên tiếp mưa dưới 1 mm (2026-03-30 → 2026-04-17)",
+    "chi_tiet": "Cả vùng, không riêng lô nào. Đây là nền của mọi cảnh báo thiếu nước cùng kỳ.",
+    "bang_chung": {
+      "tu": "2026-03-30",
+      "so_ngay": 18
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0064",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L04",
+    "pham_vi": "lo",
+    "ngay": "2026-04-17",
+    "tieu_de": "Hụt nước 51 mm trong 15 ngày (2026-03-30 → 2026-04-17)",
+    "chi_tiet": "ETc dồn 51 mm (Kc 0.7 cho Chanh) so với mưa hiệu quả 0 mm. Cần bù khoảng 95 m³ cho 0.19 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-30",
+      "den": "2026-04-17",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0065",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L07",
+    "pham_vi": "lo",
+    "ngay": "2026-04-17",
+    "tieu_de": "Hụt nước 51 mm trong 15 ngày (2026-03-30 → 2026-04-17)",
+    "chi_tiet": "ETc dồn 51 mm (Kc 0.7 cho Chanh) so với mưa hiệu quả 0 mm. Cần bù khoảng 861 m³ cho 1.68 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-30",
+      "den": "2026-04-17",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0066",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L01",
+    "pham_vi": "lo",
+    "ngay": "2026-04-22",
+    "tieu_de": "Hụt nước 84 mm trong 15 ngày (2026-03-22 → 2026-04-22)",
+    "chi_tiet": "ETc dồn 84 mm (Kc 1.15 cho Lạc (đậu phộng)) so với mưa hiệu quả 0 mm. Cần bù khoảng 1208 m³ cho 1.43 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-22",
+      "den": "2026-04-22",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0067",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L03",
+    "pham_vi": "lo",
+    "ngay": "2026-04-22",
+    "tieu_de": "Hụt nước 84 mm trong 15 ngày (2026-03-22 → 2026-04-22)",
+    "chi_tiet": "ETc dồn 84 mm (Kc 1.15 cho Lạc (đậu phộng)) so với mưa hiệu quả 0 mm. Cần bù khoảng 546 m³ cho 0.65 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-22",
+      "den": "2026-04-22",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0068",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-04-22",
+    "tieu_de": "Hụt nước 73 mm trong 15 ngày (2026-03-26 → 2026-04-22)",
+    "chi_tiet": "ETc dồn 73 mm (Kc 0.85 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 164 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-26",
+      "den": "2026-04-22",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0069",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-04-22",
+    "tieu_de": "Hụt nước 73 mm trong 15 ngày (2026-03-26 → 2026-04-22)",
+    "chi_tiet": "ETc dồn 73 mm (Kc 0.85 cho Bồ công anh) so với mưa hiệu quả 0 mm. Cần bù khoảng 260 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-03-26",
+      "den": "2026-04-22",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0070",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "cao",
+    "lo_id": "L06",
+    "pham_vi": "lo",
+    "ngay": "2026-05-14",
+    "tieu_de": "Khai thu hoạch nhưng ảnh vệ tinh không thấy tán giảm",
+    "chi_tiet": "1 ngày thu hoạch khai từ 2026-05-14 tới 2026-05-14. NDVI đỉnh 0.2836 (2026-04-07) → đáy 0.3458 (2026-06-21), thay đổi +0.062 — không đạt ngưỡng -0.15 của None. Radar cũng không thấy đổi (-0.38 dB).",
+    "bang_chung": {
+      "vu_id": null,
+      "sut_ndvi": 0.0622
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0071",
+    "ma_luat": "R3_MAT_DAU_QUANG_HOC",
+    "muc_do": "thap",
+    "lo_id": null,
+    "pham_vi": "farm",
+    "ngay": "2026-05-27",
+    "tieu_de": "Cả farm mất ảnh quang học 45 ngày (12/12 lô)",
+    "chi_tiet": "Từ 2026-04-12 tới 2026-05-27. Trong khoảng đó có 6 ngày radar Sentinel-1 — đủ để bám xu hướng. Lỗ hổng mây phủ cả vùng, không phải vấn đề của một lô.",
+    "bang_chung": {
+      "tu": "2026-04-12",
+      "den": "2026-05-27",
+      "so_ngay_radar": 6,
+      "cac_lo": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0072",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L06",
+    "pham_vi": "lo",
+    "ngay": "2026-06-06",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2026-05-27 tới 2026-06-06. Lệch trung bình cả kỳ của lô này: -0.119.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2026-05-27",
+        "2026-06-01",
+        "2026-06-06"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0073",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L08",
+    "pham_vi": "lo",
+    "ngay": "2026-06-06",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2026-05-27 tới 2026-06-06. Lệch trung bình cả kỳ của lô này: -0.13.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2026-05-27",
+        "2026-06-01",
+        "2026-06-06"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0074",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L10",
+    "pham_vi": "lo",
+    "ngay": "2026-06-06",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2026-05-27 tới 2026-06-06. Lệch trung bình cả kỳ của lô này: -0.106.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2026-05-27",
+        "2026-06-01",
+        "2026-06-06"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0075",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L12",
+    "pham_vi": "lo",
+    "ngay": "2026-06-06",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2026-05-27 tới 2026-06-06. Lệch trung bình cả kỳ của lô này: -0.083.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2026-05-27",
+        "2026-06-01",
+        "2026-06-06"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0076",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L04",
+    "pham_vi": "lo",
+    "ngay": "2026-06-07",
+    "tieu_de": "Hụt nước 37 mm trong 15 ngày (2026-05-22 → 2026-06-07)",
+    "chi_tiet": "ETc dồn 53 mm (Kc 0.65 cho Chanh) so với mưa hiệu quả 16 mm. Cần bù khoảng 68 m³ cho 0.19 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-05-22",
+      "den": "2026-06-07",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0077",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L07",
+    "pham_vi": "lo",
+    "ngay": "2026-06-07",
+    "tieu_de": "Hụt nước 39 mm trong 15 ngày (2026-05-22 → 2026-06-07)",
+    "chi_tiet": "ETc dồn 55 mm (Kc 0.7 cho Chanh) so với mưa hiệu quả 16 mm. Cần bù khoảng 658 m³ cho 1.68 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-05-22",
+      "den": "2026-06-07",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0078",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L09",
+    "pham_vi": "lo",
+    "ngay": "2026-06-07",
+    "tieu_de": "Hụt nước 35 mm trong 15 ngày (2026-05-22 → 2026-06-07)",
+    "chi_tiet": "ETc dồn 51 mm (Kc 0.4 cho Đậu che phủ (cây phân xanh)) so với mưa hiệu quả 16 mm. Cần bù khoảng 128 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-05-22",
+      "den": "2026-06-07",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0079",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L01",
+    "pham_vi": "lo",
+    "ngay": "2026-06-08",
+    "tieu_de": "Hụt nước 62 mm trong 15 ngày (2026-05-20 → 2026-06-08)",
+    "chi_tiet": "ETc dồn 78 mm (Kc 1.15 cho Lạc (đậu phộng)) so với mưa hiệu quả 16 mm. Cần bù khoảng 893 m³ cho 1.43 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-05-20",
+      "den": "2026-06-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0080",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L03",
+    "pham_vi": "lo",
+    "ngay": "2026-06-08",
+    "tieu_de": "Hụt nước 62 mm trong 15 ngày (2026-05-20 → 2026-06-08)",
+    "chi_tiet": "ETc dồn 78 mm (Kc 1.15 cho Lạc (đậu phộng)) so với mưa hiệu quả 16 mm. Cần bù khoảng 404 m³ cho 0.65 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-05-20",
+      "den": "2026-06-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0081",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-06-08",
+    "tieu_de": "Hụt nước 65 mm trong 15 ngày (2026-05-20 → 2026-06-08)",
+    "chi_tiet": "ETc dồn 81 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 16 mm. Cần bù khoảng 146 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-05-20",
+      "den": "2026-06-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0082",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-06-08",
+    "tieu_de": "Hụt nước 65 mm trong 15 ngày (2026-05-20 → 2026-06-08)",
+    "chi_tiet": "ETc dồn 81 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 16 mm. Cần bù khoảng 233 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-05-20",
+      "den": "2026-06-08",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0083",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "trung_binh",
+    "lo_id": "L09",
+    "pham_vi": "lo",
+    "ngay": "2026-06-26",
+    "tieu_de": "Hụt nước 43 mm trong 15 ngày (2026-06-10 → 2026-06-26)",
+    "chi_tiet": "ETc dồn 64 mm (Kc 0.9 cho Đậu che phủ (cây phân xanh)) so với mưa hiệu quả 21 mm. Cần bù khoảng 155 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-06-10",
+      "den": "2026-06-26",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0084",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-06-27",
+    "tieu_de": "Hụt nước 50 mm trong 15 ngày (2026-06-10 → 2026-06-27)",
+    "chi_tiet": "ETc dồn 71 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 21 mm. Cần bù khoảng 111 m³ cho 0.22 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-06-10",
+      "den": "2026-06-27",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0085",
+    "ma_luat": "R1_THIEU_NUOC",
+    "muc_do": "cao",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-06-27",
+    "tieu_de": "Hụt nước 50 mm trong 15 ngày (2026-06-10 → 2026-06-27)",
+    "chi_tiet": "ETc dồn 71 mm (Kc 1.0 cho Bồ công anh) so với mưa hiệu quả 21 mm. Cần bù khoảng 176 m³ cho 0.36 ha đang gieo.",
+    "bang_chung": {
+      "nguon": "Open-Meteo ERA5 (THẬT) + Kc FAO-56",
+      "tu": "2026-06-10",
+      "den": "2026-06-27",
+      "cua_so_ngay": 15,
+      "nguong_mm": 25.0
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0086",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L01",
+    "pham_vi": "lo",
+    "ngay": "2026-07-18",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2026-06-21 tới 2026-07-18. Lệch trung bình cả kỳ của lô này: -0.066.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2026-06-21",
+        "2026-07-11",
+        "2026-07-18"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0087",
+    "ma_luat": "R4_KEM_MAT_BANG_FARM",
+    "muc_do": "trung_binh",
+    "lo_id": "L12",
+    "pham_vi": "lo",
+    "ngay": "2026-07-18",
+    "tieu_de": "3 lần quan trắc liên tiếp thấp hơn mặt bằng farm ≥ 0,15",
+    "chi_tiet": "Từ 2026-06-21 tới 2026-07-18. Lệch trung bình cả kỳ của lô này: -0.083.",
+    "bang_chung": {
+      "cac_ngay": [
+        "2026-06-21",
+        "2026-07-11",
+        "2026-07-18"
+      ]
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0088",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "thap",
+    "lo_id": "L11",
+    "pham_vi": "lo",
+    "ngay": "2026-08-11",
+    "tieu_de": "Không đủ dữ liệu để kiểm chứng đợt thu hoạch",
+    "chi_tiet": "Thiếu ảnh quang ở ít nhất một phía của mốc thu hoạch, và radar cũng không đổi đủ để kết luận.",
+    "bang_chung": {
+      "dot_thu_id": "L11-2026-BCA-L4",
+      "vu_id": "L11-2025-BCA"
+    },
+    "nguon_du_lieu": "that"
+  },
+  {
+    "cb_id": "CB-0089",
+    "ma_luat": "R5_NHAT_KY_KHONG_KHOP_ANH",
+    "muc_do": "thap",
+    "lo_id": "L05",
+    "pham_vi": "lo",
+    "ngay": "2026-08-12",
+    "tieu_de": "Không đủ dữ liệu để kiểm chứng đợt thu hoạch",
+    "chi_tiet": "Thiếu ảnh quang ở ít nhất một phía của mốc thu hoạch, và radar cũng không đổi đủ để kết luận.",
+    "bang_chung": {
+      "dot_thu_id": "L05-2026-BCA-L3",
+      "vu_id": "L05-2025-BCA"
+    },
+    "nguon_du_lieu": "that"
+  }
+]

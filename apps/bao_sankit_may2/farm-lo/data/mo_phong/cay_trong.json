@@ -1,0 +1,128 @@
+[
+  {
+    "ma": "CUC",
+    "ten": "Cúc chi",
+    "ten_khoa_hoc": "Chrysanthemum indicum L.",
+    "nhom": "duoc_lieu_hoa",
+    "luu_nien": false,
+    "kc": {
+      "ini": 0.5,
+      "mid": 1.05,
+      "end": 0.75
+    },
+    "chu_ky_ngay": 130,
+    "nang_suat_tuoi_tan_ha": 3.1,
+    "ti_le_thu_hoi": 0.21,
+    "trong_ma_dinh_danh": true,
+    "nguon": "mau",
+    "ghi_chu_kc": "Kc theo FAO-56 Irrigation and Drainage Paper 56, bảng 12."
+  },
+  {
+    "ma": "CCO",
+    "ten": "Cúc cổ (trà hoa cúc cổ)",
+    "ten_khoa_hoc": "Chrysanthemum morifolium Ramat.",
+    "nhom": "duoc_lieu_hoa",
+    "luu_nien": true,
+    "kc": {
+      "ini": 0.6,
+      "mid": 0.95,
+      "end": 0.8
+    },
+    "chu_ky_ngay": null,
+    "nang_suat_tuoi_tan_ha": 2.4,
+    "ti_le_thu_hoi": 0.22,
+    "trong_ma_dinh_danh": false,
+    "nguon": "mau",
+    "ghi_chu_kc": "Kc theo FAO-56 Irrigation and Drainage Paper 56, bảng 12."
+  },
+  {
+    "ma": "LAC",
+    "ten": "Lạc (đậu phộng)",
+    "ten_khoa_hoc": "Arachis hypogaea L.",
+    "nhom": "cay_luan_canh_ho_dau",
+    "luu_nien": false,
+    "kc": {
+      "ini": 0.4,
+      "mid": 1.15,
+      "end": 0.6
+    },
+    "chu_ky_ngay": 145,
+    "nang_suat_tuoi_tan_ha": 2.6,
+    "ti_le_thu_hoi": 0.72,
+    "trong_ma_dinh_danh": false,
+    "nguon": "mau",
+    "ghi_chu_kc": "Kc theo FAO-56 Irrigation and Drainage Paper 56, bảng 12."
+  },
+  {
+    "ma": "BCA",
+    "ten": "Bồ công anh",
+    "ten_khoa_hoc": "Lactuca indica L.",
+    "nhom": "duoc_lieu_la_re",
+    "luu_nien": true,
+    "kc": {
+      "ini": 0.6,
+      "mid": 1.0,
+      "end": 0.85
+    },
+    "chu_ky_ngay": null,
+    "nang_suat_tuoi_tan_ha": 9.0,
+    "ti_le_thu_hoi": 0.14,
+    "trong_ma_dinh_danh": false,
+    "nguon": "mau",
+    "ghi_chu_kc": "Kc theo FAO-56 Irrigation and Drainage Paper 56, bảng 12."
+  },
+  {
+    "ma": "CHA",
+    "ten": "Chanh",
+    "ten_khoa_hoc": "Citrus aurantiifolia (Christm.) Swingle",
+    "nhom": "cay_an_qua_luu_nien",
+    "luu_nien": true,
+    "kc": {
+      "ini": 0.65,
+      "mid": 0.7,
+      "end": 0.65
+    },
+    "chu_ky_ngay": null,
+    "nang_suat_tuoi_tan_ha": 11.0,
+    "ti_le_thu_hoi": 1.0,
+    "trong_ma_dinh_danh": true,
+    "nguon": "mau",
+    "ghi_chu_kc": "Kc theo FAO-56 Irrigation and Drainage Paper 56, bảng 12."
+  },
+  {
+    "ma": "DAU",
+    "ten": "Đậu che phủ (cây phân xanh)",
+    "ten_khoa_hoc": "Vigna unguiculata (L.) Walp.",
+    "nhom": "cay_che_phu",
+    "luu_nien": false,
+    "kc": {
+      "ini": 0.4,
+      "mid": 0.9,
+      "end": 0.5
+    },
+    "chu_ky_ngay": 100,
+    "nang_suat_tuoi_tan_ha": 0.0,
+    "ti_le_thu_hoi": 0.0,
+    "trong_ma_dinh_danh": false,
+    "nguon": "mau",
+    "ghi_chu_kc": "Kc theo FAO-56 Irrigation and Drainage Paper 56, bảng 12."
+  },
+  {
+    "ma": "UOM",
+    "ten": "Luống ươm cây giống",
+    "ten_khoa_hoc": null,
+    "nhom": "vuon_uom",
+    "luu_nien": false,
+    "kc": {
+      "ini": 0.55,
+      "mid": 0.8,
+      "end": 0.6
+    },
+    "chu_ky_ngay": 75,
+    "nang_suat_tuoi_tan_ha": 0.0,
+    "ti_le_thu_hoi": 0.0,
+    "trong_ma_dinh_danh": false,
+    "nguon": "mau",
+    "ghi_chu_kc": "Kc theo FAO-56 Irrigation and Drainage Paper 56, bảng 12."
+  }
+]

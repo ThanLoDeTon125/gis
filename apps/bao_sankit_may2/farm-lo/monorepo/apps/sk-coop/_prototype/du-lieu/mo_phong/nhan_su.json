@@ -1,0 +1,50 @@
+[
+  {
+    "ma": "NS-01",
+    "ten": "Trần Văn Đức",
+    "vai_tro": "To truong dong ruong",
+    "vai_tro_vi": "Tổ trưởng đồng ruộng",
+    "nhan_vat_hu_cau": true,
+    "nguon": "mau"
+  },
+  {
+    "ma": "NS-02",
+    "ten": "Phạm Thị Lan",
+    "vai_tro": "Ky thuat vien",
+    "vai_tro_vi": "Kỹ thuật viên canh tác",
+    "nhan_vat_hu_cau": true,
+    "nguon": "mau"
+  },
+  {
+    "ma": "NS-03",
+    "ten": "Nguyễn Văn Hoà",
+    "vai_tro": "Van hanh say",
+    "vai_tro_vi": "Vận hành máy sấy",
+    "nhan_vat_hu_cau": true,
+    "nguon": "mau"
+  },
+  {
+    "ma": "NS-04",
+    "ten": "Lê Thị Nhung",
+    "vai_tro": "Thu hai",
+    "vai_tro_vi": "Tổ thu hái",
+    "nhan_vat_hu_cau": true,
+    "nguon": "mau"
+  },
+  {
+    "ma": "NS-05",
+    "ten": "Đinh Văn Sơn",
+    "vai_tro": "Thu hai",
+    "vai_tro_vi": "Tổ thu hái",
+    "nhan_vat_hu_cau": true,
+    "nguon": "mau"
+  },
+  {
+    "ma": "NS-06",
+    "ten": "Bùi Thị Hạnh",
+    "vai_tro": "QA ho so",
+    "vai_tro_vi": "QA · hồ sơ lô",
+    "nhan_vat_hu_cau": true,
+    "nguon": "mau"
+  }
+]

@@ -1,0 +1,26 @@
+# --- Separate RAG project: has its own git repo, do NOT include here ---
+rag_duocdien/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+*.egg-info/
+
+# --- Environment / secrets ---
+.env
+.env.*
+*.key
+*.pem
+
+# --- Editor / misc ---
+*.log
+.idea/
+.vscode/

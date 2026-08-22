@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sankit.vn/schema/farm-lo/1",
+  "title": "Mô hình kiểm soát farm theo lô",
+  "$defs": {
+    "ngay": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "thang": { "type": "string", "pattern": "^\\d{4}-\\d{2}$" },
+    "lo_id": { "type": "string", "pattern": "^[A-Z]\\d{2}$" },
+    "ma_lo_hang": { "type": "string", "pattern": "^SK-L-[A-Z]{3}\\d{2}-\\d{2}-[0-9A-Z]$" },
+    "ma_bich": { "type": "string", "pattern": "^SK-B-[A-Z]{3}\\d{2}-\\d{4}-[0-9A-Z]$" },
+    "ma_cay": { "type": "string", "pattern": "^SK-C-[A-Z]{3}\\d{2}-[A-Z]\\d{2}-\\d{4}-[0-9A-Z]$" },
+    "nguon": { "enum": ["that", "mau", "dan_xuat"] },
+    "ma_cay_trong": { "enum": ["CUC", "CCO", "LAC", "BCA", "CHA", "DAU", "UOM"] },
+
+    "lo_dat": {
+      "type": "object",
+      "required": ["lo_id", "ten", "muc_dich", "dien_tich_ha", "trong_tam", "cao_do_m",
+                   "do_doc_deg", "ndvi_trung_binh", "so_ngay_quang", "so_ngay_radar", "nguon"],
+      "properties": {
+        "lo_id": { "$ref": "#/$defs/lo_id" },
+        "ten": { "type": "string", "minLength": 1 },
+        "muc_dich": { "enum": ["canh_tac", "luu_nien", "cong_trinh", "dat_nghi", "vuon_uom"] },
+        "dien_tich_ha": { "type": "number", "exclusiveMinimum": 0 },
+        "dien_tich_ve_tay_ha": { "type": "number", "exclusiveMinimum": 0 },
+        "chenh_dien_tich_pct": { "type": "number" },
+        "chu_vi_m": { "type": "number", "exclusiveMinimum": 0 },
+        "trong_tam": {
+          "type": "object", "required": ["lat", "lon"],
+          "properties": {
+            "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+            "lon": { "type": "number", "minimum": -180, "maximum": 180 }
+          }
+        },
+        "cao_do_m": { "type": "number" },
+        "do_doc_deg": { "type": "number", "minimum": 0, "maximum": 90 },
+        "ndvi_trung_binh": { "type": "number", "minimum": -1, "maximum": 1 },
+        "ndvi_min": { "type": "number", "minimum": -1, "maximum": 1 },
+        "ndvi_max": { "type": "number", "minimum": -1, "maximum": 1 },
+        "bien_do_ndvi": { "type": "number", "minimum": 0, "maximum": 2 },
+        "ndmi_trung_binh": { "type": "number", "minimum": -1, "maximum": 1 },
+        "vh_db_trung_binh": { "type": "number", "maximum": 0 },
+        "so_ngay_quang": { "type": "integer", "minimum": 0 },
+        "so_ngay_radar": { "type": "integer", "minimum": 0 },
+        "phan_loai_tu_anh": { "type": "string" },
+        "nguon": { "const": "that" }
+      }
+    },
+
+    "vu": {
+      "type": "object",
+      "required": ["vu_id", "lo_id", "ma_cay_trong", "ngay_xuong_giong", "ngay_ket_thuc",
+                   "so_dot_thu", "trang_thai", "dien_tich_gieo_ha", "ti_le_gieo", "neo_ndvi", "nguon"],
+      "properties": {
+        "vu_id": { "type": "string", "minLength": 1 },
+        "lo_id": { "$ref": "#/$defs/lo_id" },
+        "ma_cay_trong": { "$ref": "#/$defs/ma_cay_trong" },
+        "luu_nien": { "type": "boolean" },
+        "ngay_xuong_giong": { "$ref": "#/$defs/ngay" },
+        "do_tin_ngay_gieo": { "enum": ["tu_ho_so_that", "suy_tu_ndvi", "khong_kiem_duoc"] },
+        "ngay_ket_thuc": { "oneOf": [{ "$ref": "#/$defs/ngay" }, { "type": "null" }] },
+        "ngay_thu_tu": { "$ref": "#/$defs/ngay" },
+        "ngay_thu_den": { "$ref": "#/$defs/ngay" },
+        "so_dot_thu": { "type": "integer", "minimum": 0 },
+        "trang_thai": { "enum": ["dang_sinh_truong", "dang_thu_hoach", "da_thu_hoach"] },
+        "dien_tich_gieo_ha": { "type": "number", "minimum": 0 },
+        "ti_le_gieo": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
+        "kc_fao56": {
+          "type": "object", "required": ["ini", "mid", "end"],
+          "properties": {
+            "ini": { "type": "number", "minimum": 0, "maximum": 1.5 },
+            "mid": { "type": "number", "minimum": 0, "maximum": 1.5 },
+            "end": { "type": "number", "minimum": 0, "maximum": 1.5 }
+          }
+        },
+        "neo_ndvi": { "type": "object", "required": ["day", "ndvi_day"] },
+        "nguon": { "$ref": "#/$defs/nguon" }
+      }
+    },
+
+    "dot_thu": {
+      "type": "object",
+      "required": ["dot_id", "vu_id", "lo_id", "ngay_thu_tu", "ngay_thu_den", "trang_thai", "nguon"],
+      "properties": {
+        "dot_id": { "type": "string", "minLength": 1 },
+        "vu_id": { "type": "string", "minLength": 1 },
+        "lo_id": { "$ref": "#/$defs/lo_id" },
+        "ma_cay_trong": { "$ref": "#/$defs/ma_cay_trong" },
+        "ngay_thu_tu": { "$ref": "#/$defs/ngay" },
+        "ngay_thu_den": { "$ref": "#/$defs/ngay" },
+        "trang_thai": { "enum": ["chua_toi", "dang_thu_hoach", "da_thu_hoach"] },
+        "nguon": { "$ref": "#/$defs/nguon" }
+      }
+    },
+
+    "lo_hang": {
+      "type": "object",
+      "required": ["id", "lo_dat_id", "vu_id", "dot_thu_id", "ma_cay_trong", "ngay_hai_tu", "ngay_hai_den",
+                   "khoi_luong_tuoi_kg", "trang_thai", "kiem_nghiem", "nguon_cay",
+                   "khi_hau_ca_vu", "nguon"],
+      "properties": {
+        "id": { "$ref": "#/$defs/ma_lo_hang" },
+        "lo_dat_id": { "$ref": "#/$defs/lo_id" },
+        "dot_thu_id": { "type": "string", "minLength": 1 },
+        "ma_cay_trong": { "$ref": "#/$defs/ma_cay_trong" },
+        "ngay_hai_tu": { "$ref": "#/$defs/ngay" },
+        "ngay_hai_den": { "$ref": "#/$defs/ngay" },
+        "khoi_luong_tuoi_kg": { "type": "number", "exclusiveMinimum": 0 },
+        "khoi_luong_kho_kg": { "type": ["number", "null"], "minimum": 0 },
+        "ti_le_thu_hoi": { "type": ["number", "null"], "exclusiveMinimum": 0, "maximum": 1 },
+        "trang_thai": {
+          "enum": ["dang_thu_hoach", "dang_say", "dang_phan_loai", "dang_dong_goi",
+                   "cho_kiem_nghiem", "da_niem_ho_so", "da_giao"]
+        },
+        "kiem_nghiem": {
+          "type": "null",
+          "$comment": "CỐ Ý chỉ nhận null. Không dựng phiếu kiểm nghiệm giả — xem docs/05 §3."
+        },
+        "nguon_cay": { "type": "array", "items": { "$ref": "#/$defs/ma_cay" } },
+        "khi_hau_ca_vu": {
+          "type": "object",
+          "required": ["tong_mua_mm", "tong_et0_mm", "gdd_co_so_10c", "nguon"],
+          "properties": { "nguon": { "const": "that" } }
+        },
+        "nguon": { "$ref": "#/$defs/nguon" }
+      }
+    },
+
+    "canh_bao": {
+      "type": "object",
+      "required": ["cb_id", "ma_luat", "muc_do", "lo_id", "pham_vi", "ngay",
+                   "tieu_de", "chi_tiet", "nguon_du_lieu"],
+      "properties": {
+        "cb_id": { "type": "string", "pattern": "^CB-\\d{4}$" },
+        "ma_luat": {
+          "enum": ["R1_THIEU_NUOC", "R2_SUT_NDVI_KHONG_RO_LY_DO", "R3_MAT_DAU_QUANG_HOC",
+                   "R4_KEM_MAT_BANG_FARM", "R5_NHAT_KY_KHONG_KHOP_ANH", "R6_CHUOI_NGAY_KHONG_MUA"]
+        },
+        "muc_do": { "enum": ["cao", "trung_binh", "thap"] },
+        "lo_id": { "oneOf": [{ "$ref": "#/$defs/lo_id" }, { "type": "null" }] },
+        "pham_vi": { "enum": ["lo", "farm"] },
+        "ngay": { "$ref": "#/$defs/ngay" },
+        "nguon_du_lieu": { "const": "that" },
+        "trang_thai": { "enum": ["mo", "da_xem", "da_xu_ly", "bo_qua"] }
+      },
+      "allOf": [{
+        "if": { "properties": { "pham_vi": { "const": "farm" } } },
+        "then": { "properties": { "lo_id": { "type": "null" } } }
+      }]
+    },
+
+    "cay_ca_the": {
+      "type": "object",
+      "required": ["id", "giong", "lo_id", "so_trong_lo", "ngay_xuong_giong", "nguon"],
+      "properties": {
+        "id": { "$ref": "#/$defs/ma_cay" },
+        "giong": { "$ref": "#/$defs/ma_cay_trong" },
+        "lo_id": { "$ref": "#/$defs/lo_id" },
+        "so_trong_lo": { "type": "integer", "minimum": 1, "maximum": 9999 },
+        "nguon": { "$ref": "#/$defs/nguon" }
+      }
+    },
+
+    "bich": {
+      "type": "object",
+      "required": ["id", "lo_hang_id", "lo_dat_id", "ngay_dong_goi", "han_su_dung", "nguon"],
+      "properties": {
+        "id": { "$ref": "#/$defs/ma_bich" },
+        "lo_hang_id": { "$ref": "#/$defs/ma_lo_hang" },
+        "lo_dat_id": { "$ref": "#/$defs/lo_id" },
+        "nguon": { "$ref": "#/$defs/nguon" }
+      }
+    }
+  }
+}

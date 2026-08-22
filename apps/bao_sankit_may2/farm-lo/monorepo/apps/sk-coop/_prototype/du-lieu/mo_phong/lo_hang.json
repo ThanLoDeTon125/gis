@@ -1,0 +1,5658 @@
+[
+  {
+    "id": "SK-L-CUC25-10-S",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 20/10/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-10-20",
+    "ngay_hai_den": "2025-10-21",
+    "khoi_luong_tuoi_kg": 252.6,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 54.9,
+    "ti_le_thu_hoi": 0.217,
+    "phan_phoi": {
+      "b2b_si_kg": 38.4,
+      "b2c_le_kg": 16.5,
+      "so_bich_20g": 825
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": -17,
+      "ndvi": 0.7384,
+      "ndmi": 0.1912,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1105.2,
+      "so_ngay_mua": 56,
+      "tong_et0_mm": 227.2,
+      "can_bang_nuoc_mm": 878.0,
+      "gdd_co_so_10c": 1190,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 21.5,
+      "so_ngay_theo_doi": 71,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-11-Q",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 22/10/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-10-22",
+    "ngay_hai_den": "2025-10-23",
+    "khoi_luong_tuoi_kg": 241.0,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 50.2,
+    "ti_le_thu_hoi": 0.208,
+    "phan_phoi": {
+      "b2b_si_kg": 35.1,
+      "b2c_le_kg": 15.1,
+      "so_bich_20g": 755
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": -19,
+      "ndvi": 0.7384,
+      "ndmi": 0.1912,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1107.8,
+      "so_ngay_mua": 57,
+      "tong_et0_mm": 234.7,
+      "can_bang_nuoc_mm": 873.1,
+      "gdd_co_so_10c": 1212,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 73,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-12-O",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 24/10/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-10-24",
+    "ngay_hai_den": "2025-10-25",
+    "khoi_luong_tuoi_kg": 259.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 52.4,
+    "ti_le_thu_hoi": 0.202,
+    "phan_phoi": {
+      "b2b_si_kg": 36.7,
+      "b2c_le_kg": 15.7,
+      "so_bich_20g": 785
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 19,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1108.5,
+      "so_ngay_mua": 57,
+      "tong_et0_mm": 239.9,
+      "can_bang_nuoc_mm": 868.6,
+      "gdd_co_so_10c": 1234,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 75,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-13-M",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 26/10/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-10-26",
+    "ngay_hai_den": "2025-10-27",
+    "khoi_luong_tuoi_kg": 228.4,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 50.0,
+    "ti_le_thu_hoi": 0.219,
+    "phan_phoi": {
+      "b2b_si_kg": 35.0,
+      "b2c_le_kg": 15.0,
+      "so_bich_20g": 750
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 17,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1108.5,
+      "so_ngay_mua": 57,
+      "tong_et0_mm": 246.0,
+      "can_bang_nuoc_mm": 862.5,
+      "gdd_co_so_10c": 1261,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 77,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-14-K",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 28/10/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-10-28",
+    "ngay_hai_den": "2025-10-29",
+    "khoi_luong_tuoi_kg": 227.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 49.9,
+    "ti_le_thu_hoi": 0.219,
+    "phan_phoi": {
+      "b2b_si_kg": 34.9,
+      "b2c_le_kg": 15.0,
+      "so_bich_20g": 750
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 15,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1108.6,
+      "so_ngay_mua": 57,
+      "tong_et0_mm": 252.1,
+      "can_bang_nuoc_mm": 856.5,
+      "gdd_co_so_10c": 1289,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 79,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-15-I",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 30/10/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-10-30",
+    "ngay_hai_den": "2025-10-31",
+    "khoi_luong_tuoi_kg": 258.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 54.7,
+    "ti_le_thu_hoi": 0.211,
+    "phan_phoi": {
+      "b2b_si_kg": 38.3,
+      "b2c_le_kg": 16.4,
+      "so_bich_20g": 820
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 13,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1124.2,
+      "so_ngay_mua": 59,
+      "tong_et0_mm": 254.9,
+      "can_bang_nuoc_mm": 869.3,
+      "gdd_co_so_10c": 1316,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 81,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-16-G",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 01/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-01",
+    "ngay_hai_den": "2025-11-02",
+    "khoi_luong_tuoi_kg": 254.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 53.7,
+    "ti_le_thu_hoi": 0.211,
+    "phan_phoi": {
+      "b2b_si_kg": 37.6,
+      "b2c_le_kg": 16.1,
+      "so_bich_20g": 805
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 11,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1130.3,
+      "so_ngay_mua": 61,
+      "tong_et0_mm": 257.9,
+      "can_bang_nuoc_mm": 872.4,
+      "gdd_co_so_10c": 1337,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 83,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-17-E",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 03/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-03",
+    "ngay_hai_den": "2025-11-04",
+    "khoi_luong_tuoi_kg": 255.1,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 56.0,
+    "ti_le_thu_hoi": 0.22,
+    "phan_phoi": {
+      "b2b_si_kg": 39.2,
+      "b2c_le_kg": 16.8,
+      "so_bich_20g": 840
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 9,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1140.0,
+      "so_ngay_mua": 63,
+      "tong_et0_mm": 260.2,
+      "can_bang_nuoc_mm": 879.8,
+      "gdd_co_so_10c": 1354,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 85,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-18-C",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 05/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-05",
+    "ngay_hai_den": "2025-11-06",
+    "khoi_luong_tuoi_kg": 241.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 50.6,
+    "ti_le_thu_hoi": 0.209,
+    "phan_phoi": {
+      "b2b_si_kg": 35.4,
+      "b2c_le_kg": 15.2,
+      "so_bich_20g": 760
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 7,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1140.3,
+      "so_ngay_mua": 63,
+      "tong_et0_mm": 263.4,
+      "can_bang_nuoc_mm": 876.9,
+      "gdd_co_so_10c": 1377,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 87,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-19-A",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 07/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-07",
+    "ngay_hai_den": "2025-11-08",
+    "khoi_luong_tuoi_kg": 212.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 44.0,
+    "ti_le_thu_hoi": 0.207,
+    "phan_phoi": {
+      "b2b_si_kg": 30.8,
+      "b2c_le_kg": 13.2,
+      "so_bich_20g": 660
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 5,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1166.9,
+      "so_ngay_mua": 65,
+      "tong_et0_mm": 266.8,
+      "can_bang_nuoc_mm": 900.1,
+      "gdd_co_so_10c": 1405,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 89,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-20-O",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 09/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-09",
+    "ngay_hai_den": "2025-11-10",
+    "khoi_luong_tuoi_kg": 215.1,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 46.6,
+    "ti_le_thu_hoi": 0.217,
+    "phan_phoi": {
+      "b2b_si_kg": 32.6,
+      "b2c_le_kg": 14.0,
+      "so_bich_20g": 700
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 3,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1199.2,
+      "so_ngay_mua": 66,
+      "tong_et0_mm": 271.0,
+      "can_bang_nuoc_mm": 928.2,
+      "gdd_co_so_10c": 1434,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 91,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-21-M",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 11/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-11",
+    "ngay_hai_den": "2025-11-12",
+    "khoi_luong_tuoi_kg": 245.3,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 49.8,
+    "ti_le_thu_hoi": 0.203,
+    "phan_phoi": {
+      "b2b_si_kg": 34.9,
+      "b2c_le_kg": 14.9,
+      "so_bich_20g": 745
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 1,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1199.3,
+      "so_ngay_mua": 66,
+      "tong_et0_mm": 275.1,
+      "can_bang_nuoc_mm": 924.2,
+      "gdd_co_so_10c": 1460,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 93,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-22-K",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 13/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-13",
+    "ngay_hai_den": "2025-11-14",
+    "khoi_luong_tuoi_kg": 245.3,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 49.3,
+    "ti_le_thu_hoi": 0.201,
+    "phan_phoi": {
+      "b2b_si_kg": 34.5,
+      "b2c_le_kg": 14.8,
+      "so_bich_20g": 740
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": -1,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1199.3,
+      "so_ngay_mua": 66,
+      "tong_et0_mm": 282.4,
+      "can_bang_nuoc_mm": 916.9,
+      "gdd_co_so_10c": 1483,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 16.6,
+      "so_ngay_theo_doi": 95,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-23-I",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 15/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-15",
+    "ngay_hai_den": "2025-11-16",
+    "khoi_luong_tuoi_kg": 217.0,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 44.9,
+    "ti_le_thu_hoi": 0.207,
+    "phan_phoi": {
+      "b2b_si_kg": 31.4,
+      "b2c_le_kg": 13.5,
+      "so_bich_20g": 675
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": -3,
+      "ndvi": 0.4117,
+      "ndmi": -0.1013,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1199.4,
+      "so_ngay_mua": 66,
+      "tong_et0_mm": 288.2,
+      "can_bang_nuoc_mm": 911.2,
+      "gdd_co_so_10c": 1507,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 16.0,
+      "so_ngay_theo_doi": 97,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-24-G",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 17/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-17",
+    "ngay_hai_den": "2025-11-18",
+    "khoi_luong_tuoi_kg": 254.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 54.6,
+    "ti_le_thu_hoi": 0.214,
+    "phan_phoi": {
+      "b2b_si_kg": 38.2,
+      "b2c_le_kg": 16.4,
+      "so_bich_20g": 820
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-20",
+      "lech_ngay": 2,
+      "ndvi": 0.3458,
+      "ndmi": -0.1411,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1217.0,
+      "so_ngay_mua": 68,
+      "tong_et0_mm": 290.5,
+      "can_bang_nuoc_mm": 926.5,
+      "gdd_co_so_10c": 1528,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 13.4,
+      "so_ngay_theo_doi": 99,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-25-E",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 19/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-19",
+    "ngay_hai_den": "2025-11-20",
+    "khoi_luong_tuoi_kg": 248.2,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 51.4,
+    "ti_le_thu_hoi": 0.207,
+    "phan_phoi": {
+      "b2b_si_kg": 36.0,
+      "b2c_le_kg": 15.4,
+      "so_bich_20g": 770
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-20",
+      "lech_ngay": 0,
+      "ndvi": 0.3458,
+      "ndmi": -0.1411,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 296.4,
+      "can_bang_nuoc_mm": 925.3,
+      "gdd_co_so_10c": 1540,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 101,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-26-C",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 21/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-21",
+    "ngay_hai_den": "2025-11-22",
+    "khoi_luong_tuoi_kg": 217.1,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 46.1,
+    "ti_le_thu_hoi": 0.212,
+    "phan_phoi": {
+      "b2b_si_kg": 32.3,
+      "b2c_le_kg": 13.8,
+      "so_bich_20g": 690
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": 1,
+      "ndvi": 0.307,
+      "ndmi": -0.1383,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 303.7,
+      "can_bang_nuoc_mm": 918.0,
+      "gdd_co_so_10c": 1558,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 103,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-27-A",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 23/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-23",
+    "ngay_hai_den": "2025-11-24",
+    "khoi_luong_tuoi_kg": 208.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 44.2,
+    "ti_le_thu_hoi": 0.212,
+    "phan_phoi": {
+      "b2b_si_kg": 30.9,
+      "b2c_le_kg": 13.3,
+      "so_bich_20g": 665
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -1,
+      "ndvi": 0.307,
+      "ndmi": -0.1383,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 310.8,
+      "can_bang_nuoc_mm": 910.9,
+      "gdd_co_so_10c": 1578,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 105,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-28-8",
+    "ten": "Lô Cúc chi · Ruộng lớn Đông · 25/11/2025",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2025-CUC",
+    "dot_thu_id": "L01-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-25",
+    "ngay_hai_den": "2025-11-26",
+    "khoi_luong_tuoi_kg": 227.2,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 47.1,
+    "ti_le_thu_hoi": 0.207,
+    "phan_phoi": {
+      "b2b_si_kg": 33.0,
+      "b2c_le_kg": 14.1,
+      "so_bich_20g": 705
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -3,
+      "ndvi": 0.307,
+      "ndmi": -0.1383,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 318.7,
+      "can_bang_nuoc_mm": 903.0,
+      "gdd_co_so_10c": 1596,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 107,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-LAC26-10-A",
+    "ten": "Lô Lạc (đậu phộng) · Ruộng lớn Đông · 10/06/2026",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2026-LAC",
+    "dot_thu_id": "L01-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "ten_cay_trong": "Lạc (đậu phộng)",
+    "ngay_hai_tu": "2026-06-10",
+    "ngay_hai_den": "2026-06-12",
+    "khoi_luong_tuoi_kg": 1177.6,
+    "che_bien": {
+      "cong_nghe": "Phơi nắng + sấy hoàn thiện",
+      "dai_nhiet": "40 – 50 °C",
+      "thoi_gian_gio": 18,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 811.0,
+    "ti_le_thu_hoi": 0.689,
+    "phan_phoi": {
+      "b2b_si_kg": 811.0,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_niem_ho_so",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-06",
+      "lech_ngay": -6,
+      "ndvi": 0.7409,
+      "ndmi": 0.2185,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 469.6,
+      "so_ngay_mua": 52,
+      "tong_et0_mm": 447.6,
+      "can_bang_nuoc_mm": 22.0,
+      "gdd_co_so_10c": 1975,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 11.9,
+      "so_ngay_theo_doi": 128,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-LAC26-11-8",
+    "ten": "Lô Lạc (đậu phộng) · Ruộng lớn Đông · 13/06/2026",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2026-LAC",
+    "dot_thu_id": "L01-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "ten_cay_trong": "Lạc (đậu phộng)",
+    "ngay_hai_tu": "2026-06-13",
+    "ngay_hai_den": "2026-06-15",
+    "khoi_luong_tuoi_kg": 1322.5,
+    "che_bien": {
+      "cong_nghe": "Phơi nắng + sấy hoàn thiện",
+      "dai_nhiet": "40 – 50 °C",
+      "thoi_gian_gio": 18,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 963.5,
+    "ti_le_thu_hoi": 0.729,
+    "phan_phoi": {
+      "b2b_si_kg": 963.5,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-21",
+      "lech_ngay": 6,
+      "ndvi": 0.2978,
+      "ndmi": -0.205,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 472.1,
+      "so_ngay_mua": 53,
+      "tong_et0_mm": 461.6,
+      "can_bang_nuoc_mm": 10.5,
+      "gdd_co_so_10c": 2038,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 11.9,
+      "so_ngay_theo_doi": 131,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-LAC26-12-6",
+    "ten": "Lô Lạc (đậu phộng) · Ruộng lớn Đông · 16/06/2026",
+    "lo_dat_id": "L01",
+    "vu_id": "L01-2026-LAC",
+    "dot_thu_id": "L01-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "ten_cay_trong": "Lạc (đậu phộng)",
+    "ngay_hai_tu": "2026-06-16",
+    "ngay_hai_den": "2026-06-18",
+    "khoi_luong_tuoi_kg": 1322.4,
+    "che_bien": {
+      "cong_nghe": "Phơi nắng + sấy hoàn thiện",
+      "dai_nhiet": "40 – 50 °C",
+      "thoi_gian_gio": 18,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 920.7,
+    "ti_le_thu_hoi": 0.696,
+    "phan_phoi": {
+      "b2b_si_kg": 920.7,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L01-0001-2",
+      "SK-C-CUC25-L01-0002-Z",
+      "SK-C-CUC25-L01-0003-X",
+      "SK-C-CUC25-L01-0004-V",
+      "SK-C-CUC25-L01-0005-T",
+      "SK-C-CUC25-L01-0006-R"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-21",
+      "lech_ngay": 3,
+      "ndvi": 0.2978,
+      "ndmi": -0.205,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 494.9,
+      "so_ngay_mua": 56,
+      "tong_et0_mm": 472.8,
+      "can_bang_nuoc_mm": 22.1,
+      "gdd_co_so_10c": 2098,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 11.9,
+      "so_ngay_theo_doi": 134,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-29-6",
+    "ten": "Lô Cúc chi · Vườn cúc hỗn hợp · 20/11/2025",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2025-CUC",
+    "dot_thu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-20",
+    "ngay_hai_den": "2025-11-21",
+    "khoi_luong_tuoi_kg": 99.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 21.2,
+    "ti_le_thu_hoi": 0.213,
+    "phan_phoi": {
+      "b2b_si_kg": 14.8,
+      "b2c_le_kg": 6.4,
+      "so_bich_20g": 320
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-20",
+      "lech_ngay": -1,
+      "ndvi": 0.4927,
+      "ndmi": -0.0659,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 300.4,
+      "can_bang_nuoc_mm": 921.3,
+      "gdd_co_so_10c": 1548,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 102,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-30-K",
+    "ten": "Lô Cúc chi · Vườn cúc hỗn hợp · 22/11/2025",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2025-CUC",
+    "dot_thu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-22",
+    "ngay_hai_den": "2025-11-23",
+    "khoi_luong_tuoi_kg": 98.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 21.7,
+    "ti_le_thu_hoi": 0.22,
+    "phan_phoi": {
+      "b2b_si_kg": 15.2,
+      "b2c_le_kg": 6.5,
+      "so_bich_20g": 325
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": 0,
+      "ndvi": 0.438,
+      "ndmi": -0.0617,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 307.0,
+      "can_bang_nuoc_mm": 914.7,
+      "gdd_co_so_10c": 1568,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 104,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-31-I",
+    "ten": "Lô Cúc chi · Vườn cúc hỗn hợp · 24/11/2025",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2025-CUC",
+    "dot_thu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-24",
+    "ngay_hai_den": "2025-11-25",
+    "khoi_luong_tuoi_kg": 111.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 23.0,
+    "ti_le_thu_hoi": 0.206,
+    "phan_phoi": {
+      "b2b_si_kg": 16.1,
+      "b2c_le_kg": 6.9,
+      "so_bich_20g": 345
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -2,
+      "ndvi": 0.438,
+      "ndmi": -0.0617,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 315.1,
+      "can_bang_nuoc_mm": 906.6,
+      "gdd_co_so_10c": 1588,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 106,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-32-G",
+    "ten": "Lô Cúc chi · Vườn cúc hỗn hợp · 26/11/2025",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2025-CUC",
+    "dot_thu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-26",
+    "ngay_hai_den": "2025-11-27",
+    "khoi_luong_tuoi_kg": 117.2,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 25.3,
+    "ti_le_thu_hoi": 0.216,
+    "phan_phoi": {
+      "b2b_si_kg": 17.7,
+      "b2c_le_kg": 7.6,
+      "so_bich_20g": 380
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -4,
+      "ndvi": 0.438,
+      "ndmi": -0.0617,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 323.0,
+      "can_bang_nuoc_mm": 898.7,
+      "gdd_co_so_10c": 1604,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 108,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-33-E",
+    "ten": "Lô Cúc chi · Vườn cúc hỗn hợp · 28/11/2025",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2025-CUC",
+    "dot_thu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-28",
+    "ngay_hai_den": "2025-11-29",
+    "khoi_luong_tuoi_kg": 104.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 22.7,
+    "ti_le_thu_hoi": 0.218,
+    "phan_phoi": {
+      "b2b_si_kg": 15.9,
+      "b2c_le_kg": 6.8,
+      "so_bich_20g": 340
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -6,
+      "ndvi": 0.438,
+      "ndmi": -0.0617,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 330.1,
+      "can_bang_nuoc_mm": 891.6,
+      "gdd_co_so_10c": 1620,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 110,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-34-C",
+    "ten": "Lô Cúc chi · Vườn cúc hỗn hợp · 30/11/2025",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2025-CUC",
+    "dot_thu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-30",
+    "ngay_hai_den": "2025-12-01",
+    "khoi_luong_tuoi_kg": 109.4,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 23.8,
+    "ti_le_thu_hoi": 0.218,
+    "phan_phoi": {
+      "b2b_si_kg": 16.7,
+      "b2c_le_kg": 7.1,
+      "so_bich_20g": 355
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -8,
+      "ndvi": 0.438,
+      "ndmi": -0.0617,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1223.2,
+      "so_ngay_mua": 70,
+      "tong_et0_mm": 335.1,
+      "can_bang_nuoc_mm": 888.1,
+      "gdd_co_so_10c": 1641,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 112,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-35-A",
+    "ten": "Lô Cúc chi · Vườn cúc hỗn hợp · 02/12/2025",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2025-CUC",
+    "dot_thu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-12-02",
+    "ngay_hai_den": "2025-12-03",
+    "khoi_luong_tuoi_kg": 113.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 24.2,
+    "ti_le_thu_hoi": 0.212,
+    "phan_phoi": {
+      "b2b_si_kg": 16.9,
+      "b2c_le_kg": 7.3,
+      "so_bich_20g": 365
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -10,
+      "ndvi": 0.438,
+      "ndmi": -0.0617,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1227.6,
+      "so_ngay_mua": 71,
+      "tong_et0_mm": 339.2,
+      "can_bang_nuoc_mm": 888.4,
+      "gdd_co_so_10c": 1665,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 114,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-36-8",
+    "ten": "Lô Cúc chi · Vườn cúc hỗn hợp · 04/12/2025",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2025-CUC",
+    "dot_thu_id": "L02-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-12-04",
+    "ngay_hai_den": "2025-12-05",
+    "khoi_luong_tuoi_kg": 115.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 24.1,
+    "ti_le_thu_hoi": 0.209,
+    "phan_phoi": {
+      "b2b_si_kg": 16.9,
+      "b2c_le_kg": 7.2,
+      "so_bich_20g": 360
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -12,
+      "ndvi": 0.438,
+      "ndmi": -0.0617,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1227.8,
+      "so_ngay_mua": 71,
+      "tong_et0_mm": 342.6,
+      "can_bang_nuoc_mm": 885.2,
+      "gdd_co_so_10c": 1686,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 116,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC26-10-K",
+    "ten": "Lô Cúc cổ (trà hoa cúc cổ) · Vườn cúc hỗn hợp · 10/03/2026",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "dot_thu_id": "L02-2026-CCO",
+    "ma_cay_trong": "CCO",
+    "ten_cay_trong": "Cúc cổ (trà hoa cúc cổ)",
+    "ngay_hai_tu": "2026-03-10",
+    "ngay_hai_den": "2026-03-13",
+    "khoi_luong_tuoi_kg": 230.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 46,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 48.5,
+    "ti_le_thu_hoi": 0.21,
+    "phan_phoi": {
+      "b2b_si_kg": 34.0,
+      "b2c_le_kg": 14.5,
+      "so_bich_20g": 725
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-03-13",
+      "lech_ngay": 0,
+      "ndvi": 0.5472,
+      "ndmi": -0.03,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1390.4,
+      "so_ngay_mua": 106,
+      "tong_et0_mm": 562.7,
+      "can_bang_nuoc_mm": 827.7,
+      "gdd_co_so_10c": 2630,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 214,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC26-11-I",
+    "ten": "Lô Cúc cổ (trà hoa cúc cổ) · Vườn cúc hỗn hợp · 14/03/2026",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "dot_thu_id": "L02-2026-CCO",
+    "ma_cay_trong": "CCO",
+    "ten_cay_trong": "Cúc cổ (trà hoa cúc cổ)",
+    "ngay_hai_tu": "2026-03-14",
+    "ngay_hai_den": "2026-03-17",
+    "khoi_luong_tuoi_kg": 237.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 46,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 51.5,
+    "ti_le_thu_hoi": 0.217,
+    "phan_phoi": {
+      "b2b_si_kg": 36.1,
+      "b2c_le_kg": 15.4,
+      "so_bich_20g": 770
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-03-13",
+      "lech_ngay": -4,
+      "ndvi": 0.5472,
+      "ndmi": -0.03,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1393.4,
+      "so_ngay_mua": 108,
+      "tong_et0_mm": 573.4,
+      "can_bang_nuoc_mm": 820.0,
+      "gdd_co_so_10c": 2676,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 218,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC26-12-G",
+    "ten": "Lô Cúc cổ (trà hoa cúc cổ) · Vườn cúc hỗn hợp · 18/03/2026",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "dot_thu_id": "L02-2026-CCO",
+    "ma_cay_trong": "CCO",
+    "ten_cay_trong": "Cúc cổ (trà hoa cúc cổ)",
+    "ngay_hai_tu": "2026-03-18",
+    "ngay_hai_den": "2026-03-21",
+    "khoi_luong_tuoi_kg": 264.3,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 46,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 59.6,
+    "ti_le_thu_hoi": 0.226,
+    "phan_phoi": {
+      "b2b_si_kg": 41.7,
+      "b2c_le_kg": 17.9,
+      "so_bich_20g": 895
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-03-13",
+      "lech_ngay": -8,
+      "ndvi": 0.5472,
+      "ndmi": -0.03,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1396.9,
+      "so_ngay_mua": 109,
+      "tong_et0_mm": 583.4,
+      "can_bang_nuoc_mm": 813.5,
+      "gdd_co_so_10c": 2730,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 222,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC26-13-E",
+    "ten": "Lô Cúc cổ (trà hoa cúc cổ) · Vườn cúc hỗn hợp · 22/03/2026",
+    "lo_dat_id": "L02",
+    "vu_id": "L02-2023-CCO",
+    "dot_thu_id": "L02-2026-CCO",
+    "ma_cay_trong": "CCO",
+    "ten_cay_trong": "Cúc cổ (trà hoa cúc cổ)",
+    "ngay_hai_tu": "2026-03-22",
+    "ngay_hai_den": "2026-03-24",
+    "khoi_luong_tuoi_kg": 251.1,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 46,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 56.4,
+    "ti_le_thu_hoi": 0.225,
+    "phan_phoi": {
+      "b2b_si_kg": 39.5,
+      "b2c_le_kg": 16.9,
+      "so_bich_20g": 845
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L02-0001-7",
+      "SK-C-CUC25-L02-0002-5",
+      "SK-C-CUC25-L02-0003-3",
+      "SK-C-CUC25-L02-0004-1",
+      "SK-C-CUC25-L02-0005-0",
+      "SK-C-CUC25-L02-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-03-13",
+      "lech_ngay": -11,
+      "ndvi": 0.5472,
+      "ndmi": -0.03,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1397.8,
+      "so_ngay_mua": 109,
+      "tong_et0_mm": 591.5,
+      "can_bang_nuoc_mm": 806.3,
+      "gdd_co_so_10c": 2773,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 225,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-10-H",
+    "ten": "Lô Bồ công anh · Ruộng giữa · 14/12/2025",
+    "lo_dat_id": "L03",
+    "vu_id": "L03-2025-BCA",
+    "dot_thu_id": "L03-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-12-14",
+    "ngay_hai_den": "2025-12-18",
+    "khoi_luong_tuoi_kg": 1312.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 183.8,
+    "ti_le_thu_hoi": 0.14,
+    "phan_phoi": {
+      "b2b_si_kg": 183.8,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC26-L03-0001-F",
+      "SK-C-CUC26-L03-0002-D",
+      "SK-C-CUC26-L03-0003-B",
+      "SK-C-CUC26-L03-0004-9",
+      "SK-C-CUC26-L03-0005-7",
+      "SK-C-CUC26-L03-0006-5"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-12-18",
+      "lech_ngay": 0,
+      "ndvi": 0.5952,
+      "ndmi": 0.0619,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 172.2,
+      "so_ngay_mua": 18,
+      "tong_et0_mm": 151.5,
+      "can_bang_nuoc_mm": 20.7,
+      "gdd_co_so_10c": 657,
+      "t_max_cao_nhat_c": 29.9,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 60,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-11-F",
+    "ten": "Lô Bồ công anh · Ruộng giữa · 19/12/2025",
+    "lo_dat_id": "L03",
+    "vu_id": "L03-2025-BCA",
+    "dot_thu_id": "L03-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-12-19",
+    "ngay_hai_den": "2025-12-23",
+    "khoi_luong_tuoi_kg": 1463.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 213.1,
+    "ti_le_thu_hoi": 0.146,
+    "phan_phoi": {
+      "b2b_si_kg": 213.1,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC26-L03-0001-F",
+      "SK-C-CUC26-L03-0002-D",
+      "SK-C-CUC26-L03-0003-B",
+      "SK-C-CUC26-L03-0004-9",
+      "SK-C-CUC26-L03-0005-7",
+      "SK-C-CUC26-L03-0006-5"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-12-18",
+      "lech_ngay": -5,
+      "ndvi": 0.5952,
+      "ndmi": 0.0619,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 177.5,
+      "so_ngay_mua": 21,
+      "tong_et0_mm": 163.8,
+      "can_bang_nuoc_mm": 13.7,
+      "gdd_co_so_10c": 713,
+      "t_max_cao_nhat_c": 29.9,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 65,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-12-D",
+    "ten": "Lô Bồ công anh · Ruộng giữa · 24/12/2025",
+    "lo_dat_id": "L03",
+    "vu_id": "L03-2025-BCA",
+    "dot_thu_id": "L03-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-12-24",
+    "ngay_hai_den": "2025-12-28",
+    "khoi_luong_tuoi_kg": 1541.6,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 207.0,
+    "ti_le_thu_hoi": 0.134,
+    "phan_phoi": {
+      "b2b_si_kg": 207.0,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC26-L03-0001-F",
+      "SK-C-CUC26-L03-0002-D",
+      "SK-C-CUC26-L03-0003-B",
+      "SK-C-CUC26-L03-0004-9",
+      "SK-C-CUC26-L03-0005-7",
+      "SK-C-CUC26-L03-0006-5"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-12-18",
+      "lech_ngay": -10,
+      "ndvi": 0.5952,
+      "ndmi": 0.0619,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 192.6,
+      "so_ngay_mua": 23,
+      "tong_et0_mm": 176.4,
+      "can_bang_nuoc_mm": 16.2,
+      "gdd_co_so_10c": 754,
+      "t_max_cao_nhat_c": 29.9,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 70,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-13-B",
+    "ten": "Lô Bồ công anh · Ruộng giữa · 29/12/2025",
+    "lo_dat_id": "L03",
+    "vu_id": "L03-2025-BCA",
+    "dot_thu_id": "L03-2025-BCA",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-12-29",
+    "ngay_hai_den": "2025-12-30",
+    "khoi_luong_tuoi_kg": 1449.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 194.9,
+    "ti_le_thu_hoi": 0.134,
+    "phan_phoi": {
+      "b2b_si_kg": 194.9,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC26-L03-0001-F",
+      "SK-C-CUC26-L03-0002-D",
+      "SK-C-CUC26-L03-0003-B",
+      "SK-C-CUC26-L03-0004-9",
+      "SK-C-CUC26-L03-0005-7",
+      "SK-C-CUC26-L03-0006-5"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-12-18",
+      "lech_ngay": -12,
+      "ndvi": 0.5952,
+      "ndmi": 0.0619,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 194.2,
+      "so_ngay_mua": 24,
+      "tong_et0_mm": 180.8,
+      "can_bang_nuoc_mm": 13.4,
+      "gdd_co_so_10c": 774,
+      "t_max_cao_nhat_c": 29.9,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 72,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-LAC26-13-4",
+    "ten": "Lô Lạc (đậu phộng) · Ruộng giữa · 25/06/2026",
+    "lo_dat_id": "L03",
+    "vu_id": "L03-2026-LAC",
+    "dot_thu_id": "L03-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "ten_cay_trong": "Lạc (đậu phộng)",
+    "ngay_hai_tu": "2026-06-25",
+    "ngay_hai_den": "2026-06-27",
+    "khoi_luong_tuoi_kg": 468.3,
+    "che_bien": {
+      "cong_nghe": "Phơi nắng + sấy hoàn thiện",
+      "dai_nhiet": "40 – 50 °C",
+      "thoi_gian_gio": 18,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 343.3,
+    "ti_le_thu_hoi": 0.733,
+    "phan_phoi": {
+      "b2b_si_kg": 343.3,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC26-L03-0001-F",
+      "SK-C-CUC26-L03-0002-D",
+      "SK-C-CUC26-L03-0003-B",
+      "SK-C-CUC26-L03-0004-9",
+      "SK-C-CUC26-L03-0005-7",
+      "SK-C-CUC26-L03-0006-5"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-21",
+      "lech_ngay": -6,
+      "ndvi": 0.6987,
+      "ndmi": 0.1503,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 498.5,
+      "so_ngay_mua": 55,
+      "tong_et0_mm": 506.3,
+      "can_bang_nuoc_mm": -7.8,
+      "gdd_co_so_10c": 2226,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 14.7,
+      "so_ngay_theo_doi": 136,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-LAC26-14-2",
+    "ten": "Lô Lạc (đậu phộng) · Ruộng giữa · 28/06/2026",
+    "lo_dat_id": "L03",
+    "vu_id": "L03-2026-LAC",
+    "dot_thu_id": "L03-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "ten_cay_trong": "Lạc (đậu phộng)",
+    "ngay_hai_tu": "2026-06-28",
+    "ngay_hai_den": "2026-06-30",
+    "khoi_luong_tuoi_kg": 403.0,
+    "che_bien": {
+      "cong_nghe": "Phơi nắng + sấy hoàn thiện",
+      "dai_nhiet": "40 – 50 °C",
+      "thoi_gian_gio": 18,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 295.0,
+    "ti_le_thu_hoi": 0.732,
+    "phan_phoi": {
+      "b2b_si_kg": 295.0,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC26-L03-0001-F",
+      "SK-C-CUC26-L03-0002-D",
+      "SK-C-CUC26-L03-0003-B",
+      "SK-C-CUC26-L03-0004-9",
+      "SK-C-CUC26-L03-0005-7",
+      "SK-C-CUC26-L03-0006-5"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-21",
+      "lech_ngay": -9,
+      "ndvi": 0.6987,
+      "ndmi": 0.1503,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 564.0,
+      "so_ngay_mua": 58,
+      "tong_et0_mm": 516.9,
+      "can_bang_nuoc_mm": 47.2,
+      "gdd_co_so_10c": 2280,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 14.7,
+      "so_ngay_theo_doi": 139,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-LAC26-15-Z",
+    "ten": "Lô Lạc (đậu phộng) · Ruộng giữa · 01/07/2026",
+    "lo_dat_id": "L03",
+    "vu_id": "L03-2026-LAC",
+    "dot_thu_id": "L03-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "ten_cay_trong": "Lạc (đậu phộng)",
+    "ngay_hai_tu": "2026-07-01",
+    "ngay_hai_den": "2026-07-03",
+    "khoi_luong_tuoi_kg": 419.1,
+    "che_bien": {
+      "cong_nghe": "Phơi nắng + sấy hoàn thiện",
+      "dai_nhiet": "40 – 50 °C",
+      "thoi_gian_gio": 18,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 304.7,
+    "ti_le_thu_hoi": 0.727,
+    "phan_phoi": {
+      "b2b_si_kg": 304.7,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC26-L03-0001-F",
+      "SK-C-CUC26-L03-0002-D",
+      "SK-C-CUC26-L03-0003-B",
+      "SK-C-CUC26-L03-0004-9",
+      "SK-C-CUC26-L03-0005-7",
+      "SK-C-CUC26-L03-0006-5"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-07-11",
+      "lech_ngay": 8,
+      "ndvi": 0.3099,
+      "ndmi": -0.2171,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 606.1,
+      "so_ngay_mua": 61,
+      "tong_et0_mm": 527.0,
+      "can_bang_nuoc_mm": 79.1,
+      "gdd_co_so_10c": 2333,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 14.7,
+      "so_ngay_theo_doi": 142,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-LAC26-16-X",
+    "ten": "Lô Lạc (đậu phộng) · Ruộng giữa · 04/07/2026",
+    "lo_dat_id": "L03",
+    "vu_id": "L03-2026-LAC",
+    "dot_thu_id": "L03-2026-LAC",
+    "ma_cay_trong": "LAC",
+    "ten_cay_trong": "Lạc (đậu phộng)",
+    "ngay_hai_tu": "2026-07-04",
+    "ngay_hai_den": "2026-07-05",
+    "khoi_luong_tuoi_kg": 464.1,
+    "che_bien": {
+      "cong_nghe": "Phơi nắng + sấy hoàn thiện",
+      "dai_nhiet": "40 – 50 °C",
+      "thoi_gian_gio": 18,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 345.1,
+    "ti_le_thu_hoi": 0.744,
+    "phan_phoi": {
+      "b2b_si_kg": 345.1,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC26-L03-0001-F",
+      "SK-C-CUC26-L03-0002-D",
+      "SK-C-CUC26-L03-0003-B",
+      "SK-C-CUC26-L03-0004-9",
+      "SK-C-CUC26-L03-0005-7",
+      "SK-C-CUC26-L03-0006-5"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-07-11",
+      "lech_ngay": 6,
+      "ndvi": 0.3099,
+      "ndmi": -0.2171,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 622.5,
+      "so_ngay_mua": 63,
+      "tong_et0_mm": 534.1,
+      "can_bang_nuoc_mm": 88.4,
+      "gdd_co_so_10c": 2370,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 14.7,
+      "so_ngay_theo_doi": 144,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-10-V",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 05/09/2025",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-09-05",
+    "ngay_hai_den": "2025-09-14",
+    "khoi_luong_tuoi_kg": 266.4,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 266.4,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-09-21",
+      "lech_ngay": 7,
+      "ndvi": 0.55,
+      "ndmi": 0.1916,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 491.7,
+      "so_ngay_mua": 27,
+      "tong_et0_mm": 113.1,
+      "can_bang_nuoc_mm": 378.6,
+      "gdd_co_so_10c": 585,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 23.0,
+      "so_ngay_theo_doi": 34,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-11-T",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 15/09/2025",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-09-15",
+    "ngay_hai_den": "2025-09-24",
+    "khoi_luong_tuoi_kg": 246.6,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 246.6,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-09-21",
+      "lech_ngay": -3,
+      "ndvi": 0.55,
+      "ndmi": 0.1916,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 577.5,
+      "so_ngay_mua": 34,
+      "tong_et0_mm": 149.0,
+      "can_bang_nuoc_mm": 428.5,
+      "gdd_co_so_10c": 756,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 23.0,
+      "so_ngay_theo_doi": 44,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-12-R",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 25/09/2025",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-09-25",
+    "ngay_hai_den": "2025-10-04",
+    "khoi_luong_tuoi_kg": 225.0,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 225.0,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": 0,
+      "ndvi": 0.8261,
+      "ndmi": 0.3459,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 882.7,
+      "so_ngay_mua": 43,
+      "tong_et0_mm": 175.8,
+      "can_bang_nuoc_mm": 706.9,
+      "gdd_co_so_10c": 918,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 23.0,
+      "so_ngay_theo_doi": 54,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-13-P",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 05/10/2025",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-10-05",
+    "ngay_hai_den": "2025-10-14",
+    "khoi_luong_tuoi_kg": 266.6,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 266.6,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": -10,
+      "ndvi": 0.8261,
+      "ndmi": 0.3459,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1070.6,
+      "so_ngay_mua": 52,
+      "tong_et0_mm": 202.2,
+      "can_bang_nuoc_mm": 868.4,
+      "gdd_co_so_10c": 1079,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 22.9,
+      "so_ngay_theo_doi": 64,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-14-N",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 15/10/2025",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-10-15",
+    "ngay_hai_den": "2025-10-24",
+    "khoi_luong_tuoi_kg": 271.0,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 271.0,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": -20,
+      "ndvi": 0.8261,
+      "ndmi": 0.3459,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1108.5,
+      "so_ngay_mua": 57,
+      "tong_et0_mm": 236.7,
+      "can_bang_nuoc_mm": 871.8,
+      "gdd_co_so_10c": 1222,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 74,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-15-L",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 25/10/2025",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-10-25",
+    "ngay_hai_den": "2025-11-03",
+    "khoi_luong_tuoi_kg": 266.8,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 266.8,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 10,
+      "ndvi": 0.8098,
+      "ndmi": 0.3606,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1134.2,
+      "so_ngay_mua": 62,
+      "tong_et0_mm": 259.4,
+      "can_bang_nuoc_mm": 874.8,
+      "gdd_co_so_10c": 1346,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 84,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-16-J",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 04/11/2025",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-11-04",
+    "ngay_hai_den": "2025-11-13",
+    "khoi_luong_tuoi_kg": 281.5,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 281.5,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 0,
+      "ndvi": 0.8098,
+      "ndmi": 0.3606,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1199.3,
+      "so_ngay_mua": 66,
+      "tong_et0_mm": 278.7,
+      "can_bang_nuoc_mm": 920.6,
+      "gdd_co_so_10c": 1472,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 94,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-17-H",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 14/11/2025",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-11-14",
+    "ngay_hai_den": "2025-11-15",
+    "khoi_luong_tuoi_kg": 253.7,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 253.7,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": -2,
+      "ndvi": 0.8098,
+      "ndmi": 0.3606,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1199.3,
+      "so_ngay_mua": 66,
+      "tong_et0_mm": 286.0,
+      "can_bang_nuoc_mm": 913.3,
+      "gdd_co_so_10c": 1495,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 16.0,
+      "so_ngay_theo_doi": 96,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-10-N",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 20/05/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-05-20",
+    "ngay_hai_den": "2026-05-29",
+    "khoi_luong_tuoi_kg": 213.4,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 213.4,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_niem_ho_so",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-05-27",
+      "lech_ngay": -2,
+      "ndvi": 0.795,
+      "ndmi": 0.2623,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1716.1,
+      "so_ngay_mua": 134,
+      "tong_et0_mm": 860.2,
+      "can_bang_nuoc_mm": 855.9,
+      "gdd_co_so_10c": 3928,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 291,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-11-L",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 30/05/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-05-30",
+    "ngay_hai_den": "2026-06-08",
+    "khoi_luong_tuoi_kg": 229.0,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 229.0,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_niem_ho_so",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-06",
+      "lech_ngay": -2,
+      "ndvi": 0.8262,
+      "ndmi": 0.3213,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1762.8,
+      "so_ngay_mua": 140,
+      "tong_et0_mm": 912.4,
+      "can_bang_nuoc_mm": 850.4,
+      "gdd_co_so_10c": 4128,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 301,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-12-J",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 09/06/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-06-09",
+    "ngay_hai_den": "2026-06-18",
+    "khoi_luong_tuoi_kg": 225.9,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 225.9,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-21",
+      "lech_ngay": 3,
+      "ndvi": 0.8517,
+      "ndmi": 0.3104,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1828.8,
+      "so_ngay_mua": 147,
+      "tong_et0_mm": 951.5,
+      "can_bang_nuoc_mm": 877.3,
+      "gdd_co_so_10c": 4319,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 311,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-13-H",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 19/06/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-06-19",
+    "ngay_hai_den": "2026-06-28",
+    "khoi_luong_tuoi_kg": 213.9,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 213.9,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-21",
+      "lech_ngay": -7,
+      "ndvi": 0.8517,
+      "ndmi": 0.3104,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1869.8,
+      "so_ngay_mua": 151,
+      "tong_et0_mm": 1001.0,
+      "can_bang_nuoc_mm": 868.8,
+      "gdd_co_so_10c": 4528,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 321,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-14-F",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 29/06/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-06-29",
+    "ngay_hai_den": "2026-07-08",
+    "khoi_luong_tuoi_kg": 240.8,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 240.8,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-07-11",
+      "lech_ngay": 3,
+      "ndvi": 0.8921,
+      "ndmi": 0.3598,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1997.5,
+      "so_ngay_mua": 161,
+      "tong_et0_mm": 1036.9,
+      "can_bang_nuoc_mm": 960.6,
+      "gdd_co_so_10c": 4710,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 331,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-15-D",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 09/07/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-07-09",
+    "ngay_hai_den": "2026-07-18",
+    "khoi_luong_tuoi_kg": 251.0,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 251.0,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_dong_goi",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-07-18",
+      "lech_ngay": 0,
+      "ndvi": 0.8727,
+      "ndmi": 0.3168,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2053.3,
+      "so_ngay_mua": 171,
+      "tong_et0_mm": 1080.2,
+      "can_bang_nuoc_mm": 973.1,
+      "gdd_co_so_10c": 4901,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 341,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-16-B",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 19/07/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-07-19",
+    "ngay_hai_den": "2026-07-28",
+    "khoi_luong_tuoi_kg": 218.1,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 218.1,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_dong_goi",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-07-26",
+      "lech_ngay": -2,
+      "ndvi": 0.8192,
+      "ndmi": 0.3058,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2154.9,
+      "so_ngay_mua": 179,
+      "tong_et0_mm": 1118.2,
+      "can_bang_nuoc_mm": 1036.7,
+      "gdd_co_so_10c": 5085,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 351,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-17-9",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 29/07/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-07-29",
+    "ngay_hai_den": "2026-08-07",
+    "khoi_luong_tuoi_kg": 232.6,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 232.6,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_say",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-08-10",
+      "lech_ngay": 3,
+      "ndvi": 0.838,
+      "ndmi": 0.3545,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2335.3,
+      "so_ngay_mua": 189,
+      "tong_et0_mm": 1148.4,
+      "can_bang_nuoc_mm": 1186.9,
+      "gdd_co_so_10c": 5253,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 361,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-18-7",
+    "ten": "Lô Chanh · Khối chanh cây mẹ · 08/08/2026",
+    "lo_dat_id": "L04",
+    "vu_id": "L04-2022-CHA",
+    "dot_thu_id": "L04-CHA-LUU-NIEN-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-08-08",
+    "ngay_hai_den": "2026-08-12",
+    "khoi_luong_tuoi_kg": 250.6,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 250.6,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_thu_hoach",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L04-0001-M",
+      "SK-C-CHA25-L04-0002-K",
+      "SK-C-CHA25-L04-0003-I",
+      "SK-C-CHA25-L04-0004-G",
+      "SK-C-CHA25-L04-0005-E",
+      "SK-C-CHA25-L04-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-08-10",
+      "lech_ngay": -2,
+      "ndvi": 0.838,
+      "ndmi": 0.3545,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2346.7,
+      "so_ngay_mua": 192,
+      "tong_et0_mm": 1174.5,
+      "can_bang_nuoc_mm": 1172.2,
+      "gdd_co_so_10c": 5355,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 366,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-14-9",
+    "ten": "Lô Bồ công anh · Luống bồ công anh Bắc · 20/11/2025",
+    "lo_dat_id": "L05",
+    "vu_id": "L05-2025-BCA",
+    "dot_thu_id": "L05-2025-BCA-L1",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-11-20",
+    "ngay_hai_den": "2025-11-24",
+    "khoi_luong_tuoi_kg": 646.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 89.3,
+    "ti_le_thu_hoi": 0.138,
+    "phan_phoi": {
+      "b2b_si_kg": 89.3,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L05-0001-M",
+      "SK-C-CUC25-L05-0002-K",
+      "SK-C-CUC25-L05-0003-I",
+      "SK-C-CUC25-L05-0004-G",
+      "SK-C-CUC25-L05-0005-E",
+      "SK-C-CUC25-L05-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -1,
+      "ndvi": 0.596,
+      "ndmi": 0.1744,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1132.5,
+      "so_ngay_mua": 61,
+      "tong_et0_mm": 287.1,
+      "can_bang_nuoc_mm": 845.4,
+      "gdd_co_so_10c": 1442,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 97,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-15-7",
+    "ten": "Lô Bồ công anh · Luống bồ công anh Bắc · 25/11/2025",
+    "lo_dat_id": "L05",
+    "vu_id": "L05-2025-BCA",
+    "dot_thu_id": "L05-2025-BCA-L1",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-11-25",
+    "ngay_hai_den": "2025-11-29",
+    "khoi_luong_tuoi_kg": 702.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 103.1,
+    "ti_le_thu_hoi": 0.147,
+    "phan_phoi": {
+      "b2b_si_kg": 103.1,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L05-0001-M",
+      "SK-C-CUC25-L05-0002-K",
+      "SK-C-CUC25-L05-0003-I",
+      "SK-C-CUC25-L05-0004-G",
+      "SK-C-CUC25-L05-0005-E",
+      "SK-C-CUC25-L05-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -6,
+      "ndvi": 0.596,
+      "ndmi": 0.1744,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1132.5,
+      "so_ngay_mua": 61,
+      "tong_et0_mm": 306.4,
+      "can_bang_nuoc_mm": 826.1,
+      "gdd_co_so_10c": 1484,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 102,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-16-5",
+    "ten": "Lô Bồ công anh · Luống bồ công anh Bắc · 30/11/2025",
+    "lo_dat_id": "L05",
+    "vu_id": "L05-2025-BCA",
+    "dot_thu_id": "L05-2025-BCA-L1",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-11-30",
+    "ngay_hai_den": "2025-11-30",
+    "khoi_luong_tuoi_kg": 610.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 85.5,
+    "ti_le_thu_hoi": 0.14,
+    "phan_phoi": {
+      "b2b_si_kg": 85.5,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L05-0001-M",
+      "SK-C-CUC25-L05-0002-K",
+      "SK-C-CUC25-L05-0003-I",
+      "SK-C-CUC25-L05-0004-G",
+      "SK-C-CUC25-L05-0005-E",
+      "SK-C-CUC25-L05-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -7,
+      "ndvi": 0.596,
+      "ndmi": 0.1744,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1132.5,
+      "so_ngay_mua": 61,
+      "tong_et0_mm": 309.5,
+      "can_bang_nuoc_mm": 823.0,
+      "gdd_co_so_10c": 1494,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 103,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA26-10-9",
+    "ten": "Lô Bồ công anh · Luống bồ công anh Bắc · 10/03/2026",
+    "lo_dat_id": "L05",
+    "vu_id": "L05-2025-BCA",
+    "dot_thu_id": "L05-2026-BCA-L2",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2026-03-10",
+    "ngay_hai_den": "2026-03-14",
+    "khoi_luong_tuoi_kg": 1087.6,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 148.7,
+    "ti_le_thu_hoi": 0.137,
+    "phan_phoi": {
+      "b2b_si_kg": 148.7,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L05-0001-M",
+      "SK-C-CUC25-L05-0002-K",
+      "SK-C-CUC25-L05-0003-I",
+      "SK-C-CUC25-L05-0004-G",
+      "SK-C-CUC25-L05-0005-E",
+      "SK-C-CUC25-L05-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-03-13",
+      "lech_ngay": -1,
+      "ndvi": 0.578,
+      "ndmi": 0.0869,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1302.2,
+      "so_ngay_mua": 99,
+      "tong_et0_mm": 541.0,
+      "can_bang_nuoc_mm": 761.2,
+      "gdd_co_so_10c": 2505,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 207,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA26-11-7",
+    "ten": "Lô Bồ công anh · Luống bồ công anh Bắc · 15/03/2026",
+    "lo_dat_id": "L05",
+    "vu_id": "L05-2025-BCA",
+    "dot_thu_id": "L05-2026-BCA-L2",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2026-03-15",
+    "ngay_hai_den": "2026-03-18",
+    "khoi_luong_tuoi_kg": 1073.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 154.1,
+    "ti_le_thu_hoi": 0.144,
+    "phan_phoi": {
+      "b2b_si_kg": 154.1,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L05-0001-M",
+      "SK-C-CUC25-L05-0002-K",
+      "SK-C-CUC25-L05-0003-I",
+      "SK-C-CUC25-L05-0004-G",
+      "SK-C-CUC25-L05-0005-E",
+      "SK-C-CUC25-L05-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-03-13",
+      "lech_ngay": -5,
+      "ndvi": 0.578,
+      "ndmi": 0.0869,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1304.2,
+      "so_ngay_mua": 100,
+      "tong_et0_mm": 552.3,
+      "can_bang_nuoc_mm": 751.9,
+      "gdd_co_so_10c": 2553,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 211,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA26-12-5",
+    "ten": "Lô Bồ công anh · Luống bồ công anh Bắc · 12/08/2026",
+    "lo_dat_id": "L05",
+    "vu_id": "L05-2025-BCA",
+    "dot_thu_id": "L05-2026-BCA-L3",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2026-08-12",
+    "ngay_hai_den": "2026-08-12",
+    "khoi_luong_tuoi_kg": 204.0,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 29.9,
+    "ti_le_thu_hoi": 0.147,
+    "phan_phoi": {
+      "b2b_si_kg": 29.9,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_thu_hoach",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L05-0001-M",
+      "SK-C-CUC25-L05-0002-K",
+      "SK-C-CUC25-L05-0003-I",
+      "SK-C-CUC25-L05-0004-G",
+      "SK-C-CUC25-L05-0005-E",
+      "SK-C-CUC25-L05-0006-C"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-08-10",
+      "lech_ngay": -2,
+      "ndvi": 0.7281,
+      "ndmi": 0.2412,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2257.5,
+      "so_ngay_mua": 184,
+      "tong_et0_mm": 1150.7,
+      "can_bang_nuoc_mm": 1106.8,
+      "gdd_co_so_10c": 5219,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 358,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-18-F",
+    "ten": "Lô Chanh · Vườn chanh lớn · 20/09/2025",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2025",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-09-20",
+    "ngay_hai_den": "2025-09-29",
+    "khoi_luong_tuoi_kg": 3342.1,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 3342.1,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": 5,
+      "ndvi": 0.8237,
+      "ndmi": 0.3502,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 822.4,
+      "so_ngay_mua": 39,
+      "tong_et0_mm": 159.7,
+      "can_bang_nuoc_mm": 662.7,
+      "gdd_co_so_10c": 835,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 23.0,
+      "so_ngay_theo_doi": 49,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-19-D",
+    "ten": "Lô Chanh · Vườn chanh lớn · 30/09/2025",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2025",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-09-30",
+    "ngay_hai_den": "2025-10-09",
+    "khoi_luong_tuoi_kg": 3070.9,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 3070.9,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": -5,
+      "ndvi": 0.8237,
+      "ndmi": 0.3502,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1018.0,
+      "so_ngay_mua": 48,
+      "tong_et0_mm": 188.3,
+      "can_bang_nuoc_mm": 829.7,
+      "gdd_co_so_10c": 998,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 22.9,
+      "so_ngay_theo_doi": 59,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-20-R",
+    "ten": "Lô Chanh · Vườn chanh lớn · 10/10/2025",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2025",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-10-10",
+    "ngay_hai_den": "2025-10-19",
+    "khoi_luong_tuoi_kg": 2746.1,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 2746.1,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": -15,
+      "ndvi": 0.8237,
+      "ndmi": 0.3502,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1104.6,
+      "so_ngay_mua": 56,
+      "tong_et0_mm": 217.6,
+      "can_bang_nuoc_mm": 887.0,
+      "gdd_co_so_10c": 1160,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 22.5,
+      "so_ngay_theo_doi": 69,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-21-P",
+    "ten": "Lô Chanh · Vườn chanh lớn · 20/10/2025",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2025",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-10-20",
+    "ngay_hai_den": "2025-10-29",
+    "khoi_luong_tuoi_kg": 2755.4,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 2755.4,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 15,
+      "ndvi": 0.8002,
+      "ndmi": 0.3606,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1108.6,
+      "so_ngay_mua": 57,
+      "tong_et0_mm": 252.1,
+      "can_bang_nuoc_mm": 856.5,
+      "gdd_co_so_10c": 1289,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 79,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-22-N",
+    "ten": "Lô Chanh · Vườn chanh lớn · 30/10/2025",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2025",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-10-30",
+    "ngay_hai_den": "2025-11-08",
+    "khoi_luong_tuoi_kg": 3090.0,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 3090.0,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 5,
+      "ndvi": 0.8002,
+      "ndmi": 0.3606,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1166.9,
+      "so_ngay_mua": 65,
+      "tong_et0_mm": 266.8,
+      "can_bang_nuoc_mm": 900.1,
+      "gdd_co_so_10c": 1405,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 89,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA25-23-L",
+    "ten": "Lô Chanh · Vườn chanh lớn · 09/11/2025",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2025",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2025-11-09",
+    "ngay_hai_den": "2025-11-10",
+    "khoi_luong_tuoi_kg": 3126.4,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 3126.4,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": 3,
+      "ndvi": 0.8002,
+      "ndmi": 0.3606,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1199.2,
+      "so_ngay_mua": 66,
+      "tong_et0_mm": 271.0,
+      "can_bang_nuoc_mm": 928.2,
+      "gdd_co_so_10c": 1434,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 17.2,
+      "so_ngay_theo_doi": 91,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-19-5",
+    "ten": "Lô Chanh · Vườn chanh lớn · 15/06/2026",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-06-15",
+    "ngay_hai_den": "2026-06-24",
+    "khoi_luong_tuoi_kg": 2637.2,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 2637.2,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-06-21",
+      "lech_ngay": -3,
+      "ndvi": 0.8472,
+      "ndmi": 0.3592,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1830.4,
+      "so_ngay_mua": 148,
+      "tong_et0_mm": 982.1,
+      "can_bang_nuoc_mm": 848.3,
+      "gdd_co_so_10c": 4447,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 317,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-20-J",
+    "ten": "Lô Chanh · Vườn chanh lớn · 25/06/2026",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-06-25",
+    "ngay_hai_den": "2026-07-04",
+    "khoi_luong_tuoi_kg": 2300.7,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 2300.7,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "cho_kiem_nghiem",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-07-11",
+      "lech_ngay": 7,
+      "ndvi": 0.9054,
+      "ndmi": 0.4266,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1964.6,
+      "so_ngay_mua": 157,
+      "tong_et0_mm": 1021.5,
+      "can_bang_nuoc_mm": 943.1,
+      "gdd_co_so_10c": 4634,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 327,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-21-H",
+    "ten": "Lô Chanh · Vườn chanh lớn · 05/07/2026",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-07-05",
+    "ngay_hai_den": "2026-07-14",
+    "khoi_luong_tuoi_kg": 2181.2,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 2181.2,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_dong_goi",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-07-11",
+      "lech_ngay": -3,
+      "ndvi": 0.9054,
+      "ndmi": 0.4266,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2040.3,
+      "so_ngay_mua": 167,
+      "tong_et0_mm": 1062.5,
+      "can_bang_nuoc_mm": 977.8,
+      "gdd_co_so_10c": 4820,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 337,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-22-F",
+    "ten": "Lô Chanh · Vườn chanh lớn · 15/07/2026",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-07-15",
+    "ngay_hai_den": "2026-07-24",
+    "khoi_luong_tuoi_kg": 2204.4,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 2204.4,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_dong_goi",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-07-26",
+      "lech_ngay": 2,
+      "ndvi": 0.8367,
+      "ndmi": 0.3843,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2095.1,
+      "so_ngay_mua": 176,
+      "tong_et0_mm": 1103.4,
+      "can_bang_nuoc_mm": 991.7,
+      "gdd_co_so_10c": 5013,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 347,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-23-D",
+    "ten": "Lô Chanh · Vườn chanh lớn · 25/07/2026",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-07-25",
+    "ngay_hai_den": "2026-08-03",
+    "khoi_luong_tuoi_kg": 2436.6,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 2436.6,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_phan_loai",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-08-10",
+      "lech_ngay": 7,
+      "ndvi": 0.8419,
+      "ndmi": 0.4225,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2272.5,
+      "so_ngay_mua": 185,
+      "tong_et0_mm": 1136.3,
+      "can_bang_nuoc_mm": 1136.2,
+      "gdd_co_so_10c": 5186,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 357,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CHA26-24-B",
+    "ten": "Lô Chanh · Vườn chanh lớn · 04/08/2026",
+    "lo_dat_id": "L07",
+    "vu_id": "L07-2021-CHA",
+    "dot_thu_id": "L07-CHA-2026",
+    "ma_cay_trong": "CHA",
+    "ten_cay_trong": "Chanh",
+    "ngay_hai_tu": "2026-08-04",
+    "ngay_hai_den": "2026-08-12",
+    "khoi_luong_tuoi_kg": 2354.7,
+    "che_bien": {
+      "cong_nghe": null,
+      "dai_nhiet": null,
+      "thoi_gian_gio": null,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": null,
+    "ti_le_thu_hoi": null,
+    "phan_phoi": {
+      "b2b_si_kg": 2354.7,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_thu_hoach",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CHA25-L07-0001-Z",
+      "SK-C-CHA25-L07-0002-X",
+      "SK-C-CHA25-L07-0003-V",
+      "SK-C-CHA25-L07-0004-T",
+      "SK-C-CHA25-L07-0005-R",
+      "SK-C-CHA25-L07-0006-P"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-08-10",
+      "lech_ngay": -2,
+      "ndvi": 0.8419,
+      "ndmi": 0.4225,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2346.7,
+      "so_ngay_mua": 192,
+      "tong_et0_mm": 1174.5,
+      "can_bang_nuoc_mm": 1172.2,
+      "gdd_co_so_10c": 5355,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 366,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-37-6",
+    "ten": "Lô Cúc chi · Vườn ươm + luống cúc đông · 25/11/2025",
+    "lo_dat_id": "L10",
+    "vu_id": "L10-2025-CUC",
+    "dot_thu_id": "L10-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-25",
+    "ngay_hai_den": "2025-11-26",
+    "khoi_luong_tuoi_kg": 107.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 22.4,
+    "ti_le_thu_hoi": 0.208,
+    "phan_phoi": {
+      "b2b_si_kg": 15.7,
+      "b2c_le_kg": 6.7,
+      "so_bich_20g": 335
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L10-0001-7",
+      "SK-C-CUC25-L10-0002-5",
+      "SK-C-CUC25-L10-0003-3",
+      "SK-C-CUC25-L10-0004-1",
+      "SK-C-CUC25-L10-0005-0",
+      "SK-C-CUC25-L10-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -3,
+      "ndvi": 0.5248,
+      "ndmi": 0.1164,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 675.1,
+      "so_ngay_mua": 37,
+      "tong_et0_mm": 190.6,
+      "can_bang_nuoc_mm": 484.5,
+      "gdd_co_so_10c": 929,
+      "t_max_cao_nhat_c": 33.3,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 68,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-38-4",
+    "ten": "Lô Cúc chi · Vườn ươm + luống cúc đông · 27/11/2025",
+    "lo_dat_id": "L10",
+    "vu_id": "L10-2025-CUC",
+    "dot_thu_id": "L10-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-27",
+    "ngay_hai_den": "2025-11-28",
+    "khoi_luong_tuoi_kg": 107.4,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 21.5,
+    "ti_le_thu_hoi": 0.2,
+    "phan_phoi": {
+      "b2b_si_kg": 15.0,
+      "b2c_le_kg": 6.5,
+      "so_bich_20g": 325
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L10-0001-7",
+      "SK-C-CUC25-L10-0002-5",
+      "SK-C-CUC25-L10-0003-3",
+      "SK-C-CUC25-L10-0004-1",
+      "SK-C-CUC25-L10-0005-0",
+      "SK-C-CUC25-L10-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -5,
+      "ndvi": 0.5248,
+      "ndmi": 0.1164,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 675.1,
+      "so_ngay_mua": 37,
+      "tong_et0_mm": 198.8,
+      "can_bang_nuoc_mm": 476.3,
+      "gdd_co_so_10c": 945,
+      "t_max_cao_nhat_c": 33.3,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 70,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-39-2",
+    "ten": "Lô Cúc chi · Vườn ươm + luống cúc đông · 29/11/2025",
+    "lo_dat_id": "L10",
+    "vu_id": "L10-2025-CUC",
+    "dot_thu_id": "L10-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-29",
+    "ngay_hai_den": "2025-11-30",
+    "khoi_luong_tuoi_kg": 111.1,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 22.4,
+    "ti_le_thu_hoi": 0.201,
+    "phan_phoi": {
+      "b2b_si_kg": 15.7,
+      "b2c_le_kg": 6.7,
+      "so_bich_20g": 335
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L10-0001-7",
+      "SK-C-CUC25-L10-0002-5",
+      "SK-C-CUC25-L10-0003-3",
+      "SK-C-CUC25-L10-0004-1",
+      "SK-C-CUC25-L10-0005-0",
+      "SK-C-CUC25-L10-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -7,
+      "ndvi": 0.5248,
+      "ndmi": 0.1164,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 675.1,
+      "so_ngay_mua": 37,
+      "tong_et0_mm": 205.1,
+      "can_bang_nuoc_mm": 470.0,
+      "gdd_co_so_10c": 963,
+      "t_max_cao_nhat_c": 33.3,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 72,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-40-G",
+    "ten": "Lô Cúc chi · Vườn ươm + luống cúc đông · 01/12/2025",
+    "lo_dat_id": "L10",
+    "vu_id": "L10-2025-CUC",
+    "dot_thu_id": "L10-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-12-01",
+    "ngay_hai_den": "2025-12-02",
+    "khoi_luong_tuoi_kg": 100.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 21.0,
+    "ti_le_thu_hoi": 0.209,
+    "phan_phoi": {
+      "b2b_si_kg": 14.7,
+      "b2c_le_kg": 6.3,
+      "so_bich_20g": 315
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L10-0001-7",
+      "SK-C-CUC25-L10-0002-5",
+      "SK-C-CUC25-L10-0003-3",
+      "SK-C-CUC25-L10-0004-1",
+      "SK-C-CUC25-L10-0005-0",
+      "SK-C-CUC25-L10-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -9,
+      "ndvi": 0.5248,
+      "ndmi": 0.1164,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 676.6,
+      "so_ngay_mua": 38,
+      "tong_et0_mm": 209.6,
+      "can_bang_nuoc_mm": 467.0,
+      "gdd_co_so_10c": 987,
+      "t_max_cao_nhat_c": 33.3,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 74,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-41-E",
+    "ten": "Lô Cúc chi · Vườn ươm + luống cúc đông · 03/12/2025",
+    "lo_dat_id": "L10",
+    "vu_id": "L10-2025-CUC",
+    "dot_thu_id": "L10-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-12-03",
+    "ngay_hai_den": "2025-12-04",
+    "khoi_luong_tuoi_kg": 110.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 22.7,
+    "ti_le_thu_hoi": 0.205,
+    "phan_phoi": {
+      "b2b_si_kg": 15.9,
+      "b2c_le_kg": 6.8,
+      "so_bich_20g": 340
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L10-0001-7",
+      "SK-C-CUC25-L10-0002-5",
+      "SK-C-CUC25-L10-0003-3",
+      "SK-C-CUC25-L10-0004-1",
+      "SK-C-CUC25-L10-0005-0",
+      "SK-C-CUC25-L10-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -11,
+      "ndvi": 0.5248,
+      "ndmi": 0.1164,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 681.0,
+      "so_ngay_mua": 39,
+      "tong_et0_mm": 213.3,
+      "can_bang_nuoc_mm": 467.7,
+      "gdd_co_so_10c": 1009,
+      "t_max_cao_nhat_c": 33.3,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 76,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-42-C",
+    "ten": "Lô Cúc chi · Vườn ươm + luống cúc đông · 05/12/2025",
+    "lo_dat_id": "L10",
+    "vu_id": "L10-2025-CUC",
+    "dot_thu_id": "L10-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-12-05",
+    "ngay_hai_den": "2025-12-05",
+    "khoi_luong_tuoi_kg": 103.1,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 20.8,
+    "ti_le_thu_hoi": 0.202,
+    "phan_phoi": {
+      "b2b_si_kg": 14.6,
+      "b2c_le_kg": 6.2,
+      "so_bich_20g": 310
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L10-0001-7",
+      "SK-C-CUC25-L10-0002-5",
+      "SK-C-CUC25-L10-0003-3",
+      "SK-C-CUC25-L10-0004-1",
+      "SK-C-CUC25-L10-0005-0",
+      "SK-C-CUC25-L10-0006-Y"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -12,
+      "ndvi": 0.5248,
+      "ndmi": 0.1164,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 681.2,
+      "so_ngay_mua": 39,
+      "tong_et0_mm": 214.5,
+      "can_bang_nuoc_mm": 466.7,
+      "gdd_co_so_10c": 1019,
+      "t_max_cao_nhat_c": 33.3,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 77,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-17-3",
+    "ten": "Lô Bồ công anh · Luống rau thuốc cắt lứa · 06/10/2025",
+    "lo_dat_id": "L11",
+    "vu_id": "L11-2025-BCA",
+    "dot_thu_id": "L11-2025-BCA-L1",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-10-06",
+    "ngay_hai_den": "2025-10-10",
+    "khoi_luong_tuoi_kg": 1653.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 225.9,
+    "ti_le_thu_hoi": 0.137,
+    "phan_phoi": {
+      "b2b_si_kg": 225.9,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L11-0001-C",
+      "SK-C-CUC25-L11-0002-A",
+      "SK-C-CUC25-L11-0003-8",
+      "SK-C-CUC25-L11-0004-6",
+      "SK-C-CUC25-L11-0005-4",
+      "SK-C-CUC25-L11-0006-2"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": -6,
+      "ndvi": 0.7319,
+      "ndmi": 0.2763,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1018.3,
+      "so_ngay_mua": 48,
+      "tong_et0_mm": 192.4,
+      "can_bang_nuoc_mm": 825.9,
+      "gdd_co_so_10c": 1015,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 22.9,
+      "so_ngay_theo_doi": 60,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-18-1",
+    "ten": "Lô Bồ công anh · Luống rau thuốc cắt lứa · 11/10/2025",
+    "lo_dat_id": "L11",
+    "vu_id": "L11-2025-BCA",
+    "dot_thu_id": "L11-2025-BCA-L1",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-10-11",
+    "ngay_hai_den": "2025-10-12",
+    "khoi_luong_tuoi_kg": 1618.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 225.9,
+    "ti_le_thu_hoi": 0.14,
+    "phan_phoi": {
+      "b2b_si_kg": 225.9,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L11-0001-C",
+      "SK-C-CUC25-L11-0002-A",
+      "SK-C-CUC25-L11-0003-8",
+      "SK-C-CUC25-L11-0004-6",
+      "SK-C-CUC25-L11-0005-4",
+      "SK-C-CUC25-L11-0006-2"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-10-04",
+      "lech_ngay": -8,
+      "ndvi": 0.7319,
+      "ndmi": 0.2763,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1032.0,
+      "so_ngay_mua": 50,
+      "tong_et0_mm": 198.6,
+      "can_bang_nuoc_mm": 833.4,
+      "gdd_co_so_10c": 1048,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 22.9,
+      "so_ngay_theo_doi": 62,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA25-19-0",
+    "ten": "Lô Bồ công anh · Luống rau thuốc cắt lứa · 20/12/2025",
+    "lo_dat_id": "L11",
+    "vu_id": "L11-2025-BCA",
+    "dot_thu_id": "L11-2025-BCA-L2",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2025-12-20",
+    "ngay_hai_den": "2025-12-24",
+    "khoi_luong_tuoi_kg": 3112.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 444.3,
+    "ti_le_thu_hoi": 0.143,
+    "phan_phoi": {
+      "b2b_si_kg": 444.3,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L11-0001-C",
+      "SK-C-CUC25-L11-0002-A",
+      "SK-C-CUC25-L11-0003-8",
+      "SK-C-CUC25-L11-0004-6",
+      "SK-C-CUC25-L11-0005-4",
+      "SK-C-CUC25-L11-0006-2"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-12-18",
+      "lech_ngay": -6,
+      "ndvi": 0.583,
+      "ndmi": 0.193,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1283.8,
+      "so_ngay_mua": 78,
+      "tong_et0_mm": 384.0,
+      "can_bang_nuoc_mm": 899.8,
+      "gdd_co_so_10c": 1885,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 135,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA26-13-3",
+    "ten": "Lô Bồ công anh · Luống rau thuốc cắt lứa · 20/03/2026",
+    "lo_dat_id": "L11",
+    "vu_id": "L11-2025-BCA",
+    "dot_thu_id": "L11-2026-BCA-L3",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2026-03-20",
+    "ngay_hai_den": "2026-03-24",
+    "khoi_luong_tuoi_kg": 1596.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 222.7,
+    "ti_le_thu_hoi": 0.139,
+    "phan_phoi": {
+      "b2b_si_kg": 222.7,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L11-0001-C",
+      "SK-C-CUC25-L11-0002-A",
+      "SK-C-CUC25-L11-0003-8",
+      "SK-C-CUC25-L11-0004-6",
+      "SK-C-CUC25-L11-0005-4",
+      "SK-C-CUC25-L11-0006-2"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-03-13",
+      "lech_ngay": -11,
+      "ndvi": 0.5684,
+      "ndmi": 0.1135,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1397.8,
+      "so_ngay_mua": 109,
+      "tong_et0_mm": 591.5,
+      "can_bang_nuoc_mm": 806.3,
+      "gdd_co_so_10c": 2773,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 225,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA26-14-1",
+    "ten": "Lô Bồ công anh · Luống rau thuốc cắt lứa · 25/03/2026",
+    "lo_dat_id": "L11",
+    "vu_id": "L11-2025-BCA",
+    "dot_thu_id": "L11-2026-BCA-L3",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2026-03-25",
+    "ngay_hai_den": "2026-03-26",
+    "khoi_luong_tuoi_kg": 1412.6,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 204.2,
+    "ti_le_thu_hoi": 0.145,
+    "phan_phoi": {
+      "b2b_si_kg": 204.2,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L11-0001-C",
+      "SK-C-CUC25-L11-0002-A",
+      "SK-C-CUC25-L11-0003-8",
+      "SK-C-CUC25-L11-0004-6",
+      "SK-C-CUC25-L11-0005-4",
+      "SK-C-CUC25-L11-0006-2"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-04-07",
+      "lech_ngay": 12,
+      "ndvi": 0.392,
+      "ndmi": 0.1083,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1398.5,
+      "so_ngay_mua": 109,
+      "tong_et0_mm": 597.9,
+      "can_bang_nuoc_mm": 800.6,
+      "gdd_co_so_10c": 2804,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 227,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA26-15-0",
+    "ten": "Lô Bồ công anh · Luống rau thuốc cắt lứa · 05/08/2026",
+    "lo_dat_id": "L11",
+    "vu_id": "L11-2025-BCA",
+    "dot_thu_id": "L11-2026-BCA-L4",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2026-08-05",
+    "ngay_hai_den": "2026-08-09",
+    "khoi_luong_tuoi_kg": 1685.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 229.7,
+    "ti_le_thu_hoi": 0.136,
+    "phan_phoi": {
+      "b2b_si_kg": 229.7,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_say",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L11-0001-C",
+      "SK-C-CUC25-L11-0002-A",
+      "SK-C-CUC25-L11-0003-8",
+      "SK-C-CUC25-L11-0004-6",
+      "SK-C-CUC25-L11-0005-4",
+      "SK-C-CUC25-L11-0006-2"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-08-10",
+      "lech_ngay": 1,
+      "ndvi": 0.5499,
+      "ndmi": 0.0475,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2337.1,
+      "so_ngay_mua": 190,
+      "tong_et0_mm": 1159.1,
+      "can_bang_nuoc_mm": 1178.0,
+      "gdd_co_so_10c": 5294,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 363,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-BCA26-16-Y",
+    "ten": "Lô Bồ công anh · Luống rau thuốc cắt lứa · 10/08/2026",
+    "lo_dat_id": "L11",
+    "vu_id": "L11-2025-BCA",
+    "dot_thu_id": "L11-2026-BCA-L4",
+    "ma_cay_trong": "BCA",
+    "ten_cay_trong": "Bồ công anh",
+    "ngay_hai_tu": "2026-08-10",
+    "ngay_hai_den": "2026-08-11",
+    "khoi_luong_tuoi_kg": 1521.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh hai giai đoạn",
+      "dai_nhiet": "35 – 45 °C",
+      "thoi_gian_gio": 30,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 203.6,
+    "ti_le_thu_hoi": 0.134,
+    "phan_phoi": {
+      "b2b_si_kg": 203.6,
+      "b2c_le_kg": 0.0,
+      "so_bich_20g": 0
+    },
+    "trang_thai": "dang_thu_hoach",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L11-0001-C",
+      "SK-C-CUC25-L11-0002-A",
+      "SK-C-CUC25-L11-0003-8",
+      "SK-C-CUC25-L11-0004-6",
+      "SK-C-CUC25-L11-0005-4",
+      "SK-C-CUC25-L11-0006-2"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2026-08-10",
+      "lech_ngay": -1,
+      "ndvi": 0.5499,
+      "ndmi": 0.0475,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 2343.5,
+      "so_ngay_mua": 191,
+      "tong_et0_mm": 1169.0,
+      "can_bang_nuoc_mm": 1174.5,
+      "gdd_co_so_10c": 5334,
+      "t_max_cao_nhat_c": 38.7,
+      "t_min_thap_nhat_c": 9.7,
+      "so_ngay_theo_doi": 365,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-43-A",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 15/11/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-15",
+    "ngay_hai_den": "2025-11-16",
+    "khoi_luong_tuoi_kg": 279.4,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 60.2,
+    "ti_le_thu_hoi": 0.215,
+    "phan_phoi": {
+      "b2b_si_kg": 42.1,
+      "b2c_le_kg": 18.1,
+      "so_bich_20g": 905
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-13",
+      "lech_ngay": -3,
+      "ndvi": 0.7323,
+      "ndmi": 0.2601,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1199.4,
+      "so_ngay_mua": 66,
+      "tong_et0_mm": 288.2,
+      "can_bang_nuoc_mm": 911.2,
+      "gdd_co_so_10c": 1507,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 16.0,
+      "so_ngay_theo_doi": 97,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-44-8",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 17/11/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-17",
+    "ngay_hai_den": "2025-11-18",
+    "khoi_luong_tuoi_kg": 242.0,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 51.7,
+    "ti_le_thu_hoi": 0.214,
+    "phan_phoi": {
+      "b2b_si_kg": 36.2,
+      "b2c_le_kg": 15.5,
+      "so_bich_20g": 775
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-20",
+      "lech_ngay": 2,
+      "ndvi": 0.7215,
+      "ndmi": 0.2373,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1217.0,
+      "so_ngay_mua": 68,
+      "tong_et0_mm": 290.5,
+      "can_bang_nuoc_mm": 926.5,
+      "gdd_co_so_10c": 1528,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 13.4,
+      "so_ngay_theo_doi": 99,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-45-6",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 19/11/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-19",
+    "ngay_hai_den": "2025-11-20",
+    "khoi_luong_tuoi_kg": 301.2,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 64.4,
+    "ti_le_thu_hoi": 0.214,
+    "phan_phoi": {
+      "b2b_si_kg": 45.1,
+      "b2c_le_kg": 19.3,
+      "so_bich_20g": 965
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-20",
+      "lech_ngay": 0,
+      "ndvi": 0.7215,
+      "ndmi": 0.2373,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 296.4,
+      "can_bang_nuoc_mm": 925.3,
+      "gdd_co_so_10c": 1540,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 101,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-46-4",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 21/11/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-21",
+    "ngay_hai_den": "2025-11-22",
+    "khoi_luong_tuoi_kg": 282.1,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 58.1,
+    "ti_le_thu_hoi": 0.206,
+    "phan_phoi": {
+      "b2b_si_kg": 40.7,
+      "b2c_le_kg": 17.4,
+      "so_bich_20g": 870
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": 1,
+      "ndvi": 0.6359,
+      "ndmi": 0.2168,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 303.7,
+      "can_bang_nuoc_mm": 918.0,
+      "gdd_co_so_10c": 1558,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 103,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-47-2",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 23/11/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-23",
+    "ngay_hai_den": "2025-11-24",
+    "khoi_luong_tuoi_kg": 275.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 57.8,
+    "ti_le_thu_hoi": 0.21,
+    "phan_phoi": {
+      "b2b_si_kg": 40.5,
+      "b2c_le_kg": 17.3,
+      "so_bich_20g": 865
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -1,
+      "ndvi": 0.6359,
+      "ndmi": 0.2168,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 310.8,
+      "can_bang_nuoc_mm": 910.9,
+      "gdd_co_so_10c": 1578,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 105,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-48-Z",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 25/11/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-25",
+    "ngay_hai_den": "2025-11-26",
+    "khoi_luong_tuoi_kg": 296.5,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 60.2,
+    "ti_le_thu_hoi": 0.203,
+    "phan_phoi": {
+      "b2b_si_kg": 42.1,
+      "b2c_le_kg": 18.1,
+      "so_bich_20g": 905
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -3,
+      "ndvi": 0.6359,
+      "ndmi": 0.2168,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 318.7,
+      "can_bang_nuoc_mm": 903.0,
+      "gdd_co_so_10c": 1596,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 107,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-49-X",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 27/11/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-27",
+    "ngay_hai_den": "2025-11-28",
+    "khoi_luong_tuoi_kg": 260.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 55.7,
+    "ti_le_thu_hoi": 0.214,
+    "phan_phoi": {
+      "b2b_si_kg": 39.0,
+      "b2c_le_kg": 16.7,
+      "so_bich_20g": 835
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -5,
+      "ndvi": 0.6359,
+      "ndmi": 0.2168,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 326.9,
+      "can_bang_nuoc_mm": 894.8,
+      "gdd_co_so_10c": 1612,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 109,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-50-C",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 29/11/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-11-29",
+    "ngay_hai_den": "2025-11-30",
+    "khoi_luong_tuoi_kg": 292.7,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 58.6,
+    "ti_le_thu_hoi": 0.2,
+    "phan_phoi": {
+      "b2b_si_kg": 41.0,
+      "b2c_le_kg": 17.6,
+      "so_bich_20g": 880
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -7,
+      "ndvi": 0.6359,
+      "ndmi": 0.2168,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1221.7,
+      "so_ngay_mua": 69,
+      "tong_et0_mm": 333.2,
+      "can_bang_nuoc_mm": 888.5,
+      "gdd_co_so_10c": 1630,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 111,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-51-A",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 01/12/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-12-01",
+    "ngay_hai_den": "2025-12-02",
+    "khoi_luong_tuoi_kg": 285.8,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 60.0,
+    "ti_le_thu_hoi": 0.21,
+    "phan_phoi": {
+      "b2b_si_kg": 42.0,
+      "b2c_le_kg": 18.0,
+      "so_bich_20g": 900
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -9,
+      "ndvi": 0.6359,
+      "ndmi": 0.2168,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1223.2,
+      "so_ngay_mua": 70,
+      "tong_et0_mm": 337.7,
+      "can_bang_nuoc_mm": 885.5,
+      "gdd_co_so_10c": 1654,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 113,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-52-8",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 03/12/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-12-03",
+    "ngay_hai_den": "2025-12-04",
+    "khoi_luong_tuoi_kg": 257.3,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 54.6,
+    "ti_le_thu_hoi": 0.212,
+    "phan_phoi": {
+      "b2b_si_kg": 38.2,
+      "b2c_le_kg": 16.4,
+      "so_bich_20g": 820
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-11-23",
+      "lech_ngay": -11,
+      "ndvi": 0.6359,
+      "ndmi": 0.2168,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1227.6,
+      "so_ngay_mua": 71,
+      "tong_et0_mm": 341.4,
+      "can_bang_nuoc_mm": 886.2,
+      "gdd_co_so_10c": 1676,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 115,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  },
+  {
+    "id": "SK-L-CUC25-53-6",
+    "ten": "Lô Cúc chi · Ruộng lớn Tây · 05/12/2025",
+    "lo_dat_id": "L12",
+    "vu_id": "L12-2025-CUC",
+    "dot_thu_id": "L12-2025-CUC",
+    "ma_cay_trong": "CUC",
+    "ten_cay_trong": "Cúc chi",
+    "ngay_hai_tu": "2025-12-05",
+    "ngay_hai_den": "2025-12-06",
+    "khoi_luong_tuoi_kg": 244.9,
+    "che_bien": {
+      "cong_nghe": "Sấy lạnh, không phơi nắng",
+      "dai_nhiet": "20 – 35 °C",
+      "thoi_gian_gio": 42,
+      "nhat_ky_nhiet_so_hoa": false,
+      "nguon": "mau"
+    },
+    "khoi_luong_kho_kg": 53.2,
+    "ti_le_thu_hoi": 0.217,
+    "phan_phoi": {
+      "b2b_si_kg": 37.2,
+      "b2c_le_kg": 16.0,
+      "so_bich_20g": 800
+    },
+    "trang_thai": "da_giao",
+    "kiem_nghiem": null,
+    "ly_do_kiem_nghiem_rong": "Chưa có phiếu kiểm nghiệm thật. Không dựng phiếu giả — xem Sankit/qr/docs/02_MO_HINH_DU_LIEU.md, trường `nguon`.",
+    "nguon_cay": [
+      "SK-C-CUC25-L12-0001-H",
+      "SK-C-CUC25-L12-0002-F",
+      "SK-C-CUC25-L12-0003-D",
+      "SK-C-CUC25-L12-0004-B",
+      "SK-C-CUC25-L12-0005-9",
+      "SK-C-CUC25-L12-0006-7"
+    ],
+    "trang_thai_lo_dat_luc_hai": {
+      "ngay_anh": "2025-12-18",
+      "lech_ngay": 12,
+      "ndvi": 0.4268,
+      "ndmi": 0.0229,
+      "nguon": "that"
+    },
+    "khi_hau_ca_vu": {
+      "tong_mua_mm": 1227.9,
+      "so_ngay_mua": 71,
+      "tong_et0_mm": 344.9,
+      "can_bang_nuoc_mm": 883.0,
+      "gdd_co_so_10c": 1696,
+      "t_max_cao_nhat_c": 34.8,
+      "t_min_thap_nhat_c": 11.8,
+      "so_ngay_theo_doi": 117,
+      "nguon": "that"
+    },
+    "nguon": "mau"
+  }
+]
