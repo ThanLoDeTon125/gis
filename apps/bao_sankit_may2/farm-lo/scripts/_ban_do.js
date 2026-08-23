@@ -120,6 +120,7 @@ function paint(){
     <span>${ic('i-mua')} ${nf(k.mua)} mm · ${k.ngay_mua} ngày</span>
     <span>${ic('i-nhiet')} ${nf(k.tmin)}–${nf(k.tmax)} °C</span>` : '';
   legend(); SEL ? detail(SEL) : overview();
+  updateTimeTicks();
 }
 function applyT(){
   stage.style.transform = `translate(${tx}px,${ty}px) scale(${z})`;
@@ -224,6 +225,13 @@ function shape(id, s=46){
   return `<svg class="shape" viewBox="0 0 ${s} ${s}" aria-hidden="true"><polygon points="${pts}"
     fill="var(--accent)" fill-opacity=".18" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
 }
+function bandInfo(v) {
+  if (v >= 0.7) return 'Rất xanh';
+  if (v >= 0.55) return 'Xanh tốt';
+  if (v >= 0.4) return 'Trung bình';
+  if (v >= 0.25) return 'Thưa thớt';
+  return 'Đất trống / nghỉ';
+}
 function chart(id){
   const L = LO[id], W = 380, H = 118, pl = 26, pr = 8, pt = 10, pb = 20;
   const x = i => pl + i/(TH.length-1)*(W-pl-pr);
@@ -246,11 +254,8 @@ function chart(id){
     <line x1="${x(MI).toFixed(1)}" y1="${pt}" x2="${x(MI).toFixed(1)}" y2="${H-pb}"
       stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="3 3"/>
     <path d="${d}" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round" opacity=".75"/>
-    ${vals.map((m,i) => m.ndvi==null ? '' : `<circle cx="${x(i).toFixed(1)}" cy="${y(m.ndvi).toFixed(1)}"
+    ${vals.map((m,i) => m.ndvi==null ? '' : `<circle class="chart-node" data-month="${TH[i]}" data-val="${nf(m.ndvi,3)}" data-band="${bandInfo(m.ndvi)}" data-src="${m.src==='noi_suy'?'Nối suy':'Vệ tinh'}" cx="${x(i).toFixed(1)}" cy="${y(m.ndvi).toFixed(1)}"
       r="${m.src==='noi_suy'?2.6:3.6}" fill="${m.src==='noi_suy'?'var(--panel)':'var(--ink)'}"
-      stroke="var(--ink)" stroke-width="1.6"/>`).join('')}
-    ${vals[MI].ndvi!=null ? `<circle cx="${x(MI).toFixed(1)}" cy="${y(vals[MI].ndvi).toFixed(1)}" r="6"
-      fill="var(--accent)" stroke="var(--card)" stroke-width="2.5"/>` : ''}
     ${TH.map((t,i) => i%2===0 ? `<text x="${x(i).toFixed(1)}" y="${H-5}" font-size="9" fill="var(--muted)"
       text-anchor="middle" font-family="var(--f-m)">${+t.slice(5)}</text>` : '').join('')}
   </svg>`;
@@ -486,6 +491,193 @@ document.getElementById('help-close').onclick = closeHelp;
 help.onclick = e => { if (e.target === help) closeHelp(); };
 
 build(); fit();
+
+function buildTimeTicks() {
+  const container = document.getElementById('time-ticks');
+  if (!container) return;
+  container.innerHTML = TH.map((t, i) => {
+    const label = t.endsWith('-01') ? `T1/${t.slice(2,4)}` : `T${+t.slice(5)}`;
+    return `<span class="tick ${i===MI?'active':''}" data-idx="${i}">${label}</span>`;
+  }).join('');
+  container.querySelectorAll('.tick').forEach(el => {
+    el.onclick = () => {
+      MI = +el.dataset.idx;
+      sl.value = MI;
+      paint();
+    };
+  });
+}
+
+function updateTimeTicks() {
+  const ticks = document.querySelectorAll('#time-ticks .tick');
+  ticks.forEach((el, i) => {
+    el.classList.toggle('active', i === MI);
+  });
+}
+
+function setupChartTooltip() {
+  const tip = document.getElementById('chart-tip');
+  if (!tip) return;
+  document.addEventListener('mouseover', (e) => {
+    const node = e.target.closest('.chart-node');
+    if (node) {
+      const { month, val, band, src } = node.dataset;
+      tip.innerHTML = `<b>Tháng ${month}</b><div>NDVI: <b>${val}</b> (${band})</div><div>Nguồn: ${src}</div>`;
+      tip.style.display = 'block';
+    }
+  });
+  document.addEventListener('mousemove', (e) => {
+    if (tip.style.display === 'block') {
+      const rect = document.getElementById('mapwrap').getBoundingClientRect();
+      tip.style.left = (e.clientX - rect.left) + 'px';
+      tip.style.top = (e.clientY - rect.top) + 'px';
+    }
+  });
+  document.addEventListener('mouseout', (e) => {
+    if (e.target.closest('.chart-node')) {
+      tip.style.display = 'none';
+    }
+  });
+}
+
+function setupCompare() {
+  const modal = document.getElementById('compare-modal');
+  const btnOpen = document.getElementById('compare-open');
+  const btnClose = document.getElementById('compare-close');
+  const selA = document.getElementById('sel-plot-a');
+  const selB = document.getElementById('sel-plot-b');
+  if (!modal || !btnOpen) return;
+
+  const plotKeys = Object.keys(LO);
+  const optionsHtml = plotKeys.map(k => `<option value="${k}">${k} - ${LO[k].ten}</option>`).join('');
+  selA.innerHTML = optionsHtml;
+  selB.innerHTML = optionsHtml;
+  if (plotKeys.length > 1) selB.value = plotKeys[1];
+
+  btnOpen.onclick = () => {
+    modal.setAttribute('open', '');
+    renderCompare();
+  };
+  btnClose.onclick = () => modal.removeAttribute('open');
+  modal.onclick = (e) => { if (e.target === modal) modal.removeAttribute('open'); };
+
+  selA.onchange = renderCompare;
+  selB.onchange = renderCompare;
+}
+
+function renderCompare() {
+  const idA = document.getElementById('sel-plot-a').value;
+  const idB = document.getElementById('sel-plot-b').value;
+  const container = document.getElementById('cmp-content');
+  if (!idA || !idB || !LO[idA] || !LO[idB]) return;
+
+  const a = LO[idA], b = LO[idB];
+  const t = TH[MI];
+  const mA = a.thang[t], mB = b.thang[t];
+
+  container.innerHTML = `
+    <div class="cmp-grid">
+      <div class="cmp-card">
+        <h4>${a.id} - ${a.ten}</h4>
+        <div class="cmp-rows">
+          <div class="cmp-r"><span>Diện tích:</span><b>${a.ha} ha</b></div>
+          <div class="cmp-r"><span>Cây trồng:</span><b>${TEN[mA.cay] || mA.cay || 'Đất nghỉ'}</b></div>
+          <div class="cmp-r"><span>Độ xanh (NDVI):</span><b>${mA.ndvi != null ? nf(mA.ndvi,3) : '--'}</b></div>
+          <div class="cmp-r"><span>Độ ẩm lá (NDMI):</span><b>${mA.ndmi != null ? nf(mA.ndmi,3) : '--'}</b></div>
+          <div class="cmp-r"><span>Nhiệt độ đất (LST):</span><b>${mA.lst != null ? nf(mA.lst,1) + ' °C' : '--'}</b></div>
+          <div class="cmp-r"><span>Nước thiếu:</span><b>${mA.thieu != null ? nf(mA.thieu,0) + ' mm' : '--'}</b></div>
+        </div>
+      </div>
+      <div class="cmp-card">
+        <h4>${b.id} - ${b.ten}</h4>
+        <div class="cmp-rows">
+          <div class="cmp-r"><span>Diện tích:</span><b>${b.ha} ha</b></div>
+          <div class="cmp-r"><span>Cây trồng:</span><b>${TEN[mB.cay] || mB.cay || 'Đất nghỉ'}</b></div>
+          <div class="cmp-r"><span>Độ xanh (NDVI):</span><b>${mB.ndvi != null ? nf(mB.ndvi,3) : '--'}</b></div>
+          <div class="cmp-r"><span>Độ ẩm lá (NDMI):</span><b>${mB.ndmi != null ? nf(mB.ndmi,3) : '--'}</b></div>
+          <div class="cmp-r"><span>Nhiệt độ đất (LST):</span><b>${mB.lst != null ? nf(mB.lst,1) + ' °C' : '--'}</b></div>
+          <div class="cmp-r"><span>Nước thiếu:</span><b>${mB.thieu != null ? nf(mB.thieu,0) + ' mm' : '--'}</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="cmp-chart-sec">
+      <h4>Diễn biến Độ xanh (NDVI 13 tháng)</h4>
+      ${renderDualChart(idA, idB)}
+    </div>
+  `;
+}
+
+function renderDualChart(idA, idB) {
+  const W = 720, H = 140, pl = 30, pr = 10, pt = 10, pb = 24;
+  const a = LO[idA], b = LO[idB];
+  const x = i => pl + i/(TH.length-1)*(W-pl-pr);
+  const y = v => pt + (1-(v-0.1)/0.85)*(H-pt-pb);
+
+  const getPath = (L) => {
+    let d = '', open = false;
+    TH.forEach((t, i) => {
+      const v = L.thang[t].ndvi;
+      if (v == null) { open = false; return; }
+      d += (open ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1);
+      open = true;
+    });
+    return d;
+  };
+
+  return `
+    <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;">
+      ${[0.25,0.55,0.85].map(v => `<line x1="${pl}" y1="${y(v)}" x2="${W-pr}" y2="${y(v)}" stroke="var(--line)" stroke-dasharray="2 2"/><text x="${pl-6}" y="${y(v)+3}" font-size="9" fill="var(--muted)" text-anchor="end">${v}</text>`).join('')}
+      <path d="${getPath(a)}" fill="none" stroke="#2e7d32" stroke-width="2.5"/>
+      <path d="${getPath(b)}" fill="none" stroke="#d84315" stroke-width="2.5" stroke-dasharray="4 2"/>
+      <legend style="display:flex;gap:12px;font-size:11px;margin-top:4px;">
+        <span style="color:#2e7d32">━ ${a.id}</span>
+        <span style="color:#d84315">┈ ${b.id}</span>
+      </legend>
+    </svg>
+  `;
+}
+
+function setupBottomSheet() {
+  const handle = document.getElementById('sheet-handle');
+  const panel = document.getElementById('panel');
+  if (!handle || !panel) return;
+
+  let startY = 0, startH = 0, dragging = false;
+  handle.onpointerdown = (e) => {
+    dragging = true;
+    startY = e.clientY;
+    startH = panel.offsetHeight;
+    handle.setPointerCapture(e.pointerId);
+  };
+  handle.onpointermove = (e) => {
+    if (!dragging) return;
+    const dy = startY - e.clientY;
+    const newH = Math.max(72, Math.min(window.innerHeight * 0.88, startH + dy));
+    panel.style.height = newH + 'px';
+  };
+  handle.onpointerup = (e) => {
+    if (!dragging) return;
+    dragging = false;
+    handle.releasePointerCapture(e.pointerId);
+    panel.style.height = '';
+    const h = panel.offsetHeight;
+    if (h > window.innerHeight * 0.6) {
+      panel.classList.remove('peek');
+      panel.classList.add('expand');
+    } else if (h < 120) {
+      panel.classList.remove('expand');
+      panel.classList.add('peek');
+    } else {
+      panel.classList.remove('expand', 'peek');
+    }
+  };
+}
+
+buildTimeTicks();
+setupChartTooltip();
+setupCompare();
+setupBottomSheet();
+
 const h0 = decodeURIComponent(location.hash.slice(1)).toUpperCase();
 if (LO[h0]){ SEL = h0; hinted = true; document.getElementById('hint').style.display = 'none'; }
 paint();
@@ -493,3 +685,4 @@ if (!hinted) setTimeout(() => { if (!hinted) document.getElementById('hint').sty
 addEventListener('hashchange', () => { const h = decodeURIComponent(location.hash.slice(1)).toUpperCase();
   select(LO[h] ? h : null, true); });
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(fit, 160); });
+

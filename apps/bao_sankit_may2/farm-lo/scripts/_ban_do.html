@@ -1,6 +1,14 @@
-<title>Bản đồ giám sát RiTi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>/*CSS*/</style>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bản đồ giám sát RiTi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#8a4a2c" />
+  <link rel="manifest" href="manifest.json" />
+  <style>/*CSS*/</style>
+</head>
+<body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="i-nuoc" viewBox="0 0 24 24"><path d="M12 3s6 6.4 6 10.5A6 6 0 0 1 6 13.5C6 9.4 12 3 12 3Z"/></symbol>
@@ -44,6 +52,7 @@
       <button data-l="canh_bao" aria-pressed="false"><svg class="ic"><use href="#i-canhbao"/></svg><span>Cần chú ý</span></button>
       <button data-l="anh" aria-pressed="false"><svg class="ic"><use href="#i-mat"/></svg><span>Ảnh gốc</span></button>
     </div>
+    <button class="tbtn" id="compare-open"><svg class="ic"><use href="#i-lop"/></svg><span>So sánh lô</span></button>
     <button class="tbtn" id="help-open"><svg class="ic"><use href="#i-cham"/></svg><span>Hướng dẫn</span></button>
   </header>
 
@@ -56,7 +65,10 @@
     <div class="ov-el card-fl timebar">
       <button class="pl" id="play" aria-label="Xem lần lượt 13 tháng"><svg class="ic"><use href="#i-chay"/></svg></button>
       <span class="tm"><b id="tm-b">Tháng 8</b><i id="tm-i">2026</i></span>
-      <input type="range" id="slider" min="0" step="1" aria-label="Chọn tháng để xem">
+      <div class="slider-box">
+        <input type="range" id="slider" min="0" step="1" aria-label="Chọn tháng để xem">
+        <div id="time-ticks" class="time-ticks"></div>
+      </div>
       <span class="wx" id="wx"></span>
     </div>
 
@@ -73,12 +85,30 @@
     <div class="ov-el card-fl hint-first" id="hint">
       <svg class="ic"><use href="#i-tay"/></svg><span>Bấm vào một lô để xem chi tiết</span></div>
     <div class="tip" id="tip"></div>
+    <div id="chart-tip" class="chart-tip"></div>
   </div>
 
   <aside class="panel" id="panel">
+    <div class="sheet-handle" id="sheet-handle" aria-label="Kéo để mở rộng thông tin"></div>
     <div class="ph" id="ph"></div>
     <div class="pb" id="pb"></div>
   </aside>
+</div>
+
+<div class="modal" id="compare-modal" role="dialog" aria-modal="true" aria-labelledby="cmp-t">
+  <div class="mbox cmp-mbox">
+    <div class="mh">
+      <h2 id="cmp-t">So sánh 2 lô nông trại</h2>
+      <button class="x tbtn" id="compare-close" aria-label="Đóng"><svg class="ic"><use href="#i-x"/></svg>Đóng</button>
+    </div>
+    <div class="mb">
+      <div class="cmp-selectors">
+        <label>Lô thứ nhất: <select id="sel-plot-a" class="sel-plot"></select></label>
+        <label>Lô thứ hai: <select id="sel-plot-b" class="sel-plot"></select></label>
+      </div>
+      <div id="cmp-content"></div>
+    </div>
+  </div>
 </div>
 
 <div class="modal" id="help" role="dialog" aria-modal="true" aria-labelledby="help-t">
@@ -135,5 +165,14 @@
   </div>
 </div>
 
-<script>window.__M = /*DATA*/;</script>
+<script>
+  window.__M = /*DATA*/;
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(err => console.log('SW reg error:', err));
+    });
+  }
+</script>
 <script>/*JS*/</script>
+</body>
+</html>

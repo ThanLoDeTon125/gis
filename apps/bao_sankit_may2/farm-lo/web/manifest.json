@@ -1,0 +1,17 @@
+{
+  "name": "Hợp tác xã RiTi - Bản đồ giám sát nông nghiệp",
+  "short_name": "RiTi Farm",
+  "description": "Bản đồ giám sát 12 lô nông nghiệp RiTi - Trường Yên, Hoa Lư, Ninh Bình",
+  "start_url": "ban-do.html",
+  "display": "standalone",
+  "background_color": "#12160f",
+  "theme_color": "#8a4a2c",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238a4a2c'/><path d='M50 80A30 30 0 0 1 20 50c0-25 28-40 30-40s30 15 30 40a30 30 0 0 1-30 30Z' fill='%235ec077'/></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
