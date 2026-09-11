@@ -1,4 +1,4 @@
-const CACHE_NAME = "riti-farm-v4";
+const CACHE_NAME = "riti-farm-v5";
 const ASSETS = [
   "ban-do.html",
   "manifest.json"
@@ -20,6 +20,10 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   e.respondWith(
-    caches.match(e.request).then((res) => res || fetch(e.request).catch(() => caches.match("ban-do.html")))
+    fetch(e.request).then((res) => {
+      const copy = res.clone();
+      caches.open(CACHE_NAME).then((cache) => cache.put(e.request, copy)).catch(() => {});
+      return res;
+    }).catch(() => caches.match(e.request).then((res) => res || caches.match("ban-do.html")))
   );
 });

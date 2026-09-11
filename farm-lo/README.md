@@ -13,19 +13,27 @@ phải sinh mã mới, không phải di trú gì.
 
 ---
 
-## Chạy thử trong 20 giây
+## Chạy thử
 
-```bash
-cd ~/Documents/Sankit/farm-lo
-python3 scripts/sinh_du_lieu.py     # sinh lại toàn bộ — kết quả y hệt mỗi lần chạy
-python3 scripts/kiem_tra.py         # schema + 12 bất biến, thoát mã 1 nếu sai
-open web/ban-do.html                # giao diện giám sát — mở thẳng bằng trình duyệt
+Xem hướng dẫn đầy đủ (Windows + deploy): [`../README.md`](../README.md).
+
+Mở bản đồ (đã có dữ liệu sẵn, không cần sinh lại):
+
+```powershell
+cd ..
+python -m http.server 8080
 ```
 
-Dựng lại giao diện sau khi dữ liệu đổi (cần `Pillow` — có sẵn trong `.venv` của GIS):
+Trình duyệt: http://127.0.0.1:8080/farm-lo/web/ban-do.html
+
+Hoặc mở thẳng `web/ban-do.html` bằng Chrome/Edge.
+
+Sinh lại dữ liệu / dựng lại HTML khi số liệu GIS đổi:
 
 ```bash
-../gis/.venv/bin/python scripts/dung_ban_do.py
+python scripts/sinh_du_lieu.py     # sinh lại toàn bộ — kết quả y hệt mỗi lần chạy
+python scripts/kiem_tra.py         # schema + 12 bất biến, thoát mã 1 nếu sai
+python scripts/dung_ban_do.py      # cần Pillow (gis/.venv)
 ```
 
 `sinh_du_lieu.py` chỉ **đọc** từ `../gis/data/out/`. Không ghi

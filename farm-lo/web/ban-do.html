@@ -795,6 +795,9 @@ function chart(id){
     <path d="${d}" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round" opacity=".75"/>
     ${vals.map((m,i) => m.ndvi==null ? '' : `<circle class="chart-node" data-month="${TH[i]}" data-val="${nf(m.ndvi,3)}" data-band="${bandInfo(m.ndvi)}" data-src="${m.src==='noi_suy'?'Nối suy':'Vệ tinh'}" cx="${x(i).toFixed(1)}" cy="${y(m.ndvi).toFixed(1)}"
       r="${m.src==='noi_suy'?2.6:3.6}" fill="${m.src==='noi_suy'?'var(--panel)':'var(--ink)'}"
+      stroke="var(--ink)" stroke-width="1.6"/>`).join('')}
+    ${vals[MI].ndvi!=null ? `<circle cx="${x(MI).toFixed(1)}" cy="${y(vals[MI].ndvi).toFixed(1)}" r="6"
+      fill="var(--accent)" stroke="var(--card)" stroke-width="2.5"/>` : ''}
     ${TH.map((t,i) => i%2===0 ? `<text x="${x(i).toFixed(1)}" y="${H-5}" font-size="9" fill="var(--muted)"
       text-anchor="middle" font-family="var(--f-m)">${+t.slice(5)}</text>` : '').join('')}
   </svg>`;
