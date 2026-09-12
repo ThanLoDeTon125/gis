@@ -462,7 +462,11 @@ function select(id, quiet){
   SEL = id; showAllCb = showAllNk = showAllLh = false;
   if (!quiet) history.replaceState(null, '', location.pathname + location.search + (id ? '#'+id : ''));
   paint();
-  document.getElementById('panel').scrollTop = 0;
+  const panel = document.getElementById('panel');
+  panel.scrollTop = 0;
+  if (id && matchMedia('(max-width:480px)').matches){
+    panel.classList.remove('peek');
+  }
   if (id) ov.querySelector(`polygon[data-id="${id}"]`)?.focus({preventScroll:true});
   if (!hinted){ hinted = true; document.getElementById('hint').style.opacity = 0; }
 }
@@ -644,6 +648,10 @@ function setupBottomSheet() {
   const handle = document.getElementById('sheet-handle');
   const panel = document.getElementById('panel');
   if (!handle || !panel) return;
+  if (matchMedia('(max-width:480px)').matches) panel.classList.add('peek');
+  panel.querySelector('.ph')?.addEventListener('click', () => {
+    if (panel.classList.contains('peek')) panel.classList.remove('peek');
+  });
 
   let startY = 0, startH = 0, dragging = false;
   handle.onpointerdown = (e) => {
