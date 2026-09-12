@@ -464,9 +464,6 @@ function select(id, quiet){
   paint();
   const panel = document.getElementById('panel');
   panel.scrollTop = 0;
-  if (id && matchMedia('(max-width:480px)').matches){
-    panel.classList.remove('peek');
-  }
   if (id) ov.querySelector(`polygon[data-id="${id}"]`)?.focus({preventScroll:true});
   if (!hinted){ hinted = true; document.getElementById('hint').style.opacity = 0; }
 }
@@ -503,8 +500,9 @@ function buildTimeTicks() {
   const container = document.getElementById('time-ticks');
   if (!container) return;
   container.innerHTML = TH.map((t, i) => {
-    const label = t.endsWith('-01') ? `T1/${t.slice(2,4)}` : `T${+t.slice(5)}`;
-    return `<span class="tick ${i===MI?'active':''}" data-idx="${i}">${label}</span>`;
+    const mo = +t.slice(5);
+    const label = t.endsWith('-01') ? `T1/${t.slice(2,4)}` : `T${mo}`;
+    return `<span class="tick ${i===MI?'active':''}" data-idx="${i}" data-m="${mo}">${label}</span>`;
   }).join('');
   container.querySelectorAll('.tick').forEach(el => {
     el.onclick = () => {
@@ -648,10 +646,6 @@ function setupBottomSheet() {
   const handle = document.getElementById('sheet-handle');
   const panel = document.getElementById('panel');
   if (!handle || !panel) return;
-  if (matchMedia('(max-width:480px)').matches) panel.classList.add('peek');
-  panel.querySelector('.ph')?.addEventListener('click', () => {
-    if (panel.classList.contains('peek')) panel.classList.remove('peek');
-  });
 
   let startY = 0, startH = 0, dragging = false;
   handle.onpointerdown = (e) => {

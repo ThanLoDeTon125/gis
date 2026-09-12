@@ -1,4 +1,4 @@
-const CACHE_NAME = "riti-farm-v5";
+const CACHE_NAME = "riti-farm-v6";
 const ASSETS = [
   "ban-do.html",
   "manifest.json"

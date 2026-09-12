@@ -343,40 +343,52 @@ summary:hover{color:var(--accent)}
 .sheet-handle { display:none; }
 
 @media (max-width:900px){
-  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:0}
-  .app{grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;height:100dvh;overflow:hidden}
-  .top{padding:8px 12px;padding-top:max(8px,env(safe-area-inset-top));gap:8px 10px}
-  .bd{gap:8px;min-width:0;flex:1}
-  .bd .lf{width:26px;height:26px}
-  .bd b{font-size:14px;letter-spacing:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .bd i,.wx,.tbtn span,.seg button span{display:none}
-  .tbtn{padding:8px 9px;flex:none}
-  .seg{flex:none}
-  .seg button{padding:8px 9px}
+  .app{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr);height:100dvh;overflow:hidden}
+  .top{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto auto;
+    grid-template-areas:"brand cmp help" "tabs tabs tabs";
+    align-items:center;
+    padding:8px 12px;
+    padding-top:max(8px,env(safe-area-inset-top));
+    gap:8px;
+  }
+  .bd{grid-area:brand;min-width:0;margin-right:0;max-width:none}
+  .bd b{font-size:15px}
+  .bd i{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .seg{grid-area:tabs;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:auto;min-width:0}
+  .seg button{min-width:0;justify-content:center;padding:7px 4px;gap:5px}
+  .seg button span{display:inline;font-size:12px;overflow:hidden;text-overflow:ellipsis}
+  #compare-open{grid-area:cmp}
+  #help-open{grid-area:help}
+  .tbtn{white-space:nowrap}
+  .tbtn span{display:inline;font-size:12px}
 
-  .mapwrap{padding-bottom:0}
   .timebar{
     left:10px;top:10px;right:54px;max-width:none;width:auto;
-    gap:8px;padding:8px 10px;align-items:center;
-  }
-  .tm{min-width:0}
-  .tm b{font-size:13px;letter-spacing:0}
-  .timebar input[type=range]{min-width:0;height:28px}
-  .slider-box{min-width:0}
-  .time-ticks{display:none}
-  .zoom{top:10px;right:10px}
-  .zoom button{width:32px;height:32px}
-  .legend{
-    left:10px;bottom:calc(42dvh + 12px);min-width:0;max-width:min(220px,calc(100% - 20px));
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;
     padding:8px 10px;
   }
+  .tm{min-width:72px}
+  .slider-box{flex:1 1 140px;min-width:0}
+  .timebar input[type=range]{min-width:0;height:24px}
+  .time-ticks{display:flex;justify-content:space-between;min-width:0;overflow:hidden}
+  .time-ticks .tick{flex:1;min-width:0;text-align:center;font-size:0;line-height:1.2}
+  .time-ticks .tick::after{content:attr(data-m);font-size:9px;font-weight:600;font-family:var(--f-m)}
+  .wx{display:flex;flex:1 1 100%;gap:10px;white-space:nowrap;font-size:11px;overflow:hidden}
+  .zoom{top:10px;right:10px}
+  .legend{
+    display:block;left:10px;bottom:calc(40dvh + 10px);
+    min-width:168px;max-width:min(220px,calc(100% - 20px));padding:8px 10px;
+  }
   .legend h4{margin-bottom:6px}
-  .attrib,.scale{display:none}
-  .hint-first{top:auto;bottom:calc(42dvh + 14px);left:50%;transform:translateX(-50%);padding:10px 14px;font-size:13px}
+  .scale{display:block;right:10px;bottom:calc(40dvh + 40px)}
+  .attrib{display:block;right:10px;bottom:calc(40dvh + 10px);max-width:46vw;font-size:9.5px}
+  .hint-first{display:flex;top:calc((100% - 40dvh) / 2);bottom:auto;left:50%;transform:translate(-50%,-50%);padding:10px 14px;z-index:5}
 
   .panel{
     position:fixed;bottom:0;left:0;right:0;z-index:100;
-    height:42dvh;max-height:88dvh;background:var(--panel);
+    height:40dvh;max-height:88dvh;background:var(--panel);
     border-left:none;border-top:1px solid var(--line);
     border-radius:16px 16px 0 0;box-shadow:0 -4px 24px rgba(0,0,0,.25);
     transition:height .25s cubic-bezier(.1,.9,.2,1);
@@ -384,32 +396,51 @@ summary:hover{color:var(--accent)}
     padding-bottom:env(safe-area-inset-bottom);
   }
   .panel.expand{height:min(88dvh,calc(100dvh - env(safe-area-inset-top)))}
-  .panel.peek{height:calc(72px + env(safe-area-inset-bottom))}
+  .panel.peek{height:calc(96px + env(safe-area-inset-bottom))}
   .sheet-handle{
-    display:flex;width:100%;height:22px;align-items:center;justify-content:center;
+    display:flex;width:100%;height:20px;align-items:center;justify-content:center;
     cursor:ns-resize;touch-action:none;flex-shrink:0;
   }
   .sheet-handle::after{
     content:'';width:36px;height:4px;background:var(--ink-2);opacity:.4;border-radius:2px;
   }
-  .ph{flex-shrink:0;padding:10px 16px 12px}
-  .ph h2{font-size:17px;letter-spacing:0}
-  .ph .sub{font-size:12px}
-  .pb{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:12px 16px 24px}
-  .stat .v{font-size:20px;letter-spacing:0}
-  .hero b,.crop b,.lot .nm b{letter-spacing:0}
-  .cmp-mbox{width:100%;max-width:none;max-height:92dvh;border-radius:14px 14px 0 0}
-  .cmp-grid{grid-template-columns:1fr}
-  .modal{padding:0;align-items:end}
-  .mbox{max-height:92dvh;border-radius:14px 14px 0 0}
+  .ph{flex-shrink:0}
+  .pb{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .cmp-mbox{width:min(820px,100%);max-height:92dvh}
+  .cmp-grid{grid-template-columns:1fr 1fr}
+  .modal{padding:12px}
 }
 
 @media (max-width:480px){
-  .timebar{padding:7px 8px;gap:6px}
-  .tm b{font-size:12.5px}
-  .tm i{font-size:10px}
-  .legend{display:none}
-  .hint-first{display:none}
+  .seg button{flex-direction:column;gap:2px;padding:6px 3px}
+  .seg button span{font-size:10px}
+  .tbtn{padding:6px 8px;gap:4px}
+  .tbtn span{display:inline;font-size:11px}
+  .timebar{right:50px}
+  .cmp-grid{grid-template-columns:1fr}
+}
+
+@media (max-width:900px) and (orientation:landscape){
+  .app{grid-template-columns:minmax(0,1fr) minmax(240px,36vw);grid-template-rows:auto 1fr}
+  .top{display:flex;flex-wrap:nowrap;gap:8px 10px;padding:6px 10px;padding-top:max(6px,env(safe-area-inset-top))}
+  .bd,.seg,#compare-open,#help-open{grid-area:auto}
+  .bd i{display:none}
+  .seg{flex:1 1 auto;width:auto;min-width:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+  .seg button{flex-direction:row;padding:5px 4px;white-space:nowrap}
+  .seg button span{font-size:11px}
+  .tbtn span{display:none}
+  .timebar{left:10px;top:8px;right:auto;max-width:min(520px,calc(100% - 58px));width:auto}
+  .legend{left:10px;bottom:12px}
+  .scale{right:10px;bottom:40px}
+  .attrib{right:10px;bottom:10px}
+  .hint-first{top:50%;bottom:auto;left:50%;transform:translate(-50%,-50%)}
+  .panel{
+    position:static;height:auto;max-height:none;border-radius:0;
+    border-top:none;border-left:1px solid var(--line);box-shadow:none;
+    padding-bottom:0;
+  }
+  .panel.expand,.panel.peek{height:auto}
+  .sheet-handle{display:none}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
@@ -1046,9 +1077,6 @@ function select(id, quiet){
   paint();
   const panel = document.getElementById('panel');
   panel.scrollTop = 0;
-  if (id && matchMedia('(max-width:480px)').matches){
-    panel.classList.remove('peek');
-  }
   if (id) ov.querySelector(`polygon[data-id="${id}"]`)?.focus({preventScroll:true});
   if (!hinted){ hinted = true; document.getElementById('hint').style.opacity = 0; }
 }
@@ -1085,8 +1113,9 @@ function buildTimeTicks() {
   const container = document.getElementById('time-ticks');
   if (!container) return;
   container.innerHTML = TH.map((t, i) => {
-    const label = t.endsWith('-01') ? `T1/${t.slice(2,4)}` : `T${+t.slice(5)}`;
-    return `<span class="tick ${i===MI?'active':''}" data-idx="${i}">${label}</span>`;
+    const mo = +t.slice(5);
+    const label = t.endsWith('-01') ? `T1/${t.slice(2,4)}` : `T${mo}`;
+    return `<span class="tick ${i===MI?'active':''}" data-idx="${i}" data-m="${mo}">${label}</span>`;
   }).join('');
   container.querySelectorAll('.tick').forEach(el => {
     el.onclick = () => {
@@ -1230,10 +1259,6 @@ function setupBottomSheet() {
   const handle = document.getElementById('sheet-handle');
   const panel = document.getElementById('panel');
   if (!handle || !panel) return;
-  if (matchMedia('(max-width:480px)').matches) panel.classList.add('peek');
-  panel.querySelector('.ph')?.addEventListener('click', () => {
-    if (panel.classList.contains('peek')) panel.classList.remove('peek');
-  });
 
   let startY = 0, startH = 0, dragging = false;
   handle.onpointerdown = (e) => {
